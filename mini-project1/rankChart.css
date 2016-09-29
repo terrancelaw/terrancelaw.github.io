@@ -1,0 +1,15 @@
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.rank .area {
+  fill: steelblue;
+  opacity: 0.5;
+}
+
+.rank .line {
+  stroke-width: 3px;
+}

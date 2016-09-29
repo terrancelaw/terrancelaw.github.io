@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" type="text/css" href="network.css">
+	<link rel="stylesheet" type="text/css" href="d3.slider.css">
+	<link rel="stylesheet" type="text/css" href="lineChart.css">
+	<link rel="stylesheet" type="text/css" href="rankChart.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="searchResult.css">
+
+	<style>
+		body {
+			font: 10px sans-serif;
+			overflow: hidden;
+		}
+
+		div:not(#slider) {
+			padding: 5px;
+		}
+
+		div.border {
+			border: 2px solid #EEEEEE;
+			border-radius: 10px;
+			margin: 3px;
+		}
+
+		div.centerBlock {
+			display: table;
+  			margin: 0 auto;
+		}
+
+		div#slider {
+			margin: auto;
+			width: 40%;
+		}
+
+		div.scroller-wrapper {
+			width: 230px;
+			height: 196px;
+			overflow-x: hidden;
+		}
+	</style>
+
+	<script src="//d3js.org/d3.v3.min.js"></script>
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
+	<script src="d3.slider.js"></script>
+</head>
+
+<body>
+
+	<div class="row">
+		<div class="col-lg-4" style="padding-left:50px">
+			<div class="border centerBlock"><svg class="network"></svg></div>
+		</div>
+
+		<div class="col-lg-8" style="padding-right:50px">
+			<div class="border centerBlock"><svg class="chart"></svg></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12" style="height:40px">
+			<div id="slider"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-2"></div>
+
+		<div class="col-lg-5">
+			<div class="border centerBlock" style="margin:auto">
+				<svg class="rank"></svg>
+			</div>
+		</div>
+
+		<div class="col-lg-4 scroller-wrapper border">
+			<div id="result" class="centerBlock">
+				<ul class="list"></ul>
+			</div>
+		</div>
+
+		<div class="col-lg-1"></div>
+	</div>
+
+	<script src="lineChart.js"></script>
+	<script src="network.js"></script>
+	<script src="slider.js"></script>
+	<script src="rankChart.js"></script>
+	<script src="start.js"></script>
+</body>
