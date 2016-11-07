@@ -1,7 +1,7 @@
 var FlowFactory = { // all the flow creation requests are send here
 	margin: {top: 10, right: 10, bottom: 10, left: 10},
 	canvasWidth: 1800,
-	canvasHeight: 500,
+	canvasHeight: 450,
 	svgWidth: 950,
 	svgHeight: 500,
 

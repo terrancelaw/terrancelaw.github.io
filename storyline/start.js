@@ -13,10 +13,11 @@ $(function(){
 
 	$("#flow-view").css("display", "inline-block")
 						.css("width", svgWidth)
-						.css("height", flowSvgHeight + timelineSvgHeight + 50);
+						.css("height", flowSvgHeight + timelineSvgHeight + 50)
+						.addClass("noselection");
 
 	$("#flow-wrapper").css("display", "inline-block")
-						.addClass("ui-widget-content ui-corner-all noselection");
+						.addClass("ui-widget-content ui-corner-all");
 
 	$("#all-flows-wrapper").css("width", svgWidth)
 							.css("height", flowSvgHeight + 50) // to prevent y overflow at the beginning, svg height is less
