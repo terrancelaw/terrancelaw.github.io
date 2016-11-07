@@ -110,13 +110,13 @@ var FlowFactory = { // all the flow creation requests are send here
 		if (!self.zoomedOut) { // big version
 			if (self.nextY_zoom > self.svgHeight) {
 				d3.select("#chart")
-					.attr("height", self.nextY_zoom);
+					.attr("height", self.nextY_zoom + 50); // 50 is for tooltip
 			}
 		}
 		else {
 			if (self.nextY_zoom > self.svgHeight) {
 				d3.select("#chart")
-					.attr("height", self.nextY_zoom / self.zoomFactor);
+					.attr("height", (self.nextY_zoom + 50) / self.zoomFactor); // 50 is for tooltip
 			}
 		}
 	},
@@ -155,7 +155,7 @@ var FlowFactory = { // all the flow creation requests are send here
 
 				// change size of svg;
 				d3.select("#chart")
-					.attr("height", self.nextY_zoom);
+					.attr("height", self.nextY_zoom + 50); // 50 is for tooltip
 
 				self.zoomedOut = false;
 			}
