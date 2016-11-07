@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.3/jquery.tipsy.min.css">
+	<link rel="stylesheet" type="text/css" href="table.css">
+
 	<script src="//d3js.org/d3.v3.min.js"></script>
 	<script   src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+
+	<style>
+		body {
+			font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+			overflow-x: hidden;
+		}
+
+		.axis path,
+		.axis line {
+		  fill: none;
+		  stroke: #000;
+		  shape-rendering: crispEdges;
+		}
+
+		.brush .extent {
+		  stroke: #fff;
+		  fill-opacity: .125;
+		  shape-rendering: crispEdges;
+		}
+
+		svg {
+		  font: 10px sans-serif;
+		}
+
+		div.noselection {
+			-webkit-user-select: none;
+		    -moz-user-select: none;
+		    -khtml-user-select: none;
+		    -ms-user-select: none;
+		}
+	</style>
 </head>
 
 <body>
-	<svg id="chart"></svg>
+	<div id="content">
 
+		<div id="table-view"></div>
+
+		<div id="flow-view">
+			<div class="toolbar ui-widget-header ui-corner-all">
+				<label class="toolbar_label">Comparison View</label>
+				<span style="float:right;line-height:15px">
+					<button id="resize" class="ui-button" style="padding:0px;margin:0px;">
+						<span class="ui-icon-zoomin ui-icon"></span>
+					</button>
+					<button id="remove" class="ui-button" style="padding:0px;margin:0px;">
+						<span class="ui-icon-close ui-icon"></span>
+					</button>
+				</span>
+			</div>
+
+			<div id="flow-wrapper">
+				<div id="timeline-wrapper"></div>
+				<div id="all-flows-wrapper"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="timeline.js"></script>
 	<script src="flow.js"></script>
 	<script src="cluster.js"></script>
+	<script src="flowFactory.js"></script>
+	<script src="table.js"></script>
 	<script src="start.js"></script>
 </body>
