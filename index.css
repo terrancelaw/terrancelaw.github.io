@@ -79,10 +79,11 @@ html, body {
 }
 
 .proj {
-  padding-left:15px;
-  padding-right:15px;
-  padding-top:15px;
-  padding-bottom:15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 135px;
 }
 
 .teaser {
@@ -91,13 +92,13 @@ html, body {
   margin-right: 20px;
 }
 
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
 .pub_title, .pub_authors, .public_venue, .download {
   padding-bottom: 5px;
   line-height: 1.5;
   font-size: 14px
-}
-
-#copyright {
-  position: absolute;
-  bottom: 0;
 }
