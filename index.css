@@ -88,6 +88,7 @@ html, body {
 
 .teaser {
   width: 195px;
+  height: 105px;
   float: left;
   margin-right: 20px;
 }
