@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="//d3js.org/d3.v3.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="content">
+
+		<div id="table-view" class="ui-view ui-corner-all noselection">
+			<svg id="table-legend"></svg>
+
+			<svg id="table"></svg>
+		</div>
+
+		<div id="flow-view" class="noselection">
+
+			<div class="ui-menu-bar ui-corner-all">
+			
+				<span>
+					<button id="remove" class="ui-button">
+						<span class="ui-icon-close ui-icon"></span>
+					</button>
+				</span>
+
+				<svg class="control"></svg>
+
+			</div>
+
+			<div id="timeline-flow" class="ui-view ui-corner-all">
+
+				<div id="timeline-wrapper">
+					<svg id="timeline"></svg>
+				</div>
+
+				<div id="flow-wrapper">
+					<svg id="chart"></svg>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="js/timeline.js"></script>
+	<script src="js/firstLayer.js"></script>
+	<script src="js/secondLayer.js"></script>
+	<script src="js/barCharts.js"></script>
+	<script src="js/flowFactory.js"></script>
+	<script src="js/table.js"></script>
+	<script src="js/database.js"></script>
+	<script src="js/start.js"></script>
+</body>

@@ -1,0 +1,113 @@
+body {
+	font: 10px sans-serif;
+	overflow-x: hidden;
+}
+
+div.noselection {
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.brush .extent {
+	stroke: #fff;
+	fill-opacity: .125;
+	shape-rendering: crispEdges;
+}
+
+.ui-menu-bar {
+	background: white;
+	border: 1px solid #aaaaaa;
+	height: 20px
+}
+
+.ui-menu-bar .svgButton {
+	fill: #D3D3D3;
+}
+
+.ui-menu-bar .svgButton.selected {
+	fill: black;
+}
+
+.ui-menu-bar span {
+	float: right;
+	line-height: 15px;
+}
+
+.ui-menu-bar .ui-button {
+	padding: 0px;
+	margin: 0px;
+}
+
+.ui-menu-bar .control .button {
+	fill: #D3D3D3;
+}
+
+.ui-menu-bar .control .button.selected {
+	fill: black;
+}
+
+.ui-view {
+	background: white;
+	border: 1px solid #aaaaaa;
+}
+
+#table-view {
+	display: inline-block;
+	vertical-align: top;
+	overflow-y: scroll;
+	overflow-x: hidden
+}
+
+#table-legend {
+	position: fixed;
+    z-index: 999;
+}
+
+#flow-view {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#timeline-flow {
+	display: inline-block;
+}
+
+#flow-wrapper {
+	overflow-y: scroll;
+	overflow-x: hidden
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #d3d3d3;
+}
+
+.row.highlighted .highlight {
+	fill: #FFFFEE;
+}
+
+.row.selected .highlight {
+	fill: #FFFFEE;
+}
+
+.row .highlight {
+	fill: white;
+}
