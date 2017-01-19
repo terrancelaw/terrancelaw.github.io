@@ -1,0 +1,4501 @@
+date,name,position,frequency
+2000-05,andy.zipper@enron.com,Employee,1
+2000-06,andy.zipper@enron.com,Employee,1
+2000-07,andy.zipper@enron.com,President,2
+2000-07,andy.zipper@enron.com,Employee,1
+2000-07,andy.zipper@enron.com,unknown,1
+2000-08,andy.zipper@enron.com,President,1
+2000-08,andy.zipper@enron.com,unknown,2
+2000-09,andy.zipper@enron.com,CEO,1
+2000-09,andy.zipper@enron.com,Employee,1
+2000-09,andy.zipper@enron.com,President,2
+2000-10,andy.zipper@enron.com,CEO,1
+2000-10,andy.zipper@enron.com,Employee,1
+2000-10,andy.zipper@enron.com,unknown,1
+2000-10,andy.zipper@enron.com,President,1
+2000-11,andy.zipper@enron.com,President,3
+2000-11,andy.zipper@enron.com,Employee,1
+2000-11,andy.zipper@enron.com,unknown,1
+2000-11,andy.zipper@enron.com,CEO,1
+2000-12,andy.zipper@enron.com,President,3
+2000-12,andy.zipper@enron.com,Employee,1
+2000-12,andy.zipper@enron.com,unknown,1
+2000-12,andy.zipper@enron.com,CEO,1
+2001-01,andy.zipper@enron.com,President,1
+2001-01,andy.zipper@enron.com,Employee,2
+2001-01,andy.zipper@enron.com,unknown,1
+2001-02,andy.zipper@enron.com,President,2
+2001-02,andy.zipper@enron.com,Employee,1
+2001-02,andy.zipper@enron.com,unknown,2
+2001-03,andy.zipper@enron.com,President,2
+2001-03,andy.zipper@enron.com,Employee,1
+2001-04,andy.zipper@enron.com,CEO,1
+2001-04,andy.zipper@enron.com,Employee,2
+2001-04,andy.zipper@enron.com,unknown,1
+2001-04,andy.zipper@enron.com,Manager,1
+2001-05,andy.zipper@enron.com,President,2
+2001-05,andy.zipper@enron.com,Employee,1
+2001-05,andy.zipper@enron.com,unknown,2
+2001-05,andy.zipper@enron.com,Vice President,5
+2001-05,andy.zipper@enron.com,CEO,1
+2001-05,andy.zipper@enron.com,Director,2
+2001-06,andy.zipper@enron.com,President,2
+2001-06,andy.zipper@enron.com,Employee,1
+2001-06,andy.zipper@enron.com,unknown,2
+2001-06,andy.zipper@enron.com,CEO,1
+2001-07,andy.zipper@enron.com,President,1
+2001-07,andy.zipper@enron.com,unknown,1
+2001-08,andy.zipper@enron.com,CEO,2
+2001-08,andy.zipper@enron.com,Employee,1
+2001-08,andy.zipper@enron.com,unknown,1
+2001-09,andy.zipper@enron.com,President,2
+2001-09,andy.zipper@enron.com,unknown,1
+2001-09,andy.zipper@enron.com,Director,1
+2001-10,andy.zipper@enron.com,President,2
+2001-10,andy.zipper@enron.com,Employee,2
+2001-10,andy.zipper@enron.com,unknown,1
+2001-10,andy.zipper@enron.com,Director,1
+2001-11,andy.zipper@enron.com,President,2
+2001-11,andy.zipper@enron.com,Employee,2
+2001-11,andy.zipper@enron.com,unknown,2
+2001-11,andy.zipper@enron.com,Vice President,1
+2001-11,andy.zipper@enron.com,Director,2
+2001-11,andy.zipper@enron.com,Trader,1
+2001-12,andy.zipper@enron.com,President,2
+2001-12,andy.zipper@enron.com,unknown,1
+2001-12,andy.zipper@enron.com,CEO,1
+2002-01,andy.zipper@enron.com,CEO,1
+2002-01,andy.zipper@enron.com,Manager,1
+2002-01,andy.zipper@enron.com,President,1
+2002-02,andy.zipper@enron.com,Employee,1
+2002-02,andy.zipper@enron.com,unknown,1
+2000-05,barry.tycholiz@enron.com,CEO,1
+2000-06,barry.tycholiz@enron.com,Manager,1
+2000-08,barry.tycholiz@enron.com,CEO,1
+2000-08,barry.tycholiz@enron.com,Vice President,1
+2000-09,barry.tycholiz@enron.com,Manager,1
+2000-10,barry.tycholiz@enron.com,CEO,1
+2000-11,barry.tycholiz@enron.com,CEO,2
+2000-11,barry.tycholiz@enron.com,Employee,2
+2000-11,barry.tycholiz@enron.com,unknown,1
+2000-12,barry.tycholiz@enron.com,CEO,1
+2000-12,barry.tycholiz@enron.com,Employee,1
+2000-12,barry.tycholiz@enron.com,Manager,1
+2001-01,barry.tycholiz@enron.com,CEO,1
+2001-01,barry.tycholiz@enron.com,Employee,1
+2001-01,barry.tycholiz@enron.com,Vice President,1
+2001-01,barry.tycholiz@enron.com,Manager,2
+2001-02,barry.tycholiz@enron.com,unknown,2
+2001-03,barry.tycholiz@enron.com,Employee,1
+2001-03,barry.tycholiz@enron.com,unknown,3
+2001-03,barry.tycholiz@enron.com,Manager,2
+2001-04,barry.tycholiz@enron.com,CEO,1
+2001-04,barry.tycholiz@enron.com,Employee,2
+2001-04,barry.tycholiz@enron.com,unknown,2
+2001-04,barry.tycholiz@enron.com,Manager,1
+2001-04,barry.tycholiz@enron.com,President,1
+2001-05,barry.tycholiz@enron.com,CEO,1
+2001-05,barry.tycholiz@enron.com,Employee,2
+2001-05,barry.tycholiz@enron.com,Vice President,2
+2001-05,barry.tycholiz@enron.com,unknown,2
+2001-05,barry.tycholiz@enron.com,Manager,3
+2001-06,barry.tycholiz@enron.com,Employee,1
+2001-06,barry.tycholiz@enron.com,unknown,1
+2001-07,barry.tycholiz@enron.com,President,1
+2001-07,barry.tycholiz@enron.com,Employee,1
+2001-07,barry.tycholiz@enron.com,Manager,1
+2001-07,barry.tycholiz@enron.com,Vice President,1
+2001-07,barry.tycholiz@enron.com,unknown,1
+2001-08,barry.tycholiz@enron.com,President,1
+2001-08,barry.tycholiz@enron.com,Employee,1
+2001-08,barry.tycholiz@enron.com,unknown,4
+2001-08,barry.tycholiz@enron.com,Manager,2
+2001-08,barry.tycholiz@enron.com,CEO,3
+2001-09,barry.tycholiz@enron.com,President,1
+2001-09,barry.tycholiz@enron.com,Employee,2
+2001-09,barry.tycholiz@enron.com,unknown,1
+2001-09,barry.tycholiz@enron.com,CEO,1
+2001-09,barry.tycholiz@enron.com,Manager,1
+2001-09,barry.tycholiz@enron.com,Director,1
+2001-10,barry.tycholiz@enron.com,President,1
+2001-10,barry.tycholiz@enron.com,Employee,2
+2001-10,barry.tycholiz@enron.com,unknown,3
+2001-10,barry.tycholiz@enron.com,CEO,2
+2001-10,barry.tycholiz@enron.com,Manager,2
+2001-10,barry.tycholiz@enron.com,Director,2
+2001-11,barry.tycholiz@enron.com,CEO,1
+2001-11,barry.tycholiz@enron.com,Employee,4
+2001-11,barry.tycholiz@enron.com,unknown,2
+2001-11,barry.tycholiz@enron.com,President,1
+2001-11,barry.tycholiz@enron.com,Manager,1
+2001-11,barry.tycholiz@enron.com,Director,2
+2001-12,barry.tycholiz@enron.com,President,1
+2001-12,barry.tycholiz@enron.com,Employee,1
+2001-12,barry.tycholiz@enron.com,unknown,2
+2001-12,barry.tycholiz@enron.com,Manager,1
+2001-12,barry.tycholiz@enron.com,Trader,1
+2002-01,barry.tycholiz@enron.com,President,1
+2002-01,barry.tycholiz@enron.com,Vice President,1
+2002-01,barry.tycholiz@enron.com,Manager,2
+2002-02,barry.tycholiz@enron.com,CEO,1
+2002-02,barry.tycholiz@enron.com,unknown,1
+2002-02,barry.tycholiz@enron.com,President,1
+2000-02,brenda.whitehead@enron.com,Employee,1
+2000-02,brenda.whitehead@enron.com,Vice President,2
+2000-03,brenda.whitehead@enron.com,Employee,1
+2000-04,brenda.whitehead@enron.com,Employee,1
+2000-05,brenda.whitehead@enron.com,Employee,1
+2000-06,brenda.whitehead@enron.com,Employee,1
+2000-07,brenda.whitehead@enron.com,Employee,1
+2000-07,brenda.whitehead@enron.com,unknown,1
+2000-08,brenda.whitehead@enron.com,Employee,2
+2000-08,brenda.whitehead@enron.com,unknown,1
+2000-08,brenda.whitehead@enron.com,Vice President,1
+2000-09,brenda.whitehead@enron.com,CEO,1
+2000-09,brenda.whitehead@enron.com,Employee,7
+2000-09,brenda.whitehead@enron.com,unknown,2
+2000-09,brenda.whitehead@enron.com,Vice President,5
+2000-09,brenda.whitehead@enron.com,Managing Director,1
+2000-09,brenda.whitehead@enron.com,Trader,2
+2000-10,brenda.whitehead@enron.com,Employee,1
+2000-11,brenda.whitehead@enron.com,Employee,1
+2000-11,brenda.whitehead@enron.com,unknown,1
+2000-12,brenda.whitehead@enron.com,Employee,1
+2001-01,brenda.whitehead@enron.com,Employee,1
+2001-02,brenda.whitehead@enron.com,Employee,2
+2001-03,brenda.whitehead@enron.com,Managing Director,1
+2001-03,brenda.whitehead@enron.com,Employee,7
+2001-03,brenda.whitehead@enron.com,unknown,4
+2001-03,brenda.whitehead@enron.com,Vice President,1
+2001-04,brenda.whitehead@enron.com,Managing Director,1
+2001-04,brenda.whitehead@enron.com,Employee,2
+2001-04,brenda.whitehead@enron.com,Vice President,1
+2000-11,cara.semperger@enron.com,Employee,2
+2000-11,cara.semperger@enron.com,Manager,1
+2000-12,cara.semperger@enron.com,Employee,2
+2000-12,cara.semperger@enron.com,unknown,1
+2000-12,cara.semperger@enron.com,Manager,1
+2000-12,cara.semperger@enron.com,Trader,1
+2001-01,cara.semperger@enron.com,Employee,1
+2001-01,cara.semperger@enron.com,unknown,1
+2001-01,cara.semperger@enron.com,Director,1
+2001-01,cara.semperger@enron.com,Trader,1
+2001-02,cara.semperger@enron.com,Employee,2
+2001-02,cara.semperger@enron.com,unknown,1
+2001-02,cara.semperger@enron.com,Trader,1
+2001-03,cara.semperger@enron.com,Employee,2
+2001-03,cara.semperger@enron.com,unknown,1
+2001-03,cara.semperger@enron.com,Director,1
+2001-03,cara.semperger@enron.com,Trader,2
+2001-04,cara.semperger@enron.com,Employee,3
+2001-04,cara.semperger@enron.com,unknown,1
+2001-04,cara.semperger@enron.com,Trader,1
+2001-05,cara.semperger@enron.com,Employee,3
+2001-05,cara.semperger@enron.com,unknown,1
+2001-05,cara.semperger@enron.com,Trader,2
+2001-06,cara.semperger@enron.com,Employee,3
+2001-06,cara.semperger@enron.com,unknown,1
+2001-06,cara.semperger@enron.com,Trader,2
+2001-07,cara.semperger@enron.com,Employee,2
+2001-07,cara.semperger@enron.com,unknown,1
+2001-07,cara.semperger@enron.com,Trader,2
+2001-08,cara.semperger@enron.com,Employee,2
+2001-08,cara.semperger@enron.com,unknown,1
+2001-08,cara.semperger@enron.com,Trader,2
+2001-09,cara.semperger@enron.com,Employee,2
+2001-09,cara.semperger@enron.com,Trader,1
+2001-10,cara.semperger@enron.com,Employee,2
+2001-10,cara.semperger@enron.com,unknown,1
+2001-10,cara.semperger@enron.com,Trader,2
+2001-11,cara.semperger@enron.com,Employee,2
+2001-11,cara.semperger@enron.com,unknown,1
+2001-11,cara.semperger@enron.com,Trader,1
+2001-12,cara.semperger@enron.com,Trader,3
+2002-01,cara.semperger@enron.com,Trader,2
+2002-02,cara.semperger@enron.com,Trader,1
+2000-02,chris.germany@enron.com,Managing Director,1
+2000-02,chris.germany@enron.com,Employee,2
+2000-02,chris.germany@enron.com,unknown,1
+2000-02,chris.germany@enron.com,Vice President,1
+2000-03,chris.germany@enron.com,Employee,2
+2000-03,chris.germany@enron.com,unknown,2
+2000-03,chris.germany@enron.com,Vice President,2
+2000-03,chris.germany@enron.com,Trader,1
+2000-04,chris.germany@enron.com,Managing Director,1
+2000-04,chris.germany@enron.com,Employee,2
+2000-04,chris.germany@enron.com,unknown,2
+2000-04,chris.germany@enron.com,Vice President,1
+2000-04,chris.germany@enron.com,Trader,1
+2000-05,chris.germany@enron.com,Employee,1
+2000-05,chris.germany@enron.com,unknown,1
+2000-06,chris.germany@enron.com,Employee,2
+2000-06,chris.germany@enron.com,Director,1
+2000-06,chris.germany@enron.com,unknown,1
+2000-06,chris.germany@enron.com,Vice President,1
+2000-06,chris.germany@enron.com,Manager,1
+2000-06,chris.germany@enron.com,Trader,1
+2000-07,chris.germany@enron.com,Employee,3
+2000-07,chris.germany@enron.com,unknown,2
+2000-07,chris.germany@enron.com,Vice President,1
+2000-07,chris.germany@enron.com,Trader,1
+2000-08,chris.germany@enron.com,Employee,3
+2000-08,chris.germany@enron.com,Manager,1
+2000-08,chris.germany@enron.com,unknown,2
+2000-08,chris.germany@enron.com,Vice President,1
+2000-08,chris.germany@enron.com,Trader,1
+2000-09,chris.germany@enron.com,Employee,2
+2000-09,chris.germany@enron.com,unknown,1
+2000-09,chris.germany@enron.com,Trader,1
+2000-10,chris.germany@enron.com,Employee,2
+2000-10,chris.germany@enron.com,unknown,2
+2000-10,chris.germany@enron.com,Vice President,1
+2000-11,chris.germany@enron.com,Employee,3
+2000-11,chris.germany@enron.com,Manager,1
+2000-11,chris.germany@enron.com,unknown,2
+2000-11,chris.germany@enron.com,Vice President,1
+2000-12,chris.germany@enron.com,Employee,3
+2000-12,chris.germany@enron.com,unknown,2
+2000-12,chris.germany@enron.com,Manager,1
+2001-01,chris.germany@enron.com,Employee,3
+2001-01,chris.germany@enron.com,unknown,1
+2001-02,chris.germany@enron.com,Employee,3
+2001-02,chris.germany@enron.com,unknown,1
+2001-02,chris.germany@enron.com,Vice President,1
+2001-03,chris.germany@enron.com,Employee,2
+2001-03,chris.germany@enron.com,unknown,2
+2001-03,chris.germany@enron.com,Manager,1
+2001-04,chris.germany@enron.com,Employee,2
+2001-04,chris.germany@enron.com,unknown,1
+2001-04,chris.germany@enron.com,Vice President,1
+2001-05,chris.germany@enron.com,CEO,1
+2001-05,chris.germany@enron.com,Employee,2
+2001-05,chris.germany@enron.com,unknown,1
+2001-05,chris.germany@enron.com,Director,1
+2001-06,chris.germany@enron.com,Employee,2
+2001-06,chris.germany@enron.com,unknown,1
+2001-08,chris.germany@enron.com,Employee,1
+2001-09,chris.germany@enron.com,Employee,1
+2001-09,chris.germany@enron.com,Director,1
+2001-10,chris.germany@enron.com,Employee,2
+2001-10,chris.germany@enron.com,unknown,2
+2001-11,chris.germany@enron.com,Employee,3
+2001-11,chris.germany@enron.com,unknown,1
+2001-11,chris.germany@enron.com,Director,1
+2001-12,chris.germany@enron.com,Employee,1
+2002-01,chris.germany@enron.com,Employee,2
+2002-01,chris.germany@enron.com,unknown,1
+2002-01,chris.germany@enron.com,Vice President,1
+2002-02,chris.germany@enron.com,Employee,3
+2002-02,chris.germany@enron.com,unknown,1
+2000-03,dan.hyvl@enron.com,Manager,1
+2000-04,dan.hyvl@enron.com,Managing Director,1
+2000-04,dan.hyvl@enron.com,unknown,1
+2000-05,dan.hyvl@enron.com,unknown,1
+2000-06,dan.hyvl@enron.com,unknown,2
+2000-07,dan.hyvl@enron.com,Managing Director,1
+2000-07,dan.hyvl@enron.com,Employee,1
+2000-07,dan.hyvl@enron.com,unknown,1
+2000-08,dan.hyvl@enron.com,Employee,1
+2000-08,dan.hyvl@enron.com,unknown,3
+2000-09,dan.hyvl@enron.com,unknown,4
+2000-10,dan.hyvl@enron.com,Managing Director,1
+2000-10,dan.hyvl@enron.com,Employee,2
+2000-10,dan.hyvl@enron.com,unknown,2
+2000-10,dan.hyvl@enron.com,Vice President,1
+2000-11,dan.hyvl@enron.com,Managing Director,1
+2000-11,dan.hyvl@enron.com,Employee,2
+2000-11,dan.hyvl@enron.com,unknown,3
+2000-11,dan.hyvl@enron.com,Vice President,1
+2000-11,dan.hyvl@enron.com,Trader,1
+2000-12,dan.hyvl@enron.com,Managing Director,1
+2000-12,dan.hyvl@enron.com,Employee,2
+2000-12,dan.hyvl@enron.com,unknown,3
+2000-12,dan.hyvl@enron.com,Vice President,2
+2000-12,dan.hyvl@enron.com,Trader,1
+2001-01,dan.hyvl@enron.com,Vice President,1
+2001-01,dan.hyvl@enron.com,Employee,1
+2001-01,dan.hyvl@enron.com,unknown,2
+2001-01,dan.hyvl@enron.com,Manager,1
+2001-01,dan.hyvl@enron.com,Trader,1
+2001-02,dan.hyvl@enron.com,Managing Director,1
+2001-02,dan.hyvl@enron.com,Employee,2
+2001-02,dan.hyvl@enron.com,unknown,2
+2001-02,dan.hyvl@enron.com,Director,1
+2001-03,dan.hyvl@enron.com,Managing Director,1
+2001-03,dan.hyvl@enron.com,Employee,1
+2001-03,dan.hyvl@enron.com,unknown,3
+2001-03,dan.hyvl@enron.com,Manager,1
+2001-04,dan.hyvl@enron.com,Employee,1
+2001-04,dan.hyvl@enron.com,unknown,2
+2001-04,dan.hyvl@enron.com,Vice President,2
+2001-04,dan.hyvl@enron.com,Managing Director,1
+2001-04,dan.hyvl@enron.com,Manager,1
+2001-04,dan.hyvl@enron.com,Director,1
+2001-05,dan.hyvl@enron.com,Employee,1
+2001-05,dan.hyvl@enron.com,unknown,2
+2001-05,dan.hyvl@enron.com,Manager,1
+2001-06,dan.hyvl@enron.com,Managing Director,1
+2001-06,dan.hyvl@enron.com,Employee,1
+2001-06,dan.hyvl@enron.com,Manager,1
+2001-06,dan.hyvl@enron.com,unknown,2
+2001-06,dan.hyvl@enron.com,Director,1
+2001-10,dan.hyvl@enron.com,unknown,1
+2000-03,dana.davis@enron.com,unknown,1
+2000-07,dana.davis@enron.com,CEO,1
+2000-07,dana.davis@enron.com,Vice President,1
+2000-08,dana.davis@enron.com,Vice President,1
+2000-09,dana.davis@enron.com,unknown,1
+2000-10,dana.davis@enron.com,CEO,1
+2000-10,dana.davis@enron.com,unknown,1
+2000-11,dana.davis@enron.com,CEO,1
+2000-11,dana.davis@enron.com,Vice President,1
+2001-01,dana.davis@enron.com,Vice President,1
+2001-02,dana.davis@enron.com,Vice President,1
+2001-03,dana.davis@enron.com,Vice President,1
+2001-04,dana.davis@enron.com,President,1
+2001-05,dana.davis@enron.com,CEO,1
+2001-05,dana.davis@enron.com,Vice President,1
+2001-06,dana.davis@enron.com,unknown,1
+2001-06,dana.davis@enron.com,Trader,1
+2001-07,dana.davis@enron.com,President,1
+2001-07,dana.davis@enron.com,Employee,1
+2001-07,dana.davis@enron.com,unknown,1
+2001-08,dana.davis@enron.com,CEO,1
+2001-08,dana.davis@enron.com,Vice President,1
+2001-08,dana.davis@enron.com,Director,1
+2001-08,dana.davis@enron.com,unknown,1
+2001-09,dana.davis@enron.com,President,1
+2001-09,dana.davis@enron.com,Vice President,1
+2001-10,dana.davis@enron.com,Employee,2
+2001-10,dana.davis@enron.com,Vice President,1
+2001-10,dana.davis@enron.com,Director,2
+2001-10,dana.davis@enron.com,Trader,1
+2001-11,dana.davis@enron.com,President,1
+2001-11,dana.davis@enron.com,Employee,1
+2001-11,dana.davis@enron.com,Vice President,1
+2001-11,dana.davis@enron.com,Director,1
+2001-11,dana.davis@enron.com,Trader,2
+2001-12,dana.davis@enron.com,President,1
+2001-12,dana.davis@enron.com,Director,1
+2001-12,dana.davis@enron.com,Trader,1
+2002-01,dana.davis@enron.com,Employee,1
+2002-02,dana.davis@enron.com,President,1
+2002-02,dana.davis@enron.com,Employee,1
+2002-02,dana.davis@enron.com,unknown,1
+2002-02,dana.davis@enron.com,Director,1
+2000-02,danny.mccarty@enron.com,unknown,1
+2000-08,danny.mccarty@enron.com,Vice President,1
+2000-09,danny.mccarty@enron.com,unknown,1
+2000-10,danny.mccarty@enron.com,Vice President,1
+2000-11,danny.mccarty@enron.com,unknown,1
+2000-11,danny.mccarty@enron.com,Vice President,2
+2000-12,danny.mccarty@enron.com,President,1
+2000-12,danny.mccarty@enron.com,Vice President,3
+2001-01,danny.mccarty@enron.com,Vice President,1
+2001-02,danny.mccarty@enron.com,President,1
+2001-02,danny.mccarty@enron.com,Employee,1
+2001-02,danny.mccarty@enron.com,Vice President,1
+2001-03,danny.mccarty@enron.com,CEO,1
+2001-03,danny.mccarty@enron.com,Vice President,1
+2001-04,danny.mccarty@enron.com,CEO,3
+2001-04,danny.mccarty@enron.com,unknown,1
+2001-04,danny.mccarty@enron.com,Manager,1
+2001-05,danny.mccarty@enron.com,President,1
+2001-05,danny.mccarty@enron.com,unknown,1
+2001-06,danny.mccarty@enron.com,Vice President,1
+2001-07,danny.mccarty@enron.com,Vice President,2
+2001-08,danny.mccarty@enron.com,CEO,2
+2001-08,danny.mccarty@enron.com,Employee,1
+2001-08,danny.mccarty@enron.com,Director,1
+2001-08,danny.mccarty@enron.com,President,1
+2001-08,danny.mccarty@enron.com,Manager,1
+2001-08,danny.mccarty@enron.com,unknown,1
+2001-09,danny.mccarty@enron.com,President,1
+2001-09,danny.mccarty@enron.com,Employee,1
+2001-09,danny.mccarty@enron.com,unknown,2
+2001-09,danny.mccarty@enron.com,Vice President,3
+2001-10,danny.mccarty@enron.com,President,2
+2001-10,danny.mccarty@enron.com,Employee,1
+2001-10,danny.mccarty@enron.com,unknown,2
+2001-10,danny.mccarty@enron.com,Vice President,3
+2001-11,danny.mccarty@enron.com,President,1
+2001-11,danny.mccarty@enron.com,Employee,1
+2001-11,danny.mccarty@enron.com,unknown,1
+2001-11,danny.mccarty@enron.com,Vice President,4
+2001-12,danny.mccarty@enron.com,CEO,1
+2001-12,danny.mccarty@enron.com,Employee,1
+2001-12,danny.mccarty@enron.com,unknown,2
+2001-12,danny.mccarty@enron.com,Vice President,4
+2001-12,danny.mccarty@enron.com,President,1
+2002-01,danny.mccarty@enron.com,Employee,1
+2002-01,danny.mccarty@enron.com,unknown,1
+2000-04,darrell.schoolcraft@enron.com,unknown,1
+2000-08,darrell.schoolcraft@enron.com,unknown,1
+2000-08,darrell.schoolcraft@enron.com,Vice President,1
+2000-10,darrell.schoolcraft@enron.com,Employee,1
+2000-10,darrell.schoolcraft@enron.com,Director,1
+2001-02,darrell.schoolcraft@enron.com,Employee,1
+2001-02,darrell.schoolcraft@enron.com,Vice President,1
+2001-02,darrell.schoolcraft@enron.com,Director,1
+2001-03,darrell.schoolcraft@enron.com,Vice President,1
+2001-03,darrell.schoolcraft@enron.com,Employee,1
+2001-03,darrell.schoolcraft@enron.com,unknown,3
+2001-03,darrell.schoolcraft@enron.com,Director,1
+2001-04,darrell.schoolcraft@enron.com,unknown,1
+2001-05,darrell.schoolcraft@enron.com,Employee,1
+2001-05,darrell.schoolcraft@enron.com,unknown,1
+2001-06,darrell.schoolcraft@enron.com,Employee,1
+2001-06,darrell.schoolcraft@enron.com,unknown,3
+2001-07,darrell.schoolcraft@enron.com,Employee,1
+2001-07,darrell.schoolcraft@enron.com,unknown,2
+2001-08,darrell.schoolcraft@enron.com,Employee,2
+2001-08,darrell.schoolcraft@enron.com,unknown,2
+2001-08,darrell.schoolcraft@enron.com,Director,1
+2001-09,darrell.schoolcraft@enron.com,Employee,1
+2001-09,darrell.schoolcraft@enron.com,unknown,3
+2001-09,darrell.schoolcraft@enron.com,Vice President,1
+2001-09,darrell.schoolcraft@enron.com,Director,1
+2001-10,darrell.schoolcraft@enron.com,unknown,2
+2001-10,darrell.schoolcraft@enron.com,Vice President,1
+2001-10,darrell.schoolcraft@enron.com,Director,1
+2001-11,darrell.schoolcraft@enron.com,unknown,2
+2001-11,darrell.schoolcraft@enron.com,Vice President,1
+2001-12,darrell.schoolcraft@enron.com,unknown,3
+2001-12,darrell.schoolcraft@enron.com,Manager,1
+2002-01,darrell.schoolcraft@enron.com,Employee,1
+2002-01,darrell.schoolcraft@enron.com,Manager,1
+2002-01,darrell.schoolcraft@enron.com,unknown,3
+2002-01,darrell.schoolcraft@enron.com,Vice President,1
+2002-01,darrell.schoolcraft@enron.com,Director,1
+2002-02,darrell.schoolcraft@enron.com,Manager,1
+2002-02,darrell.schoolcraft@enron.com,unknown,2
+2002-02,darrell.schoolcraft@enron.com,Director,1
+2000-05,darron.giron@enron.com,Employee,1
+2000-06,darron.giron@enron.com,Employee,1
+2000-06,darron.giron@enron.com,unknown,1
+2000-06,darron.giron@enron.com,Vice President,1
+2000-07,darron.giron@enron.com,unknown,1
+2000-08,darron.giron@enron.com,Employee,2
+2000-08,darron.giron@enron.com,unknown,2
+2000-09,darron.giron@enron.com,Employee,1
+2000-09,darron.giron@enron.com,unknown,1
+2000-09,darron.giron@enron.com,Trader,1
+2000-10,darron.giron@enron.com,unknown,3
+2000-10,darron.giron@enron.com,Trader,1
+2000-11,darron.giron@enron.com,Employee,2
+2000-11,darron.giron@enron.com,unknown,2
+2000-12,darron.giron@enron.com,Employee,2
+2000-12,darron.giron@enron.com,unknown,2
+2001-01,darron.giron@enron.com,Employee,3
+2001-01,darron.giron@enron.com,unknown,4
+2001-01,darron.giron@enron.com,Vice President,1
+2001-02,darron.giron@enron.com,Employee,2
+2001-02,darron.giron@enron.com,unknown,2
+2001-02,darron.giron@enron.com,Manager,1
+2001-03,darron.giron@enron.com,Employee,2
+2001-03,darron.giron@enron.com,unknown,2
+2001-03,darron.giron@enron.com,Manager,1
+2001-04,darron.giron@enron.com,unknown,2
+2001-04,darron.giron@enron.com,Vice President,1
+2001-05,darron.giron@enron.com,Employee,2
+2000-02,david.delainey@enron.com,President,1
+2000-03,david.delainey@enron.com,President,1
+2000-03,david.delainey@enron.com,Employee,1
+2000-03,david.delainey@enron.com,unknown,1
+2000-03,david.delainey@enron.com,Vice President,2
+2000-04,david.delainey@enron.com,President,1
+2000-04,david.delainey@enron.com,Employee,1
+2000-04,david.delainey@enron.com,CEO,1
+2000-05,david.delainey@enron.com,President,3
+2000-05,david.delainey@enron.com,Employee,2
+2000-05,david.delainey@enron.com,Manager,1
+2000-05,david.delainey@enron.com,Vice President,4
+2000-05,david.delainey@enron.com,CEO,1
+2000-06,david.delainey@enron.com,President,1
+2000-06,david.delainey@enron.com,Employee,2
+2000-06,david.delainey@enron.com,Vice President,6
+2000-06,david.delainey@enron.com,CEO,1
+2000-06,david.delainey@enron.com,Managing Director,1
+2000-06,david.delainey@enron.com,Trader,2
+2000-07,david.delainey@enron.com,President,1
+2000-07,david.delainey@enron.com,Employee,3
+2000-07,david.delainey@enron.com,Manager,1
+2000-07,david.delainey@enron.com,Vice President,4
+2000-07,david.delainey@enron.com,CEO,2
+2000-08,david.delainey@enron.com,President,2
+2000-08,david.delainey@enron.com,Employee,2
+2000-08,david.delainey@enron.com,Manager,1
+2000-08,david.delainey@enron.com,Vice President,7
+2000-08,david.delainey@enron.com,CEO,2
+2000-09,david.delainey@enron.com,CEO,1
+2000-09,david.delainey@enron.com,Employee,1
+2000-09,david.delainey@enron.com,unknown,1
+2000-09,david.delainey@enron.com,Vice President,2
+2000-09,david.delainey@enron.com,President,2
+2000-09,david.delainey@enron.com,Manager,1
+2000-10,david.delainey@enron.com,CEO,3
+2000-10,david.delainey@enron.com,Employee,1
+2000-10,david.delainey@enron.com,unknown,1
+2000-10,david.delainey@enron.com,Director,1
+2000-10,david.delainey@enron.com,Vice President,12
+2000-10,david.delainey@enron.com,President,1
+2000-10,david.delainey@enron.com,Manager,2
+2000-10,david.delainey@enron.com,Trader,1
+2000-11,david.delainey@enron.com,CEO,2
+2000-11,david.delainey@enron.com,Employee,1
+2000-11,david.delainey@enron.com,unknown,1
+2000-11,david.delainey@enron.com,Vice President,5
+2000-11,david.delainey@enron.com,President,2
+2000-11,david.delainey@enron.com,Manager,2
+2000-12,david.delainey@enron.com,CEO,2
+2000-12,david.delainey@enron.com,Employee,3
+2000-12,david.delainey@enron.com,Vice President,7
+2000-12,david.delainey@enron.com,President,2
+2000-12,david.delainey@enron.com,Manager,2
+2000-12,david.delainey@enron.com,Trader,1
+2001-01,david.delainey@enron.com,President,2
+2001-01,david.delainey@enron.com,Employee,1
+2001-01,david.delainey@enron.com,unknown,1
+2001-01,david.delainey@enron.com,Director,1
+2001-01,david.delainey@enron.com,Vice President,5
+2001-01,david.delainey@enron.com,CEO,1
+2001-01,david.delainey@enron.com,Manager,1
+2001-01,david.delainey@enron.com,Trader,1
+2001-02,david.delainey@enron.com,President,2
+2001-02,david.delainey@enron.com,Employee,1
+2001-02,david.delainey@enron.com,In House Lawyer,1
+2001-02,david.delainey@enron.com,Vice President,3
+2001-02,david.delainey@enron.com,CEO,3
+2001-02,david.delainey@enron.com,Manager,1
+2001-02,david.delainey@enron.com,Director,1
+2001-02,david.delainey@enron.com,unknown,1
+2001-03,david.delainey@enron.com,President,3
+2001-03,david.delainey@enron.com,Vice President,3
+2001-03,david.delainey@enron.com,Manager,1
+2001-03,david.delainey@enron.com,CEO,1
+2001-04,david.delainey@enron.com,President,3
+2001-04,david.delainey@enron.com,unknown,1
+2001-04,david.delainey@enron.com,Vice President,5
+2001-04,david.delainey@enron.com,Manager,1
+2001-04,david.delainey@enron.com,CEO,2
+2001-05,david.delainey@enron.com,CEO,3
+2001-05,david.delainey@enron.com,unknown,2
+2001-05,david.delainey@enron.com,Vice President,2
+2001-05,david.delainey@enron.com,Manager,1
+2001-05,david.delainey@enron.com,President,3
+2001-06,david.delainey@enron.com,CEO,2
+2001-06,david.delainey@enron.com,Employee,1
+2001-06,david.delainey@enron.com,unknown,1
+2001-06,david.delainey@enron.com,Vice President,1
+2001-06,david.delainey@enron.com,President,2
+2001-07,david.delainey@enron.com,CEO,1
+2001-07,david.delainey@enron.com,Employee,1
+2001-07,david.delainey@enron.com,Vice President,1
+2001-07,david.delainey@enron.com,President,1
+2001-08,david.delainey@enron.com,CEO,2
+2001-08,david.delainey@enron.com,Employee,1
+2001-08,david.delainey@enron.com,unknown,1
+2001-08,david.delainey@enron.com,Manager,1
+2001-08,david.delainey@enron.com,President,1
+2001-09,david.delainey@enron.com,CEO,1
+2001-09,david.delainey@enron.com,Employee,1
+2001-09,david.delainey@enron.com,unknown,1
+2001-09,david.delainey@enron.com,Vice President,1
+2001-10,david.delainey@enron.com,President,3
+2001-10,david.delainey@enron.com,Employee,2
+2001-10,david.delainey@enron.com,unknown,2
+2001-10,david.delainey@enron.com,Vice President,2
+2000-04,debra.perlingiere@enron.com,Managing Director,1
+2000-04,debra.perlingiere@enron.com,Employee,2
+2000-04,debra.perlingiere@enron.com,Trader,1
+2000-05,debra.perlingiere@enron.com,Managing Director,1
+2000-05,debra.perlingiere@enron.com,Employee,2
+2000-05,debra.perlingiere@enron.com,unknown,2
+2000-05,debra.perlingiere@enron.com,Trader,1
+2000-06,debra.perlingiere@enron.com,Managing Director,1
+2000-06,debra.perlingiere@enron.com,Employee,2
+2000-06,debra.perlingiere@enron.com,Trader,1
+2000-07,debra.perlingiere@enron.com,Managing Director,1
+2000-07,debra.perlingiere@enron.com,Employee,3
+2000-07,debra.perlingiere@enron.com,unknown,2
+2000-08,debra.perlingiere@enron.com,Managing Director,1
+2000-08,debra.perlingiere@enron.com,Employee,3
+2000-08,debra.perlingiere@enron.com,unknown,2
+2000-08,debra.perlingiere@enron.com,Vice President,1
+2000-09,debra.perlingiere@enron.com,Managing Director,1
+2000-09,debra.perlingiere@enron.com,Employee,2
+2000-09,debra.perlingiere@enron.com,unknown,2
+2000-09,debra.perlingiere@enron.com,Vice President,1
+2000-10,debra.perlingiere@enron.com,Managing Director,1
+2000-10,debra.perlingiere@enron.com,Employee,2
+2000-10,debra.perlingiere@enron.com,unknown,2
+2000-11,debra.perlingiere@enron.com,Managing Director,1
+2000-11,debra.perlingiere@enron.com,Employee,2
+2000-11,debra.perlingiere@enron.com,unknown,2
+2000-12,debra.perlingiere@enron.com,Managing Director,1
+2000-12,debra.perlingiere@enron.com,Employee,2
+2000-12,debra.perlingiere@enron.com,unknown,1
+2001-01,debra.perlingiere@enron.com,Managing Director,1
+2001-01,debra.perlingiere@enron.com,Employee,1
+2001-01,debra.perlingiere@enron.com,unknown,2
+2001-02,debra.perlingiere@enron.com,Managing Director,1
+2001-02,debra.perlingiere@enron.com,Employee,3
+2001-02,debra.perlingiere@enron.com,unknown,2
+2001-03,debra.perlingiere@enron.com,Managing Director,1
+2001-03,debra.perlingiere@enron.com,Employee,2
+2001-03,debra.perlingiere@enron.com,unknown,4
+2001-03,debra.perlingiere@enron.com,Manager,1
+2001-04,debra.perlingiere@enron.com,Managing Director,1
+2001-04,debra.perlingiere@enron.com,Employee,2
+2001-04,debra.perlingiere@enron.com,unknown,3
+2001-04,debra.perlingiere@enron.com,Manager,1
+2001-05,debra.perlingiere@enron.com,Managing Director,1
+2001-05,debra.perlingiere@enron.com,Employee,4
+2001-05,debra.perlingiere@enron.com,unknown,3
+2001-05,debra.perlingiere@enron.com,Manager,1
+2001-06,debra.perlingiere@enron.com,Managing Director,1
+2001-06,debra.perlingiere@enron.com,Employee,4
+2001-06,debra.perlingiere@enron.com,unknown,1
+2001-06,debra.perlingiere@enron.com,Manager,1
+2001-07,debra.perlingiere@enron.com,unknown,3
+2001-08,debra.perlingiere@enron.com,Employee,1
+2001-08,debra.perlingiere@enron.com,unknown,3
+2001-08,debra.perlingiere@enron.com,Director,1
+2001-09,debra.perlingiere@enron.com,Employee,1
+2001-09,debra.perlingiere@enron.com,unknown,1
+2001-10,debra.perlingiere@enron.com,unknown,5
+2001-11,debra.perlingiere@enron.com,Employee,2
+2001-11,debra.perlingiere@enron.com,unknown,3
+2000-11,diana.scholtes@enron.com,Employee,1
+2000-12,diana.scholtes@enron.com,Employee,1
+2001-01,diana.scholtes@enron.com,Employee,2
+2001-02,diana.scholtes@enron.com,Employee,2
+2001-03,diana.scholtes@enron.com,Employee,2
+2001-04,diana.scholtes@enron.com,Employee,2
+2001-04,diana.scholtes@enron.com,unknown,1
+2001-05,diana.scholtes@enron.com,CEO,1
+2001-05,diana.scholtes@enron.com,Employee,2
+2001-05,diana.scholtes@enron.com,Trader,1
+2001-06,diana.scholtes@enron.com,Employee,3
+2001-06,diana.scholtes@enron.com,Director,1
+2001-06,diana.scholtes@enron.com,Trader,1
+2001-07,diana.scholtes@enron.com,Employee,1
+2001-07,diana.scholtes@enron.com,Trader,1
+2001-08,diana.scholtes@enron.com,Employee,4
+2001-08,diana.scholtes@enron.com,Trader,2
+2001-09,diana.scholtes@enron.com,Employee,2
+2001-09,diana.scholtes@enron.com,Trader,2
+2001-10,diana.scholtes@enron.com,Employee,2
+2001-10,diana.scholtes@enron.com,Director,2
+2001-10,diana.scholtes@enron.com,Trader,2
+2001-11,diana.scholtes@enron.com,Employee,4
+2001-11,diana.scholtes@enron.com,Trader,1
+2001-12,diana.scholtes@enron.com,Employee,2
+2002-01,diana.scholtes@enron.com,Employee,2
+2002-02,diana.scholtes@enron.com,Employee,2
+2002-02,diana.scholtes@enron.com,unknown,1
+2000-08,don.baughman@enron.com,Employee,1
+2000-08,don.baughman@enron.com,Vice President,1
+2000-08,don.baughman@enron.com,Manager,1
+2000-09,don.baughman@enron.com,Employee,1
+2000-11,don.baughman@enron.com,Employee,2
+2000-11,don.baughman@enron.com,Vice President,1
+2000-11,don.baughman@enron.com,Manager,1
+2000-12,don.baughman@enron.com,Employee,2
+2000-12,don.baughman@enron.com,Vice President,1
+2000-12,don.baughman@enron.com,Manager,1
+2001-01,don.baughman@enron.com,Employee,2
+2001-01,don.baughman@enron.com,Vice President,2
+2001-01,don.baughman@enron.com,Manager,1
+2001-01,don.baughman@enron.com,Trader,1
+2001-02,don.baughman@enron.com,Employee,2
+2001-02,don.baughman@enron.com,Vice President,1
+2001-03,don.baughman@enron.com,Employee,1
+2001-04,don.baughman@enron.com,Employee,3
+2001-04,don.baughman@enron.com,Manager,1
+2001-04,don.baughman@enron.com,Vice President,1
+2001-05,don.baughman@enron.com,CEO,1
+2001-05,don.baughman@enron.com,Employee,3
+2001-05,don.baughman@enron.com,Vice President,1
+2001-06,don.baughman@enron.com,Employee,1
+2001-07,don.baughman@enron.com,Employee,2
+2001-07,don.baughman@enron.com,unknown,1
+2001-07,don.baughman@enron.com,Manager,2
+2001-07,don.baughman@enron.com,Vice President,1
+2001-07,don.baughman@enron.com,Director,1
+2001-07,don.baughman@enron.com,Trader,1
+2001-08,don.baughman@enron.com,CEO,1
+2001-08,don.baughman@enron.com,Employee,2
+2001-08,don.baughman@enron.com,Manager,1
+2001-08,don.baughman@enron.com,unknown,1
+2001-08,don.baughman@enron.com,Vice President,1
+2001-09,don.baughman@enron.com,Employee,2
+2001-09,don.baughman@enron.com,Vice President,1
+2001-10,don.baughman@enron.com,Employee,2
+2001-10,don.baughman@enron.com,Vice President,1
+2001-11,don.baughman@enron.com,Manager,1
+2001-11,don.baughman@enron.com,Vice President,2
+2001-11,don.baughman@enron.com,Director,1
+2001-12,don.baughman@enron.com,Vice President,1
+2002-01,don.baughman@enron.com,Employee,1
+2002-01,don.baughman@enron.com,unknown,1
+2002-01,don.baughman@enron.com,Manager,2
+2002-01,don.baughman@enron.com,Director,1
+2002-02,don.baughman@enron.com,unknown,2
+2000-02,drew.fossum@enron.com,Vice President,1
+2000-02,drew.fossum@enron.com,unknown,3
+2000-02,drew.fossum@enron.com,Director,1
+2000-03,drew.fossum@enron.com,unknown,1
+2000-03,drew.fossum@enron.com,Vice President,2
+2000-03,drew.fossum@enron.com,Director,1
+2000-04,drew.fossum@enron.com,Vice President,3
+2000-04,drew.fossum@enron.com,Director,1
+2000-04,drew.fossum@enron.com,unknown,1
+2000-05,drew.fossum@enron.com,unknown,1
+2000-05,drew.fossum@enron.com,Vice President,3
+2000-05,drew.fossum@enron.com,Director,1
+2000-06,drew.fossum@enron.com,Vice President,2
+2000-06,drew.fossum@enron.com,unknown,1
+2000-06,drew.fossum@enron.com,Director,1
+2000-07,drew.fossum@enron.com,Vice President,1
+2000-07,drew.fossum@enron.com,unknown,1
+2000-07,drew.fossum@enron.com,Director,1
+2000-08,drew.fossum@enron.com,Vice President,1
+2000-08,drew.fossum@enron.com,Employee,1
+2000-08,drew.fossum@enron.com,Manager,1
+2000-08,drew.fossum@enron.com,unknown,1
+2000-08,drew.fossum@enron.com,Director,1
+2000-09,drew.fossum@enron.com,Vice President,1
+2000-09,drew.fossum@enron.com,Employee,2
+2000-09,drew.fossum@enron.com,unknown,1
+2000-09,drew.fossum@enron.com,Director,1
+2000-10,drew.fossum@enron.com,Employee,1
+2000-10,drew.fossum@enron.com,unknown,2
+2000-10,drew.fossum@enron.com,Vice President,1
+2000-10,drew.fossum@enron.com,Director,1
+2000-11,drew.fossum@enron.com,President,1
+2000-11,drew.fossum@enron.com,Vice President,3
+2000-11,drew.fossum@enron.com,unknown,1
+2000-11,drew.fossum@enron.com,Director,1
+2000-12,drew.fossum@enron.com,President,1
+2000-12,drew.fossum@enron.com,Employee,1
+2000-12,drew.fossum@enron.com,Vice President,2
+2000-12,drew.fossum@enron.com,unknown,2
+2000-12,drew.fossum@enron.com,Director,1
+2001-01,drew.fossum@enron.com,Vice President,3
+2001-01,drew.fossum@enron.com,unknown,3
+2001-01,drew.fossum@enron.com,Director,1
+2001-02,drew.fossum@enron.com,Employee,1
+2001-02,drew.fossum@enron.com,unknown,3
+2001-02,drew.fossum@enron.com,Vice President,2
+2001-02,drew.fossum@enron.com,Director,1
+2001-03,drew.fossum@enron.com,Vice President,3
+2001-03,drew.fossum@enron.com,Employee,1
+2001-03,drew.fossum@enron.com,unknown,4
+2001-03,drew.fossum@enron.com,Director,1
+2001-04,drew.fossum@enron.com,Vice President,1
+2001-04,drew.fossum@enron.com,Employee,2
+2001-04,drew.fossum@enron.com,unknown,1
+2001-04,drew.fossum@enron.com,Director,1
+2001-04,drew.fossum@enron.com,In House Lawyer,1
+2001-05,drew.fossum@enron.com,President,1
+2001-05,drew.fossum@enron.com,Employee,2
+2001-05,drew.fossum@enron.com,In House Lawyer,1
+2001-05,drew.fossum@enron.com,CEO,1
+2001-06,drew.fossum@enron.com,Employee,1
+2001-06,drew.fossum@enron.com,In House Lawyer,1
+2001-07,drew.fossum@enron.com,President,1
+2001-07,drew.fossum@enron.com,Employee,1
+2001-07,drew.fossum@enron.com,Manager,1
+2001-07,drew.fossum@enron.com,unknown,1
+2001-07,drew.fossum@enron.com,Vice President,4
+2001-08,drew.fossum@enron.com,President,1
+2001-08,drew.fossum@enron.com,Employee,1
+2001-08,drew.fossum@enron.com,unknown,1
+2001-08,drew.fossum@enron.com,Vice President,1
+2001-08,drew.fossum@enron.com,CEO,1
+2001-09,drew.fossum@enron.com,President,1
+2001-09,drew.fossum@enron.com,Employee,1
+2001-09,drew.fossum@enron.com,unknown,2
+2001-09,drew.fossum@enron.com,Vice President,3
+2001-09,drew.fossum@enron.com,In House Lawyer,1
+2001-10,drew.fossum@enron.com,President,1
+2001-10,drew.fossum@enron.com,Employee,1
+2001-10,drew.fossum@enron.com,unknown,3
+2001-10,drew.fossum@enron.com,Vice President,4
+2001-10,drew.fossum@enron.com,In House Lawyer,1
+2001-10,drew.fossum@enron.com,Manager,1
+2001-10,drew.fossum@enron.com,Director,1
+2001-11,drew.fossum@enron.com,Employee,2
+2001-11,drew.fossum@enron.com,unknown,3
+2001-11,drew.fossum@enron.com,Vice President,3
+2001-12,drew.fossum@enron.com,Employee,1
+2001-12,drew.fossum@enron.com,unknown,3
+2001-12,drew.fossum@enron.com,Vice President,2
+2002-01,drew.fossum@enron.com,Vice President,1
+2002-02,drew.fossum@enron.com,Vice President,1
+2000-07,dutch.quigley@enron.com,Employee,1
+2000-07,dutch.quigley@enron.com,unknown,1
+2000-08,dutch.quigley@enron.com,CEO,1
+2000-08,dutch.quigley@enron.com,Employee,1
+2000-08,dutch.quigley@enron.com,unknown,1
+2000-10,dutch.quigley@enron.com,Employee,2
+2000-10,dutch.quigley@enron.com,unknown,1
+2000-11,dutch.quigley@enron.com,Employee,1
+2000-11,dutch.quigley@enron.com,unknown,2
+2000-12,dutch.quigley@enron.com,Employee,1
+2001-01,dutch.quigley@enron.com,Employee,1
+2001-01,dutch.quigley@enron.com,unknown,2
+2001-02,dutch.quigley@enron.com,Employee,1
+2001-03,dutch.quigley@enron.com,Employee,1
+2001-03,dutch.quigley@enron.com,unknown,3
+2001-04,dutch.quigley@enron.com,unknown,2
+2001-04,dutch.quigley@enron.com,Director,1
+2001-05,dutch.quigley@enron.com,Employee,1
+2001-05,dutch.quigley@enron.com,unknown,5
+2001-05,dutch.quigley@enron.com,Trader,1
+2001-06,dutch.quigley@enron.com,Employee,1
+2001-07,dutch.quigley@enron.com,unknown,2
+2001-07,dutch.quigley@enron.com,Vice President,1
+2001-08,dutch.quigley@enron.com,CEO,1
+2001-09,dutch.quigley@enron.com,Employee,1
+2001-09,dutch.quigley@enron.com,unknown,2
+2001-10,dutch.quigley@enron.com,Employee,2
+2001-10,dutch.quigley@enron.com,unknown,4
+2001-10,dutch.quigley@enron.com,Director,1
+2001-11,dutch.quigley@enron.com,Employee,1
+2001-11,dutch.quigley@enron.com,unknown,2
+2001-11,dutch.quigley@enron.com,Director,1
+2001-12,dutch.quigley@enron.com,Employee,1
+2001-12,dutch.quigley@enron.com,unknown,2
+2001-12,dutch.quigley@enron.com,Director,1
+2002-01,dutch.quigley@enron.com,CEO,1
+2002-01,dutch.quigley@enron.com,Employee,1
+2002-01,dutch.quigley@enron.com,unknown,2
+2002-01,dutch.quigley@enron.com,Director,1
+2000-02,elizabeth.sager@enron.com,Managing Director,1
+2000-02,elizabeth.sager@enron.com,Employee,1
+2000-02,elizabeth.sager@enron.com,unknown,2
+2000-02,elizabeth.sager@enron.com,Vice President,3
+2000-03,elizabeth.sager@enron.com,Managing Director,1
+2000-03,elizabeth.sager@enron.com,Employee,1
+2000-03,elizabeth.sager@enron.com,unknown,2
+2000-04,elizabeth.sager@enron.com,unknown,2
+2000-04,elizabeth.sager@enron.com,Vice President,1
+2000-05,elizabeth.sager@enron.com,Managing Director,1
+2000-05,elizabeth.sager@enron.com,unknown,2
+2000-06,elizabeth.sager@enron.com,unknown,2
+2000-06,elizabeth.sager@enron.com,Vice President,1
+2000-07,elizabeth.sager@enron.com,CEO,1
+2000-07,elizabeth.sager@enron.com,unknown,2
+2000-07,elizabeth.sager@enron.com,Vice President,2
+2000-08,elizabeth.sager@enron.com,Managing Director,1
+2000-08,elizabeth.sager@enron.com,unknown,2
+2000-08,elizabeth.sager@enron.com,Vice President,1
+2000-08,elizabeth.sager@enron.com,CEO,1
+2000-09,elizabeth.sager@enron.com,Employee,1
+2000-09,elizabeth.sager@enron.com,unknown,1
+2000-09,elizabeth.sager@enron.com,Vice President,3
+2000-10,elizabeth.sager@enron.com,Employee,2
+2000-10,elizabeth.sager@enron.com,unknown,1
+2000-10,elizabeth.sager@enron.com,Vice President,1
+2000-11,elizabeth.sager@enron.com,Managing Director,1
+2000-11,elizabeth.sager@enron.com,Employee,3
+2000-11,elizabeth.sager@enron.com,unknown,1
+2000-11,elizabeth.sager@enron.com,Vice President,1
+2000-12,elizabeth.sager@enron.com,Employee,1
+2000-12,elizabeth.sager@enron.com,unknown,2
+2001-01,elizabeth.sager@enron.com,Employee,1
+2001-01,elizabeth.sager@enron.com,unknown,2
+2001-01,elizabeth.sager@enron.com,Vice President,2
+2001-02,elizabeth.sager@enron.com,Employee,2
+2001-02,elizabeth.sager@enron.com,unknown,1
+2001-02,elizabeth.sager@enron.com,Vice President,2
+2001-03,elizabeth.sager@enron.com,Employee,1
+2001-03,elizabeth.sager@enron.com,unknown,2
+2001-03,elizabeth.sager@enron.com,Vice President,2
+2001-04,elizabeth.sager@enron.com,Managing Director,1
+2001-04,elizabeth.sager@enron.com,Employee,3
+2001-04,elizabeth.sager@enron.com,unknown,1
+2001-04,elizabeth.sager@enron.com,Vice President,2
+2001-05,elizabeth.sager@enron.com,Managing Director,1
+2001-05,elizabeth.sager@enron.com,Employee,3
+2001-05,elizabeth.sager@enron.com,Manager,1
+2001-05,elizabeth.sager@enron.com,unknown,2
+2001-05,elizabeth.sager@enron.com,Vice President,3
+2001-06,elizabeth.sager@enron.com,Employee,2
+2001-07,elizabeth.sager@enron.com,Employee,1
+2001-08,elizabeth.sager@enron.com,Employee,2
+2001-09,elizabeth.sager@enron.com,Employee,2
+2001-10,elizabeth.sager@enron.com,Employee,2
+2001-10,elizabeth.sager@enron.com,unknown,2
+2001-11,elizabeth.sager@enron.com,President,1
+2001-11,elizabeth.sager@enron.com,Employee,2
+2001-11,elizabeth.sager@enron.com,unknown,3
+2001-12,elizabeth.sager@enron.com,CEO,1
+2001-12,elizabeth.sager@enron.com,Employee,4
+2001-12,elizabeth.sager@enron.com,Director,1
+2001-12,elizabeth.sager@enron.com,President,1
+2002-01,elizabeth.sager@enron.com,President,1
+2002-01,elizabeth.sager@enron.com,Employee,2
+2002-01,elizabeth.sager@enron.com,Trader,1
+2002-02,elizabeth.sager@enron.com,President,1
+2002-02,elizabeth.sager@enron.com,Employee,1
+2002-02,elizabeth.sager@enron.com,unknown,4
+2000-02,eric.bass@enron.com,Employee,1
+2000-02,eric.bass@enron.com,unknown,2
+2000-02,eric.bass@enron.com,Manager,1
+2000-03,eric.bass@enron.com,Employee,1
+2000-03,eric.bass@enron.com,unknown,2
+2000-03,eric.bass@enron.com,Vice President,1
+2000-04,eric.bass@enron.com,Employee,1
+2000-04,eric.bass@enron.com,unknown,1
+2000-04,eric.bass@enron.com,Vice President,1
+2000-04,eric.bass@enron.com,Trader,1
+2000-05,eric.bass@enron.com,Employee,1
+2000-06,eric.bass@enron.com,Employee,1
+2000-06,eric.bass@enron.com,unknown,1
+2000-06,eric.bass@enron.com,Trader,1
+2000-07,eric.bass@enron.com,Employee,1
+2000-07,eric.bass@enron.com,unknown,1
+2000-08,eric.bass@enron.com,Employee,1
+2000-08,eric.bass@enron.com,unknown,1
+2000-08,eric.bass@enron.com,Manager,1
+2000-09,eric.bass@enron.com,Employee,3
+2000-09,eric.bass@enron.com,unknown,2
+2000-09,eric.bass@enron.com,Vice President,1
+2000-09,eric.bass@enron.com,Trader,1
+2000-10,eric.bass@enron.com,Employee,2
+2000-10,eric.bass@enron.com,unknown,1
+2000-11,eric.bass@enron.com,Employee,1
+2000-11,eric.bass@enron.com,unknown,2
+2000-11,eric.bass@enron.com,Vice President,1
+2000-11,eric.bass@enron.com,Trader,1
+2000-12,eric.bass@enron.com,Employee,2
+2000-12,eric.bass@enron.com,unknown,1
+2001-01,eric.bass@enron.com,Employee,1
+2001-01,eric.bass@enron.com,unknown,2
+2001-02,eric.bass@enron.com,Employee,2
+2001-02,eric.bass@enron.com,unknown,1
+2001-02,eric.bass@enron.com,Trader,1
+2001-03,eric.bass@enron.com,Employee,1
+2001-03,eric.bass@enron.com,unknown,1
+2001-04,eric.bass@enron.com,Employee,1
+2001-04,eric.bass@enron.com,unknown,1
+2001-04,eric.bass@enron.com,Vice President,1
+2001-04,eric.bass@enron.com,Trader,1
+2001-05,eric.bass@enron.com,CEO,1
+2001-05,eric.bass@enron.com,Employee,1
+2001-05,eric.bass@enron.com,unknown,1
+2001-05,eric.bass@enron.com,Trader,1
+2001-06,eric.bass@enron.com,Employee,1
+2001-08,eric.bass@enron.com,Manager,2
+2001-09,eric.bass@enron.com,Employee,1
+2001-09,eric.bass@enron.com,unknown,1
+2001-09,eric.bass@enron.com,Manager,2
+2001-09,eric.bass@enron.com,Trader,2
+2001-10,eric.bass@enron.com,Employee,2
+2001-10,eric.bass@enron.com,unknown,2
+2001-10,eric.bass@enron.com,Manager,2
+2001-10,eric.bass@enron.com,Trader,2
+2001-11,eric.bass@enron.com,Employee,1
+2001-11,eric.bass@enron.com,unknown,2
+2001-11,eric.bass@enron.com,Trader,2
+2001-12,eric.bass@enron.com,Employee,1
+2001-12,eric.bass@enron.com,Manager,1
+2001-12,eric.bass@enron.com,Trader,1
+2002-01,eric.bass@enron.com,Employee,1
+2002-01,eric.bass@enron.com,unknown,1
+2002-01,eric.bass@enron.com,Trader,2
+2002-02,eric.bass@enron.com,Employee,2
+2002-02,eric.bass@enron.com,unknown,2
+2000-07,errol.mclaughlin@enron.com,unknown,1
+2000-08,errol.mclaughlin@enron.com,unknown,2
+2000-09,errol.mclaughlin@enron.com,unknown,1
+2000-10,errol.mclaughlin@enron.com,unknown,3
+2000-11,errol.mclaughlin@enron.com,Employee,1
+2000-11,errol.mclaughlin@enron.com,unknown,2
+2000-12,errol.mclaughlin@enron.com,Employee,3
+2000-12,errol.mclaughlin@enron.com,unknown,2
+2001-01,errol.mclaughlin@enron.com,Employee,2
+2001-01,errol.mclaughlin@enron.com,unknown,5
+2001-02,errol.mclaughlin@enron.com,Employee,2
+2001-02,errol.mclaughlin@enron.com,unknown,3
+2001-02,errol.mclaughlin@enron.com,Director,2
+2001-03,errol.mclaughlin@enron.com,Employee,1
+2001-03,errol.mclaughlin@enron.com,unknown,2
+2001-04,errol.mclaughlin@enron.com,Employee,1
+2001-04,errol.mclaughlin@enron.com,unknown,1
+2001-05,errol.mclaughlin@enron.com,Employee,1
+2001-05,errol.mclaughlin@enron.com,unknown,2
+2001-05,errol.mclaughlin@enron.com,Director,2
+2001-06,errol.mclaughlin@enron.com,Employee,2
+2001-06,errol.mclaughlin@enron.com,unknown,2
+2001-06,errol.mclaughlin@enron.com,Director,2
+2001-07,errol.mclaughlin@enron.com,Employee,1
+2001-08,errol.mclaughlin@enron.com,CEO,1
+2001-08,errol.mclaughlin@enron.com,Employee,1
+2001-08,errol.mclaughlin@enron.com,Vice President,1
+2001-09,errol.mclaughlin@enron.com,Employee,2
+2001-09,errol.mclaughlin@enron.com,unknown,2
+2001-09,errol.mclaughlin@enron.com,Director,2
+2001-10,errol.mclaughlin@enron.com,Vice President,1
+2001-10,errol.mclaughlin@enron.com,Employee,3
+2001-10,errol.mclaughlin@enron.com,unknown,3
+2001-10,errol.mclaughlin@enron.com,Director,3
+2001-11,errol.mclaughlin@enron.com,Vice President,1
+2001-11,errol.mclaughlin@enron.com,Employee,2
+2001-11,errol.mclaughlin@enron.com,unknown,2
+2001-11,errol.mclaughlin@enron.com,Director,2
+2001-12,errol.mclaughlin@enron.com,Employee,2
+2001-12,errol.mclaughlin@enron.com,unknown,2
+2001-12,errol.mclaughlin@enron.com,Director,2
+2002-01,errol.mclaughlin@enron.com,Employee,1
+2002-01,errol.mclaughlin@enron.com,unknown,2
+2002-02,errol.mclaughlin@enron.com,Employee,1
+2002-02,errol.mclaughlin@enron.com,unknown,1
+2002-02,errol.mclaughlin@enron.com,Vice President,1
+2000-03,frank.ermis@enron.com,Manager,1
+2000-04,frank.ermis@enron.com,Employee,1
+2000-06,frank.ermis@enron.com,Employee,1
+2000-07,frank.ermis@enron.com,Employee,1
+2000-07,frank.ermis@enron.com,Manager,1
+2000-08,frank.ermis@enron.com,Manager,1
+2000-09,frank.ermis@enron.com,Employee,1
+2000-09,frank.ermis@enron.com,Manager,1
+2000-10,frank.ermis@enron.com,Manager,1
+2000-11,frank.ermis@enron.com,Employee,1
+2000-12,frank.ermis@enron.com,Employee,1
+2000-12,frank.ermis@enron.com,Manager,1
+2001-01,frank.ermis@enron.com,Employee,1
+2001-01,frank.ermis@enron.com,unknown,1
+2001-01,frank.ermis@enron.com,Manager,1
+2001-02,frank.ermis@enron.com,Employee,1
+2001-02,frank.ermis@enron.com,unknown,1
+2001-02,frank.ermis@enron.com,Manager,1
+2001-03,frank.ermis@enron.com,Employee,1
+2001-03,frank.ermis@enron.com,Manager,1
+2001-04,frank.ermis@enron.com,Manager,1
+2001-04,frank.ermis@enron.com,Trader,1
+2001-05,frank.ermis@enron.com,CEO,1
+2001-05,frank.ermis@enron.com,Employee,1
+2001-05,frank.ermis@enron.com,Manager,1
+2001-05,frank.ermis@enron.com,Director,1
+2001-05,frank.ermis@enron.com,unknown,1
+2001-07,frank.ermis@enron.com,Manager,1
+2001-08,frank.ermis@enron.com,Manager,2
+2001-09,frank.ermis@enron.com,unknown,1
+2001-09,frank.ermis@enron.com,Manager,3
+2001-10,frank.ermis@enron.com,Employee,3
+2001-10,frank.ermis@enron.com,Manager,2
+2001-10,frank.ermis@enron.com,Director,1
+2001-10,frank.ermis@enron.com,unknown,2
+2001-11,frank.ermis@enron.com,Employee,3
+2001-11,frank.ermis@enron.com,Manager,1
+2001-12,frank.ermis@enron.com,Employee,1
+2001-12,frank.ermis@enron.com,Manager,2
+2002-01,frank.ermis@enron.com,Manager,1
+2002-02,frank.ermis@enron.com,Employee,1
+2002-02,frank.ermis@enron.com,unknown,1
+2000-02,gerald.nemec@enron.com,unknown,1
+2000-02,gerald.nemec@enron.com,Vice President,1
+2000-03,gerald.nemec@enron.com,unknown,1
+2000-04,gerald.nemec@enron.com,unknown,2
+2000-04,gerald.nemec@enron.com,Trader,1
+2000-05,gerald.nemec@enron.com,unknown,1
+2000-05,gerald.nemec@enron.com,Vice President,1
+2000-06,gerald.nemec@enron.com,unknown,2
+2000-07,gerald.nemec@enron.com,unknown,1
+2000-08,gerald.nemec@enron.com,unknown,3
+2000-08,gerald.nemec@enron.com,Vice President,1
+2000-08,gerald.nemec@enron.com,Trader,1
+2000-09,gerald.nemec@enron.com,Employee,1
+2000-09,gerald.nemec@enron.com,unknown,3
+2000-09,gerald.nemec@enron.com,Vice President,1
+2000-10,gerald.nemec@enron.com,Employee,2
+2000-10,gerald.nemec@enron.com,unknown,2
+2000-11,gerald.nemec@enron.com,Employee,3
+2000-11,gerald.nemec@enron.com,unknown,1
+2000-12,gerald.nemec@enron.com,Employee,1
+2000-12,gerald.nemec@enron.com,unknown,3
+2000-12,gerald.nemec@enron.com,Manager,1
+2001-01,gerald.nemec@enron.com,Managing Director,1
+2001-01,gerald.nemec@enron.com,unknown,2
+2001-02,gerald.nemec@enron.com,Employee,1
+2001-02,gerald.nemec@enron.com,unknown,3
+2001-02,gerald.nemec@enron.com,Vice President,1
+2001-03,gerald.nemec@enron.com,Employee,1
+2001-03,gerald.nemec@enron.com,Manager,1
+2001-03,gerald.nemec@enron.com,unknown,4
+2001-03,gerald.nemec@enron.com,Vice President,1
+2001-04,gerald.nemec@enron.com,Employee,1
+2001-04,gerald.nemec@enron.com,unknown,3
+2001-04,gerald.nemec@enron.com,Vice President,1
+2001-05,gerald.nemec@enron.com,Managing Director,1
+2001-05,gerald.nemec@enron.com,Employee,3
+2001-05,gerald.nemec@enron.com,Manager,1
+2001-05,gerald.nemec@enron.com,unknown,2
+2001-05,gerald.nemec@enron.com,Vice President,1
+2001-06,gerald.nemec@enron.com,Vice President,1
+2001-06,gerald.nemec@enron.com,unknown,2
+2001-06,gerald.nemec@enron.com,Manager,1
+2001-07,gerald.nemec@enron.com,unknown,2
+2001-07,gerald.nemec@enron.com,Vice President,1
+2001-08,gerald.nemec@enron.com,Employee,1
+2001-08,gerald.nemec@enron.com,unknown,2
+2001-08,gerald.nemec@enron.com,Vice President,1
+2001-09,gerald.nemec@enron.com,Employee,2
+2001-09,gerald.nemec@enron.com,unknown,2
+2001-10,gerald.nemec@enron.com,Employee,2
+2001-10,gerald.nemec@enron.com,unknown,4
+2001-10,gerald.nemec@enron.com,Vice President,1
+2001-11,gerald.nemec@enron.com,Employee,1
+2001-11,gerald.nemec@enron.com,unknown,4
+2001-11,gerald.nemec@enron.com,Vice President,1
+2001-12,gerald.nemec@enron.com,Employee,3
+2001-12,gerald.nemec@enron.com,unknown,2
+2001-12,gerald.nemec@enron.com,Vice President,1
+2002-01,gerald.nemec@enron.com,Employee,1
+2002-01,gerald.nemec@enron.com,unknown,3
+2002-02,gerald.nemec@enron.com,Employee,2
+2002-02,gerald.nemec@enron.com,unknown,1
+2000-02,greg.whalley@enron.com,President,1
+2000-02,greg.whalley@enron.com,Employee,1
+2000-02,greg.whalley@enron.com,Vice President,1
+2000-02,greg.whalley@enron.com,Manager,1
+2000-03,greg.whalley@enron.com,CEO,1
+2000-03,greg.whalley@enron.com,Employee,1
+2000-03,greg.whalley@enron.com,Vice President,1
+2000-03,greg.whalley@enron.com,President,1
+2000-04,greg.whalley@enron.com,Vice President,2
+2000-05,greg.whalley@enron.com,CEO,1
+2000-05,greg.whalley@enron.com,unknown,1
+2000-05,greg.whalley@enron.com,Manager,1
+2000-06,greg.whalley@enron.com,President,2
+2000-06,greg.whalley@enron.com,Manager,1
+2000-07,greg.whalley@enron.com,President,1
+2000-07,greg.whalley@enron.com,Vice President,1
+2000-08,greg.whalley@enron.com,CEO,1
+2000-08,greg.whalley@enron.com,Manager,1
+2000-08,greg.whalley@enron.com,Vice President,1
+2000-09,greg.whalley@enron.com,President,1
+2000-09,greg.whalley@enron.com,Manager,1
+2000-09,greg.whalley@enron.com,Vice President,2
+2000-09,greg.whalley@enron.com,CEO,2
+2000-10,greg.whalley@enron.com,Vice President,3
+2000-11,greg.whalley@enron.com,President,3
+2000-11,greg.whalley@enron.com,Vice President,2
+2000-11,greg.whalley@enron.com,Manager,1
+2000-11,greg.whalley@enron.com,unknown,1
+2000-12,greg.whalley@enron.com,President,3
+2000-12,greg.whalley@enron.com,Employee,1
+2000-12,greg.whalley@enron.com,Vice President,1
+2000-12,greg.whalley@enron.com,CEO,2
+2000-12,greg.whalley@enron.com,Manager,1
+2000-12,greg.whalley@enron.com,Trader,1
+2001-01,greg.whalley@enron.com,CEO,2
+2001-01,greg.whalley@enron.com,President,1
+2001-01,greg.whalley@enron.com,Vice President,1
+2001-01,greg.whalley@enron.com,Manager,1
+2001-01,greg.whalley@enron.com,unknown,1
+2001-02,greg.whalley@enron.com,CEO,1
+2001-02,greg.whalley@enron.com,Employee,1
+2001-02,greg.whalley@enron.com,Vice President,1
+2001-02,greg.whalley@enron.com,President,1
+2001-03,greg.whalley@enron.com,President,1
+2001-03,greg.whalley@enron.com,Employee,2
+2001-03,greg.whalley@enron.com,Vice President,1
+2001-03,greg.whalley@enron.com,Manager,2
+2001-03,greg.whalley@enron.com,CEO,2
+2001-04,greg.whalley@enron.com,President,3
+2001-04,greg.whalley@enron.com,unknown,1
+2001-04,greg.whalley@enron.com,Vice President,4
+2001-04,greg.whalley@enron.com,CEO,2
+2001-05,greg.whalley@enron.com,CEO,2
+2001-05,greg.whalley@enron.com,Vice President,2
+2001-05,greg.whalley@enron.com,unknown,1
+2001-05,greg.whalley@enron.com,Manager,2
+2001-06,greg.whalley@enron.com,CEO,2
+2001-06,greg.whalley@enron.com,Manager,1
+2001-06,greg.whalley@enron.com,Vice President,3
+2001-06,greg.whalley@enron.com,President,1
+2001-07,greg.whalley@enron.com,CEO,2
+2001-07,greg.whalley@enron.com,Employee,1
+2001-07,greg.whalley@enron.com,Vice President,3
+2001-07,greg.whalley@enron.com,Manager,1
+2001-08,greg.whalley@enron.com,CEO,4
+2001-08,greg.whalley@enron.com,Employee,2
+2001-08,greg.whalley@enron.com,unknown,1
+2001-08,greg.whalley@enron.com,President,2
+2001-09,greg.whalley@enron.com,President,2
+2001-09,greg.whalley@enron.com,Employee,1
+2001-09,greg.whalley@enron.com,unknown,1
+2001-09,greg.whalley@enron.com,Vice President,2
+2001-09,greg.whalley@enron.com,CEO,2
+2001-10,greg.whalley@enron.com,CEO,2
+2001-10,greg.whalley@enron.com,Employee,2
+2001-10,greg.whalley@enron.com,unknown,1
+2001-10,greg.whalley@enron.com,Vice President,2
+2001-10,greg.whalley@enron.com,President,3
+2001-10,greg.whalley@enron.com,In House Lawyer,1
+2001-11,greg.whalley@enron.com,CEO,2
+2001-11,greg.whalley@enron.com,Employee,1
+2001-11,greg.whalley@enron.com,unknown,3
+2001-11,greg.whalley@enron.com,Vice President,2
+2001-11,greg.whalley@enron.com,President,2
+2001-11,greg.whalley@enron.com,Manager,1
+2001-11,greg.whalley@enron.com,Trader,1
+2001-12,greg.whalley@enron.com,President,1
+2001-12,greg.whalley@enron.com,unknown,1
+2001-12,greg.whalley@enron.com,Vice President,1
+2002-01,greg.whalley@enron.com,CEO,1
+2002-01,greg.whalley@enron.com,Employee,1
+2002-01,greg.whalley@enron.com,unknown,1
+2002-01,greg.whalley@enron.com,Vice President,1
+2002-01,greg.whalley@enron.com,President,1
+2002-02,greg.whalley@enron.com,President,1
+2002-02,greg.whalley@enron.com,unknown,1
+2002-02,greg.whalley@enron.com,CEO,1
+2000-02,hunter.shively@enron.com,President,1
+2000-02,hunter.shively@enron.com,unknown,1
+2000-03,hunter.shively@enron.com,Employee,1
+2000-04,hunter.shively@enron.com,President,1
+2000-06,hunter.shively@enron.com,President,1
+2000-06,hunter.shively@enron.com,Employee,1
+2000-06,hunter.shively@enron.com,Vice President,1
+2000-06,hunter.shively@enron.com,CEO,1
+2000-06,hunter.shively@enron.com,Manager,1
+2000-06,hunter.shively@enron.com,Trader,1
+2000-07,hunter.shively@enron.com,CEO,1
+2000-07,hunter.shively@enron.com,Employee,1
+2000-07,hunter.shively@enron.com,Director,3
+2000-07,hunter.shively@enron.com,Vice President,2
+2000-07,hunter.shively@enron.com,Managing Director,1
+2000-07,hunter.shively@enron.com,Manager,1
+2000-08,hunter.shively@enron.com,CEO,2
+2000-08,hunter.shively@enron.com,Employee,1
+2000-08,hunter.shively@enron.com,Vice President,1
+2000-08,hunter.shively@enron.com,Manager,2
+2000-08,hunter.shively@enron.com,Director,3
+2000-09,hunter.shively@enron.com,CEO,1
+2000-09,hunter.shively@enron.com,unknown,2
+2000-09,hunter.shively@enron.com,Vice President,1
+2000-09,hunter.shively@enron.com,Director,2
+2000-09,hunter.shively@enron.com,Trader,1
+2000-10,hunter.shively@enron.com,CEO,2
+2000-10,hunter.shively@enron.com,Vice President,1
+2000-10,hunter.shively@enron.com,unknown,2
+2000-10,hunter.shively@enron.com,Director,1
+2000-10,hunter.shively@enron.com,President,1
+2000-11,hunter.shively@enron.com,Manager,2
+2000-12,hunter.shively@enron.com,CEO,2
+2001-01,hunter.shively@enron.com,CEO,2
+2001-01,hunter.shively@enron.com,Vice President,2
+2001-01,hunter.shively@enron.com,Manager,1
+2001-01,hunter.shively@enron.com,Director,3
+2001-01,hunter.shively@enron.com,President,1
+2001-02,hunter.shively@enron.com,Director,1
+2001-02,hunter.shively@enron.com,Vice President,1
+2001-03,hunter.shively@enron.com,President,1
+2001-03,hunter.shively@enron.com,Trader,1
+2001-03,hunter.shively@enron.com,Director,1
+2001-03,hunter.shively@enron.com,CEO,1
+2001-04,hunter.shively@enron.com,President,1
+2001-04,hunter.shively@enron.com,Employee,1
+2001-04,hunter.shively@enron.com,Vice President,1
+2001-04,hunter.shively@enron.com,CEO,1
+2001-05,hunter.shively@enron.com,CEO,1
+2001-05,hunter.shively@enron.com,unknown,1
+2001-05,hunter.shively@enron.com,Vice President,1
+2000-02,james.derrick@enron.com,Vice President,1
+2000-05,james.derrick@enron.com,Vice President,1
+2000-07,james.derrick@enron.com,In House Lawyer,1
+2000-07,james.derrick@enron.com,Vice President,1
+2000-08,james.derrick@enron.com,Vice President,2
+2000-09,james.derrick@enron.com,Vice President,1
+2000-10,james.derrick@enron.com,CEO,2
+2000-10,james.derrick@enron.com,unknown,1
+2000-10,james.derrick@enron.com,Vice President,1
+2000-11,james.derrick@enron.com,unknown,1
+2000-12,james.derrick@enron.com,Vice President,1
+2001-01,james.derrick@enron.com,unknown,1
+2001-01,james.derrick@enron.com,Vice President,1
+2001-02,james.derrick@enron.com,CEO,1
+2001-03,james.derrick@enron.com,CEO,1
+2001-03,james.derrick@enron.com,Employee,1
+2001-03,james.derrick@enron.com,unknown,1
+2001-03,james.derrick@enron.com,Vice President,1
+2001-04,james.derrick@enron.com,CEO,3
+2001-04,james.derrick@enron.com,Employee,1
+2001-04,james.derrick@enron.com,Manager,1
+2001-04,james.derrick@enron.com,unknown,1
+2001-04,james.derrick@enron.com,Vice President,3
+2001-05,james.derrick@enron.com,unknown,2
+2001-05,james.derrick@enron.com,Vice President,3
+2001-06,james.derrick@enron.com,unknown,1
+2001-06,james.derrick@enron.com,Vice President,2
+2001-08,james.derrick@enron.com,CEO,2
+2001-08,james.derrick@enron.com,unknown,1
+2001-09,james.derrick@enron.com,Employee,1
+2001-09,james.derrick@enron.com,unknown,2
+2001-09,james.derrick@enron.com,Vice President,1
+2001-10,james.derrick@enron.com,CEO,1
+2001-10,james.derrick@enron.com,Employee,2
+2001-10,james.derrick@enron.com,unknown,2
+2001-10,james.derrick@enron.com,Vice President,1
+2001-10,james.derrick@enron.com,President,2
+2001-11,james.derrick@enron.com,CEO,1
+2001-11,james.derrick@enron.com,Employee,1
+2001-11,james.derrick@enron.com,unknown,3
+2001-12,james.derrick@enron.com,unknown,2
+2000-02,james.steffes@enron.com,Manager,1
+2000-02,james.steffes@enron.com,Vice President,1
+2000-03,james.steffes@enron.com,Vice President,1
+2000-04,james.steffes@enron.com,Employee,1
+2000-04,james.steffes@enron.com,Vice President,3
+2000-05,james.steffes@enron.com,Vice President,2
+2000-06,james.steffes@enron.com,Vice President,2
+2000-07,james.steffes@enron.com,CEO,1
+2000-07,james.steffes@enron.com,Employee,1
+2000-07,james.steffes@enron.com,Vice President,4
+2000-08,james.steffes@enron.com,CEO,2
+2000-08,james.steffes@enron.com,Employee,1
+2000-08,james.steffes@enron.com,Vice President,2
+2000-09,james.steffes@enron.com,Employee,2
+2000-09,james.steffes@enron.com,Vice President,3
+2000-09,james.steffes@enron.com,Manager,1
+2000-10,james.steffes@enron.com,CEO,2
+2000-10,james.steffes@enron.com,Employee,1
+2000-10,james.steffes@enron.com,Vice President,4
+2000-11,james.steffes@enron.com,CEO,1
+2000-11,james.steffes@enron.com,Employee,2
+2000-11,james.steffes@enron.com,Vice President,3
+2000-12,james.steffes@enron.com,CEO,1
+2000-12,james.steffes@enron.com,Employee,1
+2000-12,james.steffes@enron.com,Vice President,4
+2001-01,james.steffes@enron.com,CEO,2
+2001-01,james.steffes@enron.com,Employee,2
+2001-01,james.steffes@enron.com,Director,1
+2001-01,james.steffes@enron.com,Vice President,6
+2001-01,james.steffes@enron.com,Managing Director,1
+2001-01,james.steffes@enron.com,Manager,1
+2001-02,james.steffes@enron.com,CEO,2
+2001-02,james.steffes@enron.com,Employee,2
+2001-02,james.steffes@enron.com,Manager,1
+2001-02,james.steffes@enron.com,Vice President,5
+2001-02,james.steffes@enron.com,President,1
+2001-02,james.steffes@enron.com,Managing Director,1
+2001-02,james.steffes@enron.com,Director,1
+2001-03,james.steffes@enron.com,CEO,2
+2001-03,james.steffes@enron.com,Employee,3
+2001-03,james.steffes@enron.com,Manager,1
+2001-03,james.steffes@enron.com,Vice President,4
+2001-03,james.steffes@enron.com,President,2
+2001-03,james.steffes@enron.com,Managing Director,1
+2001-03,james.steffes@enron.com,Director,1
+2001-04,james.steffes@enron.com,CEO,2
+2001-04,james.steffes@enron.com,Employee,2
+2001-04,james.steffes@enron.com,Manager,1
+2001-04,james.steffes@enron.com,Vice President,4
+2001-04,james.steffes@enron.com,President,2
+2001-04,james.steffes@enron.com,Managing Director,1
+2001-04,james.steffes@enron.com,Director,1
+2001-05,james.steffes@enron.com,CEO,2
+2001-05,james.steffes@enron.com,Employee,1
+2001-05,james.steffes@enron.com,unknown,1
+2001-05,james.steffes@enron.com,Vice President,6
+2001-05,james.steffes@enron.com,President,1
+2001-06,james.steffes@enron.com,CEO,2
+2001-06,james.steffes@enron.com,Employee,2
+2001-06,james.steffes@enron.com,Vice President,4
+2001-06,james.steffes@enron.com,President,2
+2001-07,james.steffes@enron.com,Managing Director,1
+2001-07,james.steffes@enron.com,Employee,1
+2001-07,james.steffes@enron.com,President,2
+2001-07,james.steffes@enron.com,Vice President,3
+2001-07,james.steffes@enron.com,CEO,2
+2002-01,james.steffes@enron.com,President,1
+2000-04,jay.reitmeyer@enron.com,Manager,1
+2000-04,jay.reitmeyer@enron.com,Director,1
+2000-06,jay.reitmeyer@enron.com,Employee,1
+2000-07,jay.reitmeyer@enron.com,Employee,1
+2000-07,jay.reitmeyer@enron.com,Manager,1
+2000-08,jay.reitmeyer@enron.com,Employee,1
+2000-09,jay.reitmeyer@enron.com,Employee,1
+2000-10,jay.reitmeyer@enron.com,Employee,1
+2000-10,jay.reitmeyer@enron.com,Manager,2
+2000-11,jay.reitmeyer@enron.com,Employee,1
+2000-11,jay.reitmeyer@enron.com,Manager,2
+2000-11,jay.reitmeyer@enron.com,unknown,1
+2000-11,jay.reitmeyer@enron.com,Director,2
+2000-11,jay.reitmeyer@enron.com,Trader,1
+2000-12,jay.reitmeyer@enron.com,Employee,1
+2000-12,jay.reitmeyer@enron.com,Manager,1
+2000-12,jay.reitmeyer@enron.com,Director,2
+2000-12,jay.reitmeyer@enron.com,Trader,1
+2001-01,jay.reitmeyer@enron.com,Employee,1
+2001-01,jay.reitmeyer@enron.com,unknown,1
+2001-02,jay.reitmeyer@enron.com,Employee,1
+2001-02,jay.reitmeyer@enron.com,Manager,1
+2001-02,jay.reitmeyer@enron.com,Trader,1
+2001-03,jay.reitmeyer@enron.com,Employee,1
+2001-03,jay.reitmeyer@enron.com,Manager,1
+2001-04,jay.reitmeyer@enron.com,Employee,1
+2001-04,jay.reitmeyer@enron.com,Manager,1
+2001-04,jay.reitmeyer@enron.com,Trader,1
+2001-05,jay.reitmeyer@enron.com,CEO,1
+2001-05,jay.reitmeyer@enron.com,Employee,2
+2001-05,jay.reitmeyer@enron.com,unknown,3
+2001-05,jay.reitmeyer@enron.com,Manager,1
+2001-07,jay.reitmeyer@enron.com,Manager,1
+2001-08,jay.reitmeyer@enron.com,CEO,1
+2001-08,jay.reitmeyer@enron.com,Employee,1
+2001-08,jay.reitmeyer@enron.com,Manager,1
+2001-09,jay.reitmeyer@enron.com,Employee,2
+2001-09,jay.reitmeyer@enron.com,unknown,1
+2001-09,jay.reitmeyer@enron.com,Manager,1
+2001-10,jay.reitmeyer@enron.com,Employee,3
+2001-10,jay.reitmeyer@enron.com,Trader,1
+2001-10,jay.reitmeyer@enron.com,Manager,1
+2001-10,jay.reitmeyer@enron.com,Director,2
+2001-10,jay.reitmeyer@enron.com,unknown,3
+2001-11,jay.reitmeyer@enron.com,Employee,3
+2001-11,jay.reitmeyer@enron.com,Manager,1
+2001-11,jay.reitmeyer@enron.com,Director,1
+2001-11,jay.reitmeyer@enron.com,unknown,1
+2001-12,jay.reitmeyer@enron.com,Employee,1
+2001-12,jay.reitmeyer@enron.com,Manager,1
+2001-12,jay.reitmeyer@enron.com,Trader,1
+2002-01,jay.reitmeyer@enron.com,CEO,1
+2002-01,jay.reitmeyer@enron.com,Manager,1
+2002-02,jay.reitmeyer@enron.com,CEO,1
+2002-02,jay.reitmeyer@enron.com,Employee,1
+2002-02,jay.reitmeyer@enron.com,unknown,1
+2000-04,jeff.dasovich@enron.com,unknown,1
+2000-04,jeff.dasovich@enron.com,Vice President,1
+2000-06,jeff.dasovich@enron.com,unknown,1
+2000-07,jeff.dasovich@enron.com,unknown,1
+2000-07,jeff.dasovich@enron.com,Vice President,3
+2000-08,jeff.dasovich@enron.com,Vice President,3
+2000-09,jeff.dasovich@enron.com,Employee,1
+2000-09,jeff.dasovich@enron.com,Director,1
+2000-09,jeff.dasovich@enron.com,Vice President,5
+2000-09,jeff.dasovich@enron.com,unknown,1
+2000-10,jeff.dasovich@enron.com,Employee,1
+2000-10,jeff.dasovich@enron.com,unknown,1
+2000-10,jeff.dasovich@enron.com,Vice President,4
+2000-11,jeff.dasovich@enron.com,Employee,1
+2000-11,jeff.dasovich@enron.com,Director,1
+2000-11,jeff.dasovich@enron.com,Vice President,5
+2000-11,jeff.dasovich@enron.com,unknown,1
+2000-12,jeff.dasovich@enron.com,CEO,2
+2000-12,jeff.dasovich@enron.com,Employee,1
+2000-12,jeff.dasovich@enron.com,unknown,1
+2000-12,jeff.dasovich@enron.com,Vice President,4
+2000-12,jeff.dasovich@enron.com,Managing Director,1
+2001-01,jeff.dasovich@enron.com,Employee,1
+2001-01,jeff.dasovich@enron.com,unknown,1
+2001-01,jeff.dasovich@enron.com,Vice President,5
+2001-02,jeff.dasovich@enron.com,Employee,1
+2001-02,jeff.dasovich@enron.com,unknown,1
+2001-02,jeff.dasovich@enron.com,Vice President,5
+2001-03,jeff.dasovich@enron.com,Employee,1
+2001-03,jeff.dasovich@enron.com,unknown,1
+2001-03,jeff.dasovich@enron.com,Vice President,7
+2001-04,jeff.dasovich@enron.com,Employee,1
+2001-04,jeff.dasovich@enron.com,unknown,1
+2001-04,jeff.dasovich@enron.com,Vice President,6
+2001-05,jeff.dasovich@enron.com,Employee,1
+2001-05,jeff.dasovich@enron.com,unknown,1
+2001-05,jeff.dasovich@enron.com,Vice President,6
+2001-06,jeff.dasovich@enron.com,unknown,1
+2001-06,jeff.dasovich@enron.com,Vice President,7
+2001-07,jeff.dasovich@enron.com,CEO,3
+2001-07,jeff.dasovich@enron.com,Employee,1
+2001-07,jeff.dasovich@enron.com,unknown,1
+2001-07,jeff.dasovich@enron.com,Vice President,10
+2001-07,jeff.dasovich@enron.com,President,2
+2001-07,jeff.dasovich@enron.com,Manager,2
+2001-07,jeff.dasovich@enron.com,Trader,1
+2001-08,jeff.dasovich@enron.com,CEO,2
+2001-08,jeff.dasovich@enron.com,Employee,2
+2001-08,jeff.dasovich@enron.com,Trader,1
+2001-08,jeff.dasovich@enron.com,Vice President,2
+2001-08,jeff.dasovich@enron.com,President,2
+2001-09,jeff.dasovich@enron.com,CEO,2
+2001-09,jeff.dasovich@enron.com,Employee,1
+2001-09,jeff.dasovich@enron.com,Vice President,2
+2001-09,jeff.dasovich@enron.com,President,2
+2001-10,jeff.dasovich@enron.com,CEO,2
+2001-10,jeff.dasovich@enron.com,Employee,2
+2001-10,jeff.dasovich@enron.com,unknown,1
+2001-10,jeff.dasovich@enron.com,Vice President,2
+2001-10,jeff.dasovich@enron.com,President,2
+2001-10,jeff.dasovich@enron.com,Manager,1
+2001-11,jeff.dasovich@enron.com,Employee,1
+2001-11,jeff.dasovich@enron.com,Vice President,3
+2001-12,jeff.dasovich@enron.com,Employee,1
+2001-12,jeff.dasovich@enron.com,Vice President,2
+2002-01,jeff.dasovich@enron.com,Employee,2
+2002-01,jeff.dasovich@enron.com,Vice President,1
+2000-02,jeff.skilling@enron.com,unknown,1
+2000-03,jeff.skilling@enron.com,President,1
+2000-03,jeff.skilling@enron.com,Vice President,1
+2000-03,jeff.skilling@enron.com,Manager,1
+2000-04,jeff.skilling@enron.com,unknown,1
+2000-05,jeff.skilling@enron.com,unknown,1
+2000-06,jeff.skilling@enron.com,President,1
+2000-06,jeff.skilling@enron.com,Employee,1
+2000-06,jeff.skilling@enron.com,Manager,1
+2000-07,jeff.skilling@enron.com,Vice President,1
+2000-08,jeff.skilling@enron.com,CEO,2
+2000-08,jeff.skilling@enron.com,Manager,1
+2000-09,jeff.skilling@enron.com,Manager,1
+2000-10,jeff.skilling@enron.com,CEO,1
+2000-10,jeff.skilling@enron.com,Employee,1
+2000-10,jeff.skilling@enron.com,President,1
+2000-10,jeff.skilling@enron.com,In House Lawyer,1
+2000-10,jeff.skilling@enron.com,unknown,1
+2000-11,jeff.skilling@enron.com,President,1
+2000-11,jeff.skilling@enron.com,unknown,1
+2000-11,jeff.skilling@enron.com,Vice President,1
+2000-12,jeff.skilling@enron.com,CEO,1
+2000-12,jeff.skilling@enron.com,Employee,1
+2000-12,jeff.skilling@enron.com,President,1
+2000-12,jeff.skilling@enron.com,Trader,1
+2001-01,jeff.skilling@enron.com,Vice President,1
+2001-01,jeff.skilling@enron.com,Manager,1
+2001-01,jeff.skilling@enron.com,unknown,1
+2001-02,jeff.skilling@enron.com,CEO,1
+2001-02,jeff.skilling@enron.com,President,1
+2001-03,jeff.skilling@enron.com,CEO,1
+2001-03,jeff.skilling@enron.com,In House Lawyer,1
+2001-04,jeff.skilling@enron.com,CEO,2
+2001-04,jeff.skilling@enron.com,Employee,1
+2001-04,jeff.skilling@enron.com,In House Lawyer,1
+2001-04,jeff.skilling@enron.com,Vice President,3
+2001-04,jeff.skilling@enron.com,President,4
+2001-04,jeff.skilling@enron.com,Manager,1
+2001-05,jeff.skilling@enron.com,President,2
+2001-05,jeff.skilling@enron.com,Employee,1
+2001-05,jeff.skilling@enron.com,unknown,2
+2001-05,jeff.skilling@enron.com,Manager,1
+2001-05,jeff.skilling@enron.com,CEO,1
+2001-06,jeff.skilling@enron.com,CEO,1
+2001-06,jeff.skilling@enron.com,Vice President,1
+2001-07,jeff.skilling@enron.com,President,1
+2001-07,jeff.skilling@enron.com,Employee,1
+2001-07,jeff.skilling@enron.com,unknown,1
+2001-07,jeff.skilling@enron.com,Vice President,1
+2001-07,jeff.skilling@enron.com,CEO,1
+2001-08,jeff.skilling@enron.com,CEO,3
+2001-08,jeff.skilling@enron.com,Employee,1
+2001-08,jeff.skilling@enron.com,In House Lawyer,1
+2001-08,jeff.skilling@enron.com,Vice President,6
+2001-08,jeff.skilling@enron.com,President,3
+2001-08,jeff.skilling@enron.com,Manager,1
+2001-08,jeff.skilling@enron.com,unknown,1
+2000-02,jeffrey.hodge@enron.com,Employee,2
+2000-02,jeffrey.hodge@enron.com,unknown,1
+2000-02,jeffrey.hodge@enron.com,Vice President,1
+2000-03,jeffrey.hodge@enron.com,Employee,1
+2000-03,jeffrey.hodge@enron.com,unknown,1
+2000-03,jeffrey.hodge@enron.com,Vice President,1
+2000-04,jeffrey.hodge@enron.com,Employee,2
+2000-04,jeffrey.hodge@enron.com,unknown,2
+2000-05,jeffrey.hodge@enron.com,Employee,1
+2000-05,jeffrey.hodge@enron.com,unknown,2
+2000-06,jeffrey.hodge@enron.com,CEO,1
+2000-06,jeffrey.hodge@enron.com,Employee,1
+2000-06,jeffrey.hodge@enron.com,unknown,2
+2000-06,jeffrey.hodge@enron.com,Vice President,1
+2000-07,jeffrey.hodge@enron.com,CEO,1
+2000-07,jeffrey.hodge@enron.com,Employee,3
+2000-07,jeffrey.hodge@enron.com,unknown,2
+2000-07,jeffrey.hodge@enron.com,Vice President,2
+2000-08,jeffrey.hodge@enron.com,Employee,2
+2000-08,jeffrey.hodge@enron.com,unknown,2
+2000-09,jeffrey.hodge@enron.com,Employee,1
+2000-09,jeffrey.hodge@enron.com,unknown,3
+2000-10,jeffrey.hodge@enron.com,Employee,2
+2000-10,jeffrey.hodge@enron.com,unknown,2
+2000-10,jeffrey.hodge@enron.com,Vice President,1
+2000-11,jeffrey.hodge@enron.com,Employee,4
+2000-11,jeffrey.hodge@enron.com,unknown,2
+2000-11,jeffrey.hodge@enron.com,Vice President,1
+2000-12,jeffrey.hodge@enron.com,Employee,5
+2000-12,jeffrey.hodge@enron.com,Director,1
+2000-12,jeffrey.hodge@enron.com,Vice President,1
+2000-12,jeffrey.hodge@enron.com,unknown,2
+2001-01,jeffrey.hodge@enron.com,Employee,1
+2001-01,jeffrey.hodge@enron.com,unknown,3
+2001-01,jeffrey.hodge@enron.com,Vice President,2
+2001-02,jeffrey.hodge@enron.com,Employee,4
+2001-02,jeffrey.hodge@enron.com,unknown,2
+2001-02,jeffrey.hodge@enron.com,Vice President,1
+2001-03,jeffrey.hodge@enron.com,Employee,4
+2001-03,jeffrey.hodge@enron.com,Manager,1
+2001-03,jeffrey.hodge@enron.com,Vice President,2
+2001-03,jeffrey.hodge@enron.com,unknown,4
+2001-04,jeffrey.hodge@enron.com,Employee,5
+2001-04,jeffrey.hodge@enron.com,unknown,4
+2001-04,jeffrey.hodge@enron.com,Vice President,2
+2001-05,jeffrey.hodge@enron.com,Employee,4
+2001-05,jeffrey.hodge@enron.com,unknown,3
+2001-05,jeffrey.hodge@enron.com,Vice President,2
+2001-06,jeffrey.hodge@enron.com,Employee,4
+2001-06,jeffrey.hodge@enron.com,unknown,3
+2001-06,jeffrey.hodge@enron.com,Vice President,1
+2001-07,jeffrey.hodge@enron.com,Vice President,1
+2000-02,jeffrey.shankman@enron.com,CEO,1
+2000-02,jeffrey.shankman@enron.com,Employee,1
+2000-02,jeffrey.shankman@enron.com,unknown,1
+2000-02,jeffrey.shankman@enron.com,Vice President,1
+2000-02,jeffrey.shankman@enron.com,President,1
+2000-03,jeffrey.shankman@enron.com,President,1
+2000-03,jeffrey.shankman@enron.com,Employee,1
+2000-04,jeffrey.shankman@enron.com,CEO,1
+2000-04,jeffrey.shankman@enron.com,unknown,1
+2000-05,jeffrey.shankman@enron.com,CEO,2
+2000-05,jeffrey.shankman@enron.com,Manager,1
+2000-06,jeffrey.shankman@enron.com,CEO,3
+2000-06,jeffrey.shankman@enron.com,Employee,1
+2000-06,jeffrey.shankman@enron.com,Vice President,2
+2000-06,jeffrey.shankman@enron.com,Manager,3
+2000-07,jeffrey.shankman@enron.com,CEO,2
+2000-07,jeffrey.shankman@enron.com,Employee,1
+2000-07,jeffrey.shankman@enron.com,Manager,2
+2000-08,jeffrey.shankman@enron.com,CEO,2
+2000-08,jeffrey.shankman@enron.com,Employee,1
+2000-08,jeffrey.shankman@enron.com,Manager,2
+2000-08,jeffrey.shankman@enron.com,Vice President,1
+2000-08,jeffrey.shankman@enron.com,President,1
+2000-08,jeffrey.shankman@enron.com,Director,1
+2000-09,jeffrey.shankman@enron.com,President,1
+2000-09,jeffrey.shankman@enron.com,unknown,1
+2000-09,jeffrey.shankman@enron.com,Manager,1
+2000-09,jeffrey.shankman@enron.com,CEO,1
+2000-10,jeffrey.shankman@enron.com,President,1
+2000-10,jeffrey.shankman@enron.com,Employee,1
+2000-10,jeffrey.shankman@enron.com,unknown,1
+2000-10,jeffrey.shankman@enron.com,Vice President,2
+2000-10,jeffrey.shankman@enron.com,CEO,3
+2000-10,jeffrey.shankman@enron.com,Manager,2
+2000-11,jeffrey.shankman@enron.com,CEO,3
+2000-11,jeffrey.shankman@enron.com,Vice President,1
+2000-11,jeffrey.shankman@enron.com,Manager,1
+2000-11,jeffrey.shankman@enron.com,President,2
+2000-12,jeffrey.shankman@enron.com,President,3
+2000-12,jeffrey.shankman@enron.com,Employee,1
+2000-12,jeffrey.shankman@enron.com,Manager,1
+2000-12,jeffrey.shankman@enron.com,Vice President,2
+2000-12,jeffrey.shankman@enron.com,CEO,1
+2001-01,jeffrey.shankman@enron.com,President,4
+2001-01,jeffrey.shankman@enron.com,Manager,3
+2001-01,jeffrey.shankman@enron.com,Vice President,4
+2001-01,jeffrey.shankman@enron.com,CEO,2
+2001-01,jeffrey.shankman@enron.com,Director,1
+2001-01,jeffrey.shankman@enron.com,unknown,1
+2001-02,jeffrey.shankman@enron.com,President,1
+2001-02,jeffrey.shankman@enron.com,Employee,1
+2001-02,jeffrey.shankman@enron.com,unknown,1
+2001-02,jeffrey.shankman@enron.com,Vice President,1
+2001-02,jeffrey.shankman@enron.com,CEO,1
+2001-02,jeffrey.shankman@enron.com,Manager,1
+2001-03,jeffrey.shankman@enron.com,President,2
+2001-03,jeffrey.shankman@enron.com,Employee,1
+2001-03,jeffrey.shankman@enron.com,unknown,1
+2001-03,jeffrey.shankman@enron.com,Vice President,1
+2001-03,jeffrey.shankman@enron.com,CEO,1
+2001-03,jeffrey.shankman@enron.com,Manager,1
+2001-04,jeffrey.shankman@enron.com,CEO,2
+2001-04,jeffrey.shankman@enron.com,unknown,1
+2001-04,jeffrey.shankman@enron.com,Manager,1
+2001-04,jeffrey.shankman@enron.com,Director,1
+2001-04,jeffrey.shankman@enron.com,President,2
+2001-05,jeffrey.shankman@enron.com,President,2
+2001-05,jeffrey.shankman@enron.com,Vice President,1
+2001-05,jeffrey.shankman@enron.com,unknown,2
+2001-05,jeffrey.shankman@enron.com,Manager,1
+2001-05,jeffrey.shankman@enron.com,CEO,2
+2001-06,jeffrey.shankman@enron.com,President,2
+2001-06,jeffrey.shankman@enron.com,unknown,1
+2001-06,jeffrey.shankman@enron.com,Manager,1
+2000-08,joe.stepenovitch@enron.com,Employee,1
+2000-08,joe.stepenovitch@enron.com,Trader,1
+2000-11,joe.stepenovitch@enron.com,Trader,1
+2000-12,joe.stepenovitch@enron.com,Employee,1
+2000-12,joe.stepenovitch@enron.com,Trader,1
+2001-01,joe.stepenovitch@enron.com,Trader,1
+2001-02,joe.stepenovitch@enron.com,Trader,1
+2001-03,joe.stepenovitch@enron.com,Employee,1
+2001-04,joe.stepenovitch@enron.com,Trader,1
+2001-05,joe.stepenovitch@enron.com,Trader,2
+2001-06,joe.stepenovitch@enron.com,unknown,1
+2001-07,joe.stepenovitch@enron.com,unknown,1
+2001-07,joe.stepenovitch@enron.com,Trader,1
+2001-08,joe.stepenovitch@enron.com,unknown,1
+2001-08,joe.stepenovitch@enron.com,Trader,1
+2001-09,joe.stepenovitch@enron.com,Employee,1
+2001-09,joe.stepenovitch@enron.com,Vice President,1
+2001-09,joe.stepenovitch@enron.com,Trader,1
+2001-10,joe.stepenovitch@enron.com,Employee,1
+2001-10,joe.stepenovitch@enron.com,Vice President,1
+2001-10,joe.stepenovitch@enron.com,Trader,1
+2001-11,joe.stepenovitch@enron.com,Vice President,1
+2001-11,joe.stepenovitch@enron.com,Trader,1
+2002-02,joe.stepenovitch@enron.com,Employee,1
+2000-05,john.griffith@enron.com,Employee,1
+2000-08,john.griffith@enron.com,Manager,1
+2000-09,john.griffith@enron.com,Manager,1
+2000-10,john.griffith@enron.com,Employee,1
+2000-12,john.griffith@enron.com,Employee,1
+2001-01,john.griffith@enron.com,Vice President,1
+2001-01,john.griffith@enron.com,Employee,3
+2001-01,john.griffith@enron.com,Director,2
+2001-01,john.griffith@enron.com,Manager,1
+2001-02,john.griffith@enron.com,Employee,1
+2001-02,john.griffith@enron.com,Director,2
+2001-03,john.griffith@enron.com,unknown,2
+2001-03,john.griffith@enron.com,Director,2
+2001-04,john.griffith@enron.com,unknown,1
+2001-04,john.griffith@enron.com,Director,2
+2001-05,john.griffith@enron.com,Employee,1
+2001-05,john.griffith@enron.com,unknown,2
+2001-05,john.griffith@enron.com,Director,2
+2001-06,john.griffith@enron.com,Employee,1
+2001-06,john.griffith@enron.com,Director,2
+2001-07,john.griffith@enron.com,unknown,1
+2001-08,john.griffith@enron.com,Vice President,1
+2001-09,john.griffith@enron.com,Employee,1
+2001-09,john.griffith@enron.com,unknown,1
+2001-09,john.griffith@enron.com,Vice President,1
+2001-09,john.griffith@enron.com,Director,2
+2001-10,john.griffith@enron.com,Employee,3
+2001-10,john.griffith@enron.com,Director,3
+2001-10,john.griffith@enron.com,Vice President,1
+2001-10,john.griffith@enron.com,unknown,2
+2001-11,john.griffith@enron.com,Employee,1
+2001-11,john.griffith@enron.com,Vice President,1
+2001-11,john.griffith@enron.com,Director,3
+2001-11,john.griffith@enron.com,unknown,2
+2001-12,john.griffith@enron.com,Employee,2
+2001-12,john.griffith@enron.com,unknown,2
+2001-12,john.griffith@enron.com,Vice President,1
+2001-12,john.griffith@enron.com,Director,2
+2002-01,john.griffith@enron.com,unknown,2
+2002-01,john.griffith@enron.com,Director,2
+2002-02,john.griffith@enron.com,unknown,2
+2000-02,john.lavorato@enron.com,President,2
+2000-02,john.lavorato@enron.com,unknown,1
+2000-02,john.lavorato@enron.com,Manager,1
+2000-02,john.lavorato@enron.com,Director,1
+2000-02,john.lavorato@enron.com,CEO,1
+2000-03,john.lavorato@enron.com,President,1
+2000-04,john.lavorato@enron.com,CEO,1
+2000-04,john.lavorato@enron.com,Employee,1
+2000-04,john.lavorato@enron.com,Vice President,1
+2000-05,john.lavorato@enron.com,CEO,1
+2000-05,john.lavorato@enron.com,Employee,1
+2000-05,john.lavorato@enron.com,Director,1
+2000-05,john.lavorato@enron.com,Vice President,4
+2000-05,john.lavorato@enron.com,President,1
+2000-05,john.lavorato@enron.com,Manager,2
+2000-06,john.lavorato@enron.com,CEO,1
+2000-06,john.lavorato@enron.com,Employee,1
+2000-06,john.lavorato@enron.com,Vice President,2
+2000-06,john.lavorato@enron.com,Manager,1
+2000-06,john.lavorato@enron.com,President,1
+2000-07,john.lavorato@enron.com,CEO,1
+2000-07,john.lavorato@enron.com,Employee,1
+2000-07,john.lavorato@enron.com,unknown,1
+2000-07,john.lavorato@enron.com,Vice President,8
+2000-07,john.lavorato@enron.com,President,1
+2000-07,john.lavorato@enron.com,Managing Director,1
+2000-07,john.lavorato@enron.com,Manager,3
+2000-08,john.lavorato@enron.com,CEO,2
+2000-08,john.lavorato@enron.com,Employee,1
+2000-08,john.lavorato@enron.com,unknown,1
+2000-08,john.lavorato@enron.com,Vice President,5
+2000-08,john.lavorato@enron.com,President,2
+2000-08,john.lavorato@enron.com,Manager,3
+2000-08,john.lavorato@enron.com,Trader,1
+2000-09,john.lavorato@enron.com,President,3
+2000-09,john.lavorato@enron.com,Employee,1
+2000-09,john.lavorato@enron.com,unknown,1
+2000-09,john.lavorato@enron.com,Vice President,4
+2000-09,john.lavorato@enron.com,CEO,1
+2000-09,john.lavorato@enron.com,Manager,3
+2000-10,john.lavorato@enron.com,CEO,1
+2000-10,john.lavorato@enron.com,Employee,1
+2000-10,john.lavorato@enron.com,Director,1
+2000-10,john.lavorato@enron.com,Vice President,9
+2000-10,john.lavorato@enron.com,President,1
+2000-10,john.lavorato@enron.com,Manager,1
+2000-10,john.lavorato@enron.com,unknown,1
+2000-11,john.lavorato@enron.com,CEO,2
+2000-11,john.lavorato@enron.com,Employee,1
+2000-11,john.lavorato@enron.com,unknown,1
+2000-11,john.lavorato@enron.com,Director,4
+2000-11,john.lavorato@enron.com,Vice President,8
+2000-11,john.lavorato@enron.com,President,2
+2000-11,john.lavorato@enron.com,Manager,2
+2000-11,john.lavorato@enron.com,Trader,1
+2000-12,john.lavorato@enron.com,CEO,2
+2000-12,john.lavorato@enron.com,Employee,2
+2000-12,john.lavorato@enron.com,Vice President,4
+2000-12,john.lavorato@enron.com,President,3
+2000-12,john.lavorato@enron.com,Manager,2
+2000-12,john.lavorato@enron.com,Trader,1
+2001-01,john.lavorato@enron.com,CEO,1
+2001-01,john.lavorato@enron.com,Employee,1
+2001-01,john.lavorato@enron.com,unknown,1
+2001-01,john.lavorato@enron.com,Vice President,6
+2001-01,john.lavorato@enron.com,President,2
+2001-01,john.lavorato@enron.com,Manager,3
+2001-01,john.lavorato@enron.com,Trader,1
+2001-02,john.lavorato@enron.com,CEO,1
+2001-02,john.lavorato@enron.com,Employee,1
+2001-02,john.lavorato@enron.com,Vice President,1
+2001-02,john.lavorato@enron.com,Director,1
+2001-02,john.lavorato@enron.com,unknown,1
+2001-03,john.lavorato@enron.com,CEO,3
+2001-03,john.lavorato@enron.com,Employee,1
+2001-03,john.lavorato@enron.com,unknown,4
+2001-03,john.lavorato@enron.com,Vice President,6
+2001-03,john.lavorato@enron.com,President,2
+2001-03,john.lavorato@enron.com,Manager,1
+2001-04,john.lavorato@enron.com,President,5
+2001-04,john.lavorato@enron.com,unknown,2
+2001-04,john.lavorato@enron.com,Vice President,13
+2001-04,john.lavorato@enron.com,CEO,4
+2001-04,john.lavorato@enron.com,Trader,1
+2001-04,john.lavorato@enron.com,Manager,2
+2001-04,john.lavorato@enron.com,In House Lawyer,1
+2001-05,john.lavorato@enron.com,CEO,2
+2001-05,john.lavorato@enron.com,Employee,9
+2001-05,john.lavorato@enron.com,unknown,9
+2001-05,john.lavorato@enron.com,Vice President,13
+2001-05,john.lavorato@enron.com,President,3
+2001-05,john.lavorato@enron.com,Trader,10
+2001-05,john.lavorato@enron.com,Manager,9
+2001-05,john.lavorato@enron.com,Director,11
+2001-06,john.lavorato@enron.com,President,2
+2001-06,john.lavorato@enron.com,Employee,1
+2001-06,john.lavorato@enron.com,Director,1
+2001-06,john.lavorato@enron.com,Vice President,4
+2001-06,john.lavorato@enron.com,CEO,1
+2001-06,john.lavorato@enron.com,Manager,2
+2001-06,john.lavorato@enron.com,unknown,1
+2001-07,john.lavorato@enron.com,President,2
+2001-07,john.lavorato@enron.com,Employee,2
+2001-07,john.lavorato@enron.com,Vice President,5
+2001-07,john.lavorato@enron.com,Manager,1
+2001-08,john.lavorato@enron.com,President,2
+2001-08,john.lavorato@enron.com,Employee,1
+2001-08,john.lavorato@enron.com,unknown,1
+2001-08,john.lavorato@enron.com,Vice President,1
+2001-08,john.lavorato@enron.com,CEO,2
+2001-09,john.lavorato@enron.com,President,2
+2001-09,john.lavorato@enron.com,Employee,1
+2001-09,john.lavorato@enron.com,Director,2
+2001-09,john.lavorato@enron.com,unknown,1
+2001-09,john.lavorato@enron.com,Vice President,3
+2001-09,john.lavorato@enron.com,CEO,2
+2001-09,john.lavorato@enron.com,Manager,1
+2001-09,john.lavorato@enron.com,Trader,1
+2001-10,john.lavorato@enron.com,President,3
+2001-10,john.lavorato@enron.com,Employee,2
+2001-10,john.lavorato@enron.com,Manager,3
+2001-10,john.lavorato@enron.com,Vice President,4
+2001-10,john.lavorato@enron.com,Director,2
+2001-10,john.lavorato@enron.com,unknown,2
+2001-11,john.lavorato@enron.com,President,3
+2001-11,john.lavorato@enron.com,Employee,1
+2001-11,john.lavorato@enron.com,unknown,2
+2001-11,john.lavorato@enron.com,Director,2
+2001-11,john.lavorato@enron.com,Vice President,4
+2001-11,john.lavorato@enron.com,CEO,1
+2001-11,john.lavorato@enron.com,Manager,3
+2001-11,john.lavorato@enron.com,Trader,2
+2001-12,john.lavorato@enron.com,President,1
+2001-12,john.lavorato@enron.com,Employee,3
+2001-12,john.lavorato@enron.com,Vice President,1
+2001-12,john.lavorato@enron.com,Manager,1
+2001-12,john.lavorato@enron.com,Director,2
+2002-01,john.lavorato@enron.com,President,2
+2002-01,john.lavorato@enron.com,Employee,2
+2002-01,john.lavorato@enron.com,Manager,2
+2002-01,john.lavorato@enron.com,Vice President,1
+2002-01,john.lavorato@enron.com,CEO,1
+2002-01,john.lavorato@enron.com,Director,2
+2002-01,john.lavorato@enron.com,unknown,1
+2002-02,john.lavorato@enron.com,President,2
+2002-02,john.lavorato@enron.com,Employee,1
+2002-02,john.lavorato@enron.com,unknown,1
+2002-02,john.lavorato@enron.com,Vice President,1
+2000-06,juan.hernandez@enron.com,Manager,1
+2000-07,juan.hernandez@enron.com,Manager,1
+2000-08,juan.hernandez@enron.com,Vice President,1
+2000-08,juan.hernandez@enron.com,Trader,1
+2000-09,juan.hernandez@enron.com,Trader,1
+2000-11,juan.hernandez@enron.com,Trader,1
+2000-12,juan.hernandez@enron.com,Trader,1
+2001-01,juan.hernandez@enron.com,Trader,1
+2001-02,juan.hernandez@enron.com,Trader,1
+2001-03,juan.hernandez@enron.com,Employee,1
+2001-04,juan.hernandez@enron.com,Vice President,1
+2001-04,juan.hernandez@enron.com,Trader,1
+2001-05,juan.hernandez@enron.com,CEO,1
+2001-05,juan.hernandez@enron.com,Trader,1
+2001-06,juan.hernandez@enron.com,unknown,1
+2001-06,juan.hernandez@enron.com,Trader,1
+2001-07,juan.hernandez@enron.com,unknown,1
+2001-07,juan.hernandez@enron.com,Trader,1
+2001-08,juan.hernandez@enron.com,CEO,1
+2001-08,juan.hernandez@enron.com,unknown,1
+2001-08,juan.hernandez@enron.com,Manager,1
+2001-08,juan.hernandez@enron.com,Trader,1
+2001-09,juan.hernandez@enron.com,Vice President,1
+2001-09,juan.hernandez@enron.com,Trader,1
+2001-10,juan.hernandez@enron.com,Employee,1
+2001-10,juan.hernandez@enron.com,Trader,1
+2000-02,judy.townsend@enron.com,Employee,1
+2000-03,judy.townsend@enron.com,Employee,1
+2000-03,judy.townsend@enron.com,Vice President,1
+2000-04,judy.townsend@enron.com,Employee,1
+2000-05,judy.townsend@enron.com,Employee,1
+2000-06,judy.townsend@enron.com,Employee,1
+2000-07,judy.townsend@enron.com,Employee,1
+2000-08,judy.townsend@enron.com,Employee,1
+2000-08,judy.townsend@enron.com,Vice President,1
+2000-09,judy.townsend@enron.com,Employee,1
+2000-10,judy.townsend@enron.com,Employee,1
+2000-10,judy.townsend@enron.com,Vice President,1
+2000-11,judy.townsend@enron.com,Employee,1
+2000-12,judy.townsend@enron.com,Employee,1
+2000-12,judy.townsend@enron.com,unknown,1
+2001-01,judy.townsend@enron.com,Employee,1
+2001-02,judy.townsend@enron.com,Employee,1
+2001-02,judy.townsend@enron.com,Vice President,1
+2001-03,judy.townsend@enron.com,Employee,1
+2001-03,judy.townsend@enron.com,Vice President,1
+2001-04,judy.townsend@enron.com,Employee,1
+2001-04,judy.townsend@enron.com,Vice President,1
+2001-05,judy.townsend@enron.com,CEO,1
+2001-05,judy.townsend@enron.com,Employee,1
+2001-06,judy.townsend@enron.com,Employee,1
+2001-09,judy.townsend@enron.com,Employee,1
+2001-10,judy.townsend@enron.com,Employee,2
+2001-12,judy.townsend@enron.com,Employee,1
+2002-01,judy.townsend@enron.com,Employee,1
+2002-01,judy.townsend@enron.com,Vice President,1
+2002-02,judy.townsend@enron.com,Vice President,1
+2002-02,judy.townsend@enron.com,Employee,2
+2002-02,judy.townsend@enron.com,unknown,1
+2002-02,judy.townsend@enron.com,Director,1
+2000-05,kam.keiser@enron.com,Employee,1
+2000-05,kam.keiser@enron.com,unknown,1
+2000-06,kam.keiser@enron.com,Employee,1
+2000-06,kam.keiser@enron.com,unknown,1
+2000-07,kam.keiser@enron.com,unknown,1
+2000-07,kam.keiser@enron.com,Vice President,1
+2000-07,kam.keiser@enron.com,Trader,1
+2000-08,kam.keiser@enron.com,Employee,2
+2000-08,kam.keiser@enron.com,unknown,1
+2000-08,kam.keiser@enron.com,Vice President,1
+2000-09,kam.keiser@enron.com,Employee,1
+2000-10,kam.keiser@enron.com,unknown,1
+2000-11,kam.keiser@enron.com,Employee,1
+2000-11,kam.keiser@enron.com,unknown,1
+2000-12,kam.keiser@enron.com,Employee,3
+2000-12,kam.keiser@enron.com,unknown,2
+2001-01,kam.keiser@enron.com,Employee,3
+2001-01,kam.keiser@enron.com,unknown,2
+2001-02,kam.keiser@enron.com,Employee,4
+2001-02,kam.keiser@enron.com,unknown,1
+2001-02,kam.keiser@enron.com,Vice President,1
+2001-03,kam.keiser@enron.com,Employee,2
+2001-03,kam.keiser@enron.com,unknown,1
+2001-04,kam.keiser@enron.com,Employee,2
+2001-05,kam.keiser@enron.com,Employee,1
+2001-05,kam.keiser@enron.com,unknown,1
+2001-05,kam.keiser@enron.com,Vice President,1
+2001-06,kam.keiser@enron.com,Employee,2
+2001-06,kam.keiser@enron.com,Vice President,1
+2001-07,kam.keiser@enron.com,Employee,1
+2001-08,kam.keiser@enron.com,CEO,1
+2001-08,kam.keiser@enron.com,Employee,3
+2001-08,kam.keiser@enron.com,Director,1
+2001-09,kam.keiser@enron.com,Employee,4
+2001-09,kam.keiser@enron.com,unknown,2
+2001-09,kam.keiser@enron.com,Vice President,1
+2001-09,kam.keiser@enron.com,Director,1
+2001-10,kam.keiser@enron.com,Employee,6
+2001-10,kam.keiser@enron.com,Vice President,1
+2001-10,kam.keiser@enron.com,Director,1
+2001-10,kam.keiser@enron.com,unknown,2
+2001-11,kam.keiser@enron.com,Employee,6
+2001-11,kam.keiser@enron.com,unknown,3
+2001-11,kam.keiser@enron.com,Vice President,1
+2001-11,kam.keiser@enron.com,Manager,2
+2001-11,kam.keiser@enron.com,Director,3
+2001-11,kam.keiser@enron.com,Trader,1
+2001-12,kam.keiser@enron.com,Employee,4
+2001-12,kam.keiser@enron.com,unknown,2
+2001-12,kam.keiser@enron.com,Manager,1
+2001-12,kam.keiser@enron.com,Director,2
+2001-12,kam.keiser@enron.com,Trader,1
+2002-01,kam.keiser@enron.com,Employee,2
+2002-01,kam.keiser@enron.com,Manager,1
+2002-01,kam.keiser@enron.com,Director,1
+2002-01,kam.keiser@enron.com,unknown,1
+2002-02,kam.keiser@enron.com,Employee,5
+2002-02,kam.keiser@enron.com,unknown,2
+2002-02,kam.keiser@enron.com,Director,4
+2002-02,kam.keiser@enron.com,Manager,1
+2002-02,kam.keiser@enron.com,Trader,2
+2000-10,kate.symes@enron.com,Employee,1
+2000-11,kate.symes@enron.com,Employee,2
+2000-11,kate.symes@enron.com,Director,1
+2000-11,kate.symes@enron.com,Manager,2
+2000-11,kate.symes@enron.com,Trader,2
+2000-12,kate.symes@enron.com,Employee,3
+2000-12,kate.symes@enron.com,Manager,1
+2001-01,kate.symes@enron.com,Employee,2
+2001-01,kate.symes@enron.com,Director,1
+2001-01,kate.symes@enron.com,Trader,3
+2001-02,kate.symes@enron.com,Employee,2
+2001-02,kate.symes@enron.com,Director,1
+2001-02,kate.symes@enron.com,Trader,2
+2001-03,kate.symes@enron.com,Employee,4
+2001-03,kate.symes@enron.com,unknown,1
+2001-03,kate.symes@enron.com,Director,1
+2001-03,kate.symes@enron.com,Trader,3
+2001-04,kate.symes@enron.com,Employee,2
+2001-04,kate.symes@enron.com,Director,1
+2001-04,kate.symes@enron.com,Trader,3
+2001-05,kate.symes@enron.com,Employee,1
+2001-05,kate.symes@enron.com,Trader,1
+2001-06,kate.symes@enron.com,Employee,1
+2001-06,kate.symes@enron.com,unknown,1
+2001-06,kate.symes@enron.com,Trader,1
+2001-07,kate.symes@enron.com,Employee,2
+2001-07,kate.symes@enron.com,unknown,1
+2001-07,kate.symes@enron.com,Trader,1
+2001-08,kate.symes@enron.com,Employee,2
+2001-08,kate.symes@enron.com,unknown,1
+2001-08,kate.symes@enron.com,Trader,2
+2001-09,kate.symes@enron.com,Trader,1
+2001-10,kate.symes@enron.com,Employee,2
+2001-10,kate.symes@enron.com,unknown,1
+2001-10,kate.symes@enron.com,Trader,3
+2001-11,kate.symes@enron.com,Employee,2
+2001-11,kate.symes@enron.com,Trader,2
+2001-12,kate.symes@enron.com,Trader,1
+2002-01,kate.symes@enron.com,Trader,1
+2000-06,kay.mann@enron.com,Vice President,1
+2000-07,kay.mann@enron.com,Managing Director,1
+2000-07,kay.mann@enron.com,Vice President,1
+2000-08,kay.mann@enron.com,Managing Director,1
+2000-08,kay.mann@enron.com,unknown,1
+2000-08,kay.mann@enron.com,Vice President,1
+2000-09,kay.mann@enron.com,Employee,2
+2000-09,kay.mann@enron.com,unknown,2
+2000-10,kay.mann@enron.com,Managing Director,1
+2000-10,kay.mann@enron.com,Employee,2
+2000-10,kay.mann@enron.com,unknown,1
+2000-10,kay.mann@enron.com,Vice President,1
+2000-11,kay.mann@enron.com,Managing Director,1
+2000-11,kay.mann@enron.com,Employee,1
+2000-11,kay.mann@enron.com,Vice President,1
+2000-12,kay.mann@enron.com,Managing Director,1
+2000-12,kay.mann@enron.com,Employee,2
+2000-12,kay.mann@enron.com,Vice President,1
+2001-01,kay.mann@enron.com,Managing Director,1
+2001-01,kay.mann@enron.com,Employee,1
+2001-02,kay.mann@enron.com,Managing Director,1
+2001-02,kay.mann@enron.com,Employee,3
+2001-02,kay.mann@enron.com,unknown,1
+2001-02,kay.mann@enron.com,Vice President,1
+2001-03,kay.mann@enron.com,Managing Director,1
+2001-03,kay.mann@enron.com,Employee,1
+2001-03,kay.mann@enron.com,unknown,1
+2001-03,kay.mann@enron.com,Vice President,1
+2001-04,kay.mann@enron.com,Managing Director,1
+2001-04,kay.mann@enron.com,Employee,3
+2001-04,kay.mann@enron.com,Trader,1
+2001-05,kay.mann@enron.com,Managing Director,1
+2001-05,kay.mann@enron.com,Employee,3
+2001-05,kay.mann@enron.com,unknown,1
+2001-05,kay.mann@enron.com,Trader,1
+2001-06,kay.mann@enron.com,Managing Director,1
+2001-06,kay.mann@enron.com,Employee,1
+2001-06,kay.mann@enron.com,unknown,1
+2001-07,kay.mann@enron.com,Employee,1
+2001-08,kay.mann@enron.com,Employee,1
+2001-09,kay.mann@enron.com,Employee,1
+2001-10,kay.mann@enron.com,Employee,1
+2001-10,kay.mann@enron.com,unknown,1
+2001-11,kay.mann@enron.com,Employee,2
+2001-11,kay.mann@enron.com,unknown,1
+2001-12,kay.mann@enron.com,Employee,3
+2001-12,kay.mann@enron.com,unknown,1
+2001-12,kay.mann@enron.com,Vice President,1
+2002-01,kay.mann@enron.com,Employee,1
+2002-01,kay.mann@enron.com,unknown,1
+2002-02,kay.mann@enron.com,Employee,2
+2000-08,keith.holst@enron.com,Manager,1
+2000-09,keith.holst@enron.com,Manager,1
+2000-10,keith.holst@enron.com,Manager,1
+2000-11,keith.holst@enron.com,CEO,1
+2000-11,keith.holst@enron.com,Employee,2
+2000-11,keith.holst@enron.com,Manager,1
+2000-12,keith.holst@enron.com,Employee,1
+2000-12,keith.holst@enron.com,Manager,2
+2001-01,keith.holst@enron.com,Manager,1
+2001-01,keith.holst@enron.com,unknown,2
+2001-01,keith.holst@enron.com,Vice President,1
+2001-02,keith.holst@enron.com,President,1
+2001-02,keith.holst@enron.com,Employee,1
+2001-02,keith.holst@enron.com,Manager,1
+2001-02,keith.holst@enron.com,Vice President,1
+2001-03,keith.holst@enron.com,Employee,1
+2001-03,keith.holst@enron.com,Manager,1
+2001-03,keith.holst@enron.com,Vice President,1
+2001-04,keith.holst@enron.com,unknown,2
+2001-04,keith.holst@enron.com,Manager,1
+2001-04,keith.holst@enron.com,Vice President,1
+2001-04,keith.holst@enron.com,Trader,1
+2001-05,keith.holst@enron.com,CEO,1
+2001-05,keith.holst@enron.com,unknown,1
+2001-05,keith.holst@enron.com,Manager,2
+2001-06,keith.holst@enron.com,Director,1
+2001-07,keith.holst@enron.com,Manager,1
+2001-08,keith.holst@enron.com,Manager,2
+2001-09,keith.holst@enron.com,CEO,1
+2001-09,keith.holst@enron.com,unknown,1
+2001-09,keith.holst@enron.com,Manager,2
+2001-10,keith.holst@enron.com,Employee,2
+2001-10,keith.holst@enron.com,unknown,1
+2001-10,keith.holst@enron.com,Manager,2
+2001-10,keith.holst@enron.com,Vice President,1
+2001-10,keith.holst@enron.com,Director,1
+2001-10,keith.holst@enron.com,Trader,1
+2001-11,keith.holst@enron.com,CEO,1
+2001-11,keith.holst@enron.com,Employee,1
+2001-11,keith.holst@enron.com,Manager,2
+2001-11,keith.holst@enron.com,unknown,1
+2001-11,keith.holst@enron.com,Director,2
+2001-12,keith.holst@enron.com,Employee,1
+2001-12,keith.holst@enron.com,Manager,1
+2002-01,keith.holst@enron.com,CEO,1
+2002-01,keith.holst@enron.com,Manager,2
+2002-02,keith.holst@enron.com,Employee,1
+2002-02,keith.holst@enron.com,unknown,1
+2002-02,keith.holst@enron.com,Manager,1
+2000-02,kenneth.lay@enron.com,unknown,1
+2000-03,kenneth.lay@enron.com,President,1
+2000-03,kenneth.lay@enron.com,Vice President,1
+2000-06,kenneth.lay@enron.com,Manager,1
+2000-08,kenneth.lay@enron.com,Vice President,1
+2000-10,kenneth.lay@enron.com,CEO,1
+2000-10,kenneth.lay@enron.com,In House Lawyer,1
+2000-10,kenneth.lay@enron.com,unknown,1
+2000-11,kenneth.lay@enron.com,CEO,2
+2000-11,kenneth.lay@enron.com,unknown,1
+2000-11,kenneth.lay@enron.com,Vice President,1
+2000-12,kenneth.lay@enron.com,Vice President,1
+2001-01,kenneth.lay@enron.com,unknown,1
+2001-01,kenneth.lay@enron.com,Vice President,1
+2001-02,kenneth.lay@enron.com,CEO,1
+2001-02,kenneth.lay@enron.com,Vice President,1
+2001-03,kenneth.lay@enron.com,CEO,1
+2001-04,kenneth.lay@enron.com,CEO,1
+2001-04,kenneth.lay@enron.com,In House Lawyer,1
+2001-04,kenneth.lay@enron.com,Vice President,1
+2001-04,kenneth.lay@enron.com,President,1
+2001-05,kenneth.lay@enron.com,President,1
+2001-05,kenneth.lay@enron.com,unknown,1
+2001-06,kenneth.lay@enron.com,Vice President,1
+2001-07,kenneth.lay@enron.com,Vice President,1
+2001-08,kenneth.lay@enron.com,CEO,3
+2001-08,kenneth.lay@enron.com,Employee,8
+2001-08,kenneth.lay@enron.com,Director,1
+2001-08,kenneth.lay@enron.com,In House Lawyer,1
+2001-08,kenneth.lay@enron.com,Vice President,8
+2001-08,kenneth.lay@enron.com,President,4
+2001-08,kenneth.lay@enron.com,Trader,3
+2001-08,kenneth.lay@enron.com,Manager,3
+2001-08,kenneth.lay@enron.com,unknown,8
+2001-09,kenneth.lay@enron.com,President,2
+2001-09,kenneth.lay@enron.com,Employee,1
+2001-09,kenneth.lay@enron.com,unknown,1
+2001-09,kenneth.lay@enron.com,Vice President,1
+2001-10,kenneth.lay@enron.com,President,2
+2001-10,kenneth.lay@enron.com,Employee,2
+2001-10,kenneth.lay@enron.com,Director,1
+2001-10,kenneth.lay@enron.com,unknown,1
+2001-10,kenneth.lay@enron.com,Vice President,1
+2001-10,kenneth.lay@enron.com,Trader,1
+2001-10,kenneth.lay@enron.com,Manager,1
+2001-10,kenneth.lay@enron.com,In House Lawyer,1
+2001-11,kenneth.lay@enron.com,President,2
+2001-11,kenneth.lay@enron.com,CEO,1
+2001-11,kenneth.lay@enron.com,In House Lawyer,1
+2001-11,kenneth.lay@enron.com,Vice President,1
+2001-11,kenneth.lay@enron.com,unknown,3
+2001-12,kenneth.lay@enron.com,unknown,1
+2001-12,kenneth.lay@enron.com,Vice President,1
+2002-01,kenneth.lay@enron.com,President,1
+2002-01,kenneth.lay@enron.com,unknown,1
+2000-02,kevin.hyatt@enron.com,unknown,1
+2000-02,kevin.hyatt@enron.com,Vice President,1
+2000-03,kevin.hyatt@enron.com,unknown,1
+2000-03,kevin.hyatt@enron.com,Vice President,1
+2000-04,kevin.hyatt@enron.com,Vice President,1
+2000-05,kevin.hyatt@enron.com,unknown,1
+2000-05,kevin.hyatt@enron.com,Vice President,1
+2000-06,kevin.hyatt@enron.com,Employee,1
+2000-06,kevin.hyatt@enron.com,unknown,1
+2000-06,kevin.hyatt@enron.com,Vice President,1
+2000-07,kevin.hyatt@enron.com,Employee,1
+2000-07,kevin.hyatt@enron.com,unknown,1
+2000-07,kevin.hyatt@enron.com,Vice President,1
+2000-08,kevin.hyatt@enron.com,Employee,1
+2000-08,kevin.hyatt@enron.com,unknown,2
+2000-08,kevin.hyatt@enron.com,Vice President,2
+2000-09,kevin.hyatt@enron.com,Employee,1
+2000-09,kevin.hyatt@enron.com,Vice President,1
+2000-09,kevin.hyatt@enron.com,Director,1
+2000-09,kevin.hyatt@enron.com,unknown,1
+2000-10,kevin.hyatt@enron.com,Employee,1
+2000-10,kevin.hyatt@enron.com,unknown,3
+2000-10,kevin.hyatt@enron.com,Vice President,1
+2000-11,kevin.hyatt@enron.com,Employee,1
+2000-11,kevin.hyatt@enron.com,unknown,2
+2000-11,kevin.hyatt@enron.com,Vice President,1
+2000-12,kevin.hyatt@enron.com,Employee,1
+2000-12,kevin.hyatt@enron.com,unknown,1
+2000-12,kevin.hyatt@enron.com,Vice President,1
+2001-01,kevin.hyatt@enron.com,unknown,1
+2001-01,kevin.hyatt@enron.com,Vice President,1
+2001-02,kevin.hyatt@enron.com,Employee,1
+2001-02,kevin.hyatt@enron.com,unknown,2
+2001-02,kevin.hyatt@enron.com,Vice President,2
+2001-03,kevin.hyatt@enron.com,Employee,1
+2001-03,kevin.hyatt@enron.com,unknown,3
+2001-03,kevin.hyatt@enron.com,Vice President,2
+2001-04,kevin.hyatt@enron.com,Employee,2
+2001-04,kevin.hyatt@enron.com,unknown,1
+2001-04,kevin.hyatt@enron.com,Vice President,1
+2001-05,kevin.hyatt@enron.com,President,1
+2001-05,kevin.hyatt@enron.com,Employee,1
+2001-05,kevin.hyatt@enron.com,unknown,1
+2001-06,kevin.hyatt@enron.com,Employee,2
+2001-06,kevin.hyatt@enron.com,unknown,1
+2001-07,kevin.hyatt@enron.com,Employee,3
+2001-07,kevin.hyatt@enron.com,unknown,1
+2001-07,kevin.hyatt@enron.com,Director,1
+2001-08,kevin.hyatt@enron.com,Vice President,1
+2001-08,kevin.hyatt@enron.com,Employee,2
+2001-08,kevin.hyatt@enron.com,unknown,2
+2001-08,kevin.hyatt@enron.com,Manager,1
+2001-09,kevin.hyatt@enron.com,Employee,1
+2001-09,kevin.hyatt@enron.com,unknown,2
+2001-09,kevin.hyatt@enron.com,Manager,1
+2001-10,kevin.hyatt@enron.com,CEO,1
+2001-10,kevin.hyatt@enron.com,Employee,1
+2001-10,kevin.hyatt@enron.com,Manager,1
+2001-10,kevin.hyatt@enron.com,unknown,3
+2001-10,kevin.hyatt@enron.com,Vice President,1
+2001-11,kevin.hyatt@enron.com,Employee,3
+2001-11,kevin.hyatt@enron.com,Manager,1
+2001-11,kevin.hyatt@enron.com,Vice President,1
+2001-11,kevin.hyatt@enron.com,unknown,1
+2001-12,kevin.hyatt@enron.com,Employee,2
+2001-12,kevin.hyatt@enron.com,unknown,2
+2001-12,kevin.hyatt@enron.com,Manager,1
+2002-01,kevin.hyatt@enron.com,Employee,2
+2002-01,kevin.hyatt@enron.com,unknown,3
+2002-01,kevin.hyatt@enron.com,Manager,2
+2002-02,kevin.hyatt@enron.com,Employee,1
+2002-02,kevin.hyatt@enron.com,unknown,3
+2002-02,kevin.hyatt@enron.com,Manager,2
+2000-02,kevin.presto@enron.com,Employee,1
+2000-02,kevin.presto@enron.com,unknown,1
+2000-02,kevin.presto@enron.com,Vice President,1
+2000-04,kevin.presto@enron.com,CEO,1
+2000-04,kevin.presto@enron.com,Employee,1
+2000-05,kevin.presto@enron.com,CEO,2
+2000-05,kevin.presto@enron.com,Manager,1
+2000-06,kevin.presto@enron.com,CEO,2
+2000-06,kevin.presto@enron.com,Employee,1
+2000-06,kevin.presto@enron.com,Vice President,1
+2000-07,kevin.presto@enron.com,CEO,2
+2000-07,kevin.presto@enron.com,Employee,1
+2000-07,kevin.presto@enron.com,Manager,2
+2000-08,kevin.presto@enron.com,CEO,2
+2000-08,kevin.presto@enron.com,Employee,1
+2000-09,kevin.presto@enron.com,CEO,2
+2000-09,kevin.presto@enron.com,Employee,1
+2000-09,kevin.presto@enron.com,unknown,1
+2000-09,kevin.presto@enron.com,Manager,1
+2000-10,kevin.presto@enron.com,CEO,2
+2000-10,kevin.presto@enron.com,Vice President,1
+2000-11,kevin.presto@enron.com,CEO,2
+2000-11,kevin.presto@enron.com,Manager,1
+2000-12,kevin.presto@enron.com,CEO,2
+2000-12,kevin.presto@enron.com,Vice President,1
+2000-12,kevin.presto@enron.com,Manager,1
+2001-01,kevin.presto@enron.com,CEO,2
+2001-01,kevin.presto@enron.com,Employee,1
+2001-01,kevin.presto@enron.com,unknown,1
+2001-01,kevin.presto@enron.com,Vice President,1
+2001-01,kevin.presto@enron.com,President,1
+2001-02,kevin.presto@enron.com,President,1
+2001-02,kevin.presto@enron.com,Vice President,2
+2001-02,kevin.presto@enron.com,CEO,1
+2001-03,kevin.presto@enron.com,President,2
+2001-03,kevin.presto@enron.com,CEO,1
+2001-04,kevin.presto@enron.com,President,1
+2001-04,kevin.presto@enron.com,Employee,1
+2001-04,kevin.presto@enron.com,Vice President,1
+2001-04,kevin.presto@enron.com,Manager,1
+2001-04,kevin.presto@enron.com,CEO,1
+2001-05,kevin.presto@enron.com,CEO,1
+2001-05,kevin.presto@enron.com,Employee,1
+2001-05,kevin.presto@enron.com,unknown,1
+2001-05,kevin.presto@enron.com,Vice President,3
+2001-05,kevin.presto@enron.com,President,1
+2001-05,kevin.presto@enron.com,Manager,2
+2001-05,kevin.presto@enron.com,Trader,1
+2001-06,kevin.presto@enron.com,President,1
+2001-07,kevin.presto@enron.com,President,1
+2001-07,kevin.presto@enron.com,Employee,1
+2001-07,kevin.presto@enron.com,Vice President,1
+2001-07,kevin.presto@enron.com,CEO,1
+2000-02,kimberly.watson@enron.com,Vice President,1
+2000-04,kimberly.watson@enron.com,Vice President,1
+2000-05,kimberly.watson@enron.com,Vice President,1
+2000-07,kimberly.watson@enron.com,Vice President,1
+2000-08,kimberly.watson@enron.com,Vice President,1
+2000-08,kimberly.watson@enron.com,Employee,1
+2000-08,kimberly.watson@enron.com,Director,1
+2000-08,kimberly.watson@enron.com,Manager,1
+2000-10,kimberly.watson@enron.com,Employee,1
+2000-10,kimberly.watson@enron.com,Vice President,2
+2000-10,kimberly.watson@enron.com,Director,1
+2000-11,kimberly.watson@enron.com,Employee,1
+2000-11,kimberly.watson@enron.com,Director,1
+2001-01,kimberly.watson@enron.com,Manager,1
+2001-03,kimberly.watson@enron.com,unknown,1
+2001-03,kimberly.watson@enron.com,Vice President,2
+2001-04,kimberly.watson@enron.com,Manager,1
+2001-05,kimberly.watson@enron.com,Employee,1
+2001-05,kimberly.watson@enron.com,Director,1
+2001-05,kimberly.watson@enron.com,Manager,1
+2001-06,kimberly.watson@enron.com,President,1
+2001-06,kimberly.watson@enron.com,Employee,1
+2001-06,kimberly.watson@enron.com,unknown,2
+2001-06,kimberly.watson@enron.com,Director,1
+2001-07,kimberly.watson@enron.com,Employee,2
+2001-07,kimberly.watson@enron.com,Vice President,3
+2001-07,kimberly.watson@enron.com,Director,1
+2001-07,kimberly.watson@enron.com,unknown,2
+2001-08,kimberly.watson@enron.com,Vice President,3
+2001-08,kimberly.watson@enron.com,Employee,1
+2001-08,kimberly.watson@enron.com,Manager,1
+2001-08,kimberly.watson@enron.com,Director,1
+2001-08,kimberly.watson@enron.com,unknown,1
+2001-09,kimberly.watson@enron.com,President,1
+2001-09,kimberly.watson@enron.com,Employee,2
+2001-09,kimberly.watson@enron.com,Director,1
+2001-09,kimberly.watson@enron.com,Vice President,3
+2001-09,kimberly.watson@enron.com,Manager,2
+2001-09,kimberly.watson@enron.com,unknown,1
+2001-10,kimberly.watson@enron.com,Vice President,2
+2001-10,kimberly.watson@enron.com,Employee,3
+2001-10,kimberly.watson@enron.com,unknown,2
+2001-10,kimberly.watson@enron.com,Manager,2
+2001-10,kimberly.watson@enron.com,Director,1
+2001-11,kimberly.watson@enron.com,Vice President,2
+2001-11,kimberly.watson@enron.com,Employee,2
+2001-11,kimberly.watson@enron.com,unknown,3
+2001-11,kimberly.watson@enron.com,Manager,2
+2001-11,kimberly.watson@enron.com,Director,1
+2001-12,kimberly.watson@enron.com,Employee,1
+2001-12,kimberly.watson@enron.com,Manager,1
+2001-12,kimberly.watson@enron.com,unknown,3
+2001-12,kimberly.watson@enron.com,Vice President,3
+2001-12,kimberly.watson@enron.com,Director,1
+2002-01,kimberly.watson@enron.com,President,1
+2002-01,kimberly.watson@enron.com,Employee,3
+2002-01,kimberly.watson@enron.com,unknown,3
+2002-01,kimberly.watson@enron.com,Vice President,2
+2002-01,kimberly.watson@enron.com,Manager,2
+2002-01,kimberly.watson@enron.com,Director,1
+2002-02,kimberly.watson@enron.com,Employee,1
+2002-02,kimberly.watson@enron.com,Manager,1
+2002-02,kimberly.watson@enron.com,Director,1
+2002-02,kimberly.watson@enron.com,unknown,3
+2000-09,larry.campbell@enron.com,Employee,1
+2000-11,larry.campbell@enron.com,Trader,1
+2000-12,larry.campbell@enron.com,Vice President,1
+2000-12,larry.campbell@enron.com,Trader,1
+2001-01,larry.campbell@enron.com,Trader,1
+2001-02,larry.campbell@enron.com,Employee,1
+2001-02,larry.campbell@enron.com,Trader,1
+2001-03,larry.campbell@enron.com,Employee,3
+2001-03,larry.campbell@enron.com,Vice President,1
+2001-03,larry.campbell@enron.com,Trader,1
+2001-04,larry.campbell@enron.com,Trader,1
+2001-05,larry.campbell@enron.com,Trader,2
+2001-06,larry.campbell@enron.com,Director,1
+2001-07,larry.campbell@enron.com,Director,1
+2001-08,larry.campbell@enron.com,Director,1
+2001-09,larry.campbell@enron.com,Director,1
+2001-10,larry.campbell@enron.com,Employee,1
+2001-10,larry.campbell@enron.com,Director,1
+2001-10,larry.campbell@enron.com,Manager,2
+2001-11,larry.campbell@enron.com,Employee,1
+2001-11,larry.campbell@enron.com,Manager,1
+2001-11,larry.campbell@enron.com,Director,1
+2001-12,larry.campbell@enron.com,Director,1
+2002-01,larry.campbell@enron.com,unknown,2
+2002-01,larry.campbell@enron.com,Director,1
+2002-02,larry.campbell@enron.com,Director,1
+2000-02,lindy.donoho@enron.com,unknown,1
+2000-03,lindy.donoho@enron.com,unknown,1
+2000-07,lindy.donoho@enron.com,unknown,1
+2000-07,lindy.donoho@enron.com,Director,1
+2000-08,lindy.donoho@enron.com,Vice President,2
+2000-08,lindy.donoho@enron.com,Director,1
+2000-08,lindy.donoho@enron.com,unknown,2
+2000-09,lindy.donoho@enron.com,unknown,1
+2000-09,lindy.donoho@enron.com,Vice President,1
+2000-10,lindy.donoho@enron.com,Director,1
+2000-10,lindy.donoho@enron.com,Vice President,1
+2000-10,lindy.donoho@enron.com,unknown,3
+2000-11,lindy.donoho@enron.com,unknown,2
+2000-11,lindy.donoho@enron.com,Director,1
+2000-12,lindy.donoho@enron.com,unknown,2
+2000-12,lindy.donoho@enron.com,Vice President,2
+2000-12,lindy.donoho@enron.com,Director,1
+2001-02,lindy.donoho@enron.com,unknown,1
+2001-03,lindy.donoho@enron.com,unknown,2
+2001-03,lindy.donoho@enron.com,Director,1
+2001-04,lindy.donoho@enron.com,Vice President,1
+2001-04,lindy.donoho@enron.com,Employee,1
+2001-04,lindy.donoho@enron.com,unknown,1
+2001-04,lindy.donoho@enron.com,Director,1
+2001-05,lindy.donoho@enron.com,President,1
+2001-05,lindy.donoho@enron.com,unknown,2
+2001-05,lindy.donoho@enron.com,Director,1
+2001-06,lindy.donoho@enron.com,President,1
+2001-06,lindy.donoho@enron.com,unknown,3
+2001-06,lindy.donoho@enron.com,Director,1
+2001-07,lindy.donoho@enron.com,unknown,3
+2001-07,lindy.donoho@enron.com,Director,1
+2001-08,lindy.donoho@enron.com,Manager,1
+2001-08,lindy.donoho@enron.com,unknown,3
+2001-08,lindy.donoho@enron.com,Vice President,3
+2001-08,lindy.donoho@enron.com,Director,1
+2001-09,lindy.donoho@enron.com,Vice President,2
+2001-09,lindy.donoho@enron.com,Employee,1
+2001-09,lindy.donoho@enron.com,unknown,3
+2001-09,lindy.donoho@enron.com,Manager,2
+2001-10,lindy.donoho@enron.com,Employee,2
+2001-10,lindy.donoho@enron.com,Manager,1
+2001-10,lindy.donoho@enron.com,Vice President,1
+2001-10,lindy.donoho@enron.com,unknown,1
+2001-11,lindy.donoho@enron.com,Vice President,2
+2001-11,lindy.donoho@enron.com,Employee,1
+2001-11,lindy.donoho@enron.com,unknown,3
+2001-11,lindy.donoho@enron.com,Manager,2
+2001-11,lindy.donoho@enron.com,Director,1
+2001-12,lindy.donoho@enron.com,Vice President,1
+2001-12,lindy.donoho@enron.com,unknown,2
+2001-12,lindy.donoho@enron.com,Manager,1
+2001-12,lindy.donoho@enron.com,Director,1
+2002-01,lindy.donoho@enron.com,unknown,1
+2002-01,lindy.donoho@enron.com,Manager,2
+2002-01,lindy.donoho@enron.com,Vice President,1
+2002-01,lindy.donoho@enron.com,Director,1
+2002-02,lindy.donoho@enron.com,Employee,1
+2002-02,lindy.donoho@enron.com,Manager,2
+2002-02,lindy.donoho@enron.com,Vice President,1
+2002-02,lindy.donoho@enron.com,unknown,3
+2000-12,lisa.gang@enron.com,Employee,1
+2001-01,lisa.gang@enron.com,Employee,1
+2001-02,lisa.gang@enron.com,Employee,2
+2001-03,lisa.gang@enron.com,Employee,2
+2001-04,lisa.gang@enron.com,Employee,2
+2001-04,lisa.gang@enron.com,Trader,1
+2001-05,lisa.gang@enron.com,Employee,1
+2001-06,lisa.gang@enron.com,Employee,2
+2001-06,lisa.gang@enron.com,Trader,1
+2001-07,lisa.gang@enron.com,Employee,3
+2001-08,lisa.gang@enron.com,Employee,2
+2001-08,lisa.gang@enron.com,Trader,1
+2001-09,lisa.gang@enron.com,Employee,1
+2001-10,lisa.gang@enron.com,Employee,3
+2001-11,lisa.gang@enron.com,Employee,2
+2000-02,louise.kitchen@enron.com,President,4
+2000-02,louise.kitchen@enron.com,Employee,2
+2000-02,louise.kitchen@enron.com,unknown,2
+2000-02,louise.kitchen@enron.com,Vice President,4
+2000-02,louise.kitchen@enron.com,CEO,2
+2000-02,louise.kitchen@enron.com,Manager,1
+2000-02,louise.kitchen@enron.com,Director,2
+2000-03,louise.kitchen@enron.com,CEO,3
+2000-03,louise.kitchen@enron.com,Employee,1
+2000-03,louise.kitchen@enron.com,unknown,1
+2000-03,louise.kitchen@enron.com,Vice President,2
+2000-03,louise.kitchen@enron.com,President,3
+2000-03,louise.kitchen@enron.com,Manager,2
+2000-04,louise.kitchen@enron.com,Employee,1
+2000-04,louise.kitchen@enron.com,unknown,1
+2000-05,louise.kitchen@enron.com,Employee,3
+2000-05,louise.kitchen@enron.com,unknown,1
+2000-06,louise.kitchen@enron.com,President,3
+2000-06,louise.kitchen@enron.com,Employee,2
+2000-06,louise.kitchen@enron.com,unknown,1
+2000-07,louise.kitchen@enron.com,President,1
+2000-07,louise.kitchen@enron.com,Employee,1
+2000-07,louise.kitchen@enron.com,Manager,1
+2000-07,louise.kitchen@enron.com,unknown,1
+2000-07,louise.kitchen@enron.com,Vice President,2
+2000-08,louise.kitchen@enron.com,President,1
+2000-08,louise.kitchen@enron.com,Employee,2
+2000-08,louise.kitchen@enron.com,unknown,2
+2000-08,louise.kitchen@enron.com,Vice President,2
+2000-09,louise.kitchen@enron.com,CEO,1
+2000-09,louise.kitchen@enron.com,Employee,1
+2000-09,louise.kitchen@enron.com,President,1
+2000-10,louise.kitchen@enron.com,President,1
+2000-10,louise.kitchen@enron.com,Employee,1
+2000-10,louise.kitchen@enron.com,unknown,1
+2000-11,louise.kitchen@enron.com,President,2
+2000-11,louise.kitchen@enron.com,Employee,2
+2000-11,louise.kitchen@enron.com,Vice President,1
+2000-11,louise.kitchen@enron.com,unknown,2
+2000-11,louise.kitchen@enron.com,Manager,1
+2000-12,louise.kitchen@enron.com,President,3
+2000-12,louise.kitchen@enron.com,Employee,1
+2000-12,louise.kitchen@enron.com,Manager,1
+2000-12,louise.kitchen@enron.com,Vice President,1
+2000-12,louise.kitchen@enron.com,unknown,1
+2001-01,louise.kitchen@enron.com,President,1
+2001-01,louise.kitchen@enron.com,Employee,2
+2001-01,louise.kitchen@enron.com,Manager,1
+2001-01,louise.kitchen@enron.com,unknown,2
+2001-01,louise.kitchen@enron.com,Vice President,1
+2001-02,louise.kitchen@enron.com,CEO,1
+2001-02,louise.kitchen@enron.com,Employee,2
+2001-02,louise.kitchen@enron.com,Director,3
+2001-02,louise.kitchen@enron.com,Vice President,3
+2001-02,louise.kitchen@enron.com,unknown,1
+2001-03,louise.kitchen@enron.com,CEO,2
+2001-03,louise.kitchen@enron.com,Employee,2
+2001-03,louise.kitchen@enron.com,unknown,2
+2001-03,louise.kitchen@enron.com,Vice President,3
+2001-03,louise.kitchen@enron.com,President,1
+2001-03,louise.kitchen@enron.com,Director,1
+2001-04,louise.kitchen@enron.com,President,3
+2001-04,louise.kitchen@enron.com,Employee,2
+2001-04,louise.kitchen@enron.com,Director,2
+2001-04,louise.kitchen@enron.com,Vice President,10
+2001-04,louise.kitchen@enron.com,CEO,3
+2001-04,louise.kitchen@enron.com,Manager,1
+2001-04,louise.kitchen@enron.com,unknown,1
+2001-05,louise.kitchen@enron.com,President,2
+2001-05,louise.kitchen@enron.com,unknown,2
+2001-05,louise.kitchen@enron.com,Manager,1
+2001-05,louise.kitchen@enron.com,Vice President,6
+2001-05,louise.kitchen@enron.com,CEO,2
+2001-06,louise.kitchen@enron.com,CEO,1
+2001-06,louise.kitchen@enron.com,Employee,2
+2001-06,louise.kitchen@enron.com,Vice President,3
+2001-06,louise.kitchen@enron.com,Director,1
+2001-06,louise.kitchen@enron.com,unknown,1
+2001-07,louise.kitchen@enron.com,President,1
+2001-07,louise.kitchen@enron.com,Employee,2
+2001-07,louise.kitchen@enron.com,unknown,1
+2001-07,louise.kitchen@enron.com,Vice President,9
+2001-07,louise.kitchen@enron.com,CEO,1
+2001-07,louise.kitchen@enron.com,Manager,1
+2001-07,louise.kitchen@enron.com,Trader,1
+2001-08,louise.kitchen@enron.com,President,2
+2001-08,louise.kitchen@enron.com,Employee,1
+2001-08,louise.kitchen@enron.com,Director,1
+2001-08,louise.kitchen@enron.com,Vice President,1
+2001-08,louise.kitchen@enron.com,CEO,3
+2001-08,louise.kitchen@enron.com,Manager,1
+2001-08,louise.kitchen@enron.com,unknown,1
+2001-09,louise.kitchen@enron.com,President,3
+2001-09,louise.kitchen@enron.com,Employee,3
+2001-09,louise.kitchen@enron.com,Director,1
+2001-09,louise.kitchen@enron.com,unknown,2
+2001-09,louise.kitchen@enron.com,Vice President,6
+2001-09,louise.kitchen@enron.com,CEO,1
+2001-09,louise.kitchen@enron.com,Manager,1
+2001-09,louise.kitchen@enron.com,Trader,2
+2001-10,louise.kitchen@enron.com,President,3
+2001-10,louise.kitchen@enron.com,Employee,3
+2001-10,louise.kitchen@enron.com,unknown,2
+2001-10,louise.kitchen@enron.com,Vice President,4
+2001-10,louise.kitchen@enron.com,CEO,2
+2001-10,louise.kitchen@enron.com,Manager,1
+2001-10,louise.kitchen@enron.com,Director,1
+2001-11,louise.kitchen@enron.com,President,2
+2001-11,louise.kitchen@enron.com,Employee,3
+2001-11,louise.kitchen@enron.com,unknown,4
+2001-11,louise.kitchen@enron.com,Vice President,6
+2001-11,louise.kitchen@enron.com,CEO,2
+2001-11,louise.kitchen@enron.com,Manager,1
+2001-11,louise.kitchen@enron.com,Director,1
+2001-11,louise.kitchen@enron.com,Trader,2
+2001-12,louise.kitchen@enron.com,CEO,1
+2001-12,louise.kitchen@enron.com,Employee,3
+2001-12,louise.kitchen@enron.com,unknown,2
+2001-12,louise.kitchen@enron.com,Director,3
+2001-12,louise.kitchen@enron.com,Vice President,5
+2001-12,louise.kitchen@enron.com,President,2
+2001-12,louise.kitchen@enron.com,Manager,2
+2001-12,louise.kitchen@enron.com,Trader,1
+2002-01,louise.kitchen@enron.com,CEO,1
+2002-01,louise.kitchen@enron.com,Employee,2
+2002-01,louise.kitchen@enron.com,Director,1
+2002-01,louise.kitchen@enron.com,Vice President,5
+2002-01,louise.kitchen@enron.com,President,2
+2002-01,louise.kitchen@enron.com,Manager,2
+2002-02,louise.kitchen@enron.com,President,2
+2002-02,louise.kitchen@enron.com,Employee,2
+2002-02,louise.kitchen@enron.com,unknown,3
+2002-02,louise.kitchen@enron.com,Director,1
+2002-02,louise.kitchen@enron.com,Vice President,4
+2002-02,louise.kitchen@enron.com,CEO,1
+2002-02,louise.kitchen@enron.com,Manager,2
+2002-02,louise.kitchen@enron.com,Trader,1
+2000-02,lynn.blair@enron.com,Vice President,2
+2000-03,lynn.blair@enron.com,Vice President,1
+2000-04,lynn.blair@enron.com,unknown,1
+2000-04,lynn.blair@enron.com,Vice President,1
+2000-05,lynn.blair@enron.com,unknown,1
+2000-05,lynn.blair@enron.com,Vice President,1
+2000-07,lynn.blair@enron.com,Vice President,1
+2000-08,lynn.blair@enron.com,Vice President,1
+2000-09,lynn.blair@enron.com,unknown,1
+2000-10,lynn.blair@enron.com,Vice President,1
+2000-11,lynn.blair@enron.com,Vice President,1
+2000-12,lynn.blair@enron.com,Employee,1
+2000-12,lynn.blair@enron.com,Vice President,1
+2001-01,lynn.blair@enron.com,Vice President,1
+2001-02,lynn.blair@enron.com,Vice President,1
+2001-03,lynn.blair@enron.com,unknown,1
+2001-03,lynn.blair@enron.com,Vice President,2
+2001-03,lynn.blair@enron.com,Director,1
+2001-04,lynn.blair@enron.com,unknown,1
+2001-05,lynn.blair@enron.com,Manager,1
+2001-05,lynn.blair@enron.com,Vice President,1
+2001-05,lynn.blair@enron.com,unknown,1
+2001-06,lynn.blair@enron.com,Employee,2
+2001-06,lynn.blair@enron.com,unknown,3
+2001-06,lynn.blair@enron.com,Vice President,1
+2001-07,lynn.blair@enron.com,Employee,1
+2001-07,lynn.blair@enron.com,Manager,1
+2001-07,lynn.blair@enron.com,unknown,3
+2001-07,lynn.blair@enron.com,Vice President,1
+2001-08,lynn.blair@enron.com,Employee,1
+2001-08,lynn.blair@enron.com,Manager,1
+2001-08,lynn.blair@enron.com,unknown,2
+2001-08,lynn.blair@enron.com,Vice President,1
+2001-09,lynn.blair@enron.com,Employee,1
+2001-09,lynn.blair@enron.com,unknown,2
+2001-09,lynn.blair@enron.com,Vice President,2
+2001-10,lynn.blair@enron.com,unknown,3
+2001-10,lynn.blair@enron.com,Vice President,3
+2001-10,lynn.blair@enron.com,Director,1
+2001-11,lynn.blair@enron.com,Employee,1
+2001-11,lynn.blair@enron.com,unknown,4
+2001-11,lynn.blair@enron.com,Vice President,2
+2001-12,lynn.blair@enron.com,President,1
+2001-12,lynn.blair@enron.com,Employee,2
+2001-12,lynn.blair@enron.com,Manager,2
+2001-12,lynn.blair@enron.com,unknown,4
+2001-12,lynn.blair@enron.com,Vice President,4
+2002-01,lynn.blair@enron.com,Manager,1
+2002-01,lynn.blair@enron.com,unknown,3
+2002-01,lynn.blair@enron.com,Vice President,1
+2002-01,lynn.blair@enron.com,Director,1
+2002-02,lynn.blair@enron.com,Employee,1
+2002-02,lynn.blair@enron.com,Manager,1
+2002-02,lynn.blair@enron.com,Vice President,1
+2002-02,lynn.blair@enron.com,unknown,4
+2000-02,marie.heard@enron.com,unknown,2
+2000-03,marie.heard@enron.com,Employee,1
+2000-03,marie.heard@enron.com,unknown,2
+2000-04,marie.heard@enron.com,Employee,1
+2000-04,marie.heard@enron.com,unknown,2
+2000-04,marie.heard@enron.com,Vice President,1
+2000-05,marie.heard@enron.com,unknown,2
+2000-06,marie.heard@enron.com,Employee,1
+2000-06,marie.heard@enron.com,unknown,1
+2000-07,marie.heard@enron.com,unknown,1
+2000-08,marie.heard@enron.com,unknown,1
+2000-09,marie.heard@enron.com,unknown,1
+2000-10,marie.heard@enron.com,Employee,1
+2000-10,marie.heard@enron.com,unknown,1
+2000-11,marie.heard@enron.com,unknown,1
+2000-12,marie.heard@enron.com,unknown,1
+2001-01,marie.heard@enron.com,Employee,2
+2001-01,marie.heard@enron.com,unknown,1
+2001-02,marie.heard@enron.com,unknown,1
+2001-03,marie.heard@enron.com,unknown,2
+2001-04,marie.heard@enron.com,unknown,1
+2001-05,marie.heard@enron.com,Employee,1
+2001-05,marie.heard@enron.com,unknown,2
+2001-06,marie.heard@enron.com,Employee,2
+2001-06,marie.heard@enron.com,unknown,3
+2001-07,marie.heard@enron.com,Employee,1
+2001-07,marie.heard@enron.com,unknown,3
+2001-07,marie.heard@enron.com,Manager,1
+2001-08,marie.heard@enron.com,Employee,1
+2001-08,marie.heard@enron.com,unknown,3
+2001-09,marie.heard@enron.com,Employee,1
+2001-09,marie.heard@enron.com,unknown,2
+2001-10,marie.heard@enron.com,Employee,2
+2001-10,marie.heard@enron.com,unknown,5
+2001-11,marie.heard@enron.com,Employee,2
+2001-11,marie.heard@enron.com,unknown,5
+2001-12,marie.heard@enron.com,President,1
+2001-12,marie.heard@enron.com,Employee,1
+2001-12,marie.heard@enron.com,unknown,1
+2002-02,marie.heard@enron.com,President,1
+2002-02,marie.heard@enron.com,Employee,1
+2002-02,marie.heard@enron.com,unknown,1
+2000-02,mark.taylor@enron.com,President,1
+2000-02,mark.taylor@enron.com,Employee,3
+2000-02,mark.taylor@enron.com,unknown,2
+2000-02,mark.taylor@enron.com,Vice President,1
+2000-03,mark.taylor@enron.com,President,1
+2000-03,mark.taylor@enron.com,Employee,1
+2000-03,mark.taylor@enron.com,unknown,3
+2000-03,mark.taylor@enron.com,Trader,1
+2000-04,mark.taylor@enron.com,President,1
+2000-04,mark.taylor@enron.com,Employee,1
+2000-04,mark.taylor@enron.com,unknown,3
+2000-05,mark.taylor@enron.com,President,1
+2000-05,mark.taylor@enron.com,Employee,1
+2000-05,mark.taylor@enron.com,unknown,2
+2000-05,mark.taylor@enron.com,Vice President,1
+2000-06,mark.taylor@enron.com,President,1
+2000-06,mark.taylor@enron.com,Employee,1
+2000-06,mark.taylor@enron.com,unknown,3
+2000-06,mark.taylor@enron.com,Vice President,1
+2000-06,mark.taylor@enron.com,Managing Director,1
+2000-07,mark.taylor@enron.com,President,1
+2000-07,mark.taylor@enron.com,Employee,1
+2000-07,mark.taylor@enron.com,unknown,2
+2000-07,mark.taylor@enron.com,Vice President,2
+2000-07,mark.taylor@enron.com,Managing Director,1
+2000-08,mark.taylor@enron.com,President,1
+2000-08,mark.taylor@enron.com,Employee,3
+2000-08,mark.taylor@enron.com,unknown,3
+2000-08,mark.taylor@enron.com,Vice President,1
+2000-09,mark.taylor@enron.com,President,1
+2000-09,mark.taylor@enron.com,Employee,3
+2000-09,mark.taylor@enron.com,unknown,3
+2000-09,mark.taylor@enron.com,Vice President,1
+2000-09,mark.taylor@enron.com,Managing Director,1
+2000-10,mark.taylor@enron.com,President,1
+2000-10,mark.taylor@enron.com,Employee,4
+2000-10,mark.taylor@enron.com,unknown,3
+2000-10,mark.taylor@enron.com,Vice President,2
+2000-11,mark.taylor@enron.com,Managing Director,1
+2000-11,mark.taylor@enron.com,Employee,7
+2000-11,mark.taylor@enron.com,unknown,4
+2000-11,mark.taylor@enron.com,Vice President,2
+2000-11,mark.taylor@enron.com,Director,1
+2000-12,mark.taylor@enron.com,Managing Director,1
+2000-12,mark.taylor@enron.com,Employee,5
+2000-12,mark.taylor@enron.com,unknown,3
+2000-12,mark.taylor@enron.com,Vice President,2
+2001-01,mark.taylor@enron.com,President,1
+2001-01,mark.taylor@enron.com,Employee,3
+2001-01,mark.taylor@enron.com,unknown,3
+2001-01,mark.taylor@enron.com,Vice President,2
+2001-02,mark.taylor@enron.com,President,1
+2001-02,mark.taylor@enron.com,Employee,7
+2001-02,mark.taylor@enron.com,unknown,5
+2001-02,mark.taylor@enron.com,Vice President,2
+2001-02,mark.taylor@enron.com,Managing Director,1
+2001-03,mark.taylor@enron.com,Employee,3
+2001-03,mark.taylor@enron.com,unknown,3
+2001-03,mark.taylor@enron.com,Vice President,2
+2001-04,mark.taylor@enron.com,President,1
+2001-04,mark.taylor@enron.com,Employee,4
+2001-04,mark.taylor@enron.com,unknown,3
+2001-04,mark.taylor@enron.com,Vice President,1
+2001-05,mark.taylor@enron.com,Managing Director,1
+2001-05,mark.taylor@enron.com,Employee,3
+2001-05,mark.taylor@enron.com,unknown,3
+2001-05,mark.taylor@enron.com,Vice President,1
+2001-05,mark.taylor@enron.com,CEO,1
+2001-06,mark.taylor@enron.com,President,1
+2001-06,mark.taylor@enron.com,Employee,2
+2001-06,mark.taylor@enron.com,unknown,3
+2001-06,mark.taylor@enron.com,Vice President,3
+2000-11,matt.motley@enron.com,Employee,1
+2001-01,matt.motley@enron.com,Employee,2
+2001-02,matt.motley@enron.com,Employee,1
+2001-03,matt.motley@enron.com,Employee,2
+2001-04,matt.motley@enron.com,Employee,1
+2001-04,matt.motley@enron.com,unknown,1
+2001-04,matt.motley@enron.com,Manager,1
+2001-05,matt.motley@enron.com,CEO,1
+2001-05,matt.motley@enron.com,Trader,1
+2001-06,matt.motley@enron.com,Trader,1
+2001-06,matt.motley@enron.com,Director,1
+2001-06,matt.motley@enron.com,Manager,1
+2001-06,matt.motley@enron.com,unknown,1
+2001-07,matt.motley@enron.com,Trader,2
+2001-08,matt.motley@enron.com,unknown,1
+2001-08,matt.motley@enron.com,Trader,1
+2001-09,matt.motley@enron.com,unknown,1
+2001-09,matt.motley@enron.com,Manager,1
+2001-10,matt.motley@enron.com,CEO,1
+2001-10,matt.motley@enron.com,Employee,1
+2001-10,matt.motley@enron.com,unknown,1
+2001-10,matt.motley@enron.com,Manager,1
+2001-10,matt.motley@enron.com,Trader,2
+2001-11,matt.motley@enron.com,Employee,1
+2001-11,matt.motley@enron.com,Manager,1
+2001-12,matt.motley@enron.com,President,1
+2002-01,matt.motley@enron.com,Trader,1
+2000-02,matthew.lenhart@enron.com,Trader,1
+2000-03,matthew.lenhart@enron.com,unknown,1
+2000-03,matthew.lenhart@enron.com,Trader,1
+2000-04,matthew.lenhart@enron.com,Trader,1
+2000-05,matthew.lenhart@enron.com,Trader,1
+2000-06,matthew.lenhart@enron.com,Employee,1
+2000-06,matthew.lenhart@enron.com,unknown,2
+2000-06,matthew.lenhart@enron.com,Vice President,1
+2000-06,matthew.lenhart@enron.com,Manager,2
+2000-06,matthew.lenhart@enron.com,Director,2
+2000-06,matthew.lenhart@enron.com,Trader,2
+2000-07,matthew.lenhart@enron.com,Employee,1
+2000-07,matthew.lenhart@enron.com,Director,1
+2000-07,matthew.lenhart@enron.com,unknown,1
+2000-07,matthew.lenhart@enron.com,Manager,2
+2000-07,matthew.lenhart@enron.com,Trader,2
+2000-08,matthew.lenhart@enron.com,Employee,2
+2000-08,matthew.lenhart@enron.com,unknown,1
+2000-08,matthew.lenhart@enron.com,Manager,2
+2000-08,matthew.lenhart@enron.com,Trader,2
+2000-09,matthew.lenhart@enron.com,Employee,1
+2000-09,matthew.lenhart@enron.com,Director,1
+2000-09,matthew.lenhart@enron.com,unknown,2
+2000-09,matthew.lenhart@enron.com,Manager,2
+2000-09,matthew.lenhart@enron.com,Trader,2
+2000-10,matthew.lenhart@enron.com,Employee,1
+2000-10,matthew.lenhart@enron.com,unknown,1
+2000-10,matthew.lenhart@enron.com,Manager,1
+2000-10,matthew.lenhart@enron.com,Trader,2
+2000-11,matthew.lenhart@enron.com,Employee,2
+2000-11,matthew.lenhart@enron.com,unknown,3
+2000-11,matthew.lenhart@enron.com,Manager,3
+2000-11,matthew.lenhart@enron.com,Trader,2
+2000-12,matthew.lenhart@enron.com,Employee,2
+2000-12,matthew.lenhart@enron.com,unknown,1
+2000-12,matthew.lenhart@enron.com,Manager,2
+2000-12,matthew.lenhart@enron.com,Trader,2
+2001-01,matthew.lenhart@enron.com,Employee,1
+2001-01,matthew.lenhart@enron.com,Director,1
+2001-01,matthew.lenhart@enron.com,unknown,3
+2001-01,matthew.lenhart@enron.com,Manager,1
+2001-01,matthew.lenhart@enron.com,Trader,2
+2001-02,matthew.lenhart@enron.com,Employee,2
+2001-02,matthew.lenhart@enron.com,unknown,4
+2001-02,matthew.lenhart@enron.com,Vice President,1
+2001-02,matthew.lenhart@enron.com,Manager,3
+2001-02,matthew.lenhart@enron.com,Director,2
+2001-02,matthew.lenhart@enron.com,Trader,2
+2001-03,matthew.lenhart@enron.com,Employee,1
+2001-03,matthew.lenhart@enron.com,unknown,5
+2001-03,matthew.lenhart@enron.com,Vice President,1
+2001-03,matthew.lenhart@enron.com,Trader,2
+2001-03,matthew.lenhart@enron.com,Manager,2
+2001-03,matthew.lenhart@enron.com,Director,2
+2001-04,matthew.lenhart@enron.com,Employee,1
+2001-04,matthew.lenhart@enron.com,unknown,4
+2001-04,matthew.lenhart@enron.com,Manager,1
+2001-04,matthew.lenhart@enron.com,Trader,2
+2001-05,matthew.lenhart@enron.com,CEO,1
+2001-05,matthew.lenhart@enron.com,Employee,2
+2001-05,matthew.lenhart@enron.com,Director,1
+2001-05,matthew.lenhart@enron.com,unknown,1
+2001-05,matthew.lenhart@enron.com,Manager,1
+2001-05,matthew.lenhart@enron.com,Trader,2
+2001-06,matthew.lenhart@enron.com,Trader,1
+2001-07,matthew.lenhart@enron.com,Manager,1
+2001-08,matthew.lenhart@enron.com,CEO,1
+2001-08,matthew.lenhart@enron.com,unknown,1
+2001-08,matthew.lenhart@enron.com,Manager,3
+2001-09,matthew.lenhart@enron.com,unknown,1
+2001-09,matthew.lenhart@enron.com,Manager,3
+2001-09,matthew.lenhart@enron.com,Trader,1
+2001-10,matthew.lenhart@enron.com,Employee,1
+2001-10,matthew.lenhart@enron.com,unknown,2
+2001-10,matthew.lenhart@enron.com,Director,1
+2001-10,matthew.lenhart@enron.com,Manager,3
+2001-10,matthew.lenhart@enron.com,Trader,2
+2001-11,matthew.lenhart@enron.com,Employee,1
+2001-11,matthew.lenhart@enron.com,Manager,1
+2001-11,matthew.lenhart@enron.com,unknown,1
+2001-11,matthew.lenhart@enron.com,Director,1
+2001-11,matthew.lenhart@enron.com,Trader,2
+2001-12,matthew.lenhart@enron.com,Employee,1
+2001-12,matthew.lenhart@enron.com,Manager,2
+2001-12,matthew.lenhart@enron.com,Trader,1
+2002-01,matthew.lenhart@enron.com,Employee,1
+2002-01,matthew.lenhart@enron.com,unknown,1
+2002-01,matthew.lenhart@enron.com,Manager,1
+2002-01,matthew.lenhart@enron.com,Trader,1
+2002-02,matthew.lenhart@enron.com,Employee,1
+2002-02,matthew.lenhart@enron.com,unknown,1
+2002-02,matthew.lenhart@enron.com,Trader,1
+2000-06,mike.grigsby@enron.com,President,1
+2000-06,mike.grigsby@enron.com,Employee,1
+2000-06,mike.grigsby@enron.com,unknown,1
+2000-06,mike.grigsby@enron.com,Vice President,1
+2000-07,mike.grigsby@enron.com,President,1
+2000-07,mike.grigsby@enron.com,Employee,2
+2000-07,mike.grigsby@enron.com,Vice President,2
+2000-07,mike.grigsby@enron.com,unknown,1
+2000-07,mike.grigsby@enron.com,Director,1
+2000-08,mike.grigsby@enron.com,Manager,1
+2000-08,mike.grigsby@enron.com,Director,1
+2000-08,mike.grigsby@enron.com,Vice President,3
+2000-09,mike.grigsby@enron.com,CEO,1
+2000-09,mike.grigsby@enron.com,Employee,2
+2000-09,mike.grigsby@enron.com,unknown,2
+2000-09,mike.grigsby@enron.com,Vice President,1
+2000-09,mike.grigsby@enron.com,Manager,1
+2000-09,mike.grigsby@enron.com,Director,2
+2000-09,mike.grigsby@enron.com,Trader,1
+2000-10,mike.grigsby@enron.com,Employee,2
+2000-10,mike.grigsby@enron.com,unknown,2
+2000-10,mike.grigsby@enron.com,Vice President,2
+2000-10,mike.grigsby@enron.com,Manager,2
+2000-10,mike.grigsby@enron.com,Director,2
+2000-10,mike.grigsby@enron.com,Trader,1
+2000-11,mike.grigsby@enron.com,CEO,1
+2000-11,mike.grigsby@enron.com,Employee,2
+2000-11,mike.grigsby@enron.com,unknown,2
+2000-11,mike.grigsby@enron.com,Vice President,1
+2000-11,mike.grigsby@enron.com,Manager,1
+2000-11,mike.grigsby@enron.com,Director,1
+2000-12,mike.grigsby@enron.com,Employee,2
+2000-12,mike.grigsby@enron.com,unknown,2
+2000-12,mike.grigsby@enron.com,Manager,1
+2000-12,mike.grigsby@enron.com,Vice President,1
+2000-12,mike.grigsby@enron.com,Director,2
+2000-12,mike.grigsby@enron.com,Trader,1
+2001-01,mike.grigsby@enron.com,President,1
+2001-01,mike.grigsby@enron.com,Employee,1
+2001-01,mike.grigsby@enron.com,unknown,3
+2001-01,mike.grigsby@enron.com,Director,2
+2001-01,mike.grigsby@enron.com,Vice President,5
+2001-01,mike.grigsby@enron.com,Manager,1
+2001-01,mike.grigsby@enron.com,Trader,1
+2001-02,mike.grigsby@enron.com,Vice President,1
+2001-02,mike.grigsby@enron.com,Employee,3
+2001-02,mike.grigsby@enron.com,Manager,1
+2001-02,mike.grigsby@enron.com,unknown,3
+2001-02,mike.grigsby@enron.com,Director,2
+2001-03,mike.grigsby@enron.com,CEO,1
+2001-03,mike.grigsby@enron.com,Employee,3
+2001-03,mike.grigsby@enron.com,unknown,4
+2001-03,mike.grigsby@enron.com,Vice President,3
+2001-03,mike.grigsby@enron.com,Managing Director,1
+2001-03,mike.grigsby@enron.com,Manager,2
+2001-03,mike.grigsby@enron.com,Director,3
+2001-03,mike.grigsby@enron.com,Trader,1
+2001-04,mike.grigsby@enron.com,CEO,1
+2001-04,mike.grigsby@enron.com,Employee,2
+2001-04,mike.grigsby@enron.com,unknown,3
+2001-04,mike.grigsby@enron.com,Director,3
+2001-04,mike.grigsby@enron.com,Vice President,2
+2001-04,mike.grigsby@enron.com,President,1
+2001-04,mike.grigsby@enron.com,Manager,2
+2001-04,mike.grigsby@enron.com,Trader,1
+2001-05,mike.grigsby@enron.com,CEO,1
+2001-05,mike.grigsby@enron.com,Employee,2
+2001-05,mike.grigsby@enron.com,unknown,2
+2001-05,mike.grigsby@enron.com,Vice President,2
+2001-05,mike.grigsby@enron.com,Manager,1
+2001-05,mike.grigsby@enron.com,Director,2
+2001-06,mike.grigsby@enron.com,CEO,1
+2001-06,mike.grigsby@enron.com,Director,1
+2001-07,mike.grigsby@enron.com,President,1
+2001-07,mike.grigsby@enron.com,Employee,3
+2001-07,mike.grigsby@enron.com,unknown,4
+2001-07,mike.grigsby@enron.com,Vice President,2
+2001-07,mike.grigsby@enron.com,Director,2
+2001-07,mike.grigsby@enron.com,Trader,1
+2001-08,mike.grigsby@enron.com,CEO,1
+2001-08,mike.grigsby@enron.com,Employee,2
+2001-08,mike.grigsby@enron.com,unknown,4
+2001-08,mike.grigsby@enron.com,Vice President,2
+2001-08,mike.grigsby@enron.com,Manager,2
+2001-08,mike.grigsby@enron.com,Director,2
+2001-08,mike.grigsby@enron.com,Trader,2
+2001-09,mike.grigsby@enron.com,CEO,1
+2001-09,mike.grigsby@enron.com,Employee,2
+2001-09,mike.grigsby@enron.com,unknown,3
+2001-09,mike.grigsby@enron.com,Vice President,1
+2001-09,mike.grigsby@enron.com,President,1
+2001-09,mike.grigsby@enron.com,Manager,2
+2001-09,mike.grigsby@enron.com,Director,3
+2001-09,mike.grigsby@enron.com,Trader,3
+2001-10,mike.grigsby@enron.com,CEO,1
+2001-10,mike.grigsby@enron.com,Employee,2
+2001-10,mike.grigsby@enron.com,unknown,3
+2001-10,mike.grigsby@enron.com,Vice President,2
+2001-10,mike.grigsby@enron.com,Manager,2
+2001-10,mike.grigsby@enron.com,Director,4
+2001-10,mike.grigsby@enron.com,Trader,2
+2001-11,mike.grigsby@enron.com,CEO,1
+2001-11,mike.grigsby@enron.com,Employee,4
+2001-11,mike.grigsby@enron.com,unknown,2
+2001-11,mike.grigsby@enron.com,Vice President,2
+2001-11,mike.grigsby@enron.com,President,1
+2001-11,mike.grigsby@enron.com,Manager,1
+2001-11,mike.grigsby@enron.com,Director,3
+2001-11,mike.grigsby@enron.com,Trader,1
+2001-12,mike.grigsby@enron.com,President,1
+2001-12,mike.grigsby@enron.com,Employee,3
+2001-12,mike.grigsby@enron.com,unknown,2
+2001-12,mike.grigsby@enron.com,Vice President,2
+2001-12,mike.grigsby@enron.com,CEO,1
+2001-12,mike.grigsby@enron.com,Manager,2
+2001-12,mike.grigsby@enron.com,Director,2
+2001-12,mike.grigsby@enron.com,Trader,1
+2002-01,mike.grigsby@enron.com,President,1
+2002-01,mike.grigsby@enron.com,Employee,3
+2002-01,mike.grigsby@enron.com,unknown,2
+2002-01,mike.grigsby@enron.com,Vice President,2
+2002-01,mike.grigsby@enron.com,CEO,1
+2002-01,mike.grigsby@enron.com,Director,2
+2002-01,mike.grigsby@enron.com,Trader,1
+2002-02,mike.grigsby@enron.com,President,1
+2002-02,mike.grigsby@enron.com,Employee,1
+2002-02,mike.grigsby@enron.com,unknown,1
+2000-02,mike.mcconnell@enron.com,President,1
+2000-03,mike.mcconnell@enron.com,President,1
+2000-04,mike.mcconnell@enron.com,unknown,1
+2000-05,mike.mcconnell@enron.com,CEO,1
+2000-06,mike.mcconnell@enron.com,President,2
+2000-06,mike.mcconnell@enron.com,Employee,1
+2000-07,mike.mcconnell@enron.com,President,3
+2000-07,mike.mcconnell@enron.com,unknown,1
+2000-08,mike.mcconnell@enron.com,President,2
+2000-08,mike.mcconnell@enron.com,Employee,1
+2000-08,mike.mcconnell@enron.com,Manager,1
+2000-08,mike.mcconnell@enron.com,CEO,1
+2000-09,mike.mcconnell@enron.com,President,1
+2000-09,mike.mcconnell@enron.com,Manager,1
+2000-09,mike.mcconnell@enron.com,unknown,1
+2000-09,mike.mcconnell@enron.com,Vice President,1
+2000-09,mike.mcconnell@enron.com,CEO,1
+2000-10,mike.mcconnell@enron.com,President,2
+2000-10,mike.mcconnell@enron.com,Employee,1
+2000-10,mike.mcconnell@enron.com,Vice President,1
+2000-10,mike.mcconnell@enron.com,unknown,1
+2000-10,mike.mcconnell@enron.com,Manager,1
+2000-11,mike.mcconnell@enron.com,President,1
+2000-11,mike.mcconnell@enron.com,Employee,1
+2000-11,mike.mcconnell@enron.com,unknown,1
+2000-11,mike.mcconnell@enron.com,Manager,2
+2000-11,mike.mcconnell@enron.com,CEO,2
+2000-12,mike.mcconnell@enron.com,President,4
+2000-12,mike.mcconnell@enron.com,Employee,1
+2000-12,mike.mcconnell@enron.com,Manager,2
+2000-12,mike.mcconnell@enron.com,Vice President,1
+2000-12,mike.mcconnell@enron.com,CEO,3
+2001-01,mike.mcconnell@enron.com,President,1
+2001-01,mike.mcconnell@enron.com,unknown,1
+2001-01,mike.mcconnell@enron.com,Manager,1
+2001-02,mike.mcconnell@enron.com,President,3
+2001-02,mike.mcconnell@enron.com,Vice President,1
+2001-02,mike.mcconnell@enron.com,Manager,1
+2001-02,mike.mcconnell@enron.com,unknown,1
+2001-03,mike.mcconnell@enron.com,unknown,1
+2001-04,mike.mcconnell@enron.com,President,4
+2001-04,mike.mcconnell@enron.com,unknown,1
+2001-04,mike.mcconnell@enron.com,Vice President,1
+2001-04,mike.mcconnell@enron.com,CEO,4
+2001-05,mike.mcconnell@enron.com,President,4
+2001-05,mike.mcconnell@enron.com,unknown,2
+2001-05,mike.mcconnell@enron.com,Vice President,2
+2001-05,mike.mcconnell@enron.com,Manager,1
+2001-05,mike.mcconnell@enron.com,CEO,2
+2001-06,mike.mcconnell@enron.com,President,1
+2001-06,mike.mcconnell@enron.com,unknown,1
+2001-06,mike.mcconnell@enron.com,CEO,1
+2001-08,mike.mcconnell@enron.com,President,1
+2001-08,mike.mcconnell@enron.com,unknown,1
+2001-08,mike.mcconnell@enron.com,CEO,1
+2001-09,mike.mcconnell@enron.com,President,1
+2001-09,mike.mcconnell@enron.com,unknown,2
+2001-10,mike.mcconnell@enron.com,CEO,3
+2001-10,mike.mcconnell@enron.com,Employee,1
+2001-10,mike.mcconnell@enron.com,In House Lawyer,1
+2001-10,mike.mcconnell@enron.com,President,4
+2001-10,mike.mcconnell@enron.com,Manager,2
+2001-10,mike.mcconnell@enron.com,unknown,2
+2001-11,mike.mcconnell@enron.com,unknown,2
+2001-11,mike.mcconnell@enron.com,Vice President,1
+2001-12,mike.mcconnell@enron.com,unknown,1
+2000-03,mike.swerzbin@enron.com,unknown,1
+2000-06,mike.swerzbin@enron.com,CEO,1
+2000-06,mike.swerzbin@enron.com,unknown,1
+2000-09,mike.swerzbin@enron.com,unknown,2
+2000-10,mike.swerzbin@enron.com,CEO,1
+2000-10,mike.swerzbin@enron.com,unknown,1
+2000-11,mike.swerzbin@enron.com,Employee,1
+2001-01,mike.swerzbin@enron.com,Employee,1
+2001-02,mike.swerzbin@enron.com,Employee,1
+2001-03,mike.swerzbin@enron.com,Employee,2
+2001-04,mike.swerzbin@enron.com,Employee,1
+2001-05,mike.swerzbin@enron.com,CEO,1
+2001-05,mike.swerzbin@enron.com,Director,1
+2001-06,mike.swerzbin@enron.com,Vice President,1
+2001-06,mike.swerzbin@enron.com,Trader,1
+2001-07,mike.swerzbin@enron.com,President,1
+2001-07,mike.swerzbin@enron.com,Employee,1
+2001-07,mike.swerzbin@enron.com,Vice President,1
+2001-07,mike.swerzbin@enron.com,Director,1
+2001-07,mike.swerzbin@enron.com,Trader,1
+2001-08,mike.swerzbin@enron.com,CEO,1
+2001-08,mike.swerzbin@enron.com,Director,1
+2001-08,mike.swerzbin@enron.com,Trader,1
+2001-09,mike.swerzbin@enron.com,President,1
+2001-09,mike.swerzbin@enron.com,Manager,1
+2001-09,mike.swerzbin@enron.com,Trader,1
+2001-10,mike.swerzbin@enron.com,Director,2
+2001-10,mike.swerzbin@enron.com,Trader,1
+2001-11,mike.swerzbin@enron.com,CEO,1
+2001-11,mike.swerzbin@enron.com,President,1
+2001-12,mike.swerzbin@enron.com,President,1
+2002-01,mike.swerzbin@enron.com,Director,1
+2002-01,mike.swerzbin@enron.com,Manager,1
+2002-02,mike.swerzbin@enron.com,President,1
+2002-02,mike.swerzbin@enron.com,unknown,1
+2000-03,monique.sanchez@enron.com,unknown,1
+2000-04,monique.sanchez@enron.com,unknown,1
+2000-06,monique.sanchez@enron.com,unknown,1
+2000-06,monique.sanchez@enron.com,Manager,1
+2000-07,monique.sanchez@enron.com,Manager,1
+2000-08,monique.sanchez@enron.com,unknown,1
+2000-09,monique.sanchez@enron.com,unknown,1
+2000-09,monique.sanchez@enron.com,Manager,1
+2000-10,monique.sanchez@enron.com,unknown,1
+2000-10,monique.sanchez@enron.com,Manager,1
+2000-11,monique.sanchez@enron.com,unknown,1
+2000-11,monique.sanchez@enron.com,Manager,1
+2000-12,monique.sanchez@enron.com,unknown,1
+2000-12,monique.sanchez@enron.com,Manager,1
+2001-01,monique.sanchez@enron.com,Employee,5
+2001-01,monique.sanchez@enron.com,unknown,6
+2001-01,monique.sanchez@enron.com,Manager,2
+2001-01,monique.sanchez@enron.com,Vice President,1
+2001-01,monique.sanchez@enron.com,Director,3
+2001-01,monique.sanchez@enron.com,Trader,2
+2001-02,monique.sanchez@enron.com,Employee,1
+2001-02,monique.sanchez@enron.com,Manager,1
+2001-03,monique.sanchez@enron.com,Employee,1
+2001-03,monique.sanchez@enron.com,unknown,1
+2001-03,monique.sanchez@enron.com,Manager,1
+2001-04,monique.sanchez@enron.com,Manager,1
+2001-04,monique.sanchez@enron.com,unknown,2
+2001-04,monique.sanchez@enron.com,Director,2
+2001-04,monique.sanchez@enron.com,Trader,1
+2001-05,monique.sanchez@enron.com,CEO,1
+2001-05,monique.sanchez@enron.com,unknown,2
+2001-05,monique.sanchez@enron.com,Manager,2
+2001-06,monique.sanchez@enron.com,Director,1
+2001-06,monique.sanchez@enron.com,Manager,1
+2001-06,monique.sanchez@enron.com,Trader,1
+2001-07,monique.sanchez@enron.com,unknown,1
+2001-07,monique.sanchez@enron.com,Manager,1
+2001-08,monique.sanchez@enron.com,CEO,1
+2001-08,monique.sanchez@enron.com,Manager,1
+2001-08,monique.sanchez@enron.com,Director,1
+2001-09,monique.sanchez@enron.com,Employee,1
+2001-09,monique.sanchez@enron.com,Manager,1
+2001-09,monique.sanchez@enron.com,Director,1
+2001-09,monique.sanchez@enron.com,Trader,1
+2001-10,monique.sanchez@enron.com,Employee,3
+2001-10,monique.sanchez@enron.com,unknown,3
+2001-10,monique.sanchez@enron.com,Vice President,2
+2001-10,monique.sanchez@enron.com,Trader,2
+2001-10,monique.sanchez@enron.com,Manager,2
+2001-10,monique.sanchez@enron.com,Director,4
+2000-02,phillip.love@enron.com,Trader,1
+2000-03,phillip.love@enron.com,Trader,1
+2000-04,phillip.love@enron.com,Trader,1
+2000-05,phillip.love@enron.com,Employee,1
+2000-05,phillip.love@enron.com,unknown,1
+2000-05,phillip.love@enron.com,Director,1
+2000-06,phillip.love@enron.com,Employee,3
+2000-06,phillip.love@enron.com,Trader,1
+2000-07,phillip.love@enron.com,Employee,3
+2000-07,phillip.love@enron.com,Director,1
+2000-07,phillip.love@enron.com,Trader,1
+2000-08,phillip.love@enron.com,Employee,4
+2000-08,phillip.love@enron.com,Director,2
+2000-08,phillip.love@enron.com,Trader,1
+2000-09,phillip.love@enron.com,Employee,2
+2000-09,phillip.love@enron.com,Trader,1
+2000-10,phillip.love@enron.com,Employee,3
+2000-10,phillip.love@enron.com,unknown,1
+2000-10,phillip.love@enron.com,Director,1
+2000-10,phillip.love@enron.com,Trader,1
+2000-11,phillip.love@enron.com,Employee,3
+2000-11,phillip.love@enron.com,unknown,1
+2000-11,phillip.love@enron.com,Trader,1
+2000-12,phillip.love@enron.com,Employee,2
+2000-12,phillip.love@enron.com,Trader,1
+2001-01,phillip.love@enron.com,Employee,4
+2001-01,phillip.love@enron.com,unknown,2
+2001-01,phillip.love@enron.com,Director,1
+2001-01,phillip.love@enron.com,Trader,2
+2001-02,phillip.love@enron.com,Employee,2
+2001-02,phillip.love@enron.com,unknown,1
+2001-02,phillip.love@enron.com,Trader,1
+2001-03,phillip.love@enron.com,Employee,4
+2001-03,phillip.love@enron.com,unknown,2
+2001-03,phillip.love@enron.com,Vice President,1
+2001-03,phillip.love@enron.com,Manager,1
+2001-03,phillip.love@enron.com,Director,1
+2001-03,phillip.love@enron.com,Trader,2
+2001-04,phillip.love@enron.com,Employee,3
+2001-04,phillip.love@enron.com,Manager,1
+2001-04,phillip.love@enron.com,unknown,1
+2001-04,phillip.love@enron.com,Vice President,1
+2001-04,phillip.love@enron.com,Trader,2
+2001-05,phillip.love@enron.com,Employee,1
+2000-02,randall.gay@enron.com,Manager,1
+2000-03,randall.gay@enron.com,unknown,2
+2000-03,randall.gay@enron.com,Director,1
+2000-04,randall.gay@enron.com,Employee,1
+2000-04,randall.gay@enron.com,unknown,1
+2000-05,randall.gay@enron.com,unknown,1
+2000-05,randall.gay@enron.com,Vice President,1
+2000-06,randall.gay@enron.com,unknown,1
+2000-06,randall.gay@enron.com,Vice President,1
+2000-07,randall.gay@enron.com,unknown,1
+2000-07,randall.gay@enron.com,Vice President,1
+2000-08,randall.gay@enron.com,Employee,2
+2000-08,randall.gay@enron.com,Vice President,1
+2000-09,randall.gay@enron.com,unknown,1
+2000-09,randall.gay@enron.com,Trader,1
+2000-10,randall.gay@enron.com,Employee,2
+2000-10,randall.gay@enron.com,Vice President,1
+2000-10,randall.gay@enron.com,Manager,2
+2000-10,randall.gay@enron.com,Trader,1
+2000-11,randall.gay@enron.com,Employee,3
+2000-11,randall.gay@enron.com,Manager,1
+2000-11,randall.gay@enron.com,Trader,1
+2000-12,randall.gay@enron.com,Manager,1
+2000-12,randall.gay@enron.com,Trader,1
+2001-01,randall.gay@enron.com,Employee,1
+2001-01,randall.gay@enron.com,unknown,1
+2001-01,randall.gay@enron.com,Manager,1
+2001-02,randall.gay@enron.com,Employee,1
+2001-02,randall.gay@enron.com,Manager,1
+2001-03,randall.gay@enron.com,Employee,1
+2001-03,randall.gay@enron.com,Manager,1
+2001-04,randall.gay@enron.com,Manager,1
+2001-04,randall.gay@enron.com,Trader,1
+2001-05,randall.gay@enron.com,CEO,1
+2000-02,richard.sanders@enron.com,President,2
+2000-02,richard.sanders@enron.com,Employee,1
+2000-02,richard.sanders@enron.com,unknown,1
+2000-02,richard.sanders@enron.com,Vice President,2
+2000-02,richard.sanders@enron.com,Managing Director,1
+2000-02,richard.sanders@enron.com,In House Lawyer,1
+2000-03,richard.sanders@enron.com,Managing Director,1
+2000-03,richard.sanders@enron.com,CEO,1
+2000-03,richard.sanders@enron.com,unknown,1
+2000-03,richard.sanders@enron.com,Vice President,1
+2000-03,richard.sanders@enron.com,President,1
+2000-04,richard.sanders@enron.com,unknown,1
+2000-05,richard.sanders@enron.com,In House Lawyer,1
+2000-05,richard.sanders@enron.com,unknown,1
+2000-06,richard.sanders@enron.com,Managing Director,1
+2000-06,richard.sanders@enron.com,Employee,2
+2000-06,richard.sanders@enron.com,Vice President,2
+2000-07,richard.sanders@enron.com,CEO,1
+2000-07,richard.sanders@enron.com,Employee,3
+2000-07,richard.sanders@enron.com,In House Lawyer,1
+2000-07,richard.sanders@enron.com,Vice President,3
+2000-07,richard.sanders@enron.com,Managing Director,1
+2000-08,richard.sanders@enron.com,Employee,3
+2000-08,richard.sanders@enron.com,unknown,2
+2000-08,richard.sanders@enron.com,Vice President,1
+2000-08,richard.sanders@enron.com,In House Lawyer,1
+2000-09,richard.sanders@enron.com,Employee,2
+2000-09,richard.sanders@enron.com,unknown,2
+2000-09,richard.sanders@enron.com,Vice President,2
+2000-09,richard.sanders@enron.com,In House Lawyer,1
+2000-10,richard.sanders@enron.com,President,1
+2000-10,richard.sanders@enron.com,Employee,6
+2000-10,richard.sanders@enron.com,unknown,2
+2000-10,richard.sanders@enron.com,Vice President,5
+2000-10,richard.sanders@enron.com,CEO,2
+2000-10,richard.sanders@enron.com,Managing Director,1
+2000-10,richard.sanders@enron.com,In House Lawyer,1
+2000-11,richard.sanders@enron.com,Managing Director,1
+2000-11,richard.sanders@enron.com,Employee,4
+2000-11,richard.sanders@enron.com,unknown,1
+2000-11,richard.sanders@enron.com,Vice President,3
+2000-12,richard.sanders@enron.com,Managing Director,1
+2000-12,richard.sanders@enron.com,Employee,4
+2000-12,richard.sanders@enron.com,In House Lawyer,1
+2000-12,richard.sanders@enron.com,Vice President,3
+2000-12,richard.sanders@enron.com,unknown,1
+2001-01,richard.sanders@enron.com,Managing Director,1
+2001-01,richard.sanders@enron.com,Employee,4
+2001-01,richard.sanders@enron.com,unknown,1
+2001-01,richard.sanders@enron.com,Vice President,2
+2001-01,richard.sanders@enron.com,In House Lawyer,1
+2001-02,richard.sanders@enron.com,Employee,4
+2001-02,richard.sanders@enron.com,unknown,1
+2001-02,richard.sanders@enron.com,Vice President,2
+2001-03,richard.sanders@enron.com,Managing Director,1
+2001-03,richard.sanders@enron.com,Employee,4
+2001-03,richard.sanders@enron.com,In House Lawyer,1
+2001-03,richard.sanders@enron.com,Vice President,3
+2001-03,richard.sanders@enron.com,unknown,1
+2001-04,richard.sanders@enron.com,CEO,2
+2001-04,richard.sanders@enron.com,Employee,2
+2001-04,richard.sanders@enron.com,In House Lawyer,1
+2001-04,richard.sanders@enron.com,Vice President,3
+2001-04,richard.sanders@enron.com,President,2
+2001-04,richard.sanders@enron.com,Managing Director,1
+2001-04,richard.sanders@enron.com,Manager,1
+2001-04,richard.sanders@enron.com,unknown,1
+2001-05,richard.sanders@enron.com,Managing Director,1
+2001-05,richard.sanders@enron.com,Employee,3
+2001-05,richard.sanders@enron.com,In House Lawyer,1
+2001-05,richard.sanders@enron.com,Vice President,4
+2001-05,richard.sanders@enron.com,President,1
+2001-06,richard.sanders@enron.com,Employee,2
+2001-06,richard.sanders@enron.com,Vice President,1
+2001-07,richard.sanders@enron.com,Employee,1
+2001-07,richard.sanders@enron.com,Manager,2
+2001-07,richard.sanders@enron.com,Vice President,5
+2001-07,richard.sanders@enron.com,Trader,1
+2000-02,richard.shapiro@enron.com,Employee,1
+2000-02,richard.shapiro@enron.com,Vice President,2
+2000-03,richard.shapiro@enron.com,Vice President,2
+2000-04,richard.shapiro@enron.com,Vice President,3
+2000-05,richard.shapiro@enron.com,CEO,2
+2000-05,richard.shapiro@enron.com,Vice President,2
+2000-06,richard.shapiro@enron.com,CEO,2
+2000-06,richard.shapiro@enron.com,Vice President,4
+2000-07,richard.shapiro@enron.com,CEO,2
+2000-07,richard.shapiro@enron.com,Employee,1
+2000-07,richard.shapiro@enron.com,Vice President,4
+2000-08,richard.shapiro@enron.com,CEO,2
+2000-08,richard.shapiro@enron.com,Employee,1
+2000-08,richard.shapiro@enron.com,Vice President,2
+2000-09,richard.shapiro@enron.com,Employee,1
+2000-09,richard.shapiro@enron.com,Vice President,3
+2000-10,richard.shapiro@enron.com,CEO,1
+2000-10,richard.shapiro@enron.com,Employee,1
+2000-10,richard.shapiro@enron.com,Vice President,4
+2000-11,richard.shapiro@enron.com,Employee,1
+2000-11,richard.shapiro@enron.com,Vice President,2
+2000-12,richard.shapiro@enron.com,President,1
+2000-12,richard.shapiro@enron.com,Employee,1
+2000-12,richard.shapiro@enron.com,Vice President,3
+2000-12,richard.shapiro@enron.com,CEO,2
+2001-01,richard.shapiro@enron.com,Employee,1
+2001-01,richard.shapiro@enron.com,Vice President,3
+2001-02,richard.shapiro@enron.com,Employee,1
+2001-02,richard.shapiro@enron.com,Vice President,4
+2001-03,richard.shapiro@enron.com,CEO,1
+2001-03,richard.shapiro@enron.com,Employee,1
+2001-03,richard.shapiro@enron.com,Vice President,4
+2001-04,richard.shapiro@enron.com,CEO,2
+2001-04,richard.shapiro@enron.com,Employee,1
+2001-04,richard.shapiro@enron.com,Vice President,4
+2001-04,richard.shapiro@enron.com,President,2
+2001-05,richard.shapiro@enron.com,President,4
+2001-05,richard.shapiro@enron.com,Employee,1
+2001-05,richard.shapiro@enron.com,unknown,1
+2001-05,richard.shapiro@enron.com,Vice President,3
+2001-05,richard.shapiro@enron.com,CEO,2
+2001-06,richard.shapiro@enron.com,Employee,1
+2001-06,richard.shapiro@enron.com,Vice President,2
+2001-07,richard.shapiro@enron.com,CEO,1
+2001-07,richard.shapiro@enron.com,Employee,1
+2001-07,richard.shapiro@enron.com,unknown,2
+2001-07,richard.shapiro@enron.com,Vice President,4
+2001-07,richard.shapiro@enron.com,President,2
+2001-08,richard.shapiro@enron.com,CEO,2
+2001-08,richard.shapiro@enron.com,Employee,1
+2001-08,richard.shapiro@enron.com,Vice President,1
+2001-09,richard.shapiro@enron.com,President,2
+2001-09,richard.shapiro@enron.com,Employee,1
+2001-09,richard.shapiro@enron.com,unknown,1
+2001-09,richard.shapiro@enron.com,Vice President,1
+2001-09,richard.shapiro@enron.com,CEO,3
+2001-10,richard.shapiro@enron.com,President,2
+2001-10,richard.shapiro@enron.com,Employee,1
+2001-10,richard.shapiro@enron.com,unknown,1
+2001-10,richard.shapiro@enron.com,Vice President,1
+2001-10,richard.shapiro@enron.com,CEO,3
+2001-11,richard.shapiro@enron.com,President,3
+2001-11,richard.shapiro@enron.com,Employee,1
+2001-11,richard.shapiro@enron.com,Vice President,1
+2001-11,richard.shapiro@enron.com,CEO,2
+2001-12,richard.shapiro@enron.com,Employee,1
+2002-01,richard.shapiro@enron.com,Employee,1
+2000-03,rick.buy@enron.com,President,1
+2000-03,rick.buy@enron.com,Employee,1
+2000-03,rick.buy@enron.com,Manager,1
+2000-04,rick.buy@enron.com,Vice President,1
+2000-04,rick.buy@enron.com,Manager,1
+2000-05,rick.buy@enron.com,President,1
+2000-05,rick.buy@enron.com,Manager,1
+2000-05,rick.buy@enron.com,CEO,1
+2000-06,rick.buy@enron.com,CEO,1
+2000-06,rick.buy@enron.com,President,1
+2000-07,rick.buy@enron.com,CEO,1
+2000-07,rick.buy@enron.com,Manager,1
+2000-08,rick.buy@enron.com,CEO,2
+2000-08,rick.buy@enron.com,President,1
+2000-09,rick.buy@enron.com,CEO,2
+2000-09,rick.buy@enron.com,President,1
+2000-10,rick.buy@enron.com,CEO,2
+2000-10,rick.buy@enron.com,unknown,1
+2000-10,rick.buy@enron.com,Manager,1
+2000-10,rick.buy@enron.com,President,1
+2000-11,rick.buy@enron.com,CEO,1
+2000-11,rick.buy@enron.com,Vice President,1
+2000-11,rick.buy@enron.com,unknown,1
+2000-11,rick.buy@enron.com,Manager,1
+2000-12,rick.buy@enron.com,CEO,2
+2000-12,rick.buy@enron.com,Employee,1
+2000-12,rick.buy@enron.com,Manager,1
+2000-12,rick.buy@enron.com,President,1
+2001-01,rick.buy@enron.com,CEO,2
+2001-01,rick.buy@enron.com,President,1
+2001-01,rick.buy@enron.com,Vice President,1
+2001-01,rick.buy@enron.com,Manager,2
+2001-01,rick.buy@enron.com,unknown,1
+2001-02,rick.buy@enron.com,CEO,1
+2001-02,rick.buy@enron.com,President,1
+2001-03,rick.buy@enron.com,President,1
+2001-03,rick.buy@enron.com,Vice President,2
+2001-03,rick.buy@enron.com,CEO,1
+2001-04,rick.buy@enron.com,CEO,3
+2001-04,rick.buy@enron.com,Employee,1
+2001-04,rick.buy@enron.com,Vice President,2
+2001-05,rick.buy@enron.com,President,3
+2001-05,rick.buy@enron.com,unknown,1
+2001-05,rick.buy@enron.com,CEO,3
+2001-06,rick.buy@enron.com,President,1
+2001-07,rick.buy@enron.com,President,1
+2001-07,rick.buy@enron.com,unknown,1
+2001-07,rick.buy@enron.com,Manager,1
+2001-07,rick.buy@enron.com,CEO,1
+2001-08,rick.buy@enron.com,CEO,3
+2001-08,rick.buy@enron.com,Employee,1
+2001-08,rick.buy@enron.com,unknown,1
+2001-08,rick.buy@enron.com,President,1
+2001-09,rick.buy@enron.com,Employee,1
+2001-09,rick.buy@enron.com,unknown,1
+2001-10,rick.buy@enron.com,CEO,2
+2001-10,rick.buy@enron.com,Employee,1
+2001-10,rick.buy@enron.com,Manager,1
+2001-10,rick.buy@enron.com,President,2
+2001-10,rick.buy@enron.com,Director,1
+2001-10,rick.buy@enron.com,unknown,1
+2001-11,rick.buy@enron.com,President,1
+2001-11,rick.buy@enron.com,unknown,2
+2001-11,rick.buy@enron.com,Manager,1
+2001-11,rick.buy@enron.com,CEO,1
+2001-12,rick.buy@enron.com,President,1
+2001-12,rick.buy@enron.com,unknown,1
+2002-01,rick.buy@enron.com,President,1
+2002-01,rick.buy@enron.com,Vice President,1
+2000-02,rod.hayslett@enron.com,President,1
+2000-02,rod.hayslett@enron.com,Vice President,1
+2000-03,rod.hayslett@enron.com,Vice President,1
+2000-04,rod.hayslett@enron.com,President,1
+2000-04,rod.hayslett@enron.com,Vice President,2
+2000-05,rod.hayslett@enron.com,Employee,1
+2000-05,rod.hayslett@enron.com,Vice President,2
+2000-06,rod.hayslett@enron.com,Employee,1
+2000-06,rod.hayslett@enron.com,unknown,1
+2000-06,rod.hayslett@enron.com,Vice President,1
+2000-07,rod.hayslett@enron.com,Vice President,1
+2000-08,rod.hayslett@enron.com,President,1
+2000-08,rod.hayslett@enron.com,Vice President,1
+2000-10,rod.hayslett@enron.com,Employee,1
+2000-10,rod.hayslett@enron.com,Vice President,2
+2000-11,rod.hayslett@enron.com,President,1
+2000-11,rod.hayslett@enron.com,Employee,1
+2000-11,rod.hayslett@enron.com,Vice President,1
+2000-12,rod.hayslett@enron.com,President,1
+2000-12,rod.hayslett@enron.com,Employee,1
+2000-12,rod.hayslett@enron.com,Vice President,2
+2001-01,rod.hayslett@enron.com,Employee,1
+2001-02,rod.hayslett@enron.com,Employee,1
+2001-02,rod.hayslett@enron.com,Vice President,2
+2001-03,rod.hayslett@enron.com,Employee,1
+2001-03,rod.hayslett@enron.com,Vice President,2
+2001-04,rod.hayslett@enron.com,CEO,2
+2001-04,rod.hayslett@enron.com,Employee,1
+2001-04,rod.hayslett@enron.com,President,1
+2001-05,rod.hayslett@enron.com,President,1
+2001-05,rod.hayslett@enron.com,unknown,1
+2001-05,rod.hayslett@enron.com,Vice President,1
+2001-06,rod.hayslett@enron.com,President,1
+2001-06,rod.hayslett@enron.com,Vice President,1
+2001-07,rod.hayslett@enron.com,President,1
+2001-07,rod.hayslett@enron.com,Employee,1
+2001-07,rod.hayslett@enron.com,unknown,1
+2001-07,rod.hayslett@enron.com,Vice President,3
+2001-08,rod.hayslett@enron.com,CEO,1
+2001-08,rod.hayslett@enron.com,Employee,1
+2001-08,rod.hayslett@enron.com,Vice President,2
+2001-08,rod.hayslett@enron.com,President,1
+2001-09,rod.hayslett@enron.com,Employee,1
+2001-09,rod.hayslett@enron.com,unknown,2
+2001-09,rod.hayslett@enron.com,Vice President,2
+2001-10,rod.hayslett@enron.com,President,1
+2001-10,rod.hayslett@enron.com,Employee,2
+2001-10,rod.hayslett@enron.com,Vice President,4
+2001-10,rod.hayslett@enron.com,Manager,1
+2001-10,rod.hayslett@enron.com,unknown,1
+2001-11,rod.hayslett@enron.com,President,1
+2001-11,rod.hayslett@enron.com,Employee,3
+2001-11,rod.hayslett@enron.com,Director,1
+2001-11,rod.hayslett@enron.com,Vice President,4
+2001-11,rod.hayslett@enron.com,unknown,1
+2001-12,rod.hayslett@enron.com,President,1
+2001-12,rod.hayslett@enron.com,Employee,1
+2001-12,rod.hayslett@enron.com,unknown,3
+2001-12,rod.hayslett@enron.com,Vice President,3
+2002-01,rod.hayslett@enron.com,unknown,1
+2002-02,rod.hayslett@enron.com,President,1
+2002-02,rod.hayslett@enron.com,Employee,2
+2002-02,rod.hayslett@enron.com,Manager,1
+2002-02,rod.hayslett@enron.com,Vice President,1
+2000-11,ryan.slinger@enron.com,Manager,1
+2001-02,ryan.slinger@enron.com,Employee,1
+2001-03,ryan.slinger@enron.com,Employee,1
+2001-04,ryan.slinger@enron.com,Employee,1
+2001-05,ryan.slinger@enron.com,Trader,1
+2001-06,ryan.slinger@enron.com,Trader,1
+2001-07,ryan.slinger@enron.com,Trader,1
+2001-08,ryan.slinger@enron.com,Trader,1
+2001-09,ryan.slinger@enron.com,Employee,1
+2001-09,ryan.slinger@enron.com,Trader,1
+2001-10,ryan.slinger@enron.com,Employee,2
+2001-10,ryan.slinger@enron.com,Trader,3
+2001-11,ryan.slinger@enron.com,Employee,1
+2001-11,ryan.slinger@enron.com,Trader,1
+2001-12,ryan.slinger@enron.com,Employee,1
+2001-12,ryan.slinger@enron.com,Trader,1
+2002-01,ryan.slinger@enron.com,Employee,2
+2002-01,ryan.slinger@enron.com,Trader,3
+2002-02,ryan.slinger@enron.com,unknown,1
+2002-02,ryan.slinger@enron.com,Trader,1
+2000-02,sally.beck@enron.com,President,1
+2000-02,sally.beck@enron.com,unknown,1
+2000-03,sally.beck@enron.com,President,1
+2000-03,sally.beck@enron.com,Manager,1
+2000-03,sally.beck@enron.com,CEO,1
+2000-04,sally.beck@enron.com,CEO,2
+2000-05,sally.beck@enron.com,CEO,2
+2000-05,sally.beck@enron.com,Vice President,1
+2000-05,sally.beck@enron.com,President,1
+2000-06,sally.beck@enron.com,CEO,3
+2000-06,sally.beck@enron.com,Manager,1
+2000-06,sally.beck@enron.com,President,3
+2000-07,sally.beck@enron.com,CEO,2
+2000-07,sally.beck@enron.com,President,1
+2000-08,sally.beck@enron.com,CEO,2
+2000-08,sally.beck@enron.com,Employee,2
+2000-08,sally.beck@enron.com,unknown,4
+2000-08,sally.beck@enron.com,Manager,2
+2000-08,sally.beck@enron.com,President,3
+2000-09,sally.beck@enron.com,CEO,2
+2000-09,sally.beck@enron.com,unknown,1
+2000-10,sally.beck@enron.com,CEO,3
+2000-10,sally.beck@enron.com,President,2
+2000-11,sally.beck@enron.com,CEO,2
+2000-11,sally.beck@enron.com,Employee,1
+2000-11,sally.beck@enron.com,unknown,1
+2000-11,sally.beck@enron.com,Vice President,2
+2000-11,sally.beck@enron.com,President,2
+2000-11,sally.beck@enron.com,Manager,1
+2000-12,sally.beck@enron.com,CEO,3
+2000-12,sally.beck@enron.com,Employee,2
+2000-12,sally.beck@enron.com,Manager,1
+2000-12,sally.beck@enron.com,President,4
+2001-01,sally.beck@enron.com,President,1
+2001-01,sally.beck@enron.com,Employee,4
+2001-01,sally.beck@enron.com,unknown,1
+2001-01,sally.beck@enron.com,Vice President,1
+2001-01,sally.beck@enron.com,CEO,2
+2001-01,sally.beck@enron.com,Manager,3
+2001-02,sally.beck@enron.com,CEO,2
+2001-02,sally.beck@enron.com,Employee,2
+2001-02,sally.beck@enron.com,Director,1
+2001-02,sally.beck@enron.com,President,2
+2001-03,sally.beck@enron.com,President,3
+2001-03,sally.beck@enron.com,CEO,1
+2001-04,sally.beck@enron.com,President,1
+2001-04,sally.beck@enron.com,Employee,1
+2001-04,sally.beck@enron.com,Vice President,1
+2001-04,sally.beck@enron.com,Manager,1
+2001-04,sally.beck@enron.com,CEO,1
+2001-05,sally.beck@enron.com,CEO,1
+2001-05,sally.beck@enron.com,Vice President,1
+2001-06,sally.beck@enron.com,CEO,2
+2001-06,sally.beck@enron.com,President,1
+2001-07,sally.beck@enron.com,CEO,1
+2001-07,sally.beck@enron.com,President,1
+2001-08,sally.beck@enron.com,CEO,2
+2001-08,sally.beck@enron.com,Employee,2
+2001-08,sally.beck@enron.com,Manager,1
+2001-08,sally.beck@enron.com,President,1
+2001-09,sally.beck@enron.com,President,1
+2001-09,sally.beck@enron.com,Director,1
+2001-09,sally.beck@enron.com,Manager,1
+2001-09,sally.beck@enron.com,unknown,1
+2001-10,sally.beck@enron.com,CEO,3
+2001-10,sally.beck@enron.com,Employee,8
+2001-10,sally.beck@enron.com,Director,7
+2001-10,sally.beck@enron.com,Vice President,5
+2001-10,sally.beck@enron.com,President,4
+2001-10,sally.beck@enron.com,In House Lawyer,1
+2001-10,sally.beck@enron.com,Trader,6
+2001-10,sally.beck@enron.com,Manager,5
+2001-10,sally.beck@enron.com,unknown,7
+2001-11,sally.beck@enron.com,President,2
+2001-11,sally.beck@enron.com,Employee,2
+2001-11,sally.beck@enron.com,unknown,2
+2001-11,sally.beck@enron.com,Vice President,2
+2001-11,sally.beck@enron.com,Manager,1
+2001-11,sally.beck@enron.com,Director,1
+2001-12,sally.beck@enron.com,CEO,1
+2001-12,sally.beck@enron.com,Employee,1
+2001-12,sally.beck@enron.com,President,1
+2002-01,sally.beck@enron.com,CEO,1
+2002-01,sally.beck@enron.com,Employee,1
+2002-01,sally.beck@enron.com,unknown,1
+2002-01,sally.beck@enron.com,Vice President,1
+2002-01,sally.beck@enron.com,President,2
+2002-01,sally.beck@enron.com,Director,1
+2002-02,sally.beck@enron.com,President,1
+2002-02,sally.beck@enron.com,Employee,1
+2002-02,sally.beck@enron.com,Director,1
+2000-02,sara.shackleton@enron.com,Employee,1
+2000-02,sara.shackleton@enron.com,unknown,2
+2000-03,sara.shackleton@enron.com,Employee,1
+2000-03,sara.shackleton@enron.com,unknown,2
+2000-03,sara.shackleton@enron.com,Vice President,1
+2000-04,sara.shackleton@enron.com,Employee,2
+2000-04,sara.shackleton@enron.com,unknown,2
+2000-05,sara.shackleton@enron.com,Employee,1
+2000-05,sara.shackleton@enron.com,unknown,1
+2000-05,sara.shackleton@enron.com,Manager,1
+2000-06,sara.shackleton@enron.com,Employee,1
+2000-06,sara.shackleton@enron.com,unknown,2
+2000-06,sara.shackleton@enron.com,Director,2
+2000-07,sara.shackleton@enron.com,Employee,1
+2000-07,sara.shackleton@enron.com,unknown,1
+2000-08,sara.shackleton@enron.com,Employee,3
+2000-08,sara.shackleton@enron.com,unknown,1
+2000-09,sara.shackleton@enron.com,Employee,3
+2000-09,sara.shackleton@enron.com,unknown,2
+2000-10,sara.shackleton@enron.com,Employee,3
+2000-10,sara.shackleton@enron.com,unknown,2
+2000-11,sara.shackleton@enron.com,Employee,2
+2000-11,sara.shackleton@enron.com,unknown,1
+2000-11,sara.shackleton@enron.com,Vice President,1
+2000-12,sara.shackleton@enron.com,Employee,2
+2000-12,sara.shackleton@enron.com,Manager,1
+2000-12,sara.shackleton@enron.com,unknown,2
+2000-12,sara.shackleton@enron.com,Vice President,1
+2001-01,sara.shackleton@enron.com,Employee,2
+2001-01,sara.shackleton@enron.com,unknown,2
+2001-01,sara.shackleton@enron.com,Vice President,1
+2001-02,sara.shackleton@enron.com,Employee,2
+2001-02,sara.shackleton@enron.com,unknown,3
+2001-02,sara.shackleton@enron.com,Vice President,1
+2001-03,sara.shackleton@enron.com,Employee,2
+2001-03,sara.shackleton@enron.com,unknown,5
+2001-03,sara.shackleton@enron.com,Manager,1
+2001-04,sara.shackleton@enron.com,Managing Director,1
+2001-04,sara.shackleton@enron.com,Employee,3
+2001-04,sara.shackleton@enron.com,unknown,3
+2001-04,sara.shackleton@enron.com,Manager,1
+2001-05,sara.shackleton@enron.com,Employee,2
+2001-05,sara.shackleton@enron.com,unknown,3
+2001-06,sara.shackleton@enron.com,Managing Director,1
+2001-06,sara.shackleton@enron.com,Employee,2
+2001-06,sara.shackleton@enron.com,unknown,3
+2001-06,sara.shackleton@enron.com,Trader,1
+2001-07,sara.shackleton@enron.com,unknown,1
+2001-08,sara.shackleton@enron.com,Employee,1
+2001-08,sara.shackleton@enron.com,unknown,2
+2001-09,sara.shackleton@enron.com,Employee,1
+2001-09,sara.shackleton@enron.com,unknown,2
+2001-10,sara.shackleton@enron.com,Employee,1
+2001-10,sara.shackleton@enron.com,unknown,2
+2001-10,sara.shackleton@enron.com,Manager,1
+2001-11,sara.shackleton@enron.com,President,1
+2001-11,sara.shackleton@enron.com,Employee,2
+2001-11,sara.shackleton@enron.com,unknown,2
+2001-12,sara.shackleton@enron.com,Employee,1
+2001-12,sara.shackleton@enron.com,unknown,1
+2002-01,sara.shackleton@enron.com,Employee,2
+2002-01,sara.shackleton@enron.com,unknown,1
+2002-02,sara.shackleton@enron.com,Employee,1
+2002-02,sara.shackleton@enron.com,unknown,1
+2000-02,scott.hendrickson@enron.com,Employee,1
+2000-03,scott.hendrickson@enron.com,Employee,1
+2000-04,scott.hendrickson@enron.com,Employee,1
+2000-05,scott.hendrickson@enron.com,Employee,1
+2000-06,scott.hendrickson@enron.com,Employee,2
+2000-07,scott.hendrickson@enron.com,Employee,1
+2000-08,scott.hendrickson@enron.com,Employee,1
+2000-08,scott.hendrickson@enron.com,Vice President,1
+2000-09,scott.hendrickson@enron.com,Employee,1
+2000-10,scott.hendrickson@enron.com,Employee,1
+2000-10,scott.hendrickson@enron.com,Vice President,1
+2000-11,scott.hendrickson@enron.com,Employee,1
+2000-12,scott.hendrickson@enron.com,Employee,1
+2000-12,scott.hendrickson@enron.com,unknown,1
+2001-01,scott.hendrickson@enron.com,Employee,1
+2001-02,scott.hendrickson@enron.com,Employee,1
+2001-03,scott.hendrickson@enron.com,Employee,1
+2001-04,scott.hendrickson@enron.com,Employee,1
+2001-04,scott.hendrickson@enron.com,Vice President,1
+2001-05,scott.hendrickson@enron.com,CEO,1
+2001-05,scott.hendrickson@enron.com,Employee,1
+2001-05,scott.hendrickson@enron.com,unknown,1
+2001-05,scott.hendrickson@enron.com,Vice President,1
+2001-06,scott.hendrickson@enron.com,Employee,2
+2001-06,scott.hendrickson@enron.com,Vice President,1
+2001-10,scott.hendrickson@enron.com,Employee,1
+2000-02,scott.neal@enron.com,President,1
+2000-02,scott.neal@enron.com,Employee,1
+2000-02,scott.neal@enron.com,unknown,1
+2000-03,scott.neal@enron.com,Employee,2
+2000-04,scott.neal@enron.com,Employee,1
+2000-05,scott.neal@enron.com,CEO,1
+2000-06,scott.neal@enron.com,President,1
+2000-06,scott.neal@enron.com,Employee,2
+2000-06,scott.neal@enron.com,Director,1
+2000-06,scott.neal@enron.com,CEO,1
+2000-07,scott.neal@enron.com,President,1
+2000-07,scott.neal@enron.com,Employee,1
+2000-07,scott.neal@enron.com,unknown,1
+2000-07,scott.neal@enron.com,Vice President,3
+2000-07,scott.neal@enron.com,CEO,1
+2000-08,scott.neal@enron.com,CEO,2
+2000-08,scott.neal@enron.com,Employee,5
+2000-08,scott.neal@enron.com,unknown,3
+2000-08,scott.neal@enron.com,Vice President,3
+2000-08,scott.neal@enron.com,President,1
+2000-08,scott.neal@enron.com,Manager,3
+2000-08,scott.neal@enron.com,Director,4
+2000-08,scott.neal@enron.com,Trader,1
+2000-09,scott.neal@enron.com,Employee,1
+2000-09,scott.neal@enron.com,unknown,2
+2000-09,scott.neal@enron.com,Manager,1
+2000-09,scott.neal@enron.com,Vice President,3
+2000-09,scott.neal@enron.com,Director,1
+2000-09,scott.neal@enron.com,Trader,1
+2000-10,scott.neal@enron.com,CEO,2
+2000-10,scott.neal@enron.com,Employee,5
+2000-10,scott.neal@enron.com,unknown,2
+2000-10,scott.neal@enron.com,Vice President,3
+2000-10,scott.neal@enron.com,Manager,1
+2000-10,scott.neal@enron.com,Director,3
+2000-11,scott.neal@enron.com,CEO,2
+2000-11,scott.neal@enron.com,Employee,1
+2000-11,scott.neal@enron.com,Manager,1
+2000-11,scott.neal@enron.com,Trader,1
+2000-12,scott.neal@enron.com,CEO,1
+2001-01,scott.neal@enron.com,CEO,1
+2001-01,scott.neal@enron.com,Employee,2
+2001-01,scott.neal@enron.com,unknown,1
+2001-01,scott.neal@enron.com,Director,2
+2001-01,scott.neal@enron.com,Vice President,3
+2001-01,scott.neal@enron.com,President,1
+2001-01,scott.neal@enron.com,Manager,1
+2001-01,scott.neal@enron.com,Trader,1
+2001-02,scott.neal@enron.com,Vice President,1
+2001-02,scott.neal@enron.com,Employee,5
+2001-02,scott.neal@enron.com,unknown,1
+2001-02,scott.neal@enron.com,Director,1
+2001-03,scott.neal@enron.com,CEO,1
+2001-03,scott.neal@enron.com,Employee,4
+2001-03,scott.neal@enron.com,unknown,1
+2001-03,scott.neal@enron.com,President,1
+2001-04,scott.neal@enron.com,CEO,1
+2001-04,scott.neal@enron.com,Employee,5
+2001-04,scott.neal@enron.com,unknown,3
+2001-04,scott.neal@enron.com,Vice President,2
+2001-04,scott.neal@enron.com,President,1
+2001-04,scott.neal@enron.com,Director,2
+2001-05,scott.neal@enron.com,CEO,1
+2001-05,scott.neal@enron.com,Employee,1
+2001-05,scott.neal@enron.com,unknown,2
+2001-05,scott.neal@enron.com,Vice President,3
+2001-05,scott.neal@enron.com,Managing Director,1
+2001-06,scott.neal@enron.com,Managing Director,1
+2001-06,scott.neal@enron.com,Employee,2
+2001-06,scott.neal@enron.com,unknown,1
+2001-07,scott.neal@enron.com,President,1
+2001-08,scott.neal@enron.com,CEO,1
+2001-08,scott.neal@enron.com,Manager,1
+2001-08,scott.neal@enron.com,Director,1
+2001-09,scott.neal@enron.com,President,1
+2001-09,scott.neal@enron.com,Employee,1
+2001-09,scott.neal@enron.com,Manager,1
+2001-10,scott.neal@enron.com,CEO,1
+2001-10,scott.neal@enron.com,Employee,2
+2001-10,scott.neal@enron.com,unknown,1
+2001-10,scott.neal@enron.com,Manager,2
+2001-10,scott.neal@enron.com,Director,1
+2001-11,scott.neal@enron.com,CEO,1
+2001-11,scott.neal@enron.com,Employee,1
+2001-11,scott.neal@enron.com,Director,1
+2001-11,scott.neal@enron.com,Vice President,1
+2001-11,scott.neal@enron.com,President,1
+2001-11,scott.neal@enron.com,Manager,1
+2001-11,scott.neal@enron.com,Trader,1
+2001-12,scott.neal@enron.com,President,1
+2001-12,scott.neal@enron.com,Employee,1
+2001-12,scott.neal@enron.com,Director,1
+2002-01,scott.neal@enron.com,President,1
+2002-01,scott.neal@enron.com,Employee,3
+2002-01,scott.neal@enron.com,unknown,2
+2002-01,scott.neal@enron.com,Vice President,1
+2002-01,scott.neal@enron.com,Manager,1
+2002-01,scott.neal@enron.com,Director,2
+2002-02,scott.neal@enron.com,President,1
+2002-02,scott.neal@enron.com,Employee,1
+2002-02,scott.neal@enron.com,unknown,2
+2002-02,scott.neal@enron.com,Director,1
+2000-02,shelley.corman@enron.com,President,1
+2000-02,shelley.corman@enron.com,Manager,1
+2000-02,shelley.corman@enron.com,unknown,3
+2000-02,shelley.corman@enron.com,Vice President,6
+2000-03,shelley.corman@enron.com,President,1
+2000-03,shelley.corman@enron.com,Manager,1
+2000-03,shelley.corman@enron.com,unknown,2
+2000-03,shelley.corman@enron.com,Vice President,4
+2000-04,shelley.corman@enron.com,President,1
+2000-04,shelley.corman@enron.com,Manager,1
+2000-04,shelley.corman@enron.com,unknown,3
+2000-04,shelley.corman@enron.com,Vice President,6
+2000-05,shelley.corman@enron.com,President,1
+2000-05,shelley.corman@enron.com,Manager,1
+2000-05,shelley.corman@enron.com,unknown,3
+2000-05,shelley.corman@enron.com,Vice President,6
+2000-06,shelley.corman@enron.com,President,1
+2000-06,shelley.corman@enron.com,unknown,1
+2000-06,shelley.corman@enron.com,Vice President,3
+2000-07,shelley.corman@enron.com,President,1
+2000-07,shelley.corman@enron.com,Employee,1
+2000-07,shelley.corman@enron.com,Manager,1
+2000-07,shelley.corman@enron.com,unknown,3
+2000-07,shelley.corman@enron.com,Vice President,6
+2000-08,shelley.corman@enron.com,President,1
+2000-08,shelley.corman@enron.com,Employee,1
+2000-08,shelley.corman@enron.com,unknown,4
+2000-08,shelley.corman@enron.com,Vice President,5
+2000-08,shelley.corman@enron.com,Manager,1
+2000-08,shelley.corman@enron.com,Director,1
+2000-09,shelley.corman@enron.com,Vice President,4
+2000-10,shelley.corman@enron.com,President,1
+2000-10,shelley.corman@enron.com,Manager,1
+2000-10,shelley.corman@enron.com,unknown,3
+2000-10,shelley.corman@enron.com,Vice President,6
+2000-11,shelley.corman@enron.com,President,1
+2000-11,shelley.corman@enron.com,Employee,1
+2000-11,shelley.corman@enron.com,Manager,1
+2000-11,shelley.corman@enron.com,Vice President,5
+2000-11,shelley.corman@enron.com,unknown,2
+2000-12,shelley.corman@enron.com,President,1
+2000-12,shelley.corman@enron.com,Employee,2
+2000-12,shelley.corman@enron.com,Manager,1
+2000-12,shelley.corman@enron.com,unknown,1
+2000-12,shelley.corman@enron.com,Vice President,4
+2001-01,shelley.corman@enron.com,Employee,1
+2001-01,shelley.corman@enron.com,Vice President,4
+2001-02,shelley.corman@enron.com,Employee,1
+2001-02,shelley.corman@enron.com,Manager,1
+2001-02,shelley.corman@enron.com,Vice President,6
+2001-02,shelley.corman@enron.com,Director,1
+2001-02,shelley.corman@enron.com,unknown,1
+2001-03,shelley.corman@enron.com,President,1
+2001-03,shelley.corman@enron.com,Employee,1
+2001-03,shelley.corman@enron.com,unknown,3
+2001-03,shelley.corman@enron.com,Vice President,6
+2001-03,shelley.corman@enron.com,Manager,2
+2001-03,shelley.corman@enron.com,Director,1
+2001-04,shelley.corman@enron.com,President,1
+2001-04,shelley.corman@enron.com,Employee,1
+2001-04,shelley.corman@enron.com,unknown,1
+2001-04,shelley.corman@enron.com,Vice President,4
+2001-05,shelley.corman@enron.com,President,2
+2001-05,shelley.corman@enron.com,Employee,1
+2001-05,shelley.corman@enron.com,unknown,1
+2001-06,shelley.corman@enron.com,Employee,2
+2001-06,shelley.corman@enron.com,unknown,1
+2001-07,shelley.corman@enron.com,Employee,1
+2001-07,shelley.corman@enron.com,unknown,2
+2001-07,shelley.corman@enron.com,Vice President,2
+2001-08,shelley.corman@enron.com,President,1
+2001-08,shelley.corman@enron.com,Employee,1
+2001-08,shelley.corman@enron.com,unknown,2
+2001-08,shelley.corman@enron.com,CEO,1
+2001-09,shelley.corman@enron.com,unknown,2
+2001-09,shelley.corman@enron.com,Vice President,3
+2001-10,shelley.corman@enron.com,President,1
+2001-10,shelley.corman@enron.com,Employee,2
+2001-10,shelley.corman@enron.com,Manager,1
+2001-10,shelley.corman@enron.com,unknown,3
+2001-10,shelley.corman@enron.com,Vice President,4
+2001-11,shelley.corman@enron.com,President,1
+2001-11,shelley.corman@enron.com,Employee,2
+2001-11,shelley.corman@enron.com,Manager,1
+2001-11,shelley.corman@enron.com,unknown,3
+2001-11,shelley.corman@enron.com,Vice President,4
+2001-12,shelley.corman@enron.com,President,1
+2001-12,shelley.corman@enron.com,Employee,1
+2001-12,shelley.corman@enron.com,Manager,1
+2001-12,shelley.corman@enron.com,unknown,1
+2001-12,shelley.corman@enron.com,Vice President,3
+2002-01,shelley.corman@enron.com,Manager,1
+2002-01,shelley.corman@enron.com,unknown,2
+2002-01,shelley.corman@enron.com,Vice President,2
+2002-02,shelley.corman@enron.com,President,1
+2002-02,shelley.corman@enron.com,Employee,1
+2002-02,shelley.corman@enron.com,unknown,1
+2002-02,shelley.corman@enron.com,Vice President,3
+2000-02,stacy.dickson@enron.com,Employee,1
+2000-02,stacy.dickson@enron.com,unknown,1
+2000-03,stacy.dickson@enron.com,unknown,1
+2000-04,stacy.dickson@enron.com,unknown,2
+2000-05,stacy.dickson@enron.com,unknown,2
+2000-06,stacy.dickson@enron.com,unknown,2
+2000-07,stacy.dickson@enron.com,Employee,1
+2000-07,stacy.dickson@enron.com,unknown,2
+2000-08,stacy.dickson@enron.com,Employee,2
+2000-08,stacy.dickson@enron.com,unknown,2
+2000-09,stacy.dickson@enron.com,unknown,3
+2000-10,stacy.dickson@enron.com,Employee,2
+2000-10,stacy.dickson@enron.com,unknown,2
+2000-11,stacy.dickson@enron.com,Employee,2
+2000-11,stacy.dickson@enron.com,unknown,2
+2000-12,stacy.dickson@enron.com,Employee,1
+2000-12,stacy.dickson@enron.com,unknown,2
+2001-01,stacy.dickson@enron.com,Employee,1
+2001-02,stacy.dickson@enron.com,Managing Director,1
+2001-02,stacy.dickson@enron.com,Employee,2
+2001-02,stacy.dickson@enron.com,unknown,2
+2001-03,stacy.dickson@enron.com,Managing Director,1
+2001-03,stacy.dickson@enron.com,Employee,2
+2001-03,stacy.dickson@enron.com,unknown,3
+2001-04,stacy.dickson@enron.com,Managing Director,1
+2001-04,stacy.dickson@enron.com,Employee,3
+2001-04,stacy.dickson@enron.com,unknown,3
+2001-05,stacy.dickson@enron.com,Managing Director,1
+2001-05,stacy.dickson@enron.com,Employee,2
+2001-05,stacy.dickson@enron.com,unknown,1
+2001-06,stacy.dickson@enron.com,Managing Director,1
+2001-06,stacy.dickson@enron.com,Employee,1
+2001-06,stacy.dickson@enron.com,unknown,2
+2000-02,stanley.horton@enron.com,Vice President,2
+2000-03,stanley.horton@enron.com,Vice President,1
+2000-04,stanley.horton@enron.com,Vice President,2
+2000-05,stanley.horton@enron.com,Vice President,1
+2000-06,stanley.horton@enron.com,Vice President,1
+2000-07,stanley.horton@enron.com,Vice President,1
+2000-08,stanley.horton@enron.com,Employee,1
+2000-08,stanley.horton@enron.com,Vice President,2
+2000-09,stanley.horton@enron.com,Vice President,1
+2000-10,stanley.horton@enron.com,unknown,1
+2000-10,stanley.horton@enron.com,Vice President,1
+2000-11,stanley.horton@enron.com,President,1
+2000-11,stanley.horton@enron.com,Employee,1
+2000-11,stanley.horton@enron.com,unknown,1
+2000-11,stanley.horton@enron.com,Vice President,4
+2000-12,stanley.horton@enron.com,Vice President,4
+2001-03,stanley.horton@enron.com,Employee,1
+2001-03,stanley.horton@enron.com,Vice President,5
+2001-04,stanley.horton@enron.com,CEO,2
+2001-04,stanley.horton@enron.com,Employee,1
+2001-04,stanley.horton@enron.com,Manager,1
+2001-04,stanley.horton@enron.com,Vice President,3
+2001-04,stanley.horton@enron.com,President,1
+2001-05,stanley.horton@enron.com,President,2
+2001-05,stanley.horton@enron.com,Employee,1
+2001-05,stanley.horton@enron.com,Director,1
+2001-05,stanley.horton@enron.com,Vice President,4
+2001-05,stanley.horton@enron.com,CEO,1
+2001-05,stanley.horton@enron.com,Manager,1
+2001-05,stanley.horton@enron.com,unknown,1
+2001-06,stanley.horton@enron.com,Employee,1
+2001-06,stanley.horton@enron.com,unknown,1
+2001-06,stanley.horton@enron.com,Vice President,1
+2001-07,stanley.horton@enron.com,CEO,1
+2001-07,stanley.horton@enron.com,Vice President,2
+2001-08,stanley.horton@enron.com,CEO,2
+2001-08,stanley.horton@enron.com,Vice President,4
+2001-08,stanley.horton@enron.com,Manager,1
+2001-08,stanley.horton@enron.com,unknown,1
+2001-09,stanley.horton@enron.com,CEO,1
+2001-09,stanley.horton@enron.com,unknown,1
+2001-09,stanley.horton@enron.com,Vice President,2
+2001-09,stanley.horton@enron.com,President,1
+2001-10,stanley.horton@enron.com,CEO,1
+2001-10,stanley.horton@enron.com,Employee,1
+2001-10,stanley.horton@enron.com,unknown,2
+2001-10,stanley.horton@enron.com,Vice President,4
+2001-10,stanley.horton@enron.com,President,3
+2001-11,stanley.horton@enron.com,President,1
+2001-11,stanley.horton@enron.com,Employee,1
+2001-11,stanley.horton@enron.com,unknown,2
+2001-11,stanley.horton@enron.com,Vice President,3
+2001-11,stanley.horton@enron.com,CEO,1
+2001-12,stanley.horton@enron.com,Employee,1
+2001-12,stanley.horton@enron.com,unknown,2
+2001-12,stanley.horton@enron.com,Vice President,3
+2002-01,stanley.horton@enron.com,CEO,1
+2002-01,stanley.horton@enron.com,unknown,1
+2002-02,stanley.horton@enron.com,Employee,1
+2002-02,stanley.horton@enron.com,Vice President,2
+2000-08,stephanie.panus@enron.com,Employee,1
+2000-08,stephanie.panus@enron.com,unknown,2
+2000-09,stephanie.panus@enron.com,Employee,2
+2000-09,stephanie.panus@enron.com,unknown,2
+2000-10,stephanie.panus@enron.com,Employee,1
+2000-10,stephanie.panus@enron.com,unknown,4
+2000-11,stephanie.panus@enron.com,Employee,1
+2000-11,stephanie.panus@enron.com,unknown,3
+2000-12,stephanie.panus@enron.com,Employee,1
+2000-12,stephanie.panus@enron.com,unknown,3
+2001-01,stephanie.panus@enron.com,Employee,1
+2001-01,stephanie.panus@enron.com,unknown,2
+2001-02,stephanie.panus@enron.com,Employee,1
+2001-02,stephanie.panus@enron.com,unknown,3
+2001-03,stephanie.panus@enron.com,Employee,1
+2001-03,stephanie.panus@enron.com,unknown,4
+2001-03,stephanie.panus@enron.com,Manager,1
+2001-04,stephanie.panus@enron.com,Employee,1
+2001-04,stephanie.panus@enron.com,unknown,3
+2001-04,stephanie.panus@enron.com,Manager,1
+2001-05,stephanie.panus@enron.com,Employee,1
+2001-05,stephanie.panus@enron.com,unknown,4
+2001-06,stephanie.panus@enron.com,Employee,1
+2001-06,stephanie.panus@enron.com,unknown,5
+2001-07,stephanie.panus@enron.com,unknown,1
+2001-08,stephanie.panus@enron.com,unknown,2
+2001-09,stephanie.panus@enron.com,unknown,3
+2001-10,stephanie.panus@enron.com,unknown,3
+2001-11,stephanie.panus@enron.com,unknown,3
+2001-12,stephanie.panus@enron.com,Employee,2
+2001-12,stephanie.panus@enron.com,unknown,4
+2001-12,stephanie.panus@enron.com,Trader,1
+2002-01,stephanie.panus@enron.com,Employee,2
+2002-01,stephanie.panus@enron.com,Director,1
+2002-01,stephanie.panus@enron.com,unknown,2
+2002-01,stephanie.panus@enron.com,Vice President,1
+2002-01,stephanie.panus@enron.com,Trader,1
+2002-02,stephanie.panus@enron.com,Employee,2
+2002-02,stephanie.panus@enron.com,Trader,1
+2002-02,stephanie.panus@enron.com,Director,1
+2002-02,stephanie.panus@enron.com,Vice President,1
+2002-02,stephanie.panus@enron.com,unknown,2
+2000-02,steven.kean@enron.com,Employee,1
+2000-02,steven.kean@enron.com,Vice President,2
+2000-03,steven.kean@enron.com,CEO,2
+2000-03,steven.kean@enron.com,Vice President,3
+2000-03,steven.kean@enron.com,President,1
+2000-04,steven.kean@enron.com,Manager,1
+2000-04,steven.kean@enron.com,Vice President,3
+2000-05,steven.kean@enron.com,CEO,1
+2000-05,steven.kean@enron.com,Vice President,3
+2000-06,steven.kean@enron.com,CEO,1
+2000-06,steven.kean@enron.com,Vice President,4
+2000-07,steven.kean@enron.com,CEO,1
+2000-07,steven.kean@enron.com,Vice President,3
+2000-08,steven.kean@enron.com,CEO,2
+2000-08,steven.kean@enron.com,Employee,1
+2000-08,steven.kean@enron.com,In House Lawyer,1
+2000-08,steven.kean@enron.com,Vice President,3
+2000-08,steven.kean@enron.com,President,2
+2000-09,steven.kean@enron.com,President,1
+2000-09,steven.kean@enron.com,Employee,1
+2000-09,steven.kean@enron.com,Manager,1
+2000-09,steven.kean@enron.com,Vice President,3
+2000-10,steven.kean@enron.com,President,2
+2000-10,steven.kean@enron.com,Employee,1
+2000-10,steven.kean@enron.com,unknown,1
+2000-10,steven.kean@enron.com,Vice President,4
+2000-10,steven.kean@enron.com,CEO,2
+2000-11,steven.kean@enron.com,CEO,4
+2000-11,steven.kean@enron.com,Employee,2
+2000-11,steven.kean@enron.com,unknown,1
+2000-11,steven.kean@enron.com,Vice President,4
+2000-11,steven.kean@enron.com,President,2
+2000-11,steven.kean@enron.com,Manager,1
+2000-12,steven.kean@enron.com,CEO,1
+2000-12,steven.kean@enron.com,Employee,2
+2000-12,steven.kean@enron.com,Vice President,5
+2000-12,steven.kean@enron.com,President,1
+2001-01,steven.kean@enron.com,CEO,4
+2001-01,steven.kean@enron.com,Employee,1
+2001-01,steven.kean@enron.com,unknown,1
+2001-01,steven.kean@enron.com,Vice President,5
+2001-01,steven.kean@enron.com,President,1
+2001-01,steven.kean@enron.com,Manager,2
+2001-02,steven.kean@enron.com,President,1
+2001-02,steven.kean@enron.com,Employee,1
+2001-02,steven.kean@enron.com,Vice President,3
+2001-02,steven.kean@enron.com,CEO,2
+2001-03,steven.kean@enron.com,President,1
+2001-03,steven.kean@enron.com,Employee,2
+2001-03,steven.kean@enron.com,Manager,1
+2001-03,steven.kean@enron.com,Vice President,3
+2001-04,steven.kean@enron.com,CEO,4
+2001-04,steven.kean@enron.com,Employee,1
+2001-04,steven.kean@enron.com,unknown,1
+2001-04,steven.kean@enron.com,Vice President,5
+2001-04,steven.kean@enron.com,President,3
+2001-04,steven.kean@enron.com,Manager,1
+2001-04,steven.kean@enron.com,In House Lawyer,1
+2001-05,steven.kean@enron.com,CEO,1
+2001-05,steven.kean@enron.com,Employee,2
+2001-05,steven.kean@enron.com,In House Lawyer,1
+2001-05,steven.kean@enron.com,Vice President,5
+2001-05,steven.kean@enron.com,President,1
+2001-05,steven.kean@enron.com,unknown,1
+2001-06,steven.kean@enron.com,CEO,3
+2001-06,steven.kean@enron.com,Employee,1
+2001-06,steven.kean@enron.com,In House Lawyer,1
+2001-06,steven.kean@enron.com,Vice President,2
+2001-06,steven.kean@enron.com,President,1
+2001-07,steven.kean@enron.com,CEO,3
+2001-07,steven.kean@enron.com,Employee,1
+2001-07,steven.kean@enron.com,unknown,1
+2001-07,steven.kean@enron.com,Vice President,3
+2001-07,steven.kean@enron.com,President,2
+2000-02,susan.scott@enron.com,Employee,1
+2000-02,susan.scott@enron.com,unknown,2
+2000-02,susan.scott@enron.com,Director,1
+2000-02,susan.scott@enron.com,Vice President,2
+2000-02,susan.scott@enron.com,Trader,1
+2000-03,susan.scott@enron.com,Vice President,2
+2000-03,susan.scott@enron.com,Employee,2
+2000-03,susan.scott@enron.com,unknown,2
+2000-03,susan.scott@enron.com,Director,1
+2000-03,susan.scott@enron.com,Trader,1
+2000-04,susan.scott@enron.com,Employee,1
+2000-04,susan.scott@enron.com,unknown,5
+2000-04,susan.scott@enron.com,Vice President,2
+2000-05,susan.scott@enron.com,Director,1
+2000-05,susan.scott@enron.com,Vice President,2
+2000-05,susan.scott@enron.com,unknown,3
+2000-06,susan.scott@enron.com,Employee,2
+2000-06,susan.scott@enron.com,Vice President,2
+2000-06,susan.scott@enron.com,Director,1
+2000-06,susan.scott@enron.com,unknown,2
+2000-07,susan.scott@enron.com,Employee,3
+2000-07,susan.scott@enron.com,Vice President,2
+2000-07,susan.scott@enron.com,Director,1
+2000-08,susan.scott@enron.com,Employee,3
+2000-08,susan.scott@enron.com,Vice President,2
+2000-08,susan.scott@enron.com,Director,1
+2000-08,susan.scott@enron.com,unknown,3
+2000-09,susan.scott@enron.com,Employee,3
+2000-09,susan.scott@enron.com,unknown,4
+2000-09,susan.scott@enron.com,Vice President,2
+2000-09,susan.scott@enron.com,Director,1
+2000-10,susan.scott@enron.com,Employee,3
+2000-10,susan.scott@enron.com,Vice President,2
+2000-10,susan.scott@enron.com,Director,1
+2000-10,susan.scott@enron.com,unknown,3
+2000-11,susan.scott@enron.com,Employee,4
+2000-11,susan.scott@enron.com,unknown,2
+2000-11,susan.scott@enron.com,Director,2
+2000-11,susan.scott@enron.com,Vice President,3
+2000-11,susan.scott@enron.com,Manager,1
+2000-11,susan.scott@enron.com,Trader,1
+2000-12,susan.scott@enron.com,Employee,4
+2000-12,susan.scott@enron.com,Director,2
+2000-12,susan.scott@enron.com,Vice President,2
+2000-12,susan.scott@enron.com,unknown,1
+2001-01,susan.scott@enron.com,Employee,4
+2001-01,susan.scott@enron.com,Manager,1
+2001-01,susan.scott@enron.com,Vice President,1
+2001-01,susan.scott@enron.com,Director,1
+2001-01,susan.scott@enron.com,unknown,1
+2001-02,susan.scott@enron.com,Employee,4
+2001-02,susan.scott@enron.com,Manager,1
+2001-02,susan.scott@enron.com,Vice President,2
+2001-02,susan.scott@enron.com,Director,2
+2001-03,susan.scott@enron.com,Employee,3
+2001-03,susan.scott@enron.com,Manager,1
+2001-03,susan.scott@enron.com,Director,1
+2001-03,susan.scott@enron.com,Vice President,2
+2001-03,susan.scott@enron.com,unknown,1
+2001-04,susan.scott@enron.com,Employee,4
+2001-04,susan.scott@enron.com,unknown,4
+2001-04,susan.scott@enron.com,Vice President,3
+2001-04,susan.scott@enron.com,Manager,1
+2001-04,susan.scott@enron.com,Director,1
+2001-04,susan.scott@enron.com,Trader,1
+2001-05,susan.scott@enron.com,Employee,3
+2001-05,susan.scott@enron.com,unknown,1
+2001-05,susan.scott@enron.com,Vice President,1
+2001-06,susan.scott@enron.com,Employee,2
+2001-06,susan.scott@enron.com,Vice President,2
+2001-06,susan.scott@enron.com,Manager,2
+2001-06,susan.scott@enron.com,Trader,2
+2001-07,susan.scott@enron.com,Vice President,3
+2001-07,susan.scott@enron.com,Employee,2
+2001-07,susan.scott@enron.com,Manager,4
+2001-07,susan.scott@enron.com,Director,1
+2001-07,susan.scott@enron.com,Trader,3
+2001-08,susan.scott@enron.com,Vice President,3
+2001-08,susan.scott@enron.com,Employee,1
+2001-08,susan.scott@enron.com,Manager,3
+2001-08,susan.scott@enron.com,Director,1
+2001-08,susan.scott@enron.com,Trader,3
+2000-02,tana.jones@enron.com,Managing Director,1
+2000-02,tana.jones@enron.com,Employee,3
+2000-02,tana.jones@enron.com,unknown,2
+2000-02,tana.jones@enron.com,President,1
+2000-03,tana.jones@enron.com,President,1
+2000-03,tana.jones@enron.com,Employee,3
+2000-03,tana.jones@enron.com,unknown,2
+2000-03,tana.jones@enron.com,Vice President,2
+2000-03,tana.jones@enron.com,Managing Director,1
+2000-03,tana.jones@enron.com,Trader,2
+2000-04,tana.jones@enron.com,Managing Director,1
+2000-04,tana.jones@enron.com,Employee,3
+2000-04,tana.jones@enron.com,unknown,3
+2000-05,tana.jones@enron.com,Managing Director,1
+2000-05,tana.jones@enron.com,Employee,3
+2000-05,tana.jones@enron.com,unknown,2
+2000-05,tana.jones@enron.com,President,1
+2000-06,tana.jones@enron.com,President,1
+2000-06,tana.jones@enron.com,Employee,4
+2000-06,tana.jones@enron.com,unknown,2
+2000-06,tana.jones@enron.com,Vice President,1
+2000-06,tana.jones@enron.com,Managing Director,1
+2000-06,tana.jones@enron.com,Trader,1
+2000-07,tana.jones@enron.com,Managing Director,1
+2000-07,tana.jones@enron.com,Employee,3
+2000-07,tana.jones@enron.com,unknown,4
+2000-07,tana.jones@enron.com,Vice President,1
+2000-07,tana.jones@enron.com,President,1
+2000-08,tana.jones@enron.com,President,1
+2000-08,tana.jones@enron.com,Employee,5
+2000-08,tana.jones@enron.com,unknown,4
+2000-08,tana.jones@enron.com,Vice President,1
+2000-08,tana.jones@enron.com,Managing Director,1
+2000-09,tana.jones@enron.com,President,1
+2000-09,tana.jones@enron.com,Employee,4
+2000-09,tana.jones@enron.com,unknown,2
+2000-09,tana.jones@enron.com,Vice President,3
+2000-09,tana.jones@enron.com,Managing Director,1
+2000-09,tana.jones@enron.com,Trader,1
+2000-10,tana.jones@enron.com,President,1
+2000-10,tana.jones@enron.com,Employee,4
+2000-10,tana.jones@enron.com,unknown,4
+2000-10,tana.jones@enron.com,Vice President,3
+2000-10,tana.jones@enron.com,Managing Director,1
+2000-10,tana.jones@enron.com,Trader,1
+2000-11,tana.jones@enron.com,President,1
+2000-11,tana.jones@enron.com,Employee,3
+2000-11,tana.jones@enron.com,unknown,4
+2000-11,tana.jones@enron.com,Vice President,1
+2000-11,tana.jones@enron.com,Managing Director,1
+2000-11,tana.jones@enron.com,Director,1
+2000-12,tana.jones@enron.com,Managing Director,1
+2000-12,tana.jones@enron.com,Employee,4
+2000-12,tana.jones@enron.com,unknown,2
+2000-12,tana.jones@enron.com,Vice President,1
+2000-12,tana.jones@enron.com,President,1
+2001-01,tana.jones@enron.com,Managing Director,1
+2001-01,tana.jones@enron.com,Employee,2
+2001-01,tana.jones@enron.com,unknown,5
+2001-01,tana.jones@enron.com,Vice President,2
+2001-01,tana.jones@enron.com,President,1
+2001-02,tana.jones@enron.com,Managing Director,1
+2001-02,tana.jones@enron.com,Employee,4
+2001-02,tana.jones@enron.com,unknown,4
+2001-02,tana.jones@enron.com,Vice President,1
+2001-03,tana.jones@enron.com,Managing Director,1
+2001-03,tana.jones@enron.com,Employee,4
+2001-03,tana.jones@enron.com,unknown,4
+2001-03,tana.jones@enron.com,President,1
+2001-04,tana.jones@enron.com,Managing Director,1
+2001-04,tana.jones@enron.com,Employee,2
+2001-04,tana.jones@enron.com,unknown,4
+2001-04,tana.jones@enron.com,Vice President,1
+2001-05,tana.jones@enron.com,Managing Director,1
+2001-05,tana.jones@enron.com,Employee,3
+2001-05,tana.jones@enron.com,unknown,3
+2001-06,tana.jones@enron.com,Managing Director,1
+2001-06,tana.jones@enron.com,Employee,2
+2001-06,tana.jones@enron.com,unknown,2
+2001-06,tana.jones@enron.com,Vice President,1
+2001-07,tana.jones@enron.com,unknown,1
+2001-08,tana.jones@enron.com,unknown,2
+2001-09,tana.jones@enron.com,Employee,1
+2001-09,tana.jones@enron.com,unknown,3
+2001-10,tana.jones@enron.com,Employee,1
+2001-10,tana.jones@enron.com,unknown,4
+2001-11,tana.jones@enron.com,Employee,2
+2001-11,tana.jones@enron.com,unknown,3
+2001-12,tana.jones@enron.com,Employee,1
+2001-12,tana.jones@enron.com,unknown,2
+2002-01,tana.jones@enron.com,unknown,1
+2002-02,tana.jones@enron.com,President,1
+2002-02,tana.jones@enron.com,Employee,1
+2002-02,tana.jones@enron.com,unknown,2
+2000-03,tori.kuykendall@enron.com,Employee,1
+2000-03,tori.kuykendall@enron.com,Manager,1
+2000-06,tori.kuykendall@enron.com,Employee,1
+2000-06,tori.kuykendall@enron.com,Vice President,1
+2000-07,tori.kuykendall@enron.com,Employee,1
+2000-07,tori.kuykendall@enron.com,Vice President,1
+2000-08,tori.kuykendall@enron.com,Employee,1
+2000-08,tori.kuykendall@enron.com,Vice President,1
+2000-08,tori.kuykendall@enron.com,Manager,1
+2000-09,tori.kuykendall@enron.com,Employee,2
+2000-09,tori.kuykendall@enron.com,Manager,2
+2000-10,tori.kuykendall@enron.com,Employee,1
+2000-10,tori.kuykendall@enron.com,Manager,2
+2000-11,tori.kuykendall@enron.com,Employee,2
+2000-11,tori.kuykendall@enron.com,Manager,1
+2000-11,tori.kuykendall@enron.com,Trader,1
+2000-12,tori.kuykendall@enron.com,Employee,2
+2000-12,tori.kuykendall@enron.com,Manager,3
+2001-01,tori.kuykendall@enron.com,Employee,2
+2001-01,tori.kuykendall@enron.com,unknown,2
+2001-01,tori.kuykendall@enron.com,Manager,1
+2001-02,tori.kuykendall@enron.com,Employee,1
+2001-02,tori.kuykendall@enron.com,Vice President,1
+2001-03,tori.kuykendall@enron.com,Vice President,1
+2001-03,tori.kuykendall@enron.com,Employee,1
+2001-03,tori.kuykendall@enron.com,unknown,1
+2001-03,tori.kuykendall@enron.com,Manager,1
+2001-04,tori.kuykendall@enron.com,Vice President,1
+2001-04,tori.kuykendall@enron.com,Employee,2
+2001-04,tori.kuykendall@enron.com,Manager,3
+2001-04,tori.kuykendall@enron.com,unknown,3
+2001-04,tori.kuykendall@enron.com,Director,2
+2001-05,tori.kuykendall@enron.com,CEO,1
+2001-05,tori.kuykendall@enron.com,Employee,1
+2001-06,tori.kuykendall@enron.com,unknown,1
+2001-07,tori.kuykendall@enron.com,Manager,1
+2001-08,tori.kuykendall@enron.com,Manager,2
+2001-09,tori.kuykendall@enron.com,unknown,1
+2001-09,tori.kuykendall@enron.com,Manager,2
+2001-10,tori.kuykendall@enron.com,Employee,2
+2001-10,tori.kuykendall@enron.com,unknown,1
+2001-10,tori.kuykendall@enron.com,Manager,2
+2001-11,tori.kuykendall@enron.com,Employee,2
+2001-11,tori.kuykendall@enron.com,Manager,2
+2001-12,tori.kuykendall@enron.com,Employee,2
+2001-12,tori.kuykendall@enron.com,unknown,1
+2001-12,tori.kuykendall@enron.com,Vice President,1
+2001-12,tori.kuykendall@enron.com,Trader,1
+2001-12,tori.kuykendall@enron.com,Manager,2
+2001-12,tori.kuykendall@enron.com,Director,1
+2000-02,vince.kaminski@enron.com,President,2
+2000-02,vince.kaminski@enron.com,Vice President,1
+2000-02,vince.kaminski@enron.com,unknown,1
+2000-02,vince.kaminski@enron.com,Manager,1
+2000-03,vince.kaminski@enron.com,CEO,1
+2000-03,vince.kaminski@enron.com,Employee,1
+2000-03,vince.kaminski@enron.com,Manager,2
+2000-03,vince.kaminski@enron.com,President,1
+2000-04,vince.kaminski@enron.com,unknown,1
+2000-04,vince.kaminski@enron.com,Manager,2
+2000-04,vince.kaminski@enron.com,Trader,1
+2000-05,vince.kaminski@enron.com,CEO,1
+2000-05,vince.kaminski@enron.com,Manager,2
+2000-05,vince.kaminski@enron.com,Vice President,1
+2000-05,vince.kaminski@enron.com,President,1
+2000-06,vince.kaminski@enron.com,President,2
+2000-06,vince.kaminski@enron.com,Employee,1
+2000-06,vince.kaminski@enron.com,Manager,1
+2000-06,vince.kaminski@enron.com,CEO,2
+2000-07,vince.kaminski@enron.com,President,2
+2000-07,vince.kaminski@enron.com,Manager,2
+2000-07,vince.kaminski@enron.com,Vice President,1
+2000-07,vince.kaminski@enron.com,CEO,2
+2000-08,vince.kaminski@enron.com,CEO,2
+2000-08,vince.kaminski@enron.com,unknown,1
+2000-08,vince.kaminski@enron.com,Manager,1
+2000-08,vince.kaminski@enron.com,President,2
+2000-09,vince.kaminski@enron.com,CEO,2
+2000-09,vince.kaminski@enron.com,Vice President,2
+2000-09,vince.kaminski@enron.com,President,1
+2000-10,vince.kaminski@enron.com,President,1
+2000-10,vince.kaminski@enron.com,Manager,1
+2000-10,vince.kaminski@enron.com,CEO,1
+2000-11,vince.kaminski@enron.com,President,4
+2000-11,vince.kaminski@enron.com,Employee,1
+2000-11,vince.kaminski@enron.com,Vice President,2
+2000-11,vince.kaminski@enron.com,CEO,1
+2000-11,vince.kaminski@enron.com,Manager,2
+2000-11,vince.kaminski@enron.com,Trader,1
+2000-12,vince.kaminski@enron.com,CEO,2
+2000-12,vince.kaminski@enron.com,Employee,1
+2000-12,vince.kaminski@enron.com,President,3
+2000-12,vince.kaminski@enron.com,Manager,1
+2000-12,vince.kaminski@enron.com,Trader,1
+2001-01,vince.kaminski@enron.com,President,3
+2001-01,vince.kaminski@enron.com,Employee,2
+2001-01,vince.kaminski@enron.com,unknown,1
+2001-01,vince.kaminski@enron.com,Vice President,1
+2001-01,vince.kaminski@enron.com,CEO,2
+2001-01,vince.kaminski@enron.com,Manager,2
+2001-02,vince.kaminski@enron.com,Manager,1
+2001-03,vince.kaminski@enron.com,President,2
+2001-03,vince.kaminski@enron.com,unknown,1
+2001-03,vince.kaminski@enron.com,Manager,1
+2001-04,vince.kaminski@enron.com,President,2
+2001-04,vince.kaminski@enron.com,Manager,1
+2001-04,vince.kaminski@enron.com,unknown,1
+2001-04,vince.kaminski@enron.com,Vice President,2
+2001-05,vince.kaminski@enron.com,President,3
+2001-05,vince.kaminski@enron.com,unknown,1
+2001-06,vince.kaminski@enron.com,President,1
+2001-07,vince.kaminski@enron.com,Employee,1
+2001-07,vince.kaminski@enron.com,Vice President,1
