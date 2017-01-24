@@ -3,7 +3,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: rgb(231, 234, 239);
   font-family: 'Cabin', sans-serif;
   font-size:  15px;
 }
@@ -56,11 +55,11 @@ html, body {
    display: block;
    margin-left: auto;
    margin-right: auto;
-   background: rgb(212, 215, 220);
+   background: #f2f8ff;
 }
 
 #title {
-  background: rgb(189, 190, 193);
+  background: white;
   font-variant: small-caps;
   font-weight: bold;
   font-size: 20px;
@@ -91,6 +90,7 @@ html, body {
   height: 105px;
   float: left;
   margin-right: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .icon {
