@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/d3-context-menu.css">
+
+	<script src="//d3js.org/d3.v3.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	<script src="js/d3-context-menu.js"></script>
+</head>
+
+<body>
+	<div id="upper-content">
+
+		<div id="flow-view" class="noselection">
+
+			<div class="ui-menu-bar ui-corner-all">
+
+				<svg class="control"></svg>
+
+				<span>
+					<button id="remove" class="ui-button">
+						<span class="ui-icon-close ui-icon"></span>
+					</button>
+				</span>
+				
+				<form id="timeseries-menu">
+					<label for="timeseries-menu">Time Series:</label>
+
+					<select name="timeseries-menu">
+					</select>
+				</form>
+
+			</div>
+
+			<div id="timeline-flow" class="ui-view ui-corner-all">
+
+				<div id="timeline-wrapper">
+					<svg id="timeline"></svg>
+				</div>
+
+				<div id="flow-wrapper">
+					<svg id="chart"></svg>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="event-view" class="noselection">
+
+			<div class="dummy"></div>
+
+			<div id="event-wrapper" class="ui-view ui-corner-all">
+				<svg id="event-editor"></svg>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="lower-content">
+
+		<div id="table-view" class="ui-view ui-corner-all noselection">
+			<div id="table-legend-wrapper">
+				<svg id="table-legend"></svg>
+			</div>
+
+			<div id="table-wrapper">
+				<svg id="table"></svg>
+			</div>
+		</div>
+
+		<div id="event-summary-view" class="ui-view ui-corner-all noselection">
+			<svg id="event-summary"></svg>
+		</div>
+
+	</div>
+
+	<script src="js/eventView.js"></script>
+	<script src="js/attributePointEventHandler.js"></script>
+	<script src="js/topologicalPointEventHandler.js"></script>
+	<script src="js/intervalEventHandler.js"></script>
+	<script src="js/comparisonHandler.js"></script>
+	<script src="js/selectionHandler.js"></script>
+	<script src="js/eventSummaryView.js"></script>
+	<script src="js/timeline.js"></script>
+	<script src="js/flowVis.js"></script>
+	<script src="js/barCharts.js"></script>
+	<script src="js/timeSeriesAreaCharts.js"></script>
+	<script src="js/flowFactory.js"></script>
+	<script src="js/table.js"></script>
+	<script src="js/database.js"></script>
+	<script src="js/start.js"></script>
+</body>
