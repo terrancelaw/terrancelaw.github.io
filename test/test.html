@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="test.css">
+  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500' rel='stylesheet' type='text/css'>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="search-bar">
+		<span class="glyphicon glyphicon-search"></span>
+		<input type="text" placeholder="Search" />
+	</div>
+
+	<div id="pull-down-menu" tabindex="0">
+
+		<div id="search-results">
+			<div class="title">Search Results in this panel</div>
+		</div>
+
+		<div id="menu-content">
+			<div id="iri">
+				<div class="title">Interdisciplinary Research Institutes</div>
+				<div class="pill Brook-Byers-Institute-for-Sustainable-Systems"><span class="plus-minus-sign">+</span><span class="name">Brook Byers Institute for Sustainable Systems</span></div>
+				<div class="pill Georgia-Tech-Manufacturing-Institute"><span class="plus-minus-sign">+</span><span class="name">Georgia Tech Manufacturing Institute</span></div>
+				<div class="pill Georgia-Tech-Research-Institute"><span class="plus-minus-sign">+</span><span class="name">Georgia Tech Research Institute</span></div>
+				<div class="pill Institute-for-Data-Engineering-Science"><span class="plus-minus-sign">+</span><span class="name">Institute for Data Engineering & Science</span></div>
+				<div class="pill Institute-for-Electronics-Nanotechnology"><span class="plus-minus-sign"">+</span><span class="name">Institute for Electronics & Nanotechnology</span></div>
+				<div class="pill Institute-for-Information-Security-Privacy"><span class="plus-minus-sign">+</span><span class="name">Institute for Information Security & Privacy</span></div>
+				<div class="pill Institute-for-Materials"><span class="plus-minus-sign">+</span><span class="name">Institute for Materials</span></div>
+				<div class="pill Institute-for-People-Technology"><span class="plus-minus-sign">+</span><span class="name">Institute for People & Technology</span></div>
+				<div class="pill Institute-for-Robotics-Intelligent-Machines"><span class="plus-minus-sign">+</span><span class="name">Institute for Robotics & Intelligent Machines</span></div>
+				<div class="pill Parker-H-Petit-Institute-for-Bioengineering-Bioscience"><span class="plus-minus-sign">+</span><span class="name">Parker H. Petit Institute for Bioengineering & Bioscience</span></div>
+				<div class="pill Renewable-Bioproducts-Institute"><span class="plus-minus-sign">+</span><span class="name">Renewable Bioproducts Institute</span></div>
+				<div class="pill Strategic-Energy-Institute"><span class="plus-minus-sign">+</span><span class="name">Strategic Energy Institute</span></div>
+			</div>
+
+			<div id="irc">
+				<div class="title">Interdisciplinary Research Centers</div>
+				<div class="pill Center-for-Health-Humanitarian-Systems"><span class="plus-minus-sign">+</span><span class="name">Center for Health & Humanitarian Systems</span></div>
+				<div class="pill Center-for-ImmunoEngineering"><span class="plus-minus-sign">+</span><span class="name">Center for ImmunoEngineering</span></div>
+				<div class="pill Center-for-Regenerative-Engineering-Medicine"><span class="plus-minus-sign">+</span><span class="name">Center for Regenerative Engineering & Medicine</span></div>
+				<div class="pill Center-for-Space-Technology-Research"><span class="plus-minus-sign">+</span><span class="name">Center for Space Technology & Research</span></div>
+				<div class="pill Center-for-Urban-Innovation"><span class="plus-minus-sign">+</span><span class="name">Center for Urban Innovation</span></div>
+				<div class="pill GVU-Center"><span class="plus-minus-sign">+</span><span class="name">GVU Center</span></div>
+				<div class="pill Institute-for-Electronics-Nanotechnology"><span class="plus-minus-sign">+</span><span class="name">Institute for Electronics & Nanotechnology</span></div>
+				<div class="pill Supply-Chain-Logistics-Institute"><span class="plus-minus-sign">+</span><span class="name">Supply Chain & Logistics Institute</span></div>
+			</div>
+
+			<div id="areas">
+				<div class="title">Areas</div>
+				<div class="pill Bioengineering-Bioscience"><span class="plus-minus-sign">+</span><span class="name">Bioengineering & Bioscience</span></div>
+				<div class="pill Data-Engineering-Science"><span class="plus-minus-sign">+</span><span class="name"><span class="name">Data Engineering & Science</span></div>
+				<div class="pill Electronics-Nanotechnology"><span class="plus-minus-sign">+</span><span class="name">Electronics & Nanotechnology</span></div>
+				<div class="pill Energy-Sustainable-Infrastructure"><span class="plus-minus-sign">+</span><span class="name">Energy & Sustainable Infrastructure</span></div>
+				<div class="pill Manufacturing-Trade-Logistics"><span class="plus-minus-sign">+</span><span class="name">Manufacturing, Trade & Logistics</span></div>
+				<div class="pill Materials"><span class="plus-minus-sign">+</span><span class="name">Materials</span></div>
+				<div class="pill National-Security"><span class="plus-minus-sign">+</span><span class="name">National Security</span></div>
+				<div class="pill People-Technology"><span class="plus-minus-sign">+</span><span class="name">People & Technology</span></div>
+				<div class="pill Public-Service-Policy"><span class="plus-minus-sign">+</span><span class="name">Public Service & Policy</span></div>
+				<div class="pill Renewable-Bioproducts"><span class="plus-minus-sign">+</span><span class="name">Renewable Bioproducts</span></div>
+				<div class="pill Robotics"><span class="plus-minus-sign">+</span><span class="name">Robotics</span></div>
+				<div class="pill Systems"><span class="plus-minus-sign">+</span><span class="name">Systems</span></div>
+			</div>
+
+			<div id="colleges">
+				<div class="title">Colleges</div>
+				<div class="pill College-of-Computing"><span class="plus-minus-sign">+</span><span class="name">College of Computing</span></div>
+				<div class="pill College-of-Design"><span class="plus-minus-sign">+</span><span class="name">College of Design</span></div>
+				<div class="pill College-of-Engineering"><span class="plus-minus-sign">+</span><span class="name">College of Engineering</span></div>
+				<div class="pill College-of-Sciences"><span class="plus-minus-sign">+</span><span class="name">College of Sciences</span></div>
+				<div class="pill Ivan-Allen-College-of-Liberal-Arts"><span class="plus-minus-sign">+</span><span class="name">Ivan Allen College of Liberal Arts</span></div>
+				<div class="pill Scheller-College-of-Business"><span class="plus-minus-sign">+</span><span class="name">Scheller College of Business</span></div>
+			</div>
+		</div>
+
+		<div id="selection">
+			<div class="selection-heading">
+				<div class="title selection-title">Current Selections</div>
+
+				<div class="remove-btn">
+					<span class="glyphicon glyphicon-remove"></span>
+					<span>Clear</span>
+				</div>
+
+				<div class="app-btn">
+					<span class="glyphicon glyphicon-ok"></span>
+					<span>Apply</span>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+<script>
+	$(function() {
+
+		$("#search-bar input")
+			.mouseover(function() {
+				if (!$(this).hasClass("colored")) {
+					$("#search-bar input").animate({
+						opacity: "0.5"
+					}, 300);
+					$("#search-bar .glyphicon").animate({
+						opacity: "0.5"
+					}, 300);
+				}
+			})
+			.mouseout(function() {
+				if (!$(this).hasClass("colored")) {
+					$("#search-bar input").animate({
+						opacity: "0.1"
+					}, 300);
+					$("#search-bar .glyphicon").animate({
+						opacity: "0.1"
+					}, 300);
+				}
+			})
+			.focus(function() {
+				$(this).addClass("focused");
+				$(this).addClass("colored");
+
+				$("#pull-down-menu")
+					.css("display", "block");
+
+				$("#search-bar input").animate({
+					opacity: "1",
+					backgroundColor: "#00254c",
+					color: "#eeb211"
+				}, 50);
+				$("#search-bar .glyphicon").animate({
+					opacity: "1",
+					color: "#eeb211"
+				}, 50);
+				$("#pull-down-menu").animate({
+					top: "65"
+				}, 50);
+			})
+			.blur(function() {
+				$(this).removeClass("focused");
+			});
+
+		$("#pull-down-menu")
+			.focus(function() {
+				$(this).addClass("focused");
+			})
+			.blur(function() {
+				$(this).removeClass("focused");
+			});
+
+		$(document).click(function(event) {
+		    if (!$("#search-bar input").hasClass("focused") && !$("#pull-down-menu").hasClass("focused")) {
+		        $("#pull-down-menu").css("display", "none");
+		        $("#pull-down-menu").css("top", "-300px");
+		        $("#search-bar input").removeClass("colored");
+
+				$("#search-bar input").animate({
+					opacity: "0.1",
+					backgroundColor: "#eeb211",
+					color: "#00254c"
+				}, 50);
+				$("#search-bar .glyphicon").animate({
+					opacity: "0.1",
+					color: "#00254c"
+				}, 50);
+		    }
+		});
+
+		$(".pill")
+			.mouseenter(function() {
+				$(this).css({
+					backgroundColor: "#eeb211",
+					color: "#00254c"
+				});
+				$(this).find(".plus-minus-sign").css({
+					"display": "inline"
+				});
+
+				$(this).find(".name").animate({
+					'padding-left': "5"
+				}, 300);
+			})
+			.mouseleave(function() {
+				if (!$(this).hasClass("selected")) {
+					$(this).css("color", "#eeb211");
+
+					$(this).find(".plus-minus-sign")
+						.css("display", "none");
+					
+					$(this).find(".name")
+					.animate({
+						'padding-left': "0"
+					}, 300);
+				}
+				else {
+					$(this)
+						.css("color", "white");
+					$(this).find(".name")
+						.css("padding-left", "5");
+				}
+
+				$(this)
+					.css({
+						backgroundColor: "#00254c"
+					});
+				
+			})
+			.click(function() {
+				var text = $(this).text().substring(1);
+				var className = text.replace(' & ', ' ');
+				var className = className.replace('.', '');
+				var className = className.replace(',', '');
+				className = className.split(" ").join("-");
+
+				if (!$(this).hasClass("selected")) {
+					$("#selection")
+						.css("display", "block")
+						.append("<div class='selected-pill " + className + "'><span class='plus-minus-sign'>-</span><span class='name'>" + text + "</span></div>");
+
+					var width = parseInt($(".selected-pill:last").css("width"));
+					var padding = parseInt($(".selected-pill:last").css("padding-left"));
+
+					$(".selected-pill:last")
+						.css("width", width + padding)
+						.mouseenter(enterSelectedPill)
+						.mouseleave(leaveSelectedPill)
+						.click(clickSelectedPill);
+
+					// change visual appearance of current pill
+					$(this).addClass("selected")
+					$(this).find(".plus-minus-sign")
+						.html("-");
+				}
+				else {
+					// remove the tag in the selection panel
+					$("#selection ." + className).remove();
+
+					// change visual appearance of current pill
+					$(this).removeClass("selected")
+					$(this).find(".plus-minus-sign")
+						.html("+");
+
+					// check if all are removed from selection panel
+					if ($("#selection").find(".selected-pill").length == 0)
+						$("#selection").css("display", "none");
+				}
+			});
+
+		$(".app-btn").click(apply);
+		$(".remove-btn").click(clear);
+
+		function clear() {
+			$("#selection").html("<div class='selection-heading'><div class='title selection-title'>Current Selection</div>" +
+			"<div class='remove-btn'><span class='glyphicon glyphicon-remove'></span><span>Clear</span></div>" +
+			"<div class='app-btn'><span class='glyphicon glyphicon-ok'></span><span>Apply</span></div></div>");
+
+			$("#selection").css("display", "none");
+			$(".app-btn").click(apply);
+			$(".remove-btn").click(clear);
+
+			// remove all selections in the top panel
+			$(".pill").find(".plus-minus-sign")
+				.html("+")
+				.css("display", "none");
+			$(".pill").find(".name")
+				.css("padding-left", "0");
+			$(".pill")
+				.css("color", "#eeb211")
+				.removeClass("selected");
+		}
+
+		function apply() {
+			$("#pull-down-menu").removeClass("focused");
+			$("#search-bar input").removeClass("focused");
+			$(document).click();
+		}
+
+		function enterSelectedPill() {
+			$(this).css({
+				backgroundColor: "#eeb211",
+				color: "#00254c"
+			});
+			$(this).find(".plus-minus-sign").css({
+				"display": "inline",
+				"margin-left": "-15px"
+			});
+
+			$(this).find(".name").animate({
+				'padding-left': "5"
+			}, 300);
+		}
+
+		function leaveSelectedPill() {
+			$(this).css({
+				backgroundColor: "#00254c",
+				color: "#eeb211"
+			});
+			$(this).find(".plus-minus-sign").css({
+				"display": "none"
+			});
+
+			$(this).find(".name").animate({
+				'padding-left': "0"
+			}, 300);
+		}
+
+		function clickSelectedPill() {
+			var text = $(this).text().substring(1);
+			var className = text.replace(' & ', ' ');
+			className = className.replace('.', '');
+			className = className.replace(',', '');
+			className = className.split(" ").join("-");
+
+			$(".pill." + className).find(".plus-minus-sign")
+				.html("+")
+				.css("display", "none");
+			$(".pill." + className).find(".name")
+				.css("padding-left", "0");
+			$(".pill." + className)
+				.css("color", "#eeb211")
+				.removeClass("selected");
+			$(this).remove();
+
+			// check if all are removed
+			if ($("#selection").find(".selected-pill").length == 0)
+				$("#selection").css("display", "none");
+		}
+	});
+</script>
+
+</body>
+</html>
