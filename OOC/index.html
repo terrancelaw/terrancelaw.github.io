@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+
+	<div id="left-content">
+
+		<div id="list-view" class="ui-view ui-corner-all noselection">
+			<div class="header"><svg></svg></div>
+			<div class="content"><svg></svg></div>
+		</div>
+
+		<div class="container ui-view ui-corner-all noselection">
+			<div id="OOC-view" class="ui-bottom-border">
+				<svg></svg>
+			</div>
+
+			<div id="feature-view">
+				<div class="header"><svg></svg></div>
+				<div class="content"><svg></svg></div>
+				<div class="footer"><svg></svg></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="right-content">
+
+		<div id="concept-map-view" class="noselection">
+			
+			<div class="ui-menu-bar ui-corner-all">
+
+				<span>
+					<button id="remove" class="ui-button">
+						<span class="ui-icon-close ui-icon"></span>
+					</button>
+				</span>
+
+			</div>
+
+			<div id="concept-map" class="ui-view ui-corner-all"></div>
+
+		</div>
+
+	</div>
+
+	<script src="js/comparisonHandler.js"></script>
+	<script src="js/OOCView.js"></script>
+	<script src="js/listView.js"></script>
+	<script src="js/featureView.js"></script>
+	<script src="js/conceptMapView.js"></script>
+	<script src="js/database.js"></script>
+	<script src="js/start.js"></script>
+</body>

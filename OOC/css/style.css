@@ -1,0 +1,107 @@
+body {
+	font: 10px sans-serif;
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #d3d3d3;
+}
+
+.ui-bottom-border {
+    border-bottom: 1px solid #aaaaaa;
+}
+
+div.noselection {
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.ui-menu-bar {
+    background: white;
+    border: 1px solid #aaaaaa;
+    height: 20px
+}
+
+.ui-menu-bar .ui-button {
+    padding: 0px;
+    margin: 0px;
+    float: right;
+}
+
+.ui-view {
+    background: white;
+    border: 1px solid #aaaaaa;
+}
+
+#left-content, #right-content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#list-view {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.content {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#list-view .content {
+    cursor: pointer;
+}
+
+.header {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#feature-view .header {
+    font-size: 10px;
+}
+
+.footer {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.row.odd rect {
+    fill: white;
+}
+
+.row.even rect {
+    fill: #f4f4f4
+}
+
+.row:hover rect {
+    fill: #ffffe5
+}
+
+#draggable-tag {
+    position: absolute;
+    cursor: all-scroll;
+}
