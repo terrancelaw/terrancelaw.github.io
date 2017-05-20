@@ -141,12 +141,14 @@ var ComparisonHandler = {
 	},
 	findFeatureVectorsBelongsToGroup: function(groupKey, groupName) {
 		var groupFeatureVectors = [];
+		var findEverythingElse = groupName.charAt(0) == "!";
+		groupName = (findEverythingElse) ? groupName.substring(1) : groupName;
 
 		for (var id in Database.featureVectors) {
 			var currentObjectFeatureVector = Database.featureVectors[id];
 			var currentObjectGroupName = Database.dataByID[id][groupKey];
 
-			if (currentObjectGroupName == groupName)
+			if (findEverythingElse && currentObjectGroupName != groupName || !findEverythingElse && currentObjectGroupName == groupName)
 				groupFeatureVectors.push(currentObjectFeatureVector);
 		}
 

@@ -8,6 +8,7 @@ var rightContentWidth = 900;
 // add together = 660 + 5
 var listViewHeaderHeight = 25;
 var listViewContentHeight = 270;
+var listViewFooterHeight = 25;
 
 var OOCViewHeight = 70;
 
@@ -15,9 +16,11 @@ var featureViewHeaderHeight = 20;
 var featureViewContentHeight = 245;
 var featureViewFooterHeight = 30;
 
-// add together = 660 + 5 x 2
+// add together = 660 + 5
 var conceptMapHeight = 640 + margin;
 var menuBarHeight = 20;
+
+// table width and height = 80%
 
 $(function() {
 	// set body width so that the divs are fixed in place even on resize
@@ -42,6 +45,9 @@ $(function() {
 	$("#list-view .content")
 		.css("width", leftContentWidth)
 		.css("height", listViewContentHeight);
+	$("#list-view .footer")
+		.css("width", leftContentWidth)
+		.css("height", listViewFooterHeight);
 
 	$("#left-content .container")
 		.css("width", leftContentWidth)
@@ -72,6 +78,11 @@ $(function() {
 		.css("width", rightContentWidth)
 		.css("height", conceptMapHeight);
 
+	// data table
+	$("#table-view #data-table")
+		.css("width", (rightContentWidth + leftContentWidth + margin) * 0.8)
+		.css("height", (conceptMapHeight + menuBarHeight) * 0.8);
+
 	// set svg
 	d3.select("#list-view .header svg")
 		.attr("width", leftContentWidth)
@@ -79,6 +90,9 @@ $(function() {
 	d3.select("#list-view .content svg")
 		.attr("width", leftContentWidth)
 		.attr("height", listViewContentHeight);
+	d3.select("#list-view .footer svg")
+		.attr("width", leftContentWidth)
+		.attr("height", listViewFooterHeight);
 	
 	d3.select("#OOC-view svg")
 		.attr("width", leftContentWidth)
@@ -93,6 +107,10 @@ $(function() {
 	d3.select("#feature-view .footer svg")
 		.attr("width", leftContentWidth)
 		.attr("height", featureViewFooterHeight);
+
+	d3.select("#table-view #data-table svg")
+		.attr("width", (rightContentWidth + leftContentWidth + margin) * 0.8 - 10) // -10 to prevent overflow at the beginning
+		.attr("height", (conceptMapHeight + menuBarHeight) * 0.8 - 10); // -10 to prevent overflow at the beginning
 
 	Database.getData();
 });

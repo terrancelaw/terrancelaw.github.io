@@ -341,17 +341,21 @@ var OOCView = {
 		var findDistinguishingFeatures = !isCurrentShelfOccupied; // need state of current at the beginning (if the current shelf is occupied, find non-distinguishing features)
 
 		if (needFeatureSelection) {
-			var topShelfGroupKey = self.shelf["top"].select("text").text().split(": ")[0];
-			var topShelfGroupName = self.shelf["top"].select("text").text().split(": ")[1];
+			var topShelfText = self.shelf["top"].select("text").text();
+			var bottomShelfText = self.shelf["bottom"].select("text").text();
 
-			var bottomShelfGroupKey = self.shelf["bottom"].select("text").text().split(": ")[0];
-			var bottomShelfGroupName = self.shelf["bottom"].select("text").text().split(": ")[1];
+			// assumming that users cannot put two everything else to shelves
+			var	topShelfGroupKey = (topShelfText == "Everything Else") ? bottomShelfText.split(": ")[0] : topShelfText.split(": ")[0];
+			var	topShelfGroupName = (topShelfText == "Everything Else") ? "!" + bottomShelfText.split(": ")[1] : topShelfText.split(": ")[1];
+			var	bottomShelfGroupKey = (bottomShelfText == "Everything Else") ? topShelfText.split(": ")[0] : bottomShelfText.split(": ")[0];
+			var	bottomShelfGroupName = (bottomShelfText == "Everything Else") ? "!" + topShelfText.split(": ")[1] : bottomShelfText.split(": ")[1];
 
 			var group1 = { key: topShelfGroupKey, name: topShelfGroupName };
 			var group2 = { key: bottomShelfGroupKey, name: bottomShelfGroupName };
 
-			if (findDistinguishingFeatures) {
+			console.log(group1, group2);
 
+			if (findDistinguishingFeatures) {
 				var arrangeListInDescendingOrder = true;
 				var report = ComparisonHandler.startFindingDistinguishingFeatures(group1, group2);
 				FeatureView.populateView(report, arrangeListInDescendingOrder);

@@ -5,6 +5,7 @@ var ListView = {
 
 	contentSVG: null,
 	headerSVG: null,
+	footerSVG: null,
 
 	init: function() {
 		var self = this;
@@ -15,11 +16,7 @@ var ListView = {
 		self.contentSVG = d3.select("#list-view .content svg")
 			.attr("height", Database.data.length * self.rowHeight)
 			.append("g");
-
-		self.drawTable();
-	},
-	drawTable: function() {
-		var self = this;
+		self.footerSVG = d3.select("#list-view .footer svg");
 
 		// drag on a group
 		var dragGroup = d3.behavior.drag()
@@ -29,7 +26,7 @@ var ListView = {
 
 				var groupKey = d3.select(this).attr("group-key");
 				var groupName = d3.select(this).attr("group-name");
-				var textInside = groupKey + ": " + groupName;
+				var textInside = (groupKey == "") ? groupName : groupKey + ": " + groupName;
 
 				var tagLeft = mouseXRelativeToPage - OOCView.shelfWidth / 2;
 				var tagRight = mouseYRelativeToPage - OOCView.shelfHeight / 2
@@ -65,6 +62,36 @@ var ListView = {
 				// remove tag
 				$("#draggable-tag").remove();
 			});
+
+		self.drawHeader();
+		self.drawContent(dragGroup);
+		self.drawFooter(dragGroup);
+	},
+	drawHeader: function() {
+		var self = this;
+
+		// create header
+		self.headerSVG.append("text")
+			.attr("x", self.width / 3 / 2)
+			.attr("y", self.rowHeight / 2)
+			.style("text-anchor", "middle")
+			.style("alignment-baseline", "middle")
+			.text("City");
+		self.headerSVG.append("text")
+			.attr("x", self.width / 3 + self.width / 3 / 2)
+			.attr("y", self.rowHeight / 2)
+			.style("text-anchor", "middle")
+			.style("alignment-baseline", "middle")
+			.text("Country");
+		self.headerSVG.append("text")
+			.attr("x", self.width / 3 * 2 + self.width / 3 / 2)
+			.attr("y", self.rowHeight / 2)
+			.style("text-anchor", "middle")
+			.style("alignment-baseline", "middle")
+			.text("Continent");
+	},
+	drawContent: function(dragGroup) {
+		var self = this;
 
 		// create rows
 		var row = self.contentSVG.selectAll(".row")
@@ -161,26 +188,6 @@ var ListView = {
 				return d["Continent"];
 			});
 
-		// create header
-		self.headerSVG.append("text")
-			.attr("x", self.width / 3 / 2)
-			.attr("y", self.rowHeight / 2)
-			.style("text-anchor", "middle")
-			.style("alignment-baseline", "middle")
-			.text("City");
-		self.headerSVG.append("text")
-			.attr("x", self.width / 3 + self.width / 3 / 2)
-			.attr("y", self.rowHeight / 2)
-			.style("text-anchor", "middle")
-			.style("alignment-baseline", "middle")
-			.text("Country");
-		self.headerSVG.append("text")
-			.attr("x", self.width / 3 * 2 + self.width / 3 / 2)
-			.attr("y", self.rowHeight / 2)
-			.style("text-anchor", "middle")
-			.style("alignment-baseline", "middle")
-			.text("Continent");
-
 		function mouseenterGroup() {
 			var mouseX = d3.mouse(this)[0];
 			var mouseoverGroupName = d3.select(this).attr("group-name").split(" ").join("-");
@@ -192,7 +199,7 @@ var ListView = {
 			// highlight related group
 			d3.selectAll(".row ." + mouseoverGroupName)
 				.each(function() {
-					var bbox = d3.select(this).select("text")[0][0]
+					var bbox = d3.select(this).select("text").node()
 						.getBBox();
 
 					d3.select(this)
@@ -213,6 +220,58 @@ var ListView = {
 			// remove background
 			d3.selectAll(".background-on-hover")
 				.remove();
+		}
+	},
+	drawFooter: function(dragGroup) {
+		var self = this;
+
+		var group = self.footerSVG.append("g")
+			.attr("class", "everything-else")
+			.attr("group-name", "Everything Else")
+			.attr("group-key", "")
+			.style("cursor", "all-scroll")
+			.on("mouseenter", mouseenterEverythingElse)
+			.on("mouseleave", mouseleaveEverythingElse)
+			.call(dragGroup);
+		var text = group.append("text")
+			.attr("x", self.width - 10)
+			.attr("y", self.rowHeight / 2)
+			.style("text-anchor", "end")
+			.style("alignment-baseline", "middle")
+			.style("opacity", 0.3)
+			.text("Everything Else");
+
+		var bbox = text.node().getBBox();
+		group.insert("rect", "text")
+			.attr("x", bbox.x - 5)
+			.attr("y", bbox.y - (self.rowHeight - bbox.height) / 2)
+			.attr("width", bbox.width + 10)
+			.attr("height", self.rowHeight)
+			.style("fill", "white")
+			.style("opacity", 0);
+		group.insert("rect", "text")
+			.attr("class", "background")
+			.attr("x", bbox.x - 5)
+			.attr("y", bbox.y - 3)
+			.attr("width", bbox.width + 10)
+			.attr("height", bbox.height  + 6)
+			.attr("rx", 3)
+			.attr("ry", 3)
+			.style("fill", "gray")
+			.style("opacity", 0.1);
+
+		function mouseenterEverythingElse() {
+			d3.select(this).select("rect.background")
+				.style("opacity", 0.3);
+			d3.select(this).select("text")
+				.style("opacity", 1);
+		}
+
+		function mouseleaveEverythingElse() {
+			d3.select(this).select("rect.background")
+				.style("opacity", 0.1);
+			d3.select(this).select("text")
+				.style("opacity", 0.3);
 		}
 	},
 	createTag: function(textInside) {

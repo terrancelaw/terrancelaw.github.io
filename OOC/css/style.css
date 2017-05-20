@@ -5,6 +5,7 @@ body {
 
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px
 }
  
 ::-webkit-scrollbar-track {
@@ -60,6 +61,7 @@ div.noselection {
 #list-view {
     overflow-y: hidden;
     overflow-x: hidden;
+    position: relative;
 }
 
 .content {
@@ -69,6 +71,8 @@ div.noselection {
 
 #list-view .content {
     cursor: pointer;
+    position: absolute;
+    bottom: 0px;
 }
 
 .header {
@@ -89,15 +93,20 @@ div.noselection {
     font-weight: bold;
 }
 
-.row.odd rect {
+#list-view .footer {
+    position: absolute;
+    bottom: 0px;
+}
+
+#list-view .row.odd rect {
     fill: white;
 }
 
-.row.even rect {
+#list-view .row.even rect {
     fill: #f4f4f4
 }
 
-.row:hover rect {
+#list-view .row:hover rect {
     fill: #ffffe5
 }
 
