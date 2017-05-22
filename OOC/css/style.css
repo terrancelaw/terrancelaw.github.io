@@ -1,6 +1,6 @@
 body {
 	font: 10px sans-serif;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -61,6 +61,9 @@ div.noselection {
 #list-view {
     overflow-y: hidden;
     overflow-x: hidden;
+}
+
+#list-view .table {
     position: relative;
 }
 
@@ -69,7 +72,7 @@ div.noselection {
     overflow-x: hidden;
 }
 
-#list-view .content {
+#list-view .table .content {
     cursor: pointer;
     position: absolute;
     bottom: 0px;
@@ -93,9 +96,10 @@ div.noselection {
     font-weight: bold;
 }
 
-#list-view .footer {
+#list-view .table .footer {
     position: absolute;
     bottom: 0px;
+    right: 0px;
 }
 
 #list-view .row.odd rect {
@@ -113,4 +117,31 @@ div.noselection {
 #draggable-tag {
     position: absolute;
     cursor: all-scroll;
+}
+
+#list-view .menu {
+    display: none;
+}
+
+#list-view .menu .footer {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#list-view .menu .footer label {
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+#list-view .menu .footer select {
+    border-radius: 3px;
+    background-color: rgb(248, 248, 248);
+    border-color: rgb(166, 166, 166);
+    outline: none;
+}
+
+#list-view .menu .footer svg {
+    float: right;
 }

@@ -63,6 +63,7 @@ var Database = {
 			ListView.init();
 			OOCView.init();
 			FeatureView.init();
+			ChangeColumnMenu.init();
 		});
 
 		function type(d) {

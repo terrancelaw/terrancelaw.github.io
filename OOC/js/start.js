@@ -20,7 +20,11 @@ var featureViewFooterHeight = 30;
 var conceptMapHeight = 640 + margin;
 var menuBarHeight = 20;
 
-// table width and height = 80%
+// change column height (add together = 295 / 2)
+var changeColumnMenuHeaderHeight = 25;
+var changeColumnMenuContentHeight = 122.5;
+var changeColumnMenuFooterHeight = 30;
+var changeColumnMenuFooterSVGWidth = leftContentWidth / 3 * 2;
 
 $(function() {
 	// set body width so that the divs are fixed in place even on resize
@@ -39,15 +43,31 @@ $(function() {
 		.css("width", leftContentWidth)
 		.css("height", listViewHeaderHeight + listViewContentHeight)
 		.css("margin-bottom", margin);
-	$("#list-view .header")
+	$("#list-view .table")
+		.css("width", leftContentWidth)
+		.css("height", listViewHeaderHeight + listViewContentHeight);
+	$("#list-view .table .header")
 		.css("width", leftContentWidth)
 		.css("height", listViewHeaderHeight);
-	$("#list-view .content")
+	$("#list-view .table .content")
 		.css("width", leftContentWidth)
 		.css("height", listViewContentHeight);
-	$("#list-view .footer")
-		.css("width", leftContentWidth)
+	$("#list-view .table .footer")
+		.css("width", leftContentWidth / 3)
 		.css("height", listViewFooterHeight);
+
+	$("#list-view .menu")
+		.css("width", leftContentWidth)
+		.css("height", (listViewHeaderHeight + listViewContentHeight) / 2);
+	$("#list-view .menu .header")
+		.css("width", leftContentWidth)
+		.css("height", changeColumnMenuHeaderHeight);
+	$("#list-view .menu .content")
+		.css("width", leftContentWidth)
+		.css("height", changeColumnMenuContentHeight);
+	$("#list-view .menu .footer")
+		.css("width", leftContentWidth)
+		.css("height", changeColumnMenuFooterHeight);
 
 	$("#left-content .container")
 		.css("width", leftContentWidth)
@@ -78,21 +98,26 @@ $(function() {
 		.css("width", rightContentWidth)
 		.css("height", conceptMapHeight);
 
-	// data table
-	$("#table-view #data-table")
-		.css("width", (rightContentWidth + leftContentWidth + margin) * 0.8)
-		.css("height", (conceptMapHeight + menuBarHeight) * 0.8);
-
 	// set svg
-	d3.select("#list-view .header svg")
+	d3.select("#list-view .table .header svg")
 		.attr("width", leftContentWidth)
 		.attr("height", listViewHeaderHeight);
-	d3.select("#list-view .content svg")
+	d3.select("#list-view .table .content svg")
 		.attr("width", leftContentWidth)
 		.attr("height", listViewContentHeight);
-	d3.select("#list-view .footer svg")
-		.attr("width", leftContentWidth)
+	d3.select("#list-view .table .footer svg")
+		.attr("width", leftContentWidth / 3)
 		.attr("height", listViewFooterHeight);
+
+	d3.select("#list-view .menu .header svg")
+		.attr("width", leftContentWidth)
+		.attr("height", changeColumnMenuHeaderHeight);
+	d3.select("#list-view .menu .content svg")
+		.attr("width", leftContentWidth)
+		.attr("height", changeColumnMenuContentHeight - 10);
+	d3.select("#list-view .menu .footer svg")
+		.attr("width", changeColumnMenuFooterSVGWidth)
+		.attr("height", changeColumnMenuFooterHeight); // consider the height of dropdown as well
 	
 	d3.select("#OOC-view svg")
 		.attr("width", leftContentWidth)

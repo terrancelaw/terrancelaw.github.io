@@ -98,7 +98,8 @@ var OOCView = {
 					self.handleStateTransitionOnDragEnd(currentShelf, textOnTag);
 
 					// remove tag
-					$("#draggable-tag").remove();
+					var isTagPlacedOnShelf = (currentShelf != "none"); // to determine if everything else should be restored
+					ListView.removeTag(isTagPlacedOnShelf);
 				}
 			});
 
@@ -352,8 +353,6 @@ var OOCView = {
 
 			var group1 = { key: topShelfGroupKey, name: topShelfGroupName };
 			var group2 = { key: bottomShelfGroupKey, name: bottomShelfGroupName };
-
-			console.log(group1, group2);
 
 			if (findDistinguishingFeatures) {
 				var arrangeListInDescendingOrder = true;

@@ -12,11 +12,11 @@ var ListView = {
 
 		self.width = leftContentWidth - self.margin.left - self.margin.right;
 
-		self.headerSVG = d3.select("#list-view .header svg");
-		self.contentSVG = d3.select("#list-view .content svg")
+		self.headerSVG = d3.select("#list-view .table .header svg");
+		self.contentSVG = d3.select("#list-view .table .content svg")
 			.attr("height", Database.data.length * self.rowHeight)
 			.append("g");
-		self.footerSVG = d3.select("#list-view .footer svg");
+		self.footerSVG = d3.select("#list-view .table .footer svg");
 
 		// drag on a group
 		var dragGroup = d3.behavior.drag()
@@ -60,7 +60,8 @@ var ListView = {
 				OOCView.handleStateTransitionOnDragEnd(currentShelf, textOnTag);
 
 				// remove tag
-				$("#draggable-tag").remove();
+				var isTagPlacedOnShelf = (currentShelf != "none");
+				self.removeTag(isTagPlacedOnShelf);
 			});
 
 		self.drawHeader();
@@ -70,25 +71,89 @@ var ListView = {
 	drawHeader: function() {
 		var self = this;
 
-		// create header
-		self.headerSVG.append("text")
+		// first column
+		var firstColumnHeader = self.headerSVG.append("g");
+
+		var firstColumnTitle = firstColumnHeader.append("text")
 			.attr("x", self.width / 3 / 2)
 			.attr("y", self.rowHeight / 2)
 			.style("text-anchor", "middle")
 			.style("alignment-baseline", "middle")
 			.text("City");
-		self.headerSVG.append("text")
-			.attr("x", self.width / 3 + self.width / 3 / 2)
+
+		var bbox = firstColumnTitle.node().getBBox();
+		var idText = firstColumnHeader.append("text")
+			.attr("x", self.width / 3 / 2 + bbox.width / 2 + 10)
+			.attr("y", self.rowHeight / 2)
+			.style("text-anchor", "middle")
+			.style("alignment-baseline", "middle")
+			.text("ID")
+			.style("class", "id-icon")
+			.style("font-size", "9px");
+
+		var bbox = idText.node().getBBox();
+		firstColumnHeader.insert("rect", ".id-icon")
+			.attr("x", bbox.x - 3)
+			.attr("y", bbox.y - 1)
+			.attr("width", bbox.width + 6)
+			.attr("height", bbox.height  + 2)
+			.attr("rx", 3)
+			.attr("ry", 3)
+			.style("fill", "gray")
+			.style("opacity", 0.3);
+
+		// second column
+		var secondColumnHeader = self.headerSVG.append("g")
+			.attr("transform", "translate(" + self.width / 3 + ", 0)");
+
+		var secondColumnTitle = secondColumnHeader.append("text")
+			.attr("x", self.width / 3 / 2)
 			.attr("y", self.rowHeight / 2)
 			.style("text-anchor", "middle")
 			.style("alignment-baseline", "middle")
 			.text("Country");
-		self.headerSVG.append("text")
-			.attr("x", self.width / 3 * 2 + self.width / 3 / 2)
+		
+		var bbox = secondColumnTitle.node().getBBox();
+		var changeButtonText = secondColumnHeader.append("text")
+			.attr("x", self.width / 3 / 2 + bbox.width / 2 + 8)
+			.attr("y", self.rowHeight / 2)
+			.style("text-anchor", "middle")
+			.style("alignment-baseline", "middle")
+			.text("\uf00b")
+			.style("font-family", "FontAwesome")
+			.style("class", "change-icon1")
+			.style("font-size", "10px")
+			.style("cursor", "pointer")
+			.on("click", clickChangeButton);
+
+		// third column
+		var thirdColumnHeader = self.headerSVG.append("g")
+			.attr("transform", "translate(" + self.width / 3 * 2 + ", 0)");
+
+		var thirdColumnTitle = thirdColumnHeader.append("text")
+			.attr("x", self.width / 3 / 2)
 			.attr("y", self.rowHeight / 2)
 			.style("text-anchor", "middle")
 			.style("alignment-baseline", "middle")
 			.text("Continent");
+		
+		var bbox = thirdColumnTitle.node().getBBox();
+		var changeButtonText = thirdColumnHeader.append("text")
+			.attr("x", self.width / 3 / 2 + bbox.width / 2 + 8)
+			.attr("y", self.rowHeight / 2)
+			.style("text-anchor", "middle")
+			.style("alignment-baseline", "middle")
+			.text("\uf00b")
+			.style("font-family", "FontAwesome")
+			.style("class", "change-icon2")
+			.style("font-size", "10px")
+			.style("cursor", "pointer")
+			.on("click", clickChangeButton);
+
+		function clickChangeButton() {
+			var thisColumnFeature = d3.select(this.parentNode).select("text").text();
+			ChangeColumnMenu.show(thisColumnFeature);
+		}
 	},
 	drawContent: function(dragGroup) {
 		var self = this;
@@ -108,16 +173,36 @@ var ListView = {
 				return "translate(0," + i * self.rowHeight + ")";
 			});
 
-		// create group for hovering
+		// create rect for hovering
 		row.append("rect")
 			.attr("x", 0)
 			.attr("y", 0)
 			.attr("width", self.width)
 			.attr("height", self.rowHeight);
 
-		// create name
-		row.append("text")
-			.attr("class", "name")
+		// create id
+		var id = row.append("g")
+			.attr("class", function(d) {
+				var groupName = d["City"].split(" ").join("-");
+				return "id " + groupName;
+			})
+			.attr("group-name", function(d) {
+				var groupName = d["City"];
+				return groupName;
+			})
+			.attr("group-key", "City")
+			.style("cursor", "all-scroll")
+			.on("mouseenter", mouseenterGroup)
+			.on("mouseleave", mouseleaveGroup)
+			.call(dragGroup);
+		id.append("rect")
+			.attr("x", 0)
+			.attr("y", 0)
+			.attr("width", self.width / 3)
+			.attr("height", self.rowHeight)
+			.style("fill", "white")
+			.style("opacity", 0);
+		id.append("text")
 			.attr("x", self.width / 3 / 2)
 			.attr("y", self.rowHeight / 2)
 			.style("text-anchor", "middle")
@@ -224,6 +309,7 @@ var ListView = {
 	},
 	drawFooter: function(dragGroup) {
 		var self = this;
+		var footerWidth = self.footerSVG.attr("width");
 
 		var group = self.footerSVG.append("g")
 			.attr("class", "everything-else")
@@ -234,7 +320,7 @@ var ListView = {
 			.on("mouseleave", mouseleaveEverythingElse)
 			.call(dragGroup);
 		var text = group.append("text")
-			.attr("x", self.width - 10)
+			.attr("x", footerWidth - 15)
 			.attr("y", self.rowHeight / 2)
 			.style("text-anchor", "end")
 			.style("alignment-baseline", "middle")
@@ -302,6 +388,25 @@ var ListView = {
 			.style("alignment-baseline", "middle")
 			.style("font-size", "11px")
 			.text(textInside);
+
+		// Everything else tag can only appear once
+		if (textInside == "Everything Else") {
+			$("#list-view .table .footer")
+				.css("display", "none");
+		}
+	},
+	removeTag: function(isTagPlacedOnShelf) { // need to handle the everything else icon as well
+		var self = this;
+		var textInside = $("#draggable-tag").text();
+
+		// remove tag
+		$("#draggable-tag").remove();
+
+		// Everything else tag appears again
+		if (textInside == "Everything Else" && !isTagPlacedOnShelf) {
+			$("#list-view .table .footer")
+				.css("display", "");
+		}
 	},
 	moveTagTo: function(left, top) {
 		$("#draggable-tag")
