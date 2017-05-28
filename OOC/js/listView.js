@@ -71,6 +71,68 @@ var ListView = {
 	drawHeader: function() {
 		var self = this;
 
+		// third column
+		var thirdColumnHeader = self.headerSVG.append("g")
+			.attr("class", "group2")
+			.attr("group", "group2")
+			.attr("feature", "Continent")
+			.attr("transform", "translate(" + self.width / 3 * 2 + ", 0)");
+
+		var thirdColumnTitle = thirdColumnHeader.append("text")
+			.attr("x", self.width / 3 / 2)
+			.attr("y", self.rowHeight / 2)
+			.style("cursor", "pointer")
+			.style("text-anchor", "middle")
+			.style("alignment-baseline", "middle")
+			.text("Continent")
+			.on("mouseenter", mouseenterText)
+			.on("mouseleave", mouseleaveText);
+		
+		var bbox = thirdColumnTitle.node().getBBox();
+		var changeButtonText = thirdColumnHeader.append("text")
+			.attr("class", "change-column-btn")
+			.attr("x", self.width / 3 / 2 + bbox.width / 2 + 8)
+			.attr("y", self.rowHeight / 2)
+			.style("text-anchor", "middle")
+			.style("alignment-baseline", "middle")
+			.text("\uf00b")
+			.style("font-family", "FontAwesome")
+			.style("class", "change-icon2")
+			.style("font-size", "10px")
+			.style("cursor", "pointer")
+			.on("click", clickChangeButton);
+
+		// second column
+		var secondColumnHeader = self.headerSVG.append("g")
+			.attr("class", "group1")
+			.attr("group", "group1")
+			.attr("feature", "Country")
+			.attr("transform", "translate(" + self.width / 3 + ", 0)");
+
+		var secondColumnTitle = secondColumnHeader.append("text")
+			.attr("x", self.width / 3 / 2)
+			.attr("y", self.rowHeight / 2)
+			.style("cursor", "pointer")
+			.style("text-anchor", "middle")
+			.style("alignment-baseline", "middle")
+			.text("Country")
+			.on("mouseenter", mouseenterText)
+			.on("mouseleave", mouseleaveText);
+		
+		var bbox = secondColumnTitle.node().getBBox();
+		var changeButtonText = secondColumnHeader.append("text")
+			.attr("class", "change-column-btn")
+			.attr("x", self.width / 3 / 2 + bbox.width / 2 + 8)
+			.attr("y", self.rowHeight / 2)
+			.style("text-anchor", "middle")
+			.style("alignment-baseline", "middle")
+			.text("\uf00b")
+			.style("font-family", "FontAwesome")
+			.style("class", "change-icon1")
+			.style("font-size", "10px")
+			.style("cursor", "pointer")
+			.on("click", clickChangeButton);
+
 		// first column
 		var firstColumnHeader = self.headerSVG.append("g")
 			.attr("feature", "City")
@@ -107,68 +169,6 @@ var ListView = {
 			.style("fill", "gray")
 			.style("opacity", 0.3);
 
-		// second column
-		var secondColumnHeader = self.headerSVG.append("g")
-			.attr("class", "group1")
-			.attr("group", "group1")
-			.attr("feature", "Country")
-			.attr("transform", "translate(" + self.width / 3 + ", 0)");
-
-		var secondColumnTitle = secondColumnHeader.append("text")
-			.attr("x", self.width / 3 / 2)
-			.attr("y", self.rowHeight / 2)
-			.style("cursor", "pointer")
-			.style("text-anchor", "middle")
-			.style("alignment-baseline", "middle")
-			.text("Country")
-			.on("mouseenter", mouseenterText)
-			.on("mouseleave", mouseleaveText);
-		
-		var bbox = secondColumnTitle.node().getBBox();
-		var changeButtonText = secondColumnHeader.append("text")
-			.attr("class", "change-column-btn")
-			.attr("x", self.width / 3 / 2 + bbox.width / 2 + 8)
-			.attr("y", self.rowHeight / 2)
-			.style("text-anchor", "middle")
-			.style("alignment-baseline", "middle")
-			.text("\uf00b")
-			.style("font-family", "FontAwesome")
-			.style("class", "change-icon1")
-			.style("font-size", "10px")
-			.style("cursor", "pointer")
-			.on("click", clickChangeButton);
-
-		// third column
-		var thirdColumnHeader = self.headerSVG.append("g")
-			.attr("class", "group2")
-			.attr("group", "group2")
-			.attr("feature", "Continent")
-			.attr("transform", "translate(" + self.width / 3 * 2 + ", 0)");
-
-		var thirdColumnTitle = thirdColumnHeader.append("text")
-			.attr("x", self.width / 3 / 2)
-			.attr("y", self.rowHeight / 2)
-			.style("cursor", "pointer")
-			.style("text-anchor", "middle")
-			.style("alignment-baseline", "middle")
-			.text("Continent")
-			.on("mouseenter", mouseenterText)
-			.on("mouseleave", mouseleaveText);
-		
-		var bbox = thirdColumnTitle.node().getBBox();
-		var changeButtonText = thirdColumnHeader.append("text")
-			.attr("class", "change-column-btn")
-			.attr("x", self.width / 3 / 2 + bbox.width / 2 + 8)
-			.attr("y", self.rowHeight / 2)
-			.style("text-anchor", "middle")
-			.style("alignment-baseline", "middle")
-			.text("\uf00b")
-			.style("font-family", "FontAwesome")
-			.style("class", "change-icon2")
-			.style("font-size", "10px")
-			.style("cursor", "pointer")
-			.on("click", clickChangeButton);
-
 		function clickChangeButton() {
 			var thisColumnFeature = d3.select(this.parentNode).attr("feature");
 			thisColumnFeature = DataTransformationHandler.returnFeatureNameWithoutID(thisColumnFeature);
@@ -195,7 +195,6 @@ var ListView = {
 
 				// insert rect below it
 				textBBox = textObject.node().getBBox();
-
 				d3.select(this.parentNode)
 					.insert("rect", "text")
 					.attr("x", textBBox.x - 3)
@@ -216,7 +215,6 @@ var ListView = {
 				var groupXTranslate = d3.transform(d3.select(this.parentNode).attr("transform")).translate[0];
 				var rectXTranslate = parseInt(d3.select(this.parentNode).select("rect").attr("x"));
 				var rectWidth = parseInt(d3.select(this.parentNode).select("rect").attr("width"));
-
 				d3.select("#list-view .table .header svg")
 					.attr("width", groupXTranslate + rectXTranslate + rectWidth + 10);
 
