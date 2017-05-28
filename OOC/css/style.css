@@ -1,6 +1,7 @@
 body {
 	font: 10px sans-serif;
 	overflow: hidden;
+    margin: 8px;
 }
 
 ::-webkit-scrollbar {
@@ -56,11 +57,15 @@ div.noselection {
 #left-content, #right-content {
     display: inline-block;
     vertical-align: top;
+    position: relative;
 }
 
-#list-view {
-    overflow-y: hidden;
-    overflow-x: hidden;
+#left-content {
+    z-index: 2;
+}
+
+#right-content {
+    z-index: 1;
 }
 
 #list-view .table {
@@ -79,8 +84,6 @@ div.noselection {
 }
 
 .header {
-    overflow-y: hidden;
-    overflow-x: hidden;
     font-size: 12px;
     font-weight: bold;
 }
@@ -93,7 +96,6 @@ div.noselection {
     overflow-y: hidden;
     overflow-x: hidden;
     font-size: 10px;
-    font-weight: bold;
 }
 
 #list-view .table .footer {
@@ -114,13 +116,12 @@ div.noselection {
     fill: #ffffe5
 }
 
-#draggable-tag {
-    position: absolute;
-    cursor: all-scroll;
-}
-
 #list-view .menu {
     display: none;
+}
+
+#list-view .menu .header {
+    background: #e8ede9;
 }
 
 #list-view .menu .footer {
@@ -128,20 +129,38 @@ div.noselection {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background: #e8ede9;
 }
 
 #list-view .menu .footer label {
     margin-left: 10px;
-    margin-right: 2px;
+    font-weight: bold;
+    color: #435e69;
 }
 
 #list-view .menu .footer select {
     border-radius: 3px;
     background-color: rgb(248, 248, 248);
     border-color: rgb(166, 166, 166);
+    color: #435e69;
     outline: none;
+    width: 30px;
 }
 
 #list-view .menu .footer svg {
     float: right;
+    align-self: flex-end;
+}
+
+#draggable-tag, #tool-tip, #category-name-editor {
+    position: absolute;
+    z-index: 999;
+}
+
+#draggable-tag {
+    cursor: all-scroll;
+}
+
+#category-name-editor {
+    outline: none;
 }

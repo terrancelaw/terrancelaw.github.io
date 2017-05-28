@@ -23,16 +23,14 @@ var ListView = {
 			.on("dragstart", function() {
 				var mouseXRelativeToPage = event.clientX;
 				var mouseYRelativeToPage = event.clientY;
+				var tagLeft = mouseXRelativeToPage - OOCView.shelfWidth / 2;
+				var tagTop = mouseYRelativeToPage - OOCView.shelfHeight / 2;
 
 				var groupKey = d3.select(this).attr("group-key");
 				var groupName = d3.select(this).attr("group-name");
-				var textInside = (groupKey == "") ? groupName : groupKey + ": " + groupName;
 
-				var tagLeft = mouseXRelativeToPage - OOCView.shelfWidth / 2;
-				var tagRight = mouseYRelativeToPage - OOCView.shelfHeight / 2
-
-				self.createTag(textInside);
-				self.moveTagTo(tagLeft, tagRight);
+				self.createTag(groupKey, groupName);
+				self.moveTagTo(tagLeft, tagTop);
 				
 				// handle states
 				OOCView.handleStateTransitionOnDragstart();
@@ -42,13 +40,14 @@ var ListView = {
 				var mouseXRelativeToPage = event.clientX;
 				var mouseYRelativeToPage = event.clientY;
 				var tagLeft = mouseXRelativeToPage - OOCView.shelfWidth / 2;
-				var tagRight = mouseYRelativeToPage - OOCView.shelfHeight / 2;
-				self.moveTagTo(tagLeft, tagRight);
+				var tagTop = mouseYRelativeToPage - OOCView.shelfHeight / 2;
+				self.moveTagTo(tagLeft, tagTop);
 
 				// handle states
 				var currentShelf = OOCView.onWhichShelf(mouseXRelativeToPage, mouseYRelativeToPage);
-				var textOnTag = d3.select("#draggable-tag svg text").text();
-				OOCView.handleStateTransitionOnDrag(currentShelf, textOnTag);
+				var groupKey = $("#draggable-tag").attr("group-key");
+				var groupName = $("#draggable-tag").attr("group-name");
+				OOCView.handleStateTransitionOnDrag(currentShelf, groupKey, groupName);
 			})
 			.on("dragend", function() {
 				var mouseXRelativeToPage = event.clientX;
@@ -56,8 +55,9 @@ var ListView = {
 
 				// handle states
 				var currentShelf = OOCView.onWhichShelf(mouseXRelativeToPage, mouseYRelativeToPage);
-				var textOnTag = d3.select("#draggable-tag svg text").text();
-				OOCView.handleStateTransitionOnDragEnd(currentShelf, textOnTag);
+				var groupKey = $("#draggable-tag").attr("group-key");
+				var groupName = $("#draggable-tag").attr("group-name");
+				OOCView.handleStateTransitionOnDragEnd(currentShelf, groupKey, groupName);
 
 				// remove tag
 				var isTagPlacedOnShelf = (currentShelf != "none");
@@ -72,14 +72,19 @@ var ListView = {
 		var self = this;
 
 		// first column
-		var firstColumnHeader = self.headerSVG.append("g");
+		var firstColumnHeader = self.headerSVG.append("g")
+			.attr("feature", "City")
+			.attr("class", "id");
 
 		var firstColumnTitle = firstColumnHeader.append("text")
 			.attr("x", self.width / 3 / 2)
 			.attr("y", self.rowHeight / 2)
+			.style("cursor", "pointer")
 			.style("text-anchor", "middle")
 			.style("alignment-baseline", "middle")
-			.text("City");
+			.text("City")
+			.on("mouseenter", mouseenterText)
+			.on("mouseleave", mouseleaveText);
 
 		var bbox = firstColumnTitle.node().getBBox();
 		var idText = firstColumnHeader.append("text")
@@ -104,17 +109,24 @@ var ListView = {
 
 		// second column
 		var secondColumnHeader = self.headerSVG.append("g")
+			.attr("class", "group1")
+			.attr("group", "group1")
+			.attr("feature", "Country")
 			.attr("transform", "translate(" + self.width / 3 + ", 0)");
 
 		var secondColumnTitle = secondColumnHeader.append("text")
 			.attr("x", self.width / 3 / 2)
 			.attr("y", self.rowHeight / 2)
+			.style("cursor", "pointer")
 			.style("text-anchor", "middle")
 			.style("alignment-baseline", "middle")
-			.text("Country");
+			.text("Country")
+			.on("mouseenter", mouseenterText)
+			.on("mouseleave", mouseleaveText);
 		
 		var bbox = secondColumnTitle.node().getBBox();
 		var changeButtonText = secondColumnHeader.append("text")
+			.attr("class", "change-column-btn")
 			.attr("x", self.width / 3 / 2 + bbox.width / 2 + 8)
 			.attr("y", self.rowHeight / 2)
 			.style("text-anchor", "middle")
@@ -128,17 +140,24 @@ var ListView = {
 
 		// third column
 		var thirdColumnHeader = self.headerSVG.append("g")
+			.attr("class", "group2")
+			.attr("group", "group2")
+			.attr("feature", "Continent")
 			.attr("transform", "translate(" + self.width / 3 * 2 + ", 0)");
 
 		var thirdColumnTitle = thirdColumnHeader.append("text")
 			.attr("x", self.width / 3 / 2)
 			.attr("y", self.rowHeight / 2)
+			.style("cursor", "pointer")
 			.style("text-anchor", "middle")
 			.style("alignment-baseline", "middle")
-			.text("Continent");
+			.text("Continent")
+			.on("mouseenter", mouseenterText)
+			.on("mouseleave", mouseleaveText);
 		
 		var bbox = thirdColumnTitle.node().getBBox();
 		var changeButtonText = thirdColumnHeader.append("text")
+			.attr("class", "change-column-btn")
 			.attr("x", self.width / 3 / 2 + bbox.width / 2 + 8)
 			.attr("y", self.rowHeight / 2)
 			.style("text-anchor", "middle")
@@ -151,8 +170,87 @@ var ListView = {
 			.on("click", clickChangeButton);
 
 		function clickChangeButton() {
-			var thisColumnFeature = d3.select(this.parentNode).select("text").text();
-			ChangeColumnMenu.show(thisColumnFeature);
+			var thisColumnFeature = d3.select(this.parentNode).attr("feature");
+			thisColumnFeature = DataTransformationHandler.returnFeatureNameWithoutID(thisColumnFeature);
+			var thisColumnGroup = d3.select(this.parentNode).attr("group");
+
+			ChangeColumnMenu.show(thisColumnFeature, thisColumnGroup);
+		}
+
+		function mouseenterText() {
+			var currentText = d3.select(this).text();
+
+			if (currentText.indexOf("...") != -1) {
+				// change text
+				var feature = d3.select(this.parentNode).attr("feature");
+				var completeFeatureName = DataTransformationHandler.returnFeatureNameWithoutID(feature);
+
+				var textBBox = d3.select(this).node().getBBox();
+				var textNewX = (self.width / 3 - textBBox.width) / 2;
+
+				var textObject = d3.select(this)
+					.style("text-anchor", "start")
+					.attr("x", textNewX)
+					.text(completeFeatureName);
+
+				// insert rect below it
+				textBBox = textObject.node().getBBox();
+
+				d3.select(this.parentNode)
+					.insert("rect", "text")
+					.attr("x", textBBox.x - 3)
+					.attr("y", textBBox.y - 2)
+					.attr("width", textBBox.width + 6)
+					.attr("height", textBBox.height + 4)
+					.attr("rx", 5)
+					.attr("ry", 5)
+					.style("fill", "white")
+					.style("stroke", "gray")
+					.style("stroke-dasharray", "2, 2");
+
+				// hide the button
+				d3.select(this.parentNode).select(".change-column-btn")
+					.style("display", "none");
+
+				// change width of svg
+				var groupXTranslate = d3.transform(d3.select(this.parentNode).attr("transform")).translate[0];
+				var rectXTranslate = parseInt(d3.select(this.parentNode).select("rect").attr("x"));
+				var rectWidth = parseInt(d3.select(this.parentNode).select("rect").attr("width"));
+
+				d3.select("#list-view .table .header svg")
+					.attr("width", groupXTranslate + rectXTranslate + rectWidth + 10);
+
+				// mark change
+				d3.select(this).classed("expanded", true);
+			}
+		}
+
+		function mouseleaveText() {
+			if (d3.select(this).classed("expanded")) {
+				// change text
+				var feature = d3.select(this.parentNode).attr("feature");
+				var newFeatureNameWithoutID = DataTransformationHandler.returnFeatureNameWithoutID(feature);
+				var shortFeatureName = (newFeatureNameWithoutID.length > 6) ? newFeatureNameWithoutID.substring(0, 6) + "..." : newFeatureNameWithoutID;
+
+				d3.select(this)
+					.style("text-anchor", "middle")
+					.attr("x", self.width / 3 / 2)
+					.text(shortFeatureName);
+
+				// remove rect below it
+				d3.select(this.parentNode).selectAll("rect").remove();
+
+				// show the button
+				d3.select(this.parentNode).select(".change-column-btn")
+					.style("display", null);
+
+				// change width of svg
+				d3.select("#list-view .table .header svg")
+					.attr("width", leftContentWidth);
+
+				// unmark change
+				d3.select(this).classed("expanded", false);
+			}
 		}
 	},
 	drawContent: function(dragGroup) {
@@ -275,14 +373,14 @@ var ListView = {
 
 		function mouseenterGroup() {
 			var mouseX = d3.mouse(this)[0];
-			var mouseoverGroupName = d3.select(this).attr("group-name").split(" ").join("-");
+			var mouseoverClassName = "." + d3.select(this).attr("class").split(" ").join(".");
 
 			// remove previous background
 			d3.selectAll(".background-on-hover")
 				.remove();
 
 			// highlight related group
-			d3.selectAll(".row ." + mouseoverGroupName)
+			d3.selectAll(".row " + mouseoverClassName)
 				.each(function() {
 					var bbox = d3.select(this).select("text").node()
 						.getBBox();
@@ -360,11 +458,14 @@ var ListView = {
 				.style("opacity", 0.3);
 		}
 	},
-	createTag: function(textInside) {
+	createTag: function(groupKey, groupName) {
 		var self = this;
+		var groupKeyShown = DataTransformationHandler.returnFeatureNameWithoutID(groupKey);
+		groupKeyShown = (groupKeyShown.length > 20) ? groupKeyShown.substring(0, 20) + "..." : groupKeyShown;
+		var textOnTag = (groupKeyShown == "") ? groupName : groupKeyShown + ": " + groupName;
 
 		// append the tag
-		$("body").append("<div id='draggable-tag'><svg></svg></div>");
+		$("body").append("<div id='draggable-tag' group-key='" + groupKey + "' group-name='" + groupName + "'><svg></svg></div>");
 
 		// create tag
 		var tagSVG = d3.select("#draggable-tag svg");
@@ -387,23 +488,23 @@ var ListView = {
 			.style("text-anchor", "middle")
 			.style("alignment-baseline", "middle")
 			.style("font-size", "11px")
-			.text(textInside);
+			.text(textOnTag);
 
 		// Everything else tag can only appear once
-		if (textInside == "Everything Else") {
+		if (textOnTag == "Everything Else") {
 			$("#list-view .table .footer")
 				.css("display", "none");
 		}
 	},
 	removeTag: function(isTagPlacedOnShelf) { // need to handle the everything else icon as well
 		var self = this;
-		var textInside = $("#draggable-tag").text();
+		var textOnTag = $("#draggable-tag").text();
 
 		// remove tag
 		$("#draggable-tag").remove();
 
 		// Everything else tag appears again
-		if (textInside == "Everything Else" && !isTagPlacedOnShelf) {
+		if (textOnTag == "Everything Else" && !isTagPlacedOnShelf) {
 			$("#list-view .table .footer")
 				.css("display", "");
 		}
@@ -412,5 +513,42 @@ var ListView = {
 		$("#draggable-tag")
 			.css("left", left)
 			.css("top", top);
+	},
+	changeColumn: function(columnClassName, newFeatureName) {
+		var self = this;
+
+		self.updateHeader(columnClassName, newFeatureName);
+		self.updateContent(columnClassName, newFeatureName);
+	},
+	updateHeader: function(columnClassName, newFeatureName) {
+		var self = this;
+		var newFeatureNameWithoutID = DataTransformationHandler.returnFeatureNameWithoutID(newFeatureName);
+		var shortFeatureName = (newFeatureNameWithoutID.length > 6) ? newFeatureNameWithoutID.substring(0, 6) + "..." : newFeatureNameWithoutID;
+		
+		// feature name stored and feature name displayed are different
+		self.headerSVG.select("." + columnClassName)
+			.attr("feature", newFeatureName);
+		self.headerSVG.select("." + columnClassName + " text")
+			.text(shortFeatureName);
+	},
+	updateContent: function(columnClassName, newFeatureName) {
+		var self = this;
+
+		var row = self.contentSVG.selectAll(".row")
+			.data(Database.data);
+
+		var group = row.select("." + columnClassName) // change group attributes
+			.attr("class", function(d) {
+				return columnClassName + " " + d[newFeatureName].split(" ").join("-");
+			})
+			.attr("group-key", newFeatureName)
+			.attr("group-name", function(d) {
+				return d[newFeatureName];
+			});
+
+		group.select("text") // change group text
+			.text(function(d) {
+				return d[newFeatureName];
+			});
 	}
 }

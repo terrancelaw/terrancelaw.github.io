@@ -20,11 +20,11 @@ var featureViewFooterHeight = 30;
 var conceptMapHeight = 640 + margin;
 var menuBarHeight = 20;
 
-// change column height (add together = 295 / 2)
+// change column height (add together = (295 - 1) / 2)
 var changeColumnMenuHeaderHeight = 25;
-var changeColumnMenuContentHeight = 122.5;
-var changeColumnMenuFooterHeight = 30;
-var changeColumnMenuFooterSVGWidth = leftContentWidth / 3 * 2;
+var changeColumnMenuContentHeight = 122;
+var changeColumnMenuFooterHeight = 50;
+var changeColumnMenuFooterSVGWidth = leftContentWidth / 3 * 2 + 10;
 
 $(function() {
 	// set body width so that the divs are fixed in place even on resize
@@ -58,7 +58,7 @@ $(function() {
 
 	$("#list-view .menu")
 		.css("width", leftContentWidth)
-		.css("height", (listViewHeaderHeight + listViewContentHeight) / 2);
+		.css("height", (listViewHeaderHeight + listViewContentHeight - 1) / 2);
 	$("#list-view .menu .header")
 		.css("width", leftContentWidth)
 		.css("height", changeColumnMenuHeaderHeight);
@@ -68,6 +68,8 @@ $(function() {
 	$("#list-view .menu .footer")
 		.css("width", leftContentWidth)
 		.css("height", changeColumnMenuFooterHeight);
+	$("#list-view .menu .footer #selector-container")
+		.css("height", changeColumnMenuFooterHeight / 2);
 
 	$("#left-content .container")
 		.css("width", leftContentWidth)

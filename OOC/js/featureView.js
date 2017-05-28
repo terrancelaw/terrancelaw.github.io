@@ -185,38 +185,52 @@ var FeatureView = {
 			.attr("height", self.rowHeight * resultArray.length);
 
 		function mouseoverFeatureName(d) {
-			d3.select(this)
-				.text(d["featureName"]);
-
-			// append rect before the text
-			var bbox = d3.select(this).node().getBBox();
-			var horizontalPadding = 10;
-			var verticalPadding = 5;
-			var rectWidth = bbox.width + horizontalPadding;
-			var rectHeight = bbox.height + verticalPadding;
-			d3.select(this.parentNode)
-				.insert("rect", ".feature-name")
-				.attr("class", "hover-on-text-rect")
-				.attr("width", rectWidth)
-				.attr("height", rectHeight)
-				.attr("x", -horizontalPadding/2)
-				.attr("y", self.rowHeight / 2 - rectHeight / 2)
-				.attr("rx", 5)
-				.attr("ry", 5)
-				.style("fill", "white")
-				.style("stroke", "gray")
-				.style("stroke-dasharray", "2, 2");
-		}
-		function mouseoutFeatureName(d) {
-			if (d["featureName"].length > self.textLength)
-				d3.select(this)
-					.text(d["featureName"].substring(0, self.textLength) + "...");
-			else
+			if (d3.select(this).text().indexOf("...") != -1) {
+				// change text
 				d3.select(this)
 					.text(d["featureName"]);
 
-			// remove rect
-			d3.selectAll(".hover-on-text-rect").remove();
+				// append rect before the text
+				var bbox = d3.select(this).node().getBBox();
+				var horizontalPadding = 10;
+				var verticalPadding = 5;
+				var rectWidth = bbox.width + horizontalPadding;
+				var rectHeight = bbox.height + verticalPadding;
+				d3.select(this.parentNode)
+					.insert("rect", ".feature-name")
+					.attr("class", "hover-on-text-rect")
+					.attr("width", rectWidth)
+					.attr("height", rectHeight)
+					.attr("x", -horizontalPadding/2)
+					.attr("y", self.rowHeight / 2 - rectHeight / 2)
+					.attr("rx", 5)
+					.attr("ry", 5)
+					.style("fill", "white")
+					.style("stroke", "gray")
+					.style("stroke-dasharray", "2, 2");
+
+				// mark expanded
+				d3.select(this)
+					.classed("expanded", true);
+			}
+		}
+
+		function mouseoutFeatureName(d) {
+			if (d3.select(this).classed("expanded")) {
+				if (d["featureName"].length > self.textLength)
+					d3.select(this)
+						.text(d["featureName"].substring(0, self.textLength) + "...");
+				else
+					d3.select(this)
+						.text(d["featureName"]);
+
+				// remove rect
+				d3.selectAll(".hover-on-text-rect").remove();
+
+				// unmark expanded
+				d3.select(this)
+					.classed("expanded", false);
+			}
 		}
 	},
 	drawFooter: function(overallAccuracy) {

@@ -19,10 +19,6 @@ var OOCView = {
 		"top": false,
 		"bottom": false
 	},
-	textOnShelf: {
-		"top": null,
-		"bottom": null
-	},
 
 	// colours
 	shelfColors: {
@@ -49,6 +45,13 @@ var OOCView = {
 			.append("g")
 			.attr("transform", "translate(" + self.margin.left + ", " + self.margin.top + ")");
 
+		self.drawShelf("top");
+		self.drawShelf("bottom");
+		self.drawContainer();
+	},
+	drawShelf: function(shelfName) {
+		var self = this;
+
 		// drag on the shelf to remove
 		var dragShelf = d3.behavior.drag()
 			.on("dragstart", function() {
@@ -57,12 +60,13 @@ var OOCView = {
 				if (self.isOccupied[shelfName]) {
 					var mouseXRelativeToPage = event.clientX;
 					var mouseYRelativeToPage = event.clientY;
-
 					var tagLeft = mouseXRelativeToPage - self.shelfWidth / 2;
 					var tagRight = mouseYRelativeToPage - self.shelfHeight / 2;
-					var textInside = d3.select(this).select(".group-name").text();
 
-					ListView.createTag(textInside);
+					var groupKey = d3.select(this).attr("group-key");
+					var groupName = d3.select(this).attr("group-name");
+
+					ListView.createTag(groupKey, groupName);
 					ListView.moveTagTo(tagLeft, tagRight);
 
 					self.removeOccupyShelf(shelfName);
@@ -83,8 +87,9 @@ var OOCView = {
 
 					// handle states
 					var currentShelf = self.onWhichShelf(mouseXRelativeToPage, mouseYRelativeToPage);
-					var textOnTag = d3.select("#draggable-tag svg text").text();
-					self.handleStateTransitionOnDrag(currentShelf, textOnTag);
+					var groupKey = $("#draggable-tag").attr("group-key");
+					var groupName = $("#draggable-tag").attr("group-name");
+					self.handleStateTransitionOnDrag(currentShelf, groupKey, groupName);
 				}
 			})
 			.on("dragend", function() {
@@ -94,21 +99,15 @@ var OOCView = {
 
 					// handle states
 					var currentShelf = self.onWhichShelf(mouseXRelativeToPage, mouseYRelativeToPage);
-					var textOnTag = d3.select("#draggable-tag svg text").text();
-					self.handleStateTransitionOnDragEnd(currentShelf, textOnTag);
+					var groupKey = $("#draggable-tag").attr("group-key");
+					var groupName = $("#draggable-tag").attr("group-name");
+					self.handleStateTransitionOnDragEnd(currentShelf, groupKey, groupName);
 
 					// remove tag
 					var isTagPlacedOnShelf = (currentShelf != "none"); // to determine if everything else should be restored
 					ListView.removeTag(isTagPlacedOnShelf);
 				}
 			});
-
-		self.drawShelf("top", dragShelf);
-		self.drawShelf("bottom", dragShelf);
-		self.drawContainer();
-	},
-	drawShelf: function(shelfName, dragShelf) {
-		var self = this;
 
 		// draw background
 		self.svg.append("rect")
@@ -132,8 +131,10 @@ var OOCView = {
 		// draw shelf
 		self.shelf[shelfName] = self.svg.append("g")
 			.attr("class", shelfName + "-shelf")
-			.style("cursor", "pointer")
-			.call(dragShelf);
+			.style("cursor", "all-scroll")
+			.call(dragShelf)
+			.on("mouseenter", mouseenterShelf)
+			.on("mouseleave", mouseleaveShelf);
 		self.shelf[shelfName].append("rect")
 			.attr("class", "shelf")
 			.attr("x", self.shelfLeftPadding)
@@ -143,7 +144,71 @@ var OOCView = {
 			.attr("rx", 5)
 			.attr("ry", 5)
 			.style("fill", "white")
-			.style("stroke", "none");
+			.style("stroke", self.shelfColors[shelfName].deep);
+
+		function mouseenterShelf() {
+			if (!d3.select(this).select(".config").empty()) {
+				var textOnTag = d3.select(this).select(".config").text();
+
+				if (textOnTag.indexOf("...") != -1) { // if some text is hidden, expand the shelf
+					// change text
+					var groupKey = DataTransformationHandler.returnFeatureNameWithoutID(d3.select(this).attr("group-key"));
+					var groupName = d3.select(this).attr("group-name");
+					var newText = groupKey + ": " + groupName;
+
+					var textBBox = d3.select(this).select(".config").node().getBBox();
+					var textLeftPadding = (self.shelfWidth - textBBox.width) / 2;
+					var textNewX = self.shelfLeftPadding + textLeftPadding;
+
+					var text = d3.select(this).select(".config")
+						.attr("x", textNewX)
+						.style("text-anchor", "start")
+						.text(newText);
+
+					// change rect
+					textBBox = text.node().getBBox();
+					var rectWidth = textBBox.width + textLeftPadding * 2;
+
+					d3.select(this).select(".shelf")
+						.attr("width", rectWidth);
+
+					// change svg width
+					d3.select("#OOC-view svg")
+						.attr("width", self.shelfLeftPadding + rectWidth + 20)
+
+					// mark the change
+					d3.select(this).classed("expanded", true);
+				}
+			}
+		}
+
+		function mouseleaveShelf() {
+			if (d3.select(this).classed("expanded")) {
+				// change text
+				var groupKey = DataTransformationHandler.returnFeatureNameWithoutID(d3.select(this).attr("group-key"));
+				var groupName = d3.select(this).attr("group-name");
+				groupKey = (groupKey.length > 20) ? groupKey.substring(0, 20) + "..." : groupKey;
+				var newText = groupKey + ": " + groupName;
+
+				var textNewX = self.shelfLeftPadding + self.shelfWidth / 2;
+
+				d3.select(this).select(".config")
+					.attr("x", textNewX)
+					.style("text-anchor", "middle")
+					.text(newText);
+
+				// change rect
+				d3.select(this).select(".shelf")
+					.attr("width", self.shelfWidth);
+
+				// change svg width
+				d3.select("#OOC-view svg")
+					.attr("width", leftContentWidth)
+
+				// unmark the change
+				d3.select(this).classed("expanded", false);
+			}
+		}
 	},
 	drawContainer: function() {
 		var self = this;
@@ -251,7 +316,7 @@ var OOCView = {
 				self.highlightNoTagShelf(currentShelf);
 		}
 	},
-	handleStateTransitionOnDrag: function(currentShelf, textOnTag) {
+	handleStateTransitionOnDrag: function(currentShelf, groupKey, groupName) {
 		var self = this;
 
 		// if it is on a shelf
@@ -271,14 +336,14 @@ var OOCView = {
 				self.drawFunctionSign("different");
 			}
 			if (self.isShelfOccupied(currentShelf) && !self.isShelfOccupied(anotherShelf)) {
-				self.addTagToShelf(anotherShelf, textOnTag);
+				self.addTagToShelf(anotherShelf, groupKey, groupName);
 				self.highlightTaggedShelf(anotherShelf);
 				self.showContainer();
 				self.drawFunctionSign("similar");
 				self.previousState = currentShelf + ":currentOccupiedAnotherEmpty";
 			}
 			if (self.isShelfOccupied(currentShelf) && self.isShelfOccupied(anotherShelf)) {
-				self.addTagToShelf(anotherShelf, textOnTag);
+				self.addTagToShelf(anotherShelf, groupKey, groupName);
 				self.highlightTaggedShelf(anotherShelf);
 				self.showContainer();
 				self.drawFunctionSign("similar");
@@ -312,7 +377,7 @@ var OOCView = {
 			}
 		}
 	},
-	handleStateTransitionOnDragEnd: function(currentShelf, textOnTag) {
+	handleStateTransitionOnDragEnd: function(currentShelf, groupKey, groupName) {
 		var self = this;
 		var isCurrentShelfOccupied = (currentShelf != "none") ? self.isShelfOccupied(currentShelf) : false;
 
@@ -321,9 +386,9 @@ var OOCView = {
 			var anotherShelf = self.getNameOfAnotherShelf(currentShelf);
 
 			if (isCurrentShelfOccupied)
-				self.occupyShelf(anotherShelf, textOnTag);
+				self.occupyShelf(anotherShelf, groupKey, groupName);
 			else
-				self.occupyShelf(currentShelf, textOnTag);
+				self.occupyShelf(currentShelf, groupKey, groupName);
 		}
 
 		// restore the visual appearance
@@ -342,26 +407,35 @@ var OOCView = {
 		var findDistinguishingFeatures = !isCurrentShelfOccupied; // need state of current at the beginning (if the current shelf is occupied, find non-distinguishing features)
 
 		if (needFeatureSelection) {
-			var topShelfText = self.shelf["top"].select("text").text();
-			var bottomShelfText = self.shelf["bottom"].select("text").text();
+			var	topShelfGroupKey = self.shelf["top"].attr("group-key");
+			var	topShelfGroupName = self.shelf["top"].attr("group-name");
+			var	bottomShelfGroupKey = self.shelf["bottom"].attr("group-key");
+			var	bottomShelfGroupName = self.shelf["bottom"].attr("group-name");
 
 			// assumming that users cannot put two everything else to shelves
-			var	topShelfGroupKey = (topShelfText == "Everything Else") ? bottomShelfText.split(": ")[0] : topShelfText.split(": ")[0];
-			var	topShelfGroupName = (topShelfText == "Everything Else") ? "!" + bottomShelfText.split(": ")[1] : topShelfText.split(": ")[1];
-			var	bottomShelfGroupKey = (bottomShelfText == "Everything Else") ? topShelfText.split(": ")[0] : bottomShelfText.split(": ")[0];
-			var	bottomShelfGroupName = (bottomShelfText == "Everything Else") ? "!" + topShelfText.split(": ")[1] : bottomShelfText.split(": ")[1];
+			var topGroup, bottomGroup;
+			if (topShelfGroupName == "Everything Else") {
+				topGroup = { key: bottomShelfGroupKey, name: "!" + bottomShelfGroupName };
+				bottomGroup = { key: bottomShelfGroupKey, name: bottomShelfGroupName };
+			}
+			else if (bottomShelfGroupName == "Everything Else") {
+				topGroup = { key: topShelfGroupKey, name: topShelfGroupName };
+				bottomGroup = { key: topShelfGroupKey, name: "!" + topShelfGroupName };
+			}
+			else { // both are not everything else
+				topGroup = { key: topShelfGroupKey, name: topShelfGroupName };
+				bottomGroup = { key: bottomShelfGroupKey, name: bottomShelfGroupName };
+			}
 
-			var group1 = { key: topShelfGroupKey, name: topShelfGroupName };
-			var group2 = { key: bottomShelfGroupKey, name: bottomShelfGroupName };
-
+			// generate report
 			if (findDistinguishingFeatures) {
 				var arrangeListInDescendingOrder = true;
-				var report = ComparisonHandler.startFindingDistinguishingFeatures(group1, group2);
+				var report = ComparisonHandler.startFindingDistinguishingFeatures(topGroup, bottomGroup);
 				FeatureView.populateView(report, arrangeListInDescendingOrder);
 			}
 			else {
 				var arrangeListInDescendingOrder = false;
-				var report = ComparisonHandler.startFindingSimilarFeatures(group1, group2);
+				var report = ComparisonHandler.startFindingSimilarFeatures(topGroup, bottomGroup);
 				FeatureView.populateView(report, arrangeListInDescendingOrder);
 			}
 		}
@@ -369,11 +443,12 @@ var OOCView = {
 
 	// defining actions in different states
 
-	occupyShelf: function(shelfName, textOnTag) {
+	occupyShelf: function(shelfName, groupKey, groupName) {
 		var self = this;
 
 		self.isOccupied[shelfName] = true;
-		self.textOnShelf[shelfName] = textOnTag;
+		self.shelf[shelfName].attr("group-key", groupKey);
+		self.shelf[shelfName].attr("group-name", groupName);
 		self.previousState = null; // ending state
 	},
 	removeOccupyShelf: function(shelfName) {
@@ -381,7 +456,8 @@ var OOCView = {
 
 		// starting state, no self.previousState = null;
 		self.isOccupied[shelfName] = false;
-		self.textOnShelf[shelfName] = null;
+		self.shelf[shelfName].attr("group-key", null);
+		self.shelf[shelfName].attr("group-name", null);
 
 		// clean the feature view
 		FeatureView.clear();
@@ -402,6 +478,7 @@ var OOCView = {
 		var self = this;
 
 		self.shelf[shelfName].select(".shelf")
+			.attr("width", self.shelfWidth)
 			.style("fill", "white");
 
 		self.shelf[shelfName].select("text")
@@ -412,6 +489,7 @@ var OOCView = {
 
 		// shelf
 		self.shelf[shelfName].select(".shelf")
+			.attr("width", self.shelfWidth)
 			.style("fill", self.noTagShelfHightlight);
 
 		// text guide
@@ -432,8 +510,8 @@ var OOCView = {
 		}
 
 		// group name
-		if (!self.shelf[shelfName].select(".group-name").empty()) {
-			self.shelf[shelfName].select(".group-name")
+		if (!self.shelf[shelfName].select(".config").empty()) {
+			self.shelf[shelfName].select(".config")
 				.remove();
 		}
 	},
@@ -442,17 +520,22 @@ var OOCView = {
 
 		// shelf
 		self.shelf[shelfName].select(".shelf")
+			.attr("width", self.shelfWidth)
 			.style("fill", self.noTagShelfDoubleHightlight);
 
 		// assume that in order for shelf to be double highlighted, text-guide is already there
 		self.shelf[shelfName].select(".text-guide")
 			.style("opacity", "1");
 	},
-	addTagToShelf: function(shelfName, textOnTag) {
+	addTagToShelf: function(shelfName, groupKey, groupName) {
 		var self = this;
+		var groupKeyShown = DataTransformationHandler.returnFeatureNameWithoutID(groupKey);
+		groupKeyShown = (groupKeyShown.length > 20) ? groupKeyShown.substring(0, 20) + "..." : groupKeyShown;
+		var textOnTag = (groupKeyShown == "") ? groupName : groupKeyShown + ": " + groupName;
 
 		// change shelf color
 		self.shelf[shelfName].select(".shelf")
+			.attr("width", self.shelfWidth)
 			.style("fill", self.shelfColors[shelfName].pale);
 
 		// add text to the shelf
@@ -460,9 +543,9 @@ var OOCView = {
 			.remove();
 
 		self.shelf[shelfName].append("text")
-			.attr("class", "group-name " + shelfName + "-shelf")
-			.attr("x", self.shelfLeftPadding + OOCView.shelfWidth / 2)
-			.attr("y", self.shelfTopPadding[shelfName] + OOCView.shelfHeight / 2)
+			.attr("class", "config")
+			.attr("x", self.shelfLeftPadding + self.shelfWidth / 2)
+			.attr("y", self.shelfTopPadding[shelfName] + self.shelfHeight / 2)
 			.style("fill", self.shelfColors[shelfName].deep)
 			.style("text-anchor", "middle")
 			.style("alignment-baseline", "middle")
@@ -471,16 +554,18 @@ var OOCView = {
 	},
 	restoreTaggedShelfToNormal: function(shelfName) {
 		var self = this;
-		var textOnTag = self.textOnShelf[shelfName];
+		var groupKey = self.shelf[shelfName].attr("group-key");
+		var groupName = self.shelf[shelfName].attr("group-name");
 
-		self.addTagToShelf(shelfName, textOnTag);
+		self.addTagToShelf(shelfName, groupKey, groupName);
 	},
 	highlightTaggedShelf: function(shelfName) {
 		var self = this;
 
-		self.shelf[shelfName].select(".group-name")
+		self.shelf[shelfName].select(".config")
 			.style("fill", self.shelfColors[shelfName].medium);
-		self.shelf[shelfName].selectAll(".shelf")
+		self.shelf[shelfName].select(".shelf")
+			.attr("width", self.shelfWidth)
 			.style("fill", "white");
 
 		// text guide
@@ -514,9 +599,9 @@ var OOCView = {
 			return "none";
 
 		function isOnTopShelf(clientX, clientY) {
-			var topEdgeY = $("#OOC-view").position().top + self.margin.top + self.shelfTopPadding["top"];
+			var topEdgeY = $("#OOC-view").position().top + self.margin.top + self.shelfTopPadding["top"] + 8; // 8 is the margin
 			var bottomEdgeY = topEdgeY + self.shelfHeight;
-			var leftEdgeX = $("#OOC-view").position().left + self.margin.left + self.shelfLeftPadding;
+			var leftEdgeX = $("#OOC-view").position().left + self.margin.left + self.shelfLeftPadding + 8;
 			var rightEdgeX = leftEdgeX + self.shelfWidth;
 
 			if (clientX >= leftEdgeX && clientX <= rightEdgeX && clientY >= topEdgeY && clientY <= bottomEdgeY)
@@ -526,9 +611,9 @@ var OOCView = {
 		}
 
 		function isOnBottomShelf(clientX, clientY) {
-			var topEdgeY = $("#OOC-view").position().top + self.margin.top + self.shelfTopPadding["bottom"];
+			var topEdgeY = $("#OOC-view").position().top + self.margin.top + self.shelfTopPadding["bottom"] + 8;
 			var bottomEdgeY = topEdgeY + self.shelfHeight;
-			var leftEdgeX = $("#OOC-view").position().left + self.margin.left + self.shelfLeftPadding;
+			var leftEdgeX = $("#OOC-view").position().left + self.margin.left + self.shelfLeftPadding + 8;
 			var rightEdgeX = leftEdgeX + self.shelfWidth;
 
 			if (clientX >= leftEdgeX && clientX <= rightEdgeX && clientY >= topEdgeY && clientY <= bottomEdgeY)
