@@ -23,8 +23,9 @@ var menuBarHeight = 20;
 // change column height (add together = (295 - 1) / 2)
 var changeColumnMenuHeaderHeight = 25;
 var changeColumnMenuContentHeight = 122;
-var changeColumnMenuFooterHeight = 50;
-var changeColumnMenuFooterSVGWidth = leftContentWidth / 3 * 2 + 10;
+var changeColumnMenuCateFooterHeight = 25;
+var changeColumnMenuQuantFooterHeight = 50;
+var changeColumnMenuQuantFooterSVGWidth = leftContentWidth / 3 * 2 + 10;
 
 $(function() {
 	// set body width so that the divs are fixed in place even on resize
@@ -65,11 +66,12 @@ $(function() {
 	$("#list-view .menu .content")
 		.css("width", leftContentWidth)
 		.css("height", changeColumnMenuContentHeight);
-	$("#list-view .menu .footer")
+	$("#list-view .menu .footer.quant")
 		.css("width", leftContentWidth)
-		.css("height", changeColumnMenuFooterHeight);
-	$("#list-view .menu .footer #selector-container")
-		.css("height", changeColumnMenuFooterHeight / 2);
+		.css("height", changeColumnMenuQuantFooterHeight);
+	$("#list-view .menu .footer.cate")
+		.css("width", leftContentWidth)
+		.css("height", changeColumnMenuCateFooterHeight);
 
 	$("#left-content .container")
 		.css("width", leftContentWidth)
@@ -117,9 +119,12 @@ $(function() {
 	d3.select("#list-view .menu .content svg")
 		.attr("width", leftContentWidth)
 		.attr("height", changeColumnMenuContentHeight - 10);
-	d3.select("#list-view .menu .footer svg")
-		.attr("width", changeColumnMenuFooterSVGWidth)
-		.attr("height", changeColumnMenuFooterHeight); // consider the height of dropdown as well
+	d3.select("#list-view .menu .footer.quant svg")
+		.attr("width", changeColumnMenuQuantFooterSVGWidth)
+		.attr("height", changeColumnMenuQuantFooterHeight); // consider the height of dropdown as well
+	d3.select("#list-view .menu .footer.cate svg")
+		.attr("width", leftContentWidth)
+		.attr("height", changeColumnMenuCateFooterHeight); 
 	
 	d3.select("#OOC-view svg")
 		.attr("width", leftContentWidth)

@@ -1,24 +1,27 @@
 var ChangeColumnMenu = {
 	contentMargin: { top: 15, left: 20, bottom: 15, right: 10 },
-	footerMargin: { top: 5, left: 10, bottom: 5, right: 10 },
+	quantFooterMargin: { top: 5, left: 10, bottom: 5, right: 10 },
+
+	changeColumnMenuColour: "#435e69",
 
 	featureHeight: 20,
 	contentWidth: null,
-	footerSVGWidth: null,
-	footerRectHeight: 15,
-	footerRectWidth: null,
-	footerMiddleY: null,
+
+	quantFooterSVGWidth: null,
+	quantFooterRectHeight: 15,
+	quantFooterRectWidth: null,
+	quantFooterMiddleY: null,
 
 	// for drawing footer dynamic content
-	footerXScale: null,
+	quantFooterXScale: null,
 	selectedFeatureValueArray: [],
-	footerScaleColour: "#435e69",
 	partition: null, // for storing the range of different groups when switch is pressed
 
 	view: null,
 	headerSVG: null,
 	contentSVG: null,
-	footerSVG: null,
+	quantFooterSVG: null,
+	cateFooterSVG: null,
 
 	selectedNewFeature: null,
 	selectedColumnGroup: null,
@@ -28,19 +31,21 @@ var ChangeColumnMenu = {
 		var self = this;
 
 		self.contentWidth = leftContentWidth - self.contentMargin.left - self.contentMargin.right;
-		self.footerSVGWidth = changeColumnMenuFooterSVGWidth - self.footerMargin.left - self.footerMargin.right;
-		self.footerRectWidth = self.footerSVGWidth - 20 - 25;
-		self.footerMiddleY = changeColumnMenuFooterHeight /  2 - self.footerMargin.top + 3;
+		self.quantFooterSVGWidth = changeColumnMenuQuantFooterSVGWidth - self.quantFooterMargin.left - self.quantFooterMargin.right;
+		self.quantFooterRectWidth = self.quantFooterSVGWidth - 20 - 25;
+		self.quantFooterMiddleY = changeColumnMenuQuantFooterHeight /  2 - self.quantFooterMargin.top + 3;
 
 		self.view = $("#list-view .menu");
 		self.headerSVG = d3.select("#list-view .menu .header svg"); // no need to shift
 		self.contentSVG = d3.select("#list-view .menu .content svg").append("g")
 			.attr("transform", "translate(" + self.contentMargin.left + ", " + self.contentMargin.top + ")");
-		self.footerSVG = d3.select("#list-view .menu .footer svg").append("g")
-			.attr("transform", "translate(" + self.footerMargin.left + ", " + self.footerMargin.top + ")");
+		self.cateFooterSVG = d3.select("#list-view .menu .footer.cate svg"); // no need to shift
+		self.quantFooterSVG = d3.select("#list-view .menu .footer.quant svg").append("g")
+			.attr("transform", "translate(" + self.quantFooterMargin.left + ", " + self.quantFooterMargin.top + ")");
 
 		self.initHeader();
-		self.initFooter();
+		self.initQuantFooter();
+		self.initCateFooter();
 	},
 	initHeader: function() {
 		var self = this;
@@ -53,7 +58,7 @@ var ChangeColumnMenu = {
 			.style("text-anchor", "start")
 			.style("alignment-baseline", "middle")
 			.style("font-size", "10px")
-			.style("fill", "#435e69")
+			.style("fill", self.changeColumnMenuColour)
 			.text("Change Column");
 		self.headerSVG.append("text")
 			.attr("x", headerWidth - 10)
@@ -65,65 +70,90 @@ var ChangeColumnMenu = {
 			.style("class", "remove-menu-icon")
 			.style("font-size", "10px")
 			.style("cursor", "pointer")
-			.style("fill", "#435e69")
+			.style("fill", self.changeColumnMenuColour)
 			.on("click", clickRemoveMenuButton);
 
 		function clickRemoveMenuButton() {
-			// restore table
-			$("#list-view .table").css("height", listViewHeaderHeight + listViewContentHeight);
-			$("#list-view .table .content").css("height", listViewContentHeight);
-			$("#list-view .table").removeClass("ui-bottom-border");
-
-			// restore footer
-			$("#list-view .menu .footer").css("display", "none");
-			$("#list-view .menu .content").css("height", changeColumnMenuContentHeight);
-			self.view.css("display", "");
-
-			// remove properties
-			self.selectedNewFeature = null;
-			self.selectedColumnGroup = null;
-			self.selectedColumnFeature = null;
+			self.removeView();
 		}
 	},
-	initFooter: function() {
+	initCateFooter: function() {
 		var self = this;
-		var numberOfGroups = parseInt($("#list-view .menu .footer  select option:selected").val());
+		var cateFooterWidth = self.headerSVG.attr("width");
+		var cateFooterHeight = self.headerSVG.attr("height");
+
+		self.cateFooterSVG.append("text")
+			.attr("class", "selection-info")
+			.attr("x", 10)
+			.attr("y", cateFooterHeight / 2)
+			.style("text-anchor", "start")
+			.style("alignment-baseline", "middle")
+			.style("font-size", "10px")
+			.style("cursor", "pointer")
+			.style("font-weight", "bold")
+			.style("fill", self.changeColumnMenuColour)
+			.text("Selected Categorical Attribute: ");
+
+		// draw apply button
+		self.cateFooterSVG.append("text")
+			.attr("class", "apply-btn")
+			.attr("x", cateFooterWidth - 10)
+			.attr("y", cateFooterHeight / 2)
+			.style("text-anchor", "end")
+			.style("alignment-baseline", "middle")
+			.style("font-family", "FontAwesome")
+			.style("font-size", "10px")
+			.style("cursor", "pointer")
+			.style("fill", self.changeColumnMenuColour)
+			.text("\uf00c")
+			.on("click", clickApplyButton);
+
+		function clickApplyButton() {
+			// update table
+			ListView.changeColumn(self.selectedColumnGroup, self.selectedNewFeature);
+
+			self.removeView();
+		}
+	},
+	initQuantFooter: function() {
+		var self = this;
+		var numberOfGroups = parseInt($("#list-view .menu .footer.quant select option:selected").val());
 
 		// set group selector
 		$("#group-selector").on("change", changeGroupSelector);
 
 		// draw switch button
-		self.footerSVG.append("text")
+		self.quantFooterSVG.append("text")
 			.attr("class", "switch-btn")
-			.attr("x", self.footerSVGWidth - 15)
-			.attr("y", self.footerMiddleY)
+			.attr("x", self.quantFooterSVGWidth - 15)
+			.attr("y", self.quantFooterMiddleY)
 			.style("text-anchor", "end")
 			.style("alignment-baseline", "middle")
 			.text("\uf0ec")
 			.style("font-family", "FontAwesome")
 			.style("font-size", "10px")
 			.style("cursor", "pointer")
-			.style("fill", "#435e69")
+			.style("fill", self.changeColumnMenuColour)
 			.on("click", clickSwitchButton);
 
 		// draw apply button
-		self.footerSVG.append("text")
+		self.quantFooterSVG.append("text")
 			.attr("class", "apply-btn")
-			.attr("x", self.footerSVGWidth)
-			.attr("y", self.footerMiddleY)
+			.attr("x", self.quantFooterSVGWidth)
+			.attr("y", self.quantFooterMiddleY)
 			.style("text-anchor", "end")
 			.style("alignment-baseline", "middle")
 			.text("\uf00c")
 			.style("font-family", "FontAwesome")
 			.style("font-size", "10px")
 			.style("cursor", "pointer")
-			.style("fill", "#435e69")
+			.style("fill", self.changeColumnMenuColour)
 			.on("click", clickApplyButton);
 
 		function changeGroupSelector() {
 			var numberOfGroups = parseInt($("#group-selector option:selected").val());
 
-			self.footerSVG.select(".switch-btn").classed("uneven", false);
+			self.quantFooterSVG.select(".switch-btn").classed("uneven", false);
 			self.drawTextBox(numberOfGroups);
 			self.drawIntervals(numberOfGroups);
 			self.drawNumbers(numberOfGroups);
@@ -192,19 +222,9 @@ var ChangeColumnMenu = {
 		function clickApplyButton() {
 			var numberOfGroups = parseInt($("#group-selector option:selected").val());
 
-			// restore table
-			$("#list-view .table").css("height", listViewHeaderHeight + listViewContentHeight);
-			$("#list-view .table .content").css("height", listViewContentHeight);
-			$("#list-view .table").removeClass("ui-bottom-border");
-
-			// restore footer
-			$("#list-view .menu .footer").css("display", "none");
-			$("#list-view .menu .content").css("height", changeColumnMenuContentHeight);
-			self.view.css("display", "");
-
 			// get and set group name
 			var newGroupNames = [];
-			d3.selectAll("#list-view .menu .footer .textbox").each(function(d, i) {
+			d3.selectAll("#list-view .menu .footer.quant .textbox").each(function(d, i) {
 				var groupName = d3.select(this).select("text").attr("group-name");
 				var isEmpty = d3.select(this).select("text").text() == "";
 
@@ -222,10 +242,7 @@ var ChangeColumnMenu = {
 			DataTransformationHandler.removeDerivedFeatureFromDatabase(self.selectedColumnFeature);
 			ListView.changeColumn(self.selectedColumnGroup, newFeatureName);
 
-			// remove properties
-			self.selectedNewFeature = null;
-			self.selectedColumnGroup = null;
-			self.selectedColumnFeature = null;
+			self.removeView();
 		}
 	},
 	showHeader: function(thisColumnFeature) {
@@ -263,7 +280,7 @@ var ChangeColumnMenu = {
 			.on("click", clickFeatureGroup)
 		featureGroup.each(function(d) {
 			var featureText = d3.select(this).append("text")
-				.style("fill", self.footerScaleColour)
+				.style("fill", self.changeColumnMenuColour)
 				.style("font-weight", "bold")
 				.text(d);
 
@@ -300,27 +317,47 @@ var ChangeColumnMenu = {
 				.style("stroke", "gray")
 				.style("stroke-dasharray", "2, 2");
 
-			self.showFooter(self.selectedNewFeature);
+			if (DataTransformationHandler.isCategoricalFeature(self.selectedNewFeature)) {
+
+				self.showCateFooter(self.selectedNewFeature);
+			}
+			else {
+				self.showQuantFooter(self.selectedNewFeature);
+			}
 		}
 	},
-	showFooter: function(featureName) {
+	showCateFooter: function(featureName) {
+		var self = this;
+
+		// change height of the feature list
+		$("#list-view .menu .footer.quant").css("display", ""); // ensure another view is removed
+		$("#list-view .menu .footer.cate").css("display", "block");
+		$("#list-view .menu .content").css("height", changeColumnMenuContentHeight - changeColumnMenuCateFooterHeight);
+
+		// change text inside
+		var shortFeatureName = (featureName.length > 20) ? featureName.substring(0, 20) + "..." : featureName;
+		self.cateFooterSVG.select(".selection-info")
+			.text("Selected Categorical Attribute: " + shortFeatureName);
+	},
+	showQuantFooter: function(featureName) {
 		var self = this;
 
 		// init
 		self.partition = null;
-		self.footerSVG.select(".switch-btn").classed("uneven", false);
+		self.quantFooterSVG.select(".switch-btn").classed("uneven", false);
 		$("#group-selector").val("3"); // reset the dropdown menu
 
 		// change height of the feature list
-		$("#list-view .menu .footer").css("display", "flex");
-		$("#list-view .menu .content").css("height", changeColumnMenuContentHeight - changeColumnMenuFooterHeight);
+		$("#list-view .menu .footer.cate").css("display", ""); // ensure another view is removed
+		$("#list-view .menu .footer.quant").css("display", "flex");
+		$("#list-view .menu .content").css("height", changeColumnMenuContentHeight - changeColumnMenuQuantFooterHeight);
 
-		self.preprocessDataOnShowFooter(featureName)
+		self.preprocessDataOnShowQuantFooter(featureName)
 		self.drawTextBox(3);
 		self.drawIntervals(3);
 		self.drawNumbers(3);
 	},
-	preprocessDataOnShowFooter: function(featureName) {
+	preprocessDataOnShowQuantFooter: function(featureName) {
 		var self = this;
 
 		// create array of value
@@ -332,22 +369,22 @@ var ChangeColumnMenu = {
 		// create scale
 		var xScale = d3.scale.linear()
 			.domain(d3.extent(valueArray))
-			.range([0, self.footerRectWidth]);
+			.range([0, self.quantFooterRectWidth]);
 
 		// store the results
-		self.footerXScale = xScale;
+		self.quantFooterXScale = xScale;
 		self.selectedFeatureValueArray = valueArray;
 	},
 	drawTextBox: function(numberOfGroups, numbersToBeDrawn = null) {
 		var self = this;
 
 		// remove previous
-		self.footerSVG.selectAll(".textbox").remove();
+		self.quantFooterSVG.selectAll(".textbox").remove();
 
 		// if numbersToBeDrawn not provided, create it
 		if (!numbersToBeDrawn) {
-			var minValue = d3.min(self.footerXScale.domain());
-			var maxValue = d3.max(self.footerXScale.domain());
+			var minValue = d3.min(self.quantFooterXScale.domain());
+			var maxValue = d3.max(self.quantFooterXScale.domain());
 			numbersToBeDrawn = DataTransformationHandler.returnBoundariesOfIntervals(minValue, maxValue, numberOfGroups);
 		}
 
@@ -355,8 +392,8 @@ var ChangeColumnMenu = {
 		var xArray = [];
 		var isLastItemDuplicated = numbersToBeDrawn[numbersToBeDrawn.length - 1] == numbersToBeDrawn[numbersToBeDrawn.length - 2];
 		for (var i = 0; i < numbersToBeDrawn.length - 1; i++) {
-			var interval = self.footerXScale(numbersToBeDrawn[i + 1]) - self.footerXScale(numbersToBeDrawn[i]);
-			var xPosition = self.footerXScale(numbersToBeDrawn[i]) + interval / 2;
+			var interval = self.quantFooterXScale(numbersToBeDrawn[i + 1]) - self.quantFooterXScale(numbersToBeDrawn[i]);
+			var xPosition = self.quantFooterXScale(numbersToBeDrawn[i]) + interval / 2;
 
 			if (isLastItemDuplicated && i == numbersToBeDrawn.length - 2)
 				xPosition += 5; // dummy length = 10
@@ -365,39 +402,39 @@ var ChangeColumnMenu = {
 		}
 
 		// draw new ones
-		var textboxWidth = 15;
+		var textboxWidth = 12;
 		var textboxHeight = 10;
 		for (var i = 0; i < numberOfGroups; i++) {
-			var textBoxGroup = self.footerSVG.append("g")
+			var textBoxGroup = self.quantFooterSVG.append("g")
 				.attr("class", "textbox")
 				.style("cursor", "text")
 				.on("click", clickTextBox);
 
 			var rect = textBoxGroup.append("rect")
 				.attr("x", xArray[i] - textboxWidth / 2)
-				.attr("y", self.footerMiddleY - self.footerRectHeight / 2 - textboxHeight - 5)
+				.attr("y", self.quantFooterMiddleY - self.quantFooterRectHeight / 2 - textboxHeight - 5)
 				.attr("width", textboxWidth)
 				.attr("height", textboxHeight)
 				.attr("rx", 5)
 				.attr("ry", 5)
 				.style("fill", "white")
-				.style("stroke", self.footerScaleColour);
+				.style("stroke", self.changeColumnMenuColour);
 
 			var text = textBoxGroup.append("text")
 				.attr("x", xArray[i])
-				.attr("y", self.footerMiddleY - self.footerRectHeight / 2 - textboxHeight / 2 - 5)
-				.style("fill", self.footerScaleColour)
+				.attr("y", self.quantFooterMiddleY - self.quantFooterRectHeight / 2 - textboxHeight / 2 - 5)
+				.style("fill", self.changeColumnMenuColour)
 				.style("text-anchor", "middle")
-				.style("alignment-baseline", "middle");
+				.style("alignment-baseline", "central");
 		}
 
 		function clickTextBox() {
 			var thisTextBox = this;
 
-			var footerSVGTop = $("#list-view .menu .footer svg").position().top;
-			var footerSVGLeft = $("#list-view .menu .footer svg").position().left;
-			var footerSVGTranslateX = self.footerMargin.left;
-			var footerSVGTranslateY = self.footerMargin.top;
+			var quantFooterSVGTop = $("#list-view .menu .footer.quant svg").position().top;
+			var quantFooterSVGLeft = $("#list-view .menu .footer.quant svg").position().left;
+			var quantFooterSVGTranslateX = self.quantFooterMargin.left;
+			var quantFooterSVGTranslateY = self.quantFooterMargin.top;
 			var rectX = parseFloat(d3.select(thisTextBox).select("rect").attr("x"));
 			var rectY = parseFloat(d3.select(thisTextBox).select("rect").attr("y"));
 
@@ -408,8 +445,10 @@ var ChangeColumnMenu = {
 
 			// edit the text box
 			var isSafari = navigator.userAgent.indexOf("Safari") > -1 && !(navigator.userAgent.indexOf('Chrome') > -1);
-			var editorLeft = footerSVGLeft + footerSVGTranslateX + rectX - 2;
-			var editorTop = footerSVGTop + footerSVGTranslateY + rectY - 2;
+			var editorHeight = textboxHeight * 1.2;
+			var editorWidth = textboxWidth * 2;
+			var editorLeft = quantFooterSVGLeft + quantFooterSVGTranslateX + rectX + textboxWidth / 2 - (editorWidth + 4) / 2;
+			var editorTop = quantFooterSVGTop + quantFooterSVGTranslateY + rectY + textboxHeight / 2 - editorHeight / 2;
 			if (isSafari) { // adjust position for safari
 				editorLeft += 8;
 				editorTop += 8;
@@ -417,13 +456,14 @@ var ChangeColumnMenu = {
 			$("#category-name-editor")
 				.css("left", editorLeft)
 				.css("top", editorTop)
-				.css("height", textboxHeight + 2)
-				.css("width", textboxWidth * 2)
-				.css("padding", "0px 0px 0px 3px")
+				.css("height", editorHeight)
+				.css("width", editorWidth)
+				.css("padding", "0px 2px 0px 2px")
 				.css("border-radius", "5px")
 				.css("border-style", "solid")
-				.css("border-color", self.footerScaleColour)
+				.css("border-color", self.changeColumnMenuColour)
 				.css("border-width", "1px")
+				.css("font-size", "10px")
 				.on("blur", blurTextBox)
 				.on("keydown", keydownTextBox)
 				.val(textInside)
@@ -431,11 +471,10 @@ var ChangeColumnMenu = {
 
 			function blurTextBox() {
 				var textInside = $(this).val();
-				var shortTextInside = (textInside.length <= 2) ? textInside : textInside.substring(0, 1) + "..";
 
 				d3.select(thisTextBox).select("text")
 					.attr("group-name", textInside)
-					.text(shortTextInside);
+					.text(textInside.charAt(0));
 
 				$(this).remove();
 			}
@@ -476,12 +515,12 @@ var ChangeColumnMenu = {
 		var self = this;
 
 		// remove previous
-		self.footerSVG.selectAll(".interval").remove();
+		self.quantFooterSVG.selectAll(".interval").remove();
 
 		// if numbersToBeDrawn not provided, create it
 		if (!numbersToBeDrawn) {
-			var minValue = d3.min(self.footerXScale.domain());
-			var maxValue = d3.max(self.footerXScale.domain());
+			var minValue = d3.min(self.quantFooterXScale.domain());
+			var maxValue = d3.max(self.quantFooterXScale.domain());
 			numbersToBeDrawn = DataTransformationHandler.returnBoundariesOfIntervals(minValue, maxValue, numberOfGroups);
 		}
 
@@ -504,16 +543,16 @@ var ChangeColumnMenu = {
 			var dummyLength = (isLastItemDuplicated && i == numbersToBeDrawn.length - 2) ? 10 : 0;
 
 			rectData.push({
-				x: self.footerXScale(numbersToBeDrawn[i]),
-				y: self.footerMiddleY - self.footerRectHeight / 2,
-				width: self.footerXScale(numbersToBeDrawn[i + 1]) - self.footerXScale(numbersToBeDrawn[i]) + dummyLength,
-				height: self.footerRectHeight,
+				x: self.quantFooterXScale(numbersToBeDrawn[i]),
+				y: self.quantFooterMiddleY - self.quantFooterRectHeight / 2,
+				width: self.quantFooterXScale(numbersToBeDrawn[i + 1]) - self.quantFooterXScale(numbersToBeDrawn[i]) + dummyLength,
+				height: self.quantFooterRectHeight,
 				opacity: count / self.selectedFeatureValueArray.length
 			});
 		}
 
 		// create rectangle
-		var interval = self.footerSVG.selectAll(".interval")
+		var interval = self.quantFooterSVG.selectAll(".interval")
 			.data(rectData)
 			.attr("x", function(d) { return d.x; })
 			.attr("y", function(d) { return d.y; })
@@ -529,7 +568,7 @@ var ChangeColumnMenu = {
 			.attr("width", function(d) { return d.width; })
 			.attr("height", function(d) { return d.height; })
 			.style("fill-opacity", function(d) { return d.opacity; })
-			.style("fill", "#435e69")
+			.style("fill", self.changeColumnMenuColour)
 			.style("stroke", "white")
 			.style("stroke-width", 2);
 
@@ -540,30 +579,30 @@ var ChangeColumnMenu = {
 		var self = this;
 
 		// remove previous
-		self.footerSVG.selectAll(".number").remove();
-		self.footerSVG.selectAll(".number-rect").remove();
+		self.quantFooterSVG.selectAll(".number").remove();
+		self.quantFooterSVG.selectAll(".number-rect").remove();
 
 		// if numbersToBeDrawn not provided, create it
 		if (!numbersToBeDrawn) {
-			var minValue = d3.min(self.footerXScale.domain());
-			var maxValue = d3.max(self.footerXScale.domain());
+			var minValue = d3.min(self.quantFooterXScale.domain());
+			var maxValue = d3.max(self.quantFooterXScale.domain());
 			numbersToBeDrawn = DataTransformationHandler.returnBoundariesOfIntervals(minValue, maxValue, numberOfGroups);
 		}
 
 		// draw the numbers
 		for (var i = 0; i < numbersToBeDrawn.length; i++) {
-			var text = self.footerSVG.append("text")
+			var text = self.quantFooterSVG.append("text")
 				.attr("class", "number")
-				.attr("x", self.footerXScale(numbersToBeDrawn[i]))
-				.attr("y", self.footerMiddleY + self.footerRectHeight / 2 + 5)
+				.attr("x", self.quantFooterXScale(numbersToBeDrawn[i]))
+				.attr("y", self.quantFooterMiddleY + self.quantFooterRectHeight / 2 + 5)
 				.style("text-anchor", "middle")
 				.style("alignment-baseline", "middle")
-				.style("fill", self.footerScaleColour)
+				.style("fill", self.changeColumnMenuColour)
 				.style("font-size", 8)
 				.text(numbersToBeDrawn[i]);
 
 			var bbox = text.node().getBBox();
-			var rect = self.footerSVG.insert("rect", ".number")
+			var rect = self.quantFooterSVG.insert("rect", ".number")
 				.attr("class", "number-rect")
 				.attr("x", bbox.x - 2)
 				.attr("y", bbox.y - 1)
@@ -572,16 +611,16 @@ var ChangeColumnMenu = {
 				.attr("rx", 3)
 				.attr("ry", 3)
 				.style("fill", "white")
-				.style("stroke", self.footerScaleColour);
+				.style("stroke", self.changeColumnMenuColour);
 
 			var isLastItemDuplicated = numbersToBeDrawn[numbersToBeDrawn.length - 1] == numbersToBeDrawn[numbersToBeDrawn.length - 2]
 			if (i == numbersToBeDrawn.length - 1 && isLastItemDuplicated) {
-				text.attr("x", self.footerXScale(numbersToBeDrawn[i]) + 10);
+				text.attr("x", self.quantFooterXScale(numbersToBeDrawn[i]) + 10);
 				rect.attr("x", bbox.x - 2 + 10);
 			}
 		}
 	},
-	show: function(thisColumnFeature, thisColumnGroup) {
+	showView: function(thisColumnFeature, thisColumnGroup) {
 		var self = this;
 
 		$("#list-view .table").css("height", (listViewHeaderHeight + listViewContentHeight - 1) / 2); // 1 is the bottom margin
@@ -593,5 +632,23 @@ var ChangeColumnMenu = {
 		self.showContent(thisColumnFeature);
 		self.selectedColumnGroup = thisColumnGroup;
 		self.selectedColumnFeature = thisColumnFeature;
+	},
+	removeView: function() {
+		var self = this;
+
+		// restore table
+		$("#list-view .table").css("height", listViewHeaderHeight + listViewContentHeight);
+		$("#list-view .table .content").css("height", listViewContentHeight);
+		$("#list-view .table").removeClass("ui-bottom-border");
+
+		// restore view
+		$("#list-view .menu .footer").css("display", "");
+		$("#list-view .menu .content").css("height", changeColumnMenuContentHeight);
+		self.view.css("display", "");
+
+		// remove properties
+		self.selectedNewFeature = null;
+		self.selectedColumnGroup = null;
+		self.selectedColumnFeature = null;
 	}
 }

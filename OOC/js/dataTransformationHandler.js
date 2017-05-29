@@ -111,5 +111,10 @@ var DataTransformationHandler = {
 		var self = this;
 
 		self.groupNames = newGroupNames;
+	},
+	isCategoricalFeature: function(featureName) {
+		var firstValueOfFeature = Database.data[0][featureName];
+
+		return isNaN(firstValueOfFeature);
 	}
 }

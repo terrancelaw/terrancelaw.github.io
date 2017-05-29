@@ -124,7 +124,12 @@ div.noselection {
     background: #e8ede9;
 }
 
-#list-view .menu .footer {
+#list-view .menu .footer.cate {
+    display: none;
+    background: #e8ede9;
+}
+
+#list-view .menu .footer.quant {
     display: none;
     flex-direction: row;
     align-items: center;
@@ -132,13 +137,13 @@ div.noselection {
     background: #e8ede9;
 }
 
-#list-view .menu .footer label {
+#list-view .menu .footer.quant label {
     margin-left: 10px;
     font-weight: bold;
     color: #435e69;
 }
 
-#list-view .menu .footer select {
+#list-view .menu .footer.quant select {
     border-radius: 3px;
     background-color: rgb(248, 248, 248);
     border-color: rgb(166, 166, 166);
@@ -147,7 +152,7 @@ div.noselection {
     width: 30px;
 }
 
-#list-view .menu .footer svg {
+#list-view .menu .footer.quant svg {
     float: right;
     align-self: flex-end;
 }

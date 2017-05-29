@@ -174,7 +174,7 @@ var ListView = {
 			thisColumnFeature = DataTransformationHandler.returnFeatureNameWithoutID(thisColumnFeature);
 			var thisColumnGroup = d3.select(this.parentNode).attr("group");
 
-			ChangeColumnMenu.show(thisColumnFeature, thisColumnGroup);
+			ChangeColumnMenu.showView(thisColumnFeature, thisColumnGroup);
 		}
 
 		function mouseenterText() {
