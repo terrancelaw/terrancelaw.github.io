@@ -63,9 +63,10 @@ var ConceptMapView = {
 				if (d.show && d.small || !d.show)
 					return 0;
 				if (d.show && !d.small)
-					return -500;
+					return -600;
 			})
 			.gravity(0.1)
+			.alpha(0.1)
 			.on("tick", tick);
 
 		function tick() {
@@ -137,6 +138,7 @@ var ConceptMapView = {
 						.attr("d", "M" + startingPoint.x + "," + startingPoint.y + " L" + endingPoint.x + "," + endingPoint.y)
 				});
 		}
+
 		function collide(node) {
 			var r = self.getNodeRadius(node) + 16;
 		    var nx1 = node.x - r, nx2 = node.x + r, ny1 = node.y - r, ny2 = node.y + r;
@@ -163,6 +165,8 @@ var ConceptMapView = {
 		var self = this;
 		var nodes = {};
 
+		self.fixPositionOfOldNodes();
+
 		for (var i = 0; i < OOCView.shelfList.length; i++) {
 			var currentShelf = OOCView.shelfList[i];
 
@@ -181,6 +185,13 @@ var ConceptMapView = {
 
 		self.createLinkBetweenShelves(nodes, report); // use the nodes
 		self.updateNetwork();
+	},
+	fixPositionOfOldNodes: function() {
+		var self = this;
+
+		// fix the positions of the nodes
+		for (var i = 0; i < self.nodes.length; i++)
+			self.nodes[i].fixed = true;
 	},
 	newAdhocGroupUpdate: function(nodes, currentShelf) {
 		var self = this;
