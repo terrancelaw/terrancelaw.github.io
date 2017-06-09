@@ -2,7 +2,7 @@ var ChangeColumnMenu = {
 	contentMargin: { top: 15, left: 20, bottom: 15, right: 10 },
 	quantFooterMargin: { top: 5, left: 10, bottom: 5, right: 10 },
 
-	changeColumnMenuColour: "#435e69",
+	mainColour: "#435e69",
 
 	featureHeight: 20,
 	contentWidth: null,
@@ -58,7 +58,7 @@ var ChangeColumnMenu = {
 			.style("text-anchor", "start")
 			.style("alignment-baseline", "middle")
 			.style("font-size", "10px")
-			.style("fill", self.changeColumnMenuColour)
+			.style("fill", self.mainColour)
 			.text("Change Column");
 		self.headerSVG.append("text")
 			.attr("x", headerWidth - 10)
@@ -70,7 +70,7 @@ var ChangeColumnMenu = {
 			.style("class", "remove-menu-icon")
 			.style("font-size", "10px")
 			.style("cursor", "pointer")
-			.style("fill", self.changeColumnMenuColour)
+			.style("fill", self.mainColour)
 			.on("click", clickRemoveMenuButton);
 
 		function clickRemoveMenuButton() {
@@ -91,7 +91,7 @@ var ChangeColumnMenu = {
 			.style("font-size", "10px")
 			.style("cursor", "pointer")
 			.style("font-weight", "bold")
-			.style("fill", self.changeColumnMenuColour)
+			.style("fill", self.mainColour)
 			.text("Selected Categorical Attribute: ");
 
 		// draw apply button
@@ -104,7 +104,7 @@ var ChangeColumnMenu = {
 			.style("font-family", "FontAwesome")
 			.style("font-size", "10px")
 			.style("cursor", "pointer")
-			.style("fill", self.changeColumnMenuColour)
+			.style("fill", self.mainColour)
 			.text("\uf00c")
 			.on("click", clickApplyButton);
 
@@ -133,7 +133,7 @@ var ChangeColumnMenu = {
 			.style("font-family", "FontAwesome")
 			.style("font-size", "10px")
 			.style("cursor", "pointer")
-			.style("fill", self.changeColumnMenuColour)
+			.style("fill", self.mainColour)
 			.on("click", clickSwitchButton);
 
 		// draw apply button
@@ -147,7 +147,7 @@ var ChangeColumnMenu = {
 			.style("font-family", "FontAwesome")
 			.style("font-size", "10px")
 			.style("cursor", "pointer")
-			.style("fill", self.changeColumnMenuColour)
+			.style("fill", self.mainColour)
 			.on("click", clickApplyButton);
 
 		function changeGroupSelector() {
@@ -280,7 +280,7 @@ var ChangeColumnMenu = {
 			.on("click", clickFeatureGroup)
 		featureGroup.each(function(d) {
 			var featureText = d3.select(this).append("text")
-				.style("fill", self.changeColumnMenuColour)
+				.style("fill", self.mainColour)
 				.style("font-weight", "bold")
 				.text(d);
 
@@ -335,7 +335,7 @@ var ChangeColumnMenu = {
 		$("#list-view .menu .content").css("height", changeColumnMenuContentHeight - changeColumnMenuCateFooterHeight);
 
 		// change text inside
-		var shortFeatureName = (featureName.length > 20) ? featureName.substring(0, 20) + "..." : featureName;
+		var shortFeatureName = DataTransformationHandler.createShortString(featureName, 20);
 		self.cateFooterSVG.select(".selection-info")
 			.text("Selected Categorical Attribute: " + shortFeatureName);
 	},
@@ -418,12 +418,12 @@ var ChangeColumnMenu = {
 				.attr("rx", 5)
 				.attr("ry", 5)
 				.style("fill", "white")
-				.style("stroke", self.changeColumnMenuColour);
+				.style("stroke", self.mainColour);
 
 			var text = textBoxGroup.append("text")
 				.attr("x", xArray[i])
 				.attr("y", self.quantFooterMiddleY - self.quantFooterRectHeight / 2 - textboxHeight / 2 - 5)
-				.style("fill", self.changeColumnMenuColour)
+				.style("fill", self.mainColour)
 				.style("text-anchor", "middle")
 				.style("alignment-baseline", "central");
 		}
@@ -461,7 +461,7 @@ var ChangeColumnMenu = {
 				.css("padding", "0px 2px 0px 2px")
 				.css("border-radius", "5px")
 				.css("border-style", "solid")
-				.css("border-color", self.changeColumnMenuColour)
+				.css("border-color", self.mainColour)
 				.css("border-width", "1px")
 				.css("font-size", "10px")
 				.on("blur", blurTextBox)
@@ -568,7 +568,7 @@ var ChangeColumnMenu = {
 			.attr("width", function(d) { return d.width; })
 			.attr("height", function(d) { return d.height; })
 			.style("fill-opacity", function(d) { return d.opacity; })
-			.style("fill", self.changeColumnMenuColour)
+			.style("fill", self.mainColour)
 			.style("stroke", "white")
 			.style("stroke-width", 2);
 
@@ -597,7 +597,7 @@ var ChangeColumnMenu = {
 				.attr("y", self.quantFooterMiddleY + self.quantFooterRectHeight / 2 + 5)
 				.style("text-anchor", "middle")
 				.style("alignment-baseline", "middle")
-				.style("fill", self.changeColumnMenuColour)
+				.style("fill", self.mainColour)
 				.style("font-size", 8)
 				.text(numbersToBeDrawn[i]);
 
@@ -611,7 +611,7 @@ var ChangeColumnMenu = {
 				.attr("rx", 3)
 				.attr("ry", 3)
 				.style("fill", "white")
-				.style("stroke", self.changeColumnMenuColour);
+				.style("stroke", self.mainColour);
 
 			var isLastItemDuplicated = numbersToBeDrawn[numbersToBeDrawn.length - 1] == numbersToBeDrawn[numbersToBeDrawn.length - 2]
 			if (i == numbersToBeDrawn.length - 1 && isLastItemDuplicated) {

@@ -116,7 +116,7 @@ div.noselection {
     fill: #ffffe5
 }
 
-#list-view .menu {
+#list-view .menu, #change-group-menu {
     display: none;
 }
 

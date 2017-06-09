@@ -38,8 +38,9 @@ var FeatureView = {
 			self.width / 3 / 3
 		];
 	},
-	populateView: function(report, arrangeListInDescendingOrder) {
+	populateView: function(report) {
 		var self = this;
+		var arrangeListInDescendingOrder = report.arrangeListInDescendingOrder;
 		var overallAccuracy = report.overallAccuracyOfFeatureSubset;
 		var resultArray = report.result.sort(function(x, y) {
 			if (arrangeListInDescendingOrder)
@@ -172,10 +173,10 @@ var FeatureView = {
 			.style("alignment-baseline", "middle")
 			.style("cursor", "pointer")
 			.text(function(d) {
-				if (d["featureName"].length > self.textLength)
-					return d["featureName"].substring(0, self.textLength) + "...";
-				else
-					return d["featureName"];
+				var featureName = d["featureName"];
+				var shortFeatureName = DataTransformationHandler.createShortString(featureName, self.textLength);
+				
+				return shortFeatureName;
 			})
 			.on("mouseover", mouseoverFeatureName)
 			.on("mouseout", mouseoutFeatureName);
@@ -217,12 +218,11 @@ var FeatureView = {
 
 		function mouseoutFeatureName(d) {
 			if (d3.select(this).classed("expanded")) {
-				if (d["featureName"].length > self.textLength)
-					d3.select(this)
-						.text(d["featureName"].substring(0, self.textLength) + "...");
-				else
-					d3.select(this)
-						.text(d["featureName"]);
+				// restore name
+				var featureName = d["featureName"];
+				var shortFeatureName = DataTransformationHandler.createShortString(featureName, self.textLength);
+				d3.select(this)
+					.text(shortFeatureName);
 
 				// remove rect
 				d3.selectAll(".hover-on-text-rect").remove();
@@ -273,5 +273,8 @@ var FeatureView = {
 		self.headerSVG.selectAll("*").remove();
 		self.contentSVG.selectAll("*").remove();
 		self.footerSVG.selectAll("*").remove();
+
+		d3.select("#feature-view .content svg")
+			.attr("height", featureViewContentHeight - changeGroupMenuHeaderHeight - changeGroupMenuContentHeight - 5);
 	}
 }

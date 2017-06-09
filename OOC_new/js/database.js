@@ -23,6 +23,8 @@ var Database = {
 			OOCView.init();
 			FeatureView.init();
 			ChangeColumnMenu.init();
+			ChangeGroupMenu.init();
+			ConceptMapView.init();
 		});
 
 		function type(d) {

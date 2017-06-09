@@ -21,48 +21,13 @@ var ListView = {
 		// drag on a group
 		var dragGroup = d3.behavior.drag()
 			.on("dragstart", function() {
-				var mouseXRelativeToPage = event.clientX;
-				var mouseYRelativeToPage = event.clientY;
-				var tagLeft = mouseXRelativeToPage - OOCView.shelfWidth / 2;
-				var tagTop = mouseYRelativeToPage - OOCView.shelfHeight / 2;
-
 				var groupKey = d3.select(this).attr("group-key");
 				var groupName = d3.select(this).attr("group-name");
-
-				self.createTag(groupKey, groupName);
-				self.moveTagTo(tagLeft, tagTop);
 				
-				// handle states
-				OOCView.handleStateTransitionOnDragstart();
+				DragTagHandler.handleDragStart(groupKey, groupName);
 			})
-			.on("drag", function() {
-				// change tag position
-				var mouseXRelativeToPage = event.clientX;
-				var mouseYRelativeToPage = event.clientY;
-				var tagLeft = mouseXRelativeToPage - OOCView.shelfWidth / 2;
-				var tagTop = mouseYRelativeToPage - OOCView.shelfHeight / 2;
-				self.moveTagTo(tagLeft, tagTop);
-
-				// handle states
-				var currentShelf = OOCView.onWhichShelf(mouseXRelativeToPage, mouseYRelativeToPage);
-				var groupKey = $("#draggable-tag").attr("group-key");
-				var groupName = $("#draggable-tag").attr("group-name");
-				OOCView.handleStateTransitionOnDrag(currentShelf, groupKey, groupName);
-			})
-			.on("dragend", function() {
-				var mouseXRelativeToPage = event.clientX;
-				var mouseYRelativeToPage = event.clientY;
-
-				// handle states
-				var currentShelf = OOCView.onWhichShelf(mouseXRelativeToPage, mouseYRelativeToPage);
-				var groupKey = $("#draggable-tag").attr("group-key");
-				var groupName = $("#draggable-tag").attr("group-name");
-				OOCView.handleStateTransitionOnDragEnd(currentShelf, groupKey, groupName);
-
-				// remove tag
-				var isTagPlacedOnShelf = (currentShelf != "none");
-				self.removeTag(isTagPlacedOnShelf);
-			});
+			.on("drag", DragTagHandler.handleDrag)
+			.on("dragend", DragTagHandler.handleDragEnd);
 
 		self.drawHeader();
 		self.drawContent(dragGroup);
@@ -97,10 +62,9 @@ var ListView = {
 			.style("alignment-baseline", "middle")
 			.text("\uf00b")
 			.style("font-family", "FontAwesome")
-			.style("class", "change-icon2")
 			.style("font-size", "10px")
 			.style("cursor", "pointer")
-			.on("click", clickChangeButton);
+			.on("click", clickChangeColumnButton);
 
 		// second column
 		var secondColumnHeader = self.headerSVG.append("g")
@@ -128,10 +92,9 @@ var ListView = {
 			.style("alignment-baseline", "middle")
 			.text("\uf00b")
 			.style("font-family", "FontAwesome")
-			.style("class", "change-icon1")
 			.style("font-size", "10px")
 			.style("cursor", "pointer")
-			.on("click", clickChangeButton);
+			.on("click", clickChangeColumnButton);
 
 		// first column
 		var firstColumnHeader = self.headerSVG.append("g")
@@ -169,12 +132,18 @@ var ListView = {
 			.style("fill", "gray")
 			.style("opacity", 0.3);
 
-		function clickChangeButton() {
+		function clickChangeColumnButton() {
+			var columnChangeMenuOpened = ChangeColumnMenu.view.css("display") == "block";
 			var thisColumnFeature = d3.select(this.parentNode).attr("feature");
 			thisColumnFeature = DataTransformationHandler.returnFeatureNameWithoutID(thisColumnFeature);
 			var thisColumnGroup = d3.select(this.parentNode).attr("group");
 
-			ChangeColumnMenu.showView(thisColumnFeature, thisColumnGroup);
+			if (!columnChangeMenuOpened)
+				ChangeColumnMenu.showView(thisColumnFeature, thisColumnGroup);
+			else if (columnChangeMenuOpened && ChangeColumnMenu.selectedColumnGroup != thisColumnGroup)
+				ChangeColumnMenu.showView(thisColumnFeature, thisColumnGroup);
+			else if (columnChangeMenuOpened && ChangeColumnMenu.selectedColumnGroup == thisColumnGroup)
+				ChangeColumnMenu.removeView();
 		}
 
 		function mouseenterText() {
@@ -228,7 +197,7 @@ var ListView = {
 				// change text
 				var feature = d3.select(this.parentNode).attr("feature");
 				var newFeatureNameWithoutID = DataTransformationHandler.returnFeatureNameWithoutID(feature);
-				var shortFeatureName = (newFeatureNameWithoutID.length > 6) ? newFeatureNameWithoutID.substring(0, 6) + "..." : newFeatureNameWithoutID;
+				var shortFeatureName = DataTransformationHandler.createShortString(newFeatureNameWithoutID, 6);
 
 				d3.select(this)
 					.style("text-anchor", "middle")
@@ -456,10 +425,13 @@ var ListView = {
 				.style("opacity", 0.3);
 		}
 	},
+
+	// START: ACTIONS IN DIFFERENT STATES
+
 	createTag: function(groupKey, groupName) {
 		var self = this;
 		var groupKeyShown = DataTransformationHandler.returnFeatureNameWithoutID(groupKey);
-		groupKeyShown = (groupKeyShown.length > 20) ? groupKeyShown.substring(0, 20) + "..." : groupKeyShown;
+		groupKeyShown = DataTransformationHandler.createShortString(groupKeyShown, 20);
 		var textOnTag = (groupKeyShown == "") ? groupName : groupKeyShown + ": " + groupName;
 
 		// append the tag
@@ -494,24 +466,55 @@ var ListView = {
 				.css("display", "none");
 		}
 	},
-	removeTag: function(isTagPlacedOnShelf) { // need to handle the everything else icon as well
+	removeTag: function(isTagPlacedOnShelf, isTagPlacedOnChangeGroupMenu) { // need to handle the everything else icon as well
 		var self = this;
+
+		// check if it is everything else
 		var textOnTag = $("#draggable-tag").text();
-
-		// remove tag
-		$("#draggable-tag").remove();
-
-		// Everything else tag appears again
-		if (textOnTag == "Everything Else" && !isTagPlacedOnShelf) {
+		if (textOnTag == "Everything Else" && !isTagPlacedOnShelf && !isTagPlacedOnChangeGroupMenu) {
 			$("#list-view .table .footer")
 				.css("display", "");
 		}
+
+		// remove tag
+		$("#draggable-tag").remove();
 	},
 	moveTagTo: function(left, top) {
 		$("#draggable-tag")
 			.css("left", left)
 			.css("top", top);
 	},
+
+	// END: ACTIONS IN DIFFERENT STATES
+
+	// START: STATE HANDLER
+
+	handleStateTransitionOnDragstart: function(mouseXRelativeToPage, mouseYRelativeToPage, groupKey, groupName) {
+		var self = this;
+		var tagLeft = mouseXRelativeToPage - OOCView.shelfWidth / 2;
+		var tagTop = mouseYRelativeToPage - OOCView.shelfHeight / 2;
+
+		self.createTag(groupKey, groupName);
+		self.moveTagTo(tagLeft, tagTop);
+	},
+	handleStateTransitionOnDrag: function(mouseXRelativeToPage, mouseYRelativeToPage) {
+		var self = this;
+		var tagLeft = mouseXRelativeToPage - OOCView.shelfWidth / 2;
+		var tagTop = mouseYRelativeToPage - OOCView.shelfHeight / 2;
+		
+		self.moveTagTo(tagLeft, tagTop);
+	},
+	handleStateTransitionOnDragEnd: function(mouseXRelativeToPage, mouseYRelativeToPage) {
+		var self = this;
+		var currentShelf = OOCView.onWhichShelf(mouseXRelativeToPage, mouseYRelativeToPage);
+		var isTagPlacedOnShelf = (currentShelf != "none");
+		var isTagPlacedOnChangeGroupMenu = ChangeGroupMenu.isOnView(mouseXRelativeToPage, mouseYRelativeToPage);
+		
+		self.removeTag(isTagPlacedOnShelf, isTagPlacedOnChangeGroupMenu);
+	},
+
+	// END: STATE HANDLER
+
 	changeColumn: function(columnClassName, newFeatureName) {
 		var self = this;
 
@@ -521,7 +524,7 @@ var ListView = {
 	updateHeader: function(columnClassName, newFeatureName) {
 		var self = this;
 		var newFeatureNameWithoutID = DataTransformationHandler.returnFeatureNameWithoutID(newFeatureName);
-		var shortFeatureName = (newFeatureNameWithoutID.length > 6) ? newFeatureNameWithoutID.substring(0, 6) + "..." : newFeatureNameWithoutID;
+		var shortFeatureName = DataTransformationHandler.createShortString(newFeatureNameWithoutID, 6);
 		
 		// feature name stored and feature name displayed are different
 		self.headerSVG.select("." + columnClassName)

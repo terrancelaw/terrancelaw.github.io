@@ -1,11 +1,58 @@
 var ComparisonHandler = {
-	// group1 is the group on the top shelf
-	// group2 is the group on the bottom shelf
-	startFindingDistinguishingFeatures: function(group1, group2) {
+	startFeatureSelection: function() {
 		var self = this;
 
-		var group1FeatureVectors = self.findFeatureVectorsBelongsToGroup(group1.key, group1.name);
-		var group2FeatureVectors = self.findFeatureVectorsBelongsToGroup(group2.key, group2.name);
+		var functionSign = OOCView.svg.select(".function-sign text").text();
+		var findDistinguishingFeatures = functionSign == "≠";
+
+		// there can only be one everything else
+		var groupConditionsForEverythingElse = [];
+		var everythingElseShelfName = null;
+		for (var i = 0; i < OOCView.shelfList.length; i++) {
+			var shelfName = OOCView.shelfList[i];
+			var everythingElseOnShelf = OOCView.groupsOnShelves[shelfName].length == 1 && OOCView.groupsOnShelves[shelfName][0].groupName == "Everything Else";
+
+			if (everythingElseOnShelf) {
+				everythingElseShelfName = shelfName;
+
+				// create everything else conditions
+				for (var j = 0; j < OOCView.shelfList.length; j++) {
+					if (OOCView.shelfList[j] != everythingElseShelfName) {
+						var notEverythingElseShelfName = OOCView.shelfList[j];
+						for (var k = 0; k < OOCView.groupsOnShelves[notEverythingElseShelfName].length; k++)
+							groupConditionsForEverythingElse.push({
+								groupKey: OOCView.groupsOnShelves[notEverythingElseShelfName][k].groupKey,
+								groupName: "!" + OOCView.groupsOnShelves[notEverythingElseShelfName][k].groupName
+							});	
+					}
+				}
+
+				break;
+			}
+		}
+
+		// create group conditions
+		var groupConditions = $.extend(true, {}, OOCView.groupsOnShelves);
+		if (everythingElseShelfName)
+			groupConditions[everythingElseShelfName] = groupConditionsForEverythingElse;
+
+		// generate report
+		if (findDistinguishingFeatures) {
+			var arrangeListInDescendingOrder = true;
+			var report = self.startFindingDistinguishingFeatures(groupConditions["top"], groupConditions["bottom"]);
+			FeatureView.populateView(report, arrangeListInDescendingOrder);
+		}
+		else {
+			var arrangeListInDescendingOrder = false;
+			var report = self.startFindingSimilarFeatures(groupConditions["top"], groupConditions["bottom"]);
+			FeatureView.populateView(report, arrangeListInDescendingOrder);
+		}
+	},
+	startFindingDistinguishingFeatures: function(group1Conditions, group2Conditions) { // group1: groups on the top shelf, group2: groups on the bottom shelf
+		var self = this;
+
+		var group1FeatureVectors = self.findFeatureVectorsBelongsToGroup(group1Conditions);
+		var group2FeatureVectors = self.findFeatureVectorsBelongsToGroup(group2Conditions);
 		var fullLengthOfFeatureVector = Database.includedFeatures.length;
 
 		var currentFeatureSubsetIndices = [];
@@ -54,6 +101,12 @@ var ComparisonHandler = {
 				}
 			}
 
+			// if two group are exactly the same (no variations in all attributes), break to construct empty report
+			if (featuresWithNoVariations.length == fullLengthOfFeatureVector) {
+				bestFeatureSubsetAccuracy = 0;
+				break;
+			}
+
 			// add the best feature
 			currentFeatureSubsetIndices.push(bestFeatureToAdd);
 
@@ -72,11 +125,11 @@ var ComparisonHandler = {
 		// construct report
 		return self.constructReport(bestFeatureSubsetIndices, bestFeatureSubsetAccuracy, group1FeatureVectors, group2FeatureVectors);
 	},
-	startFindingSimilarFeatures: function(group1, group2) {
+	startFindingSimilarFeatures: function(group1Conditions, group2Conditions) {
 		var self = this;
 
-		var group1FeatureVectors = self.findFeatureVectorsBelongsToGroup(group1.key, group1.name);
-		var group2FeatureVectors = self.findFeatureVectorsBelongsToGroup(group2.key, group2.name);
+		var group1FeatureVectors = self.findFeatureVectorsBelongsToGroup(group1Conditions);
+		var group2FeatureVectors = self.findFeatureVectorsBelongsToGroup(group2Conditions);
 		var fullLengthOfFeatureVector = Database.includedFeatures.length;
 
 		var currentFeatureSubsetIndices = [];
@@ -139,17 +192,47 @@ var ComparisonHandler = {
 		// construct report
 		return self.constructReport(worstFeatureSubsetIndices, worstFeatureSubsetAccuracy, group1FeatureVectors, group2FeatureVectors);
 	},
-	findFeatureVectorsBelongsToGroup: function(groupKey, groupName) {
+	findFeatureVectorsBelongsToGroup: function(groupConditions) {
 		var groupFeatureVectors = [];
-		var findEverythingElse = groupName.charAt(0) == "!";
-		groupName = (findEverythingElse) ? groupName.substring(1) : groupName;
+		var findEverythingElse = groupConditions[0].groupName.charAt(0) == "!";
 
 		for (var id in Database.featureVectors) {
-			var currentObjectFeatureVector = Database.featureVectors[id];
-			var currentObjectGroupName = Database.dataByID[id][groupKey];
+			var satisfyAllConditions;
 
-			if (findEverythingElse && currentObjectGroupName != groupName || !findEverythingElse && currentObjectGroupName == groupName)
+			if (!findEverythingElse) {
+				satisfyAllConditions = false;
+
+				for (var i = 0; i < groupConditions.length; i++) {
+					var groupKeyInCondition = groupConditions[i].groupKey;
+					var groupNameInCondition = groupConditions[i].groupName;
+					var currentObjectGroupName = Database.dataByID[id][groupKeyInCondition];
+
+					if (currentObjectGroupName == groupNameInCondition) {
+						satisfyAllConditions = true;
+						break;
+					}
+				}
+			}
+
+			if (findEverythingElse) {
+				satisfyAllConditions = true;
+
+				for (var i = 0; i < groupConditions.length; i++) {
+					var groupKeyInCondition = groupConditions[i].groupKey;
+					var groupNameInCondition = groupConditions[i].groupName.substring(1);
+					var currentObjectGroupName = Database.dataByID[id][groupKeyInCondition];
+
+					if (currentObjectGroupName == groupNameInCondition) {
+						satisfyAllConditions = false;
+						break;
+					}
+				}
+			}
+
+			if (satisfyAllConditions) {
+				var currentObjectFeatureVector = Database.featureVectors[id];
 				groupFeatureVectors.push(currentObjectFeatureVector);
+			}
 		}
 
 		return groupFeatureVectors;
@@ -298,5 +381,8 @@ var ComparisonHandler = {
 		var unnormalizedAverage = average * (maxValueOfFeature - minValueOfFeature) + minValueOfFeature;
 
 		return unnormalizedAverage;
+	},
+	areBothShelvesOccupied(extraCondition = true) {
+		return OOCView.isOccupied["top"] && OOCView.isOccupied["bottom"] && extraCondition;
 	}
 };

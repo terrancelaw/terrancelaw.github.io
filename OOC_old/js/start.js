@@ -27,6 +27,10 @@ var changeColumnMenuCateFooterHeight = 25;
 var changeColumnMenuQuantFooterHeight = 50;
 var changeColumnMenuQuantFooterSVGWidth = leftContentWidth / 3 * 2 + 10;
 
+// change group height
+var changeGroupMenuHeaderHeight = 25;
+var changeGroupMenuContentHeight = 70;
+
 $(function() {
 	// set body width so that the divs are fixed in place even on resize
 	$("body")
@@ -81,6 +85,16 @@ $(function() {
 		.css("width", leftContentWidth)
 		.css("height", OOCViewHeight);
 
+	$("#change-group-menu")
+		.css("width", leftContentWidth)
+		.css("height", changeGroupMenuHeaderHeight + changeGroupMenuContentHeight);
+	$("#change-group-menu .header")
+		.css("width", leftContentWidth)
+		.css("height", changeGroupMenuHeaderHeight);
+	$("#change-group-menu .content")
+		.css("width", leftContentWidth)
+		.css("height", changeGroupMenuContentHeight);
+
 	$("#feature-view")
 		.css("width", leftContentWidth)
 		.css("height", featureViewHeaderHeight + featureViewContentHeight + featureViewFooterHeight);
@@ -118,7 +132,7 @@ $(function() {
 		.attr("height", changeColumnMenuHeaderHeight);
 	d3.select("#list-view .menu .content svg")
 		.attr("width", leftContentWidth)
-		.attr("height", changeColumnMenuContentHeight - 10);
+		.attr("height", changeColumnMenuContentHeight - 5);
 	d3.select("#list-view .menu .footer.quant svg")
 		.attr("width", changeColumnMenuQuantFooterSVGWidth)
 		.attr("height", changeColumnMenuQuantFooterHeight); // consider the height of dropdown as well
@@ -130,19 +144,26 @@ $(function() {
 		.attr("width", leftContentWidth)
 		.attr("height", OOCViewHeight);
 
+	d3.select("#change-group-menu .header svg")
+		.attr("width", leftContentWidth)
+		.attr("height", changeGroupMenuHeaderHeight);
+	d3.select("#change-group-menu .content svg")
+		.attr("width", leftContentWidth)
+		.attr("height", changeGroupMenuContentHeight - 2);
+
 	d3.select("#feature-view .header svg")
 		.attr("width", leftContentWidth)
 		.attr("height", featureViewHeaderHeight);
 	d3.select("#feature-view .content svg")
 		.attr("width", leftContentWidth)
-		.attr("height", featureViewContentHeight - 10); // -10 to prevent overflow at the beginning
+		.attr("height", featureViewContentHeight - changeGroupMenuHeaderHeight - changeGroupMenuContentHeight - 5); // -5 to prevent overflow
 	d3.select("#feature-view .footer svg")
 		.attr("width", leftContentWidth)
 		.attr("height", featureViewFooterHeight);
 
 	d3.select("#table-view #data-table svg")
-		.attr("width", (rightContentWidth + leftContentWidth + margin) * 0.8 - 10) // -10 to prevent overflow at the beginning
-		.attr("height", (conceptMapHeight + menuBarHeight) * 0.8 - 10); // -10 to prevent overflow at the beginning
+		.attr("width", (rightContentWidth + leftContentWidth + margin) * 0.8 - 5) // -5 to prevent overflow at the beginning
+		.attr("height", (conceptMapHeight + menuBarHeight) * 0.8 - 5); // -5 to prevent overflow at the beginning
 
 	Database.getData();
 });
