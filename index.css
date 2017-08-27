@@ -44,7 +44,7 @@ html, body {
   padding-bottom: 20px;
 }
 
-.proj, #title, #bio, #copyright {
+.proj, #title, #bio, #copyright, .experience {
    position: relative;
    bottom: 0px;
    margin-bottom:15px;
@@ -85,6 +85,14 @@ html, body {
   height: 135px;
 }
 
+.experience {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 90px;
+}
+
 .teaser {
   width: 195px;
   height: 105px;
@@ -93,13 +101,27 @@ html, body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.logo {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .icon {
   width: 20px;
   height: 20px;
 }
 
-.pub_title, .pub_authors, .public_venue, .download {
+.pub_title, .pub_authors, .public_venue, .download, .exp_venue, .exp_title, .exp_date {
   padding-bottom: 5px;
   line-height: 1.5;
   font-size: 14px
+}
+
+.exp_info {
+  display: inline-block;
 }
