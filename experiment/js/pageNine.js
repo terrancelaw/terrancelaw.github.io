@@ -129,13 +129,13 @@ var PageNine = {
 			.attr("y", 230)
 			.style("font-size", 20)
 			.style("font-style", "italic")
-			.text("Group 1 a has a uniform distribution of color.");
+			.text("Group 1 has a uniform distribution of color.");
 		d3.select(".pair-a").append("text")
 			.attr("x", 0)
 			.attr("y", 250)
 			.style("font-size", 20)
 			.style("font-style", "italic")
-			.text("Group 2 a only has deep purple marbles.");
+			.text("Group 2 only has deep purple marbles.");
 	},
 	drawLeftBarChart: function() {
 		var self = this;
@@ -289,7 +289,7 @@ var PageNine = {
 			.attr("x", 700)
 			.attr("y", 150)
 			.style("font-size", 20)
-			.text("Both group 1 and group 2 contain 100 people.");
+			.text("Both group 1 and group 2 contain 100 marbles.");
 		d3.select(".pair-b").append("text")
 			.attr("x", 700)
 			.attr("y", 170)
