@@ -379,7 +379,7 @@ var PageSix = {
 		var self = this;
 		var width = 300;
 		var xTranslate = 790, yTranslate = 560;
-		var data = Database.trainingNumericalWideNoOverlap;
+		var data = Database.trainingNumericalWideOverlap;
 
 		var xScale = d3.scaleLinear()
 			.domain([127, 190.5])
@@ -422,7 +422,7 @@ var PageSix = {
 		var self = this;
 		var width = 300;
 		var xTranslate = 790, yTranslate = 620;
-		var data = Database.trainingNumericalWideNoOverlap;
+		var data = Database.trainingNumericalWideOverlap;
 
 		var xScale = d3.scaleLinear()
 			.domain([127, 190.5])
