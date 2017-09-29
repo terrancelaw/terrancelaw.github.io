@@ -70,8 +70,6 @@ var PageFive = {
 			});
 		self.drawLeftDescription();
 		self.drawLeftBarChart();
-		self.drawLeftGroup1DotPlot();
-		self.drawLeftGroup2DotPlot();
 		self.drawLeftOption();
 		self.insertLeftRect();
 

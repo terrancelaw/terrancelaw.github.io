@@ -105,8 +105,6 @@ var PageNine = {
 			});
 		self.drawRightDescription();
 		self.drawRightBarChart();
-		self.drawRightGroup1DotPlot();
-		self.drawRightGroup2DotPlot();
 		self.drawRightOption();
 		self.insertRightRect();
 	},

@@ -63,8 +63,6 @@ var PageThree = {
 			});
 		self.drawLeftDescription();
 		self.drawLeftBarChart();
-		self.drawLeftGroup1DotPlot();
-		self.drawLeftGroup2DotPlot();
 		self.drawLeftOption();
 		self.insertLeftRect();
 
@@ -82,8 +80,6 @@ var PageThree = {
 			});
 		self.drawRightDescription();
 		self.drawRightBarChart();
-		self.drawRightGroup1DotPlot();
-		self.drawRightGroup2DotPlot();
 		self.drawRightOption();
 		self.insertRightRect();
 	},
