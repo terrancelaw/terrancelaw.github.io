@@ -82,7 +82,11 @@ html, body {
   padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
-  height: 135px;
+}
+
+.proj-info, .teaser-container {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .experience {
@@ -90,12 +94,10 @@ html, body {
   padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
-  height: 90px;
 }
 
 .teaser {
   width: 195px;
-  height: 105px;
   float: left;
   margin-right: 20px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -103,12 +105,9 @@ html, body {
 
 .logo {
   width: 100px;
-  float: left;
   margin-right: 20px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .icon {
@@ -119,9 +118,10 @@ html, body {
 .pub_title, .pub_authors, .public_venue, .download, .exp_venue, .exp_title, .exp_date {
   padding-bottom: 5px;
   line-height: 1.5;
-  font-size: 14px
+  font-size: 15px
 }
 
-.exp_info {
+.exp_info, .logo-container {
   display: inline-block;
+  vertical-align: middle;
 }
