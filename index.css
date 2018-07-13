@@ -8,20 +8,21 @@ html, body {
 }
 
 #container {
-  width: 800px;
+  width: 70%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.pad {
-  padding-left: 35px;
-  padding-right: 0px;
+.photo, .pad {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 15px;
 }
 
-.pad2 {
-  padding-left: 0px;
+.pad {
+  padding-left: 25px;
 }
 
 #personal_info #name {
@@ -45,16 +46,11 @@ html, body {
 }
 
 .proj, #title, #bio, #copyright, .experience {
-   position: relative;
-   bottom: 0px;
    margin-bottom:15px;
    padding-left:10px;
    padding-right:10px;
    padding-top:10px;
    padding-bottom:10px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
    background: #f2f8ff;
 }
 
@@ -71,6 +67,7 @@ html, body {
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  width: calc(100% - 40px);
 }
 
 #bio #cv {
@@ -82,11 +79,16 @@ html, body {
   padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
+  width: calc(100% - 30px);
 }
 
 .proj-info, .teaser-container {
   display: inline-block;
   vertical-align: middle;
+}
+
+.proj-info {
+  width: calc(100% - 195px - 25px);
 }
 
 .experience {
@@ -113,6 +115,14 @@ html, body {
 .icon {
   width: 20px;
   height: 20px;
+}
+
+.icon, .resource-link {
+  vertical-align: middle;
+}
+
+.resource-link, .other-link {
+  color: steelblue;
 }
 
 .pub_title, .pub_authors, .public_venue, .download, .exp_venue, .exp_title, .exp_date {
