@@ -7,6 +7,10 @@ html, body {
   font-size:  15px;
 }
 
+a {
+  color: steelblue;
+}
+
 #container {
   width: 70%;
   margin-right: auto;
@@ -45,7 +49,7 @@ html, body {
   padding-bottom: 20px;
 }
 
-.proj, #title, #bio, #copyright, .experience {
+.proj, .title, #bio, #copyright, .experience, #news {
    margin-bottom:15px;
    padding-left:10px;
    padding-right:10px;
@@ -54,7 +58,21 @@ html, body {
    background: #f2f8ff;
 }
 
-#title {
+#news #news-title {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#news .news-entry .date {
+  padding-right: 10px;
+}
+#news .news-entry {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.title {
   background: white;
   font-variant: small-caps;
   font-weight: bold;
@@ -62,7 +80,7 @@ html, body {
   margin-bottom: 5px;
 }
 
-#bio {
+#bio, #news {
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 20px;
