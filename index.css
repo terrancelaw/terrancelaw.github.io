@@ -59,17 +59,16 @@ a {
 }
 
 #news #news-title {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-weight: bold;
-  font-size: 18px;
 }
 
 #news .news-entry .date {
   padding-right: 10px;
 }
 #news .news-entry {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .title {
@@ -137,10 +136,6 @@ a {
 
 .icon, .resource-link {
   vertical-align: middle;
-}
-
-.resource-link, .other-link {
-  color: steelblue;
 }
 
 .pub_title, .pub_authors, .public_venue, .download, .exp_venue, .exp_title, .exp_date {
