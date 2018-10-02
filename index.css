@@ -64,10 +64,14 @@ a {
 }
 
 #news .news-entry .date {
-  padding-right: 10px;
-}
-#news .news-entry {
+  vertical-align: text-top;
   padding-left: 20px;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+#news .news-entry .content {
+  vertical-align: text-top;
   padding-right: 20px;
 }
 
@@ -85,6 +89,7 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   width: calc(100% - 40px);
+  font-size: 15px;
 }
 
 #bio #cv {
@@ -105,7 +110,7 @@ a {
 }
 
 .proj-info {
-  width: calc(100% - 195px - 25px);
+  width: calc(100% - 195px - 26px);
 }
 
 .experience {
