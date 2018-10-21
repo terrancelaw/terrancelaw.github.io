@@ -108,6 +108,7 @@ a {
 .proj-info, .teaser-container {
   display: inline-block;
   vertical-align: middle;
+  white-space: normal;
 }
 
 .proj-info {
@@ -154,4 +155,8 @@ a {
 .exp_info, .logo-container {
   display: inline-block;
   vertical-align: middle;
+}
+
+.exp_info {
+  white-space: normal;
 }
