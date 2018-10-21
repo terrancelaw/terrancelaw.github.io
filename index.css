@@ -102,6 +102,7 @@ a {
   padding-top: 15px;
   padding-bottom: 15px;
   width: calc(100% - 30px);
+  white-space: nowrap;
 }
 
 .proj-info, .teaser-container {
@@ -118,6 +119,7 @@ a {
   padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
+  white-space: nowrap;
 }
 
 .teaser {
