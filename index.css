@@ -61,8 +61,8 @@ a {
 #news #news-title {
   display: inline;
   position: absolute;
-  left: -20px;
-  top: 0px;
+  left: -25px;
+  top: 10px;
   background: #f2f8ff;
   padding: 6px;
   font-family: Arial;
