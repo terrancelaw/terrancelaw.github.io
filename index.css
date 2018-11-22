@@ -59,8 +59,18 @@ a {
 }
 
 #news #news-title {
-  margin-bottom: 5px;
-  font-weight: bold;
+  display: inline;
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  background: #f2f8ff;
+  padding: 6px;
+  font-family: Arial;
+  color: #8dc1ff;
+  -webkit-box-shadow: 0px 0px 5px 0px #a6cfff;
+  -moz-box-shadow: 0px 0px 5px 0px #a6cfff;
+  box-shadow: 0px 0px 5px 0px #a6cfff;
+  border: 1px #c0ddff solid;
 }
 
 #news .news-entry .date {
@@ -84,6 +94,7 @@ a {
 }
 
 #bio, #news {
+  position: relative;
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 20px;
