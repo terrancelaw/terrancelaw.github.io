@@ -148,6 +148,15 @@ a {
   position: relative;
 }
 
+.resource {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.resource .icon {
+  margin-right: 3px;
+}
+
 .icon {
   width: 20px;
   height: 20px;
@@ -159,7 +168,7 @@ a {
 
 .pub_title, .pub_authors, .public_venue, .download, .exp_venue, .exp_title, .exp_date {
   padding-bottom: 5px;
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 15px
 }
 
