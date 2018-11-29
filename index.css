@@ -61,14 +61,16 @@ a {
 #news-title, #bio-title {
   display: inline;
   position: absolute;
-  left: -39px;
+  right: calc(100% - 10px);
   top: 10px;
-  background: #f2f8ff;
-  padding: 5px 10px 5px 8px;
-  color: #8dc1ff;
-  -webkit-box-shadow: 0px 0px 5px 0px #a6cfff;
-  -moz-box-shadow: 0px 0px 5px 0px #a6cfff;
-  box-shadow: 0px 0px 5px 0px #a6cfff;
+  padding: 5px 15px 5px 8px;
+
+  opacity: 0.5;
+  background: #D9EAFF;
+  color: steelblue;
+  -webkit-box-shadow: 0px 0px 5px 0px #8EC1FF;
+  -moz-box-shadow: 0px 0px 5px 0px #8EC1FF;
+  box-shadow: 0px 0px 5px 0px #8EC1FF;
   border: 1px #c0ddff solid;
 }
 
