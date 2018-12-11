@@ -61,6 +61,7 @@ a {
 #news-title, #bio-title {
   display: inline;
   position: absolute;
+  white-space: nowrap;
   right: calc(100% - 10px);
   top: 10px;
   padding: 5px 15px 5px 8px;
@@ -79,6 +80,7 @@ a {
   padding-left: 20px;
   padding-right: 10px;
   white-space: nowrap;
+  text-align: right;
 }
 
 #news .news-entry .content {
