@@ -8,7 +8,17 @@ html, body {
 }
 
 a {
-  color: steelblue;
+  background: steelblue;
+  color: white;
+  text-decoration: none;
+  padding-right: 3px;
+  padding-left: 3px;
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+a:hover {
+  opacity: 0.9;
 }
 
 #container {
@@ -66,13 +76,12 @@ a {
   top: 10px;
   padding: 5px 15px 5px 8px;
 
-  opacity: 0.5;
-  background: #D9EAFF;
-  color: steelblue;
-  -webkit-box-shadow: 0px 0px 5px 0px #8EC1FF;
-  -moz-box-shadow: 0px 0px 5px 0px #8EC1FF;
-  box-shadow: 0px 0px 5px 0px #8EC1FF;
-  border: 1px #c0ddff solid;
+  opacity: 0.9;
+  background: steelblue;
+  color: white;
+  -webkit-box-shadow: 0px 0px 5px 0px steelblue;
+  -moz-box-shadow: 0px 0px 5px 0px steelblue;
+  box-shadow: 0px 0px 5px 0px steelblue;
 }
 
 #news .news-entry .date {
