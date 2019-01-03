@@ -22,7 +22,7 @@ a:hover {
 }
 
 #container {
-  width: 71%;
+  width: 73%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -113,6 +113,7 @@ a:hover {
   padding-right: 20px;
   width: calc(100% - 55px);
   font-size: 15px;
+  line-height: 1.5;
 }
 
 #bio #cv {
@@ -120,11 +121,11 @@ a:hover {
 }
 
 .proj {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  width: calc(100% - 30px);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: calc(100% - 40px);
   white-space: nowrap;
 }
 
@@ -139,10 +140,10 @@ a:hover {
 }
 
 .experience {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   white-space: nowrap;
 }
 
