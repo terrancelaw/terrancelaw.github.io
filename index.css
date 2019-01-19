@@ -9,18 +9,18 @@ html, body {
 }
 
 a {
-  background: steelblue;
-  color: white;
+  background: #d6ebf2;
+  color: steelblue;
   text-decoration: none;
   padding-right: 3px;
   padding-left: 3px;
   padding-bottom: 1px;
   border-radius: 2px;
-  opacity: 0.6;
 }
 
 a:hover {
-  opacity: 0.9;
+  background: #9bc2cf;
+  color: white;
 }
 
 #container {
@@ -78,7 +78,7 @@ a:hover {
   top: 10px;
   padding: 5px 8px 5px 8px;
 
-  opacity: 0.9;
+  opacity: 0.5;
   background: steelblue;
   color: white;
   -webkit-box-shadow: 0px 0px 5px 0px steelblue;
