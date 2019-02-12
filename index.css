@@ -48,6 +48,17 @@ a:hover {
   display: block;
 }
 
+#personal_info .info-entry .info-title {
+  vertical-align: text-top;
+  text-align: left;
+  padding-right: 5px;
+}
+
+#personal_info .info-entry .info-content {
+  vertical-align: text-top;
+  text-align: left;
+}
+
 #personal_info .info  {
   height: 180px;
 }
