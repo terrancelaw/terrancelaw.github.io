@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+	<title>US College Explorer</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+	<link rel="stylesheet" type="text/css" href="css/tooltip.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Font-Awesome/css/all.min.css">
+
+	<script src="vender/d3.min.js"></script>
+	<script src="vender/jquery-3.3.1.min.js"></script>
+	<script src="vender/jquery-ui.min.js"></script>
+	<script src="vender/bootstrap-slider.js"></script>
+	<script src="vender/edit-distance.js"></script>
+</head>
+
+<body class="noselection">
+	<div id="filter-bar" class="pane noselection">
+
+		<div class="filter-input-container">
+			<div class="input-box">
+				<span class="title">Filter: </span>
+				<input type="text" class="box">
+			</div>
+		</div>
+
+		<div class="filter-capsule-container">
+			<span class="record-number"></span>
+		</div>
+
+	</div>
+
+	<div id="main-view" class="noselection">
+
+		<div id="selection-pane">
+
+			<div id="dimension-pane" class="pane loader-installed">
+				<div class="header">Dimensions</div>
+				<div class="attributes content"></div>
+				<div class="categories content"></div>
+
+				<div class="footer">
+
+					<span class="select-none button">
+						<span class="far fa-square"></span>
+						<span class="button-text">Select None</span>
+					</span>
+
+					<span class="select-all button">
+						<span class="far fa-check-square"></span>
+						<span class="button-text">Select All</span>
+					</span>
+
+				</div>
+
+				<div class="loader">
+					<div class="background"></div>
+					<div class="loader-container"><div class="loader-animation"></div></div>
+				</div>
+			</div>
+
+			<div id="measure-pane" class="pane loader-installed">
+				<div class="header">Measures</div>
+				<div class="content"></div>
+
+				<div class="footer">
+
+					<span class="select-none button">
+						<span class="far fa-square"></span>
+						<span class="button-text">Select None</span>
+					</span>
+
+					<span class="select-all button">
+						<span class="far fa-check-square"></span>
+						<span class="button-text">Select All</span>
+					</span>
+
+				</div>
+
+				<div class="loader">
+					<div class="background"></div>
+					<div class="loader-container"><div class="loader-animation"></div></div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="vis-pane" class="pane loader-installed">
+
+			<div class="header">
+				<span class="grouping">
+					<span class="text">Group By: </span>
+					<span class="dimension button selected" mode="dimension">Dimension</span>
+					<span class="slash">/</span>
+					<span class="measure button" mode="measure">Measure</span>
+				</span>
+
+				<span class="comparison">
+					<span class="text">Comparison Mode: </span>
+					<span class="relative button selected" mode="relative">Relative</span>
+					<span class="slash">/</span>
+					<span class="cms button" mode="cms">CMS</span>
+					<span class="slash">/</span>
+					<span class="peer button" mode="peer">Registry Peer</span>
+				</span>
+			</div>
+
+			<div class="content"></div>
+
+			<div class="footer">
+				<span class="comparison button selected" type="comparison">
+					<span class="fa fa-chart-area"></span>
+					<span class="button-text">Comparison Insights</span>
+				</span>
+
+				<span class="time-series button" type="timeSeries">
+					<span class="fa fa-chart-line"></span>
+					<span class="button-text">Time Series Insights</span>
+				</span>
+			</div>
+
+			<div class="loader">
+				<div class="background"></div>
+				<div class="loader-container"><div class="loader-animation"></div></div>
+			</div>
+		</div>
+
+		<div id="highlight-pane">
+
+			<div id="dimension-highlight-pane" class="pane loader-installed">
+				<div class="header">Dimension Highlights</div>
+				<div class="content"></div>
+
+				<div class="loader">
+					<div class="background"></div>
+					<div class="loader-container"><div class="loader-animation"></div></div>
+				</div>
+			</div>
+
+			<div id="measure-highlight-pane" class="pane loader-installed">
+				<div class="header">Measure Highlights</div>
+				<div class="content"></div>
+
+				<div class="loader">
+					<div class="background"></div>
+					<div class="loader-container"><div class="loader-animation"></div></div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="filter-menu" class="noselection">
+
+		<div class="attribute-only menu">
+			<div class="attribute header">Attribute Names</div>
+			<div class="attribute content">
+				<div class='container'></div>
+			</div>
+		</div>
+
+		<div class="categorical-attribute-value-pair menu">
+			<div class="attribute header">Attribute Names</div>
+			<div class="attribute content">
+				<div class='container'></div>
+			</div>
+
+			<div class="value header">Attribute Values</div>
+			<div class="value content">
+				<div class='container'></div>
+			</div>
+		</div>
+
+		<div class="numerical-attribute-value-pair menu">
+			<div class="attribute header">Attribute Names</div>
+			<div class="attribute content">
+				<div class='container'></div>
+			</div>
+
+			<div class="range header">Range</div>
+			<div class="range content">
+				<svg><g></g></svg>
+				<span class="min-text">min</span>
+				<input id="filter-menu-slider" data-slider-id="filter-menu-slider" type="text"/>
+				<span class="max-text">max</span>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="tooltip"></div>
+
+	<script src="js/start.js"></script>
+	<script src="js/database.js"></script>
+	<script src="js/measurePane.js"></script>
+	<script src="js/dimensionPane.js"></script>
+	<script src="js/visPane.js"></script>
+	<script src="js/dimensionHighlightPane.js"></script>
+	<script src="js/measureHighlightPane.js"></script>
+
+	<script src="js/meanOperator.js"></script>
+	<script src="js/comparisonOperator.js"></script>
+	<script src="js/comparisonHandler.js"></script>
+	<script src="js/timeSeriesOperator.js"></script>
+	<script src="js/timeSeriesHandler.js"></script>
+	
+	<script src="js/body.js"></script>
+	<script src="js/helpers.js"></script>
+	<script src="js/tooltip.js"></script>
+	<script src="js/clickEvents.js"></script>
+
+	<script src="js/filterBar.js"></script>
+	<script src="js/filterHandler.js"></script>
+	<script src="js/filterMenu.js"></script>
+	<script src="js/filterMenuHelpers.js"></script>
+	<script src="js/filterNumericalMenu.js"></script>
+	<script src="js/filterCategoricalMenu.js"></script>
+	<script src="js/filterAttributeOnlyMenu.js"></script>
+	<script src="js/slider.js"></script>
+</body>
