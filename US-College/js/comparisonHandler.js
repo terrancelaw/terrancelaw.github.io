@@ -383,11 +383,10 @@ const ComparisonHandler = {
 			let SVGEl = data.SVGEl;
 			let min = data.min, max = data.max;
 			let binNumber = ComparisonOperator.binNumber;
-			let binSize = (max - min) / binNumber;
 			let translateString = data.translateString;
 
 			let xScale = d3.scaleLinear()
-				.domain([ min + binSize / 2 , max - binSize / 2])
+				.domain([ min , max ])
 				.range([ 0, self.densityPlotWidth ]);
 
 			let lineGroup = d3.select(SVGEl)
@@ -416,12 +415,11 @@ const ComparisonHandler = {
 			let SVGEl = data.SVGEl;
 			let min = data.min, max = data.max;
 			let binNumber = ComparisonOperator.binNumber;
-			let binSize = (max - min) / binNumber;
 			let translateString = data.translateString;
 			let roundedMean = Math.round(mean * 100) / 100;
 
 			let xScale = d3.scaleLinear()
-				.domain([ min + binSize / 2 , max - binSize / 2])
+				.domain([ min , max ])
 				.range([ 0, self.densityPlotWidth ]);
 
 			return d3.select(SVGEl)
