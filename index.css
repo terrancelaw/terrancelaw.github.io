@@ -21,6 +21,7 @@ a {
 a:hover {
   background: #9bc2cf;
   color: white;
+  transition: 0.2s;
 }
 
 #container {
