@@ -13,6 +13,11 @@
     background: #d3d3d3;
 }
 
+[contenteditable] {
+    -webkit-user-select: text;
+    user-select: text;
+}
+
 .no-selection {
 	-webkit-user-select: none;
     -moz-user-select: none;
