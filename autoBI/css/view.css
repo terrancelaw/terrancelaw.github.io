@@ -1,0 +1,48 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: calc(100% - 16px); /* margin = 8 */
+    height: calc(100% - 16px); /* margin = 8 */
+}
+
+#menu-bar {
+	width: calc(100% - 2px);
+	height: 30px; /* padding = 3 */
+}
+
+#insight-view {
+	width: calc(100% - 2px);
+	height: calc(100% - 30px - 8px - 4px); /* margin = 8 */
+}
+
+#insight-view .header {
+	width: calc(100% - 15px - 15px);
+    height: 50px;
+}
+
+#insight-view .content {
+	width: calc(100% - 60px); /* padding = 30 */
+	height: calc(100% - 90px); /* padding = 30 + 60 */
+}
+
+#dashboard-view {
+	width: calc(100% - 2px);
+	height: calc(100% - 30px - 8px - 4px); /* margin = 8 */
+}
+
+#load-data-window {
+	width: 100%;
+    height: 100%;
+}
+
+#load-data-window .background {
+	width: 100%;
+    height: 100%;
+}
+
+#load-data-window .menu {
+	width: calc(300px - 40px); /* padding = 40 */
+}

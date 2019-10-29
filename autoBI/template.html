@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+	<title>Your Dashboard</title>
+
+	<style>
+
+		::-webkit-scrollbar {
+		    width: 10px;
+		    height: 10px
+		}
+		 
+		::-webkit-scrollbar-track {
+		    background: #f0f0f0;
+		    border-radius: 2px;
+		}
+		 
+		::-webkit-scrollbar-thumb {
+		    border-radius: 2px;
+		    background: #d3d3d3;
+		}
+
+		.no-selection {
+			-webkit-user-select: none;
+		    -moz-user-select: none;
+		    -khtml-user-select: none;
+		    -ms-user-select: none;
+		}
+
+		.pane {
+		    background: white;
+		    border: 1px solid #d3d3d3;
+		    border-radius: 2px;
+		}
+
+		html {
+		    width: 100%;
+		    height: 100%;
+		}
+
+		body {
+			width: calc(100% - 16px);
+		    height: calc(100% - 16px);
+		    
+		    font-size: 13px;
+		    font-family: 'Lato', Arial;
+		    font-weight: 300;
+		    position: fixed;
+		    margin: 0px;
+		    top: 8px;
+		    left: 8px;
+		    white-space: nowrap;
+		}
+
+		#dashboard {
+			position: relative;
+			width: calc(100% - 2px);
+			height: calc(100% - 2px);
+		}
+
+		#dashboard > .chart {
+			position: absolute;
+			background: white;
+    		border: 2px solid white;
+    		border-radius: 2px;
+
+			-webkit-box-shadow: 0px 0px 10px 0px rgba(105,155,197,0.36);
+    		-moz-box-shadow: 0px 0px 10px 0px rgba(105,155,197,0.36);
+    		box-shadow: 0px 0px 10px 0px rgba(105,155,197,0.36);
+		}
+
+		#dashboard > .chart > .container {
+		    width: 100%;
+		    height: 100%;
+		    padding-right: 0px;
+		    overflow-y: hidden;
+		    overflow-x: hidden;
+		}
+
+		#dashboard > .chart > .container.overflow-y {
+		    overflow-y: auto;
+		}
+
+		#dashboard > .chart > .container > canvas {
+		    position: absolute;
+		    cursor: default;
+
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		}
+
+		#dashboard > .chart > .container.overflow-y > canvas {
+		    top: 0%;
+		    transform: translate(-50%, 0%);
+		    margin-top: 30px;
+		    margin-bottom: 30px;
+		}
+
+		#dashboard > .text {
+		    position: absolute;
+		    border: 2px solid transparent;
+		    border-radius: 2px;
+
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		#dashboard > .text > .container {
+		    width: calc(100% - 20px);
+		    height: calc(100% - 20px);
+		    padding: 10px;
+
+		    cursor: text;
+		    outline: none;
+		    color: steelblue;
+
+		    overflow-y: hidden;
+		    overflow-x: hidden;
+		}
+		
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/vega@5.7.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.0.0-beta.10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@5.1.3"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body class="no-selection">
+	<div id="dashboard" class="pane">
+		[[TEXTBOXES]]
+		[[CHARTS]]
+	</div>
+
+	<script>
+		[[DATA]]
+
+		const generateVLSpec = {
+			trend: function(data) {
+				let vegaLiteData = data.data;
+				let chartWidth = data.chartWidth;
+				let chartHeight = data.chartHeight;
+				let temporalAttrList = data.temporalAttrList;
+				let quantitativeAttrList = data.quantitativeAttrList;
+				let timeUnit = data.timeUnit;
+
+				return {
+					$schema: "https://vega.github.io/schema/vega-lite/v4.json",
+					data: { values: vegaLiteData },
+					width: chartWidth,
+					height: chartHeight,
+					mark: { type: 'line', tooltip: true },
+					encoding: {
+					    x: { field: temporalAttrList[0], type: 'temporal', timeUnit: timeUnit },
+				    	y: { field: quantitativeAttrList[0], type: 'quantitative', aggregate: 'mean' }
+				  	}
+				};
+			},
+			count: function(data) {
+				let vegaLiteData = data.data;
+				let chartWidth = data.chartWidth;
+				let chartHeight = data.chartHeight;
+				let categoricalAttr = (data.ordinalAttrList.length == 0) ? data.nominalAttrList[0] : data.ordinalAttrList[0];
+				let quantitativeAttr = (data.quantitativeAttrList == 0) ? [] : data.quantitativeAttrList[0]
+				let categoricalAttrType = (data.ordinalAttrList.length != 0) ? 'ordinal' : 'nominal';
+
+				return {
+				  	$schema: "https://vega.github.io/schema/vega-lite/v4.json",
+				  	data: { values: vegaLiteData },
+				  	width: chartWidth,
+				  	mark: { type: 'bar', tooltip: true },
+				  	encoding: {
+						x: { field: '*', type: 'quantitative', aggregate: 'count' },
+				  	  	y: { field: categoricalAttr, type: categoricalAttrType, sort: '-x', axis: { labelLimit: 50 } }
+				  	}
+				}
+			},
+			mean: function(data) {
+				let vegaLiteData = data.data;
+				let chartWidth = data.chartWidth;
+				let chartHeight = data.chartHeight;
+				let categoricalAttr = (data.ordinalAttrList.length == 0) ? data.nominalAttrList[0] : data.ordinalAttrList[0];
+				let quantitativeAttr = (data.quantitativeAttrList == 0) ? [] : data.quantitativeAttrList[0]
+				let categoricalAttrType = (data.ordinalAttrList.length != 0) ? 'ordinal' : 'nominal';
+
+				return {
+				  	$schema: "https://vega.github.io/schema/vega-lite/v4.json",
+				  	data: { values: vegaLiteData },
+				  	width: chartWidth,
+				  	mark: { type: 'bar', tooltip: true },
+				  	encoding: {
+				  	  	x: { field: quantitativeAttr, type: 'quantitative', aggregate: 'mean' },
+				  	  	y: { field: categoricalAttr, type: categoricalAttrType, sort: '-x', axis: { labelLimit: 50 } }
+				  	}
+				}
+			},
+			correlation: function(data) {
+				let vegaLiteData = data.data;
+				let chartWidth = data.chartWidth;
+				let chartHeight = data.chartHeight;
+				let quantitativeAttrList = data.quantitativeAttrList;
+
+				return {
+				  	$schema: "https://vega.github.io/schema/vega-lite/v4.json",
+				  	data: { values: vegaLiteData },
+				  	width: chartWidth,
+				  	height: chartHeight,
+				  	mark: { type: 'circle', tooltip: true },
+				  	encoding: {
+				  	  x: { field: quantitativeAttrList[0], type: "quantitative" },
+				  	  y: { field: quantitativeAttrList[1], type: "quantitative" }
+				  	}
+				};
+			}
+		}
+
+		$(function() {
+			initChart();
+			addChart();
+			initText();
+			addText();
+		});
+
+		function initChart() {
+			$('.chart').each(function() {
+				let left = $(this).attr('x');
+				let top = $(this).attr('y');
+				let width = $(this).attr('width');
+				let height = $(this).attr('height');
+
+				$(this).css({
+					left: left + 'px', top: top + 'px',
+					width: width + 'px', height: height + 'px'
+				});
+			});
+		}
+
+		function addChart() {
+			$('.chart').each(function() {
+				let dataID = parseInt($(this).attr('data-id'));
+				let width = $(this).attr('width');
+				let height = $(this).attr('height');
+				let timeUnit = $(this).attr('time-unit');
+				let insightType = $(this).attr('insight-type');
+
+				let innerContainerEl = $(this).find('.container')[0];
+				let dataForCurrentChart = data[dataID];
+				let chartWidth = width - 100;
+				let chartHeight = height - 100;
+				let quantitativeAttrList = $(this).attr('q-attr-list') == '' ? [] : $(this).attr('q-attr-list').split(',');
+				let temporalAttrList = $(this).attr('t-attr-list').split(',') == '' ? [] : $(this).attr('t-attr-list').split(',');
+				let ordinalAttrList = $(this).attr('o-attr-list').split(',') == '' ? [] : $(this).attr('o-attr-list').split(',');
+				let nominalAttrList = $(this).attr('n-attr-list').split(',') == '' ? [] : $(this).attr('n-attr-list').split(',');
+				let VLSpec = generateVLSpec[insightType]({
+					data: dataForCurrentChart,
+					chartWidth: chartWidth,
+					chartHeight: chartHeight,
+					quantitativeAttrList: quantitativeAttrList,
+					temporalAttrList: temporalAttrList,
+					ordinalAttrList: ordinalAttrList,
+					nominalAttrList: nominalAttrList
+				});
+				
+				vegaEmbed(innerContainerEl, VLSpec, { actions: false });
+			});
+		}
+
+		function initText() {
+			$('.text').each(function() {
+				let left = $(this).attr('x');
+				let top = $(this).attr('y');
+				let width = $(this).attr('width');
+				let height = $(this).attr('height');
+				
+				$(this).css({
+					left: left + 'px', top: top + 'px',
+					width: width + 'px', height: height + 'px'
+				});
+			});
+		}
+
+		function addText() {
+			$('.text').each(function() {
+				let text = $(this).attr('content');
+				let fontSize = $(this).attr('font-size');
+
+				$(this).find('.container')
+					.css('font-size', fontSize + 'px')
+					.html(text);
+			});
+		}
+
+	</script>
+</body>
