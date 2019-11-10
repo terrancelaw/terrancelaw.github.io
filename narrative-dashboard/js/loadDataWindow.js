@@ -2,7 +2,7 @@ const LoadDataWindow = {
 	init: function() {
 		const self = this;
 
-		self.installSampleDataButton('college.csv', 27034);
+		self.installSampleDataButton('college.csv', 9842);
 		self.installSampleDataButton('county.csv', 21945);
 		self.installClickBackground();
 	},
