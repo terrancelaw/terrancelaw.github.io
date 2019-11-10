@@ -36,7 +36,7 @@ const MapView = {
 	drawContent: function(quantitativeAttr, year) {
 		let containerWidth = $('#map-view > .content').width();
 		let containerHeight = $('#map-view > .content').height();
-		let tooltipExpression = '{"State": datum.state, "' + quantitativeAttr + '": format(datum["' + quantitativeAttr + '"], ".1f")}'
+		let tooltipExpression = '{"State": datum.state, "' + quantitativeAttr + '": format(datum["' + quantitativeAttr + '"], ".2f")}'
 		let vegaSpec = {
 			$schema: 'https://vega.github.io/schema/vega/v5.json',
 			width: containerWidth, height: containerHeight, autosize: 'none',
@@ -196,9 +196,9 @@ const MapView = {
 				NarrativeView.showLoader();
 
 				setTimeout(function() {
-					LeftTrendView.draw(isInitialization=false, filterState=selectedState);
-					MiddleTrendView.draw(isInitialization=false, filterState=selectedState);
-					RightTrendView.draw(isInitialization=false, filterState=selectedState);
+					LeftTrendView.draw(isInitialization=false);
+					MiddleTrendView.draw(isInitialization=false);
+					RightTrendView.draw(isInitialization=false);
 					NarrativeView.draw();
 
 					LeftTrendView.hideLoader();

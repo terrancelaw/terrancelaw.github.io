@@ -34,13 +34,13 @@ const NarrativeView = {
 		let description = '';
 
 		if (selectedState === null) {
-			description += 'In <span>' + selectedYear + '</span>, the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' is ' + Math.round(average * 10 ) / 10 + ' nationwise. ';
-			description += '<span>' + lowestStateStat.state + '</span> has the lowest value (' + Math.round(lowestStateStat[selectedQuantitativeAttr] * 10 ) / 10 + ') ';
-			description += 'while <span>' + highestStateStat.state + '</span> has the highest value (' + Math.round(highestStateStat[selectedQuantitativeAttr] * 10 ) / 10 + ').';
+			description += 'In <span>' + selectedYear + '</span>, the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' is ' + Math.round(average * 100 ) / 100 + ' nationwise. ';
+			description += '<span>' + lowestStateStat.state + '</span> has the lowest value (' + Math.round(lowestStateStat[selectedQuantitativeAttr] * 100) / 100 + ') ';
+			description += 'while <span>' + highestStateStat.state + '</span> has the highest value (' + Math.round(highestStateStat[selectedQuantitativeAttr] * 100 ) / 100 + ').';
 		}
 		if (selectedState !== null) {
 			description += 'In <span>' + selectedYear + '</span>, the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' ';
-			description += 'is ' + Math.round(selectedStateStat[selectedQuantitativeAttr] * 10 ) / 10 + ' in ' + selectedStateStat.state + '.';
+			description += 'is ' + Math.round(selectedStateStat[selectedQuantitativeAttr] * 100) / 100 + ' in ' + selectedStateStat.state + '.';
 		}
 
 		$('#narrative-view > .container > .content > .container')
@@ -56,9 +56,9 @@ const NarrativeView = {
 		let dataByTimeStep = self.getDataByTimeStep(selectedQuantitativeAttr);
 		let timeSeries = self.generateTimeSeries(dataByTimeStep);
 
-		let roundedFirstValue = Math.round(timeSeries[0] * 10) / 10;
-		let roundedLastValue = Math.round(timeSeries[timeSeries.length - 1] * 10) / 10;
-		let roundedPercentChange = Math.abs(Math.round((timeSeries[timeSeries.length - 1] - timeSeries[0]) / timeSeries[0] * 100 * 10) / 10);
+		let roundedFirstValue = Math.round(timeSeries[0] * 100) / 100;
+		let roundedLastValue = Math.round(timeSeries[timeSeries.length - 1] * 100) / 100;
+		let roundedPercentChange = Math.abs(Math.round((timeSeries[timeSeries.length - 1] - timeSeries[0]) / timeSeries[0] * 100 * 100) / 100);
 
 		let hasIncreased = timeSeries[timeSeries.length - 1] > timeSeries[0];
 		let hasDecreased = timeSeries[timeSeries.length - 1] < timeSeries[0];

@@ -1,11 +1,11 @@
 const LeftTrendView = {
-	draw: function(isInitialization, filterState=null) {
+	draw: function(isInitialization) {
 		const self = this;
 		let quantitativeAttr = isInitialization ? Database.getQuantitativeAttrList()[0] 
 							 : $('#trend-view > .view:nth-child(1) > .header > .attribute[type="quantitative"]').attr('value');
 
-		self.drawHeader(quantitativeAttr, filterState);
-		self.drawContent(quantitativeAttr, filterState);
+		self.drawHeader(quantitativeAttr);
+		self.drawContent(quantitativeAttr);
 		self.installClickHeaderAttrBehaviour();
 	},
 	showLoader: function() {
@@ -19,8 +19,9 @@ const LeftTrendView = {
 
 	// draw
 
-	drawHeader: function(quantitativeAttr, filterState=null) {
+	drawHeader: function(quantitativeAttr) {
 		let itemName = Database.getItemName();
+		let filterState = MapView.selectedState;
 		let stateAbbr = filterState !== null ? Database.stateToAbbr[filterState] : '';
 		let headerHTML = '';
 
@@ -28,7 +29,8 @@ const LeftTrendView = {
 		headerHTML += ' per ' + itemName + (filterState !== null ? ' in ' + stateAbbr : '');
 		$('#trend-view > .view:nth-child(1) > .header').html(headerHTML);
 	},
-	drawContent: function(quantitativeAttr, filterState=null) {
+	drawContent: function(quantitativeAttr) {
+		let filterState = MapView.selectedState;
 		let containerWidth = $('#trend-view > .view:nth-child(1) > .content').width();
 		let containerHeight = $('#trend-view > .view:nth-child(1) > .content').height();
 		let vegaLiteSpec = {
@@ -58,7 +60,7 @@ const LeftTrendView = {
 					}
 				},
 				tooltip: [
-			      { field: quantitativeAttr, type: "quantitative", aggregate: "mean", format: ".1f" },
+			      { field: quantitativeAttr, type: "quantitative", aggregate: "mean", format: ".2f" },
 			      { field: "Year", type: "temporal", timeUnit: "year", title: 'Year' }
 			    ]
 			}
