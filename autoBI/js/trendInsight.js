@@ -90,7 +90,7 @@ const TrendInsight = {
 				let percentageChange = (j >= 1) ? ((currentValue - previousValue) / previousValue) : 0;
 
 				if (currentValue > firstValue) numberOfStepsGreaterThanFirst++;
-				if (currentValue < firstValue) numberOfStepsLessThanLast++;
+				if (currentValue < lastValue) numberOfStepsLessThanLast++;
 				if (percentageChange > 0.05) numberOfIncreasingPeriod++; // only consider strong increasing
 			}
 
