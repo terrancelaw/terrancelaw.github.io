@@ -10,6 +10,7 @@ const MapView = {
 				 ? Database.getYearList().sort(function(a, b) { return b - a; })[0]
 				 : $('#map-view > .header > .attribute[type="temporal"]').attr('value');
 
+		self.selectedState = null;
 		self.drawHeader(quantitativeAttr, year);
 		self.drawContent(quantitativeAttr, year);
 		self.installClickHeaderAttrBehaviour();

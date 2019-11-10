@@ -63,8 +63,18 @@ const DropDownMenu = {
 			DropDownMenu.hide();
 
 			setTimeout(function() {
-				DropDownMenu.focusedView.draw(isInitialization=false);
-				NarrativeView.draw();
+				if (DropDownMenu.focusedView === MapView) {
+					MapView.draw(isInitialization=false);
+					LeftTrendView.draw(isInitialization=false);
+					MiddleTrendView.draw(isInitialization=false);
+					RightTrendView.draw(isInitialization=false);
+					NarrativeView.draw();
+				}
+
+				if (DropDownMenu.focusedView !== MapView) {
+					DropDownMenu.focusedView.draw(isInitialization=false);
+					NarrativeView.draw();
+				}
 
 				DropDownMenu.focusedView.hideLoader();
 				NarrativeView.hideLoader();

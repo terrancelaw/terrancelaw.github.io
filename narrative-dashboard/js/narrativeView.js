@@ -40,7 +40,7 @@ const NarrativeView = {
 		}
 		if (selectedState !== null) {
 			description += 'In <span>' + selectedYear + '</span>, the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' ';
-			description += 'is ' + Math.round(selectedStateStat[selectedQuantitativeAttr] * 100) / 100 + ' in ' + selectedStateStat.state + '.';
+			description += 'is ' + Math.round(selectedStateStat[selectedQuantitativeAttr] * 100) / 100 + ' in <span>' + selectedStateStat.state + '</span>.';
 		}
 
 		$('#narrative-view > .container > .content > .container')
