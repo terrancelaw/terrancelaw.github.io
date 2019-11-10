@@ -1,0 +1,78 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: calc(100% - 16px); /* margin = 8 */
+    height: calc(100% - 16px); /* margin = 8 */
+}
+
+#left-view {
+	width: calc(100% - (250px * 3 + 18px * 3) - 8px); /* depends on trend views */
+    height: 100%;
+}
+
+#menu-bar {
+	width: 100%;
+	height: 40px;
+}
+
+#narrative-view {
+	width: 100%;
+	height: calc(100% - 40px - 8px);
+}
+
+#narrative-view > .container {
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
+}
+
+#narrative-view > .container > .content {
+    width: 100%;
+    height: 100%;
+}
+
+#narrative-view > .container > .content > .container {
+    width: calc(100% - 40px - 20px); /* padding = 10 */
+    height: calc(100% - 60px - 20px); /* padding = 10 */
+}
+
+#right-view {
+    width: calc(250px * 3 + 18px * 3); /* depends on trend views */
+    height: 100%;
+}
+
+#map-view {
+    width: calc(100% - 18px);
+    height: calc(100% - 250px - 18px * 3);
+}
+
+#map-view > .content {
+    width: 100%;
+    height: 100%;
+}
+
+#trend-view > .view {
+    width: 250px;
+    height: 250px;
+}
+
+#trend-view > .view .content {
+    width: 100%;
+    height: calc(100% - 35px);
+}
+
+#load-data-window {
+	width: 100%;
+    height: 100%;
+}
+
+#load-data-window .background {
+	width: 100%;
+    height: 100%;
+}
+
+#load-data-window .menu {
+	width: calc(300px - 40px); /* padding = 40 */
+}
