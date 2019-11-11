@@ -178,7 +178,7 @@ const MapView = {
     		}]
 		};
 
-		vegaEmbed('#map-view > .content', vegaSpec).then(function(result) {
+		vegaEmbed('#map-view > .content', vegaSpec, { actions: false }).then(function(result) {
 			let view = result.view;
 
 			view.addSignalListener('clickUS', function(name, value) {
