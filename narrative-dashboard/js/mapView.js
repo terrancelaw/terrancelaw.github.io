@@ -168,20 +168,17 @@ const MapView = {
     			encode: {
     				enter: { fill: { value: "#f5f5f5" } },
     				update: { 
-    					opacity: [
-    						{ test: "!clickUS || !clickUS.datum || !clickUS.datum.state || datum.state == clickUS.datum.state", value: 1 }, 
-    						{ value: 0.15 }
-    					],
-    					fill: { scale: "color", field: quantitativeAttr }, 
-    					cursor: { value: "pointer" },
-    					tooltip: { signal: tooltipExpression } 
+    					opacity: [{ test: "!clickUS || !clickUS.datum || !clickUS.datum.state || datum.state == clickUS.datum.state", value: 1 }, { value: 0.15 }],
+    					fill: [{ test: "!datum.state", value: "#f5f5f5" }, { scale: "color", field: quantitativeAttr }], 
+    					cursor: [{ test: "!datum.state", value: "default" }, { value: "pointer" }],
+    					tooltip: [{ test: "!datum.state", value: false }, { signal: tooltipExpression }]
     				}
     			},
     			transform: [{ type: "geoshape", projection: "projection" }]
     		}]
 		};
 
-		vegaEmbed('#map-view > .content', vegaSpec, { actions: false }).then(function(result) {
+		vegaEmbed('#map-view > .content', vegaSpec).then(function(result) {
 			let view = result.view;
 
 			view.addSignalListener('clickUS', function(name, value) {

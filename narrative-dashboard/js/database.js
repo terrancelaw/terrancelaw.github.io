@@ -94,9 +94,6 @@ const Database = {
 			let currentYear = moment(currentYearString, moment.ISO_8601, true).year();
 			currentRow.year_ = currentYear; // for filtering
 			yearListObject[currentYear] = null;
-
-			if (isNaN(currentYear))
-				console.log(currentYearString)
 		}
 
 		attributeMetadata.Year.yearList = Object.keys(yearListObject);
