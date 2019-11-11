@@ -86,8 +86,8 @@ const NarrativeView = {
 		if (selectedState !== null && remainSteady) description += 'the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' remains steady in <span>' + selectedState + '</span>';
 
 		// third part
-		if (hasIncreased) description += ', with a' + (remainSteady ? ' mild' : '') + ' increase from ' + roundedFirstValue + ' in <span>' + firstYear + '</span> to ' + roundedLastValue + ' in <span>' + lastYear + '</span> (' + roundedPercentChange + '% increase).';
-		if (hasDecreased) description += ', with a' + (remainSteady ? ' mild' : '') + ' decrease from ' + roundedFirstValue + ' in <span>' + firstYear + '</span> to ' + roundedLastValue + ' in <span>' + lastYear + '</span> (' + roundedPercentChange + '% decrease).';
+		if (hasIncreased) description += ', with ' + (remainSteady ? 'a mild' : 'an') + ' increase from ' + roundedFirstValue + ' in <span>' + firstYear + '</span> to ' + roundedLastValue + ' in <span>' + lastYear + '</span> (' + roundedPercentChange + '% increase).';
+		if (hasDecreased) description += ', with ' + (remainSteady ? 'a mild' : 'a') + ' decrease from ' + roundedFirstValue + ' in <span>' + firstYear + '</span> to ' + roundedLastValue + ' in <span>' + lastYear + '</span> (' + roundedPercentChange + '% decrease).';
 		if (unchanged) description += '. The average value remains unchanged at ' + roundedFirstValue + '.';
 
 		$('#narrative-view > .container > .content > .container')
