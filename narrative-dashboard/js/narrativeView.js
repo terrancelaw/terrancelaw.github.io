@@ -53,7 +53,7 @@ const NarrativeView = {
 		let selectedQuantitativeAttr = $('#trend-view > .view:nth-child(' + index + ') > .header > .attribute').attr('value');
 		let selectedState = MapView.selectedState;
 
-		let dataByTimeStep = self.getDataByTimeStep(selectedQuantitativeAttr);
+		let dataByTimeStep = self.getDataByTimeStep(selectedQuantitativeAttr, selectedState);
 		let timeSeries = self.generateTimeSeries(dataByTimeStep);
 
 		let roundedFirstValue = Math.round(timeSeries[0] * 100) / 100;
@@ -136,7 +136,7 @@ const NarrativeView = {
 
 	// writeNarrativeForLeftTrend
 
-	getDataByTimeStep: function(quantitativeAttr) {
+	getDataByTimeStep: function(quantitativeAttr, selectedState) {
 		const self = this;
 		let data = Database.data;
 		let dataByTimeStep = self.initDataByTimeStep();
@@ -144,10 +144,13 @@ const NarrativeView = {
 		for (let i = 0; i < data.length; i++) {
 			let currentRow = data[i];
 			let currentYear = currentRow.year_;
+			let currentState = currentRow.State;
 			let currentValue = +currentRow[quantitativeAttr];
 			let currentValueIsMissing = (currentRow[quantitativeAttr] === null);
+			let hasNoSelectedState = selectedState === null;
+			let currentStateIsSameAsSelected = currentState == selectedState;
 
-			if (!currentValueIsMissing) {
+			if (!currentValueIsMissing && (hasNoSelectedState || currentStateIsSameAsSelected)) {
 				dataByTimeStep[currentYear].sum += currentValue;
 				dataByTimeStep[currentYear].count++;
 			}
