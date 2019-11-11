@@ -9,7 +9,12 @@ body {
 }
 
 #left-view {
-	width: calc(100% - (250px * 3 + 18px * 3) - 8px); /* depends on trend views */
+	width: calc(100% / 3 - 8px);
+    height: 100%;
+}
+
+#right-view {
+    width: calc(100% / 3 * 2);
     height: 100%;
 }
 
@@ -38,14 +43,9 @@ body {
     height: calc(100% - 60px - 20px); /* padding = 10 */
 }
 
-#right-view {
-    width: calc(250px * 3 + 18px * 3); /* depends on trend views */
-    height: 100%;
-}
-
 #map-view {
     width: calc(100% - 18px);
-    height: calc(100% - 250px - 18px * 3);
+    height: calc(100% * 0.6 - 18px * 2);
 }
 
 #map-view > .content {
@@ -53,9 +53,14 @@ body {
     height: 100%;
 }
 
+#trend-view {
+    width: calc(100% - 18px);
+    height: calc(100% * 0.4 - 18px);
+}
+
 #trend-view > .view {
-    width: 250px;
-    height: 250px;
+    width: calc((100% - 18px * 2) / 3);
+    height: 100%;
 }
 
 #trend-view > .view .content {

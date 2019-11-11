@@ -240,11 +240,15 @@ body {
 
 /* trend-view */
 
+#trend-view {
+    margin-bottom: 18px;
+    margin-right: 18px;
+}
+
 #trend-view > .view {
 	display: inline-block;
 	vertical-align: text-top;
 	margin-right: 18px;
-	margin-bottom: 18px;
 	font-size: 13px;
 	border-radius: 2px;
 
@@ -253,6 +257,10 @@ body {
 	box-shadow: 0px 0px 5px 0px rgba(211,211,211,1);
 
     transition: 0.3s;
+}
+
+#trend-view > .view:last-child {
+    margin-right: 0px;
 }
 
 #trend-view > .view.highlight {
