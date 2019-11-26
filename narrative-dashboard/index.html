@@ -20,20 +20,54 @@
 
 <body class="no-selection">
 
-	<div id="left-view">
+	<div id="wrapper">
 
-		<div id="menu-bar">
-			<span class="load-data button"><i class="fas fa-database"></i>Load Data</span>
-			<span class="file-name"></span>
+		<div id="left-view">
+
+			<div id="menu-bar">
+				<span class="load-data button"><i class="fas fa-database"></i>Load Data</span>
+				<span class="file-name"></span>
+			</div>
+
+			<div id="narrative-view">
+				<div class="container">
+
+					<div class="header">Automated Analysis</div>
+
+					<div class="content loader-installed">
+						<div class="container"></div>
+
+						<div class="loader">
+							<div class="background"></div>
+							<div class="loader-container"><div class="loader-animation"></div></div>
+						</div>
+					</div>
+
+					<div class="footer">* Click on a state or an attribute to update the story</div>
+				</div>
+			</div>
+
 		</div>
 
-		<div id="narrative-view">
-			<div class="container">
+		<div id="right-view">
 
-				<div class="header">Automated Analysis</div>
+			<div id="map-view" class="loader-installed">
+				<div class="header"></div>
 
-				<div class="content loader-installed">
-					<div class="container"></div>
+				<div class="content"></div>
+
+				<div class="loader">
+					<div class="background"></div>
+					<div class="loader-container"><div class="loader-animation"></div></div>
+				</div>
+			</div>
+
+			<div id="trend-view">
+
+				<div class="view loader-installed">
+					<div class="header"></div>
+
+					<div class="content"></div>
 
 					<div class="loader">
 						<div class="background"></div>
@@ -41,80 +75,50 @@
 					</div>
 				</div>
 
-				<div class="footer">* Click on a state or an attribute to update the story</div>
-			</div>
-		</div>
+				<div class="view loader-installed">
+					<div class="header"></div>
 
-	</div>
+					<div class="content"></div>
 
-	<div id="right-view">
-
-		<div id="map-view" class="loader-installed">
-			<div class="header"></div>
-
-			<div class="content"></div>
-
-			<div class="loader">
-				<div class="background"></div>
-				<div class="loader-container"><div class="loader-animation"></div></div>
-			</div>
-		</div>
-
-		<div id="trend-view">
-
-			<div class="view loader-installed">
-				<div class="header"></div>
-
-				<div class="content"></div>
-
-				<div class="loader">
-					<div class="background"></div>
-					<div class="loader-container"><div class="loader-animation"></div></div>
+					<div class="loader">
+						<div class="background"></div>
+						<div class="loader-container"><div class="loader-animation"></div></div>
+					</div>
 				</div>
-			</div>
 
-			<div class="view loader-installed">
-				<div class="header"></div>
+				<div class="view loader-installed">
+					<div class="header"></div>
 
-				<div class="content"></div>
+					<div class="content"></div>
 
-				<div class="loader">
-					<div class="background"></div>
-					<div class="loader-container"><div class="loader-animation"></div></div>
+					<div class="loader">
+						<div class="background"></div>
+						<div class="loader-container"><div class="loader-animation"></div></div>
+					</div>
 				</div>
-			</div>
 
-			<div class="view loader-installed">
-				<div class="header"></div>
-
-				<div class="content"></div>
-
-				<div class="loader">
-					<div class="background"></div>
-					<div class="loader-container"><div class="loader-animation"></div></div>
-				</div>
 			</div>
 
 		</div>
 
-	</div>
+		<div id="load-data-window" class="no-selection">
+			<div class="background"></div>
 
-	<div id="load-data-window" class="no-selection">
-		<div class="background"></div>
+			<div class="menu">
 
-		<div class="menu">
+				<div class="sample-data-title">
+					You can try out the system using one of the sample data sets:
+				</div>
 
-			<div class="sample-data-title">
-				You can try out the system using one of the sample data sets:
+				<div class="sample-data-content"></div>
+
 			</div>
-
-			<div class="sample-data-content"></div>
-
 		</div>
-	</div>
 
-	<div id="drop-down-menu" class="bottom-arrow no-selection">
-		<div class="container"></div>
+		<div id="drop-down-menu" class="bottom-arrow no-selection">
+			<div class="container"></div>
+		</div>
+
 	</div>
 
 	<script src="js/start.js"></script>

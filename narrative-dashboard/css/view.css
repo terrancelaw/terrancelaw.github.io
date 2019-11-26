@@ -8,6 +8,11 @@ body {
     height: calc(100% - 16px); /* margin = 8 */
 }
 
+#wrapper {
+    width: 1215px;
+    height: 682px;
+}
+
 #left-view {
 	width: calc(100% / 3 - 8px);
     height: 100%;

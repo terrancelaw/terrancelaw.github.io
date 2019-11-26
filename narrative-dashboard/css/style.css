@@ -30,11 +30,7 @@ body {
     font-size: 0px;
     font-family: 'Lato', Arial;
     font-weight: 300;
-    position: fixed;
-    margin: 0px;
-    top: 8px;
-    left: 8px;
-    white-space: nowrap;
+    margin: 8px;
 }
 
 #left-view {
