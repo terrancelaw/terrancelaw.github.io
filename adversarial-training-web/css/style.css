@@ -29,6 +29,8 @@ body {
 
 #header > .title {
 	font-size: 30px;
+	font-weight: 400;
+	color: gray;
 	text-align: center;
 	padding: 30px;
 }
@@ -49,6 +51,8 @@ span.adv-e { color: rgb(225, 87, 89); }
 #learning-from-clean > .title,
 #learning-from-adversarial > .title {
 	font-size: 25px;
+	font-weight: 400;
+	color: gray;
 	padding: 25px;
 }
 
@@ -102,11 +106,15 @@ span.adv-e { color: rgb(225, 87, 89); }
 
 #individual-experiment > .title {
 	font-size: 25px;
+	font-weight: 400;
+	color: gray;
 	padding: 25px;
 }
 
 #conclusion > .title {
 	font-size: 25px;
+	font-weight: 400;
+	color: gray;
 	padding: 25px;
 }
 
