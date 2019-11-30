@@ -1,0 +1,54 @@
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px
+}
+ 
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 2px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #d3d3d3;
+}
+
+body {
+    font-size: 0px;
+    font-family: 'Lato', Arial;
+    font-weight: 300;
+
+   	margin: 8px;
+   	overflow: auto;
+}
+
+#header, #stochastic, #learning-from-clean, 
+#learning-from-adversarial, #individual-experiment, #reference {
+	margin: 0 auto;
+}
+
+#header > .title {
+	font-size: 30px;
+	text-align: center;
+	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#header > .introduction {
+	font-size: 20px;
+}
+
+#header > .introduction > div {
+	padding: 10px;
+}
+
+#reference {
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+#reference > div {
+	padding: 10px;
+}
+

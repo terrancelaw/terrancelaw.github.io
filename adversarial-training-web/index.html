@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+	<title>Exploring Adversarial Training Strategies for Weak PGD Attack</title>
+
+	<link rel="stylesheet" type="text/css" href="css/view.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Font-Awesome/css/all.min.css">
+
+	<script src="vendor/d3.v5.min.js"></script>
+	<script src="vendor/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<div id="header" class="section">
+		<div class="title">Exploring Adversarial Training Strategies for Weak PGD Attack</div>
+		<div class="introduction">
+
+			<div>Deep neural networks are powerful in image classification but are vulnerable to adversarial attacks—subtle perturbations to images can lead to incorrect classifications. A well-known adversarial attack is projected gradient descent (PGD) <a href="#pgd">[1]</a>. It was shown that PGD adversarial training (i.e. producing adversarial examples using PGD and train a deep neural network using the attacked examples) improves model resistance to a wide range of attacks <a href="#pgd">[1]</a>.</div>
+
+			<div>A goal of adversarial training is to ensure that the model is robust to the adversarial examples (i.e. the model should have low adversarial error) while not harming the performance on the benign examples (i.e. the model should have low error on the test set).</div>
+
+			<div>In this article, we explore three adversarial training strategies. For each strategy, we conducted six experiments by training six models. Our goal is to understaning which strategy can produce both a low adversarial error and a low low error on the test set.</div>
+
+			<div>For all the 18 experiments, we trained a VGG16 (lr=0.1) on the CIFAR10 dataset and employed a weak PGD attack (Ɛ=0.05).</div>
+
+		</div>
+	</div>
+
+	<div id="stochastic">
+		<div class="introduction"></div>
+		<div class="vis-container">
+			<span class="chart">
+			<span class="finding">
+		</div>
+	</div>
+
+	<div id="learning-from-clean">
+		<div class="introduction"></div>
+		<div class="vis-container">
+			<span class="chart">
+			<span class="finding">
+		</div>
+	</div>
+
+	<div id="learning-from-adversarial">
+		<div class="introduction"></div>
+		<div class="vis-container">
+			<span class="chart">
+			<span class="finding">
+		</div>
+	</div>
+
+	<div id="individual-experiment">
+		<div class="introduction"></div>
+		<div class="vis-container">
+			<span class="chart">
+			<span class="finding">
+		</div>
+	</div>
+
+	<div id="reference">
+		<div>
+			<a name="pgd"></a>[1] Towards Deep Learning Models Resistant to Adversarial Attacks (<a href="https://arxiv.org/pdf/1706.06083.pdf" target="_blank">https://arxiv.org/pdf/1706.06083.pdf</a>)
+		</div>
+	</div>
+
+	<script src="js/start.js"></script>
+	<script src="js/database.js"></script>
+</body>
