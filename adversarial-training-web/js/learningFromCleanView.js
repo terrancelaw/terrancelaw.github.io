@@ -120,7 +120,7 @@ const LearningFromCleanView = {
       			((chartWidth - margin.left - margin.right) / 2) + " ," +  
       			(chartHeight - margin.top - margin.bottom + 40) + ")")
       		.style("text-anchor", "middle")
-     		.text('Attack Probability')
+     		.text('Training Probability')
      		.style('font-size', '15px');
      	svgGroup.append("text")
       		.attr("transform", "rotate(-90)")

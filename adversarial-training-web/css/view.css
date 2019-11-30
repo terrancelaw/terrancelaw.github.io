@@ -23,8 +23,8 @@ body {
 #stochastic > .vis-container > .finding,
 #learning-from-clean > .vis-container > .finding,
 #learning-from-adversarial > .vis-container > .finding {
-	width: 360px;
-	height: 360px;
+	width: calc(360px - 60px);
+	height: calc(360px - 60px);
 }
 
 #stochastic > .vis-container > .chart > svg, 

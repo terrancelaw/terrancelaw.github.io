@@ -44,10 +44,18 @@
 
 		</div>
 		<div class="vis-container">
-			<span class="chart">
-				<svg></svg>
+			<span class="chart"><svg></svg></span>
+			<span class="finding">
+				
+				<div>Key Observations:</div>
+
+				<div>1. The model trained only on benign examples (attack probability=0%) has the lowest <span class="te-e">test_err</span>. Interestingly, it also has the lowest <span class="adv-e">adv_err</span>.</div>
+
+				<div>2. As the attack probability increases, <span class="adv-e">adv_err</span> decreases. Obviously, training on more adversarial examples helps the model generalize to adversarial examples.</div>
+
+				<div>3. As the attack probability increases, <span class="te-e">test_err</span> increases.</div>
+
 			</span>
-			<span class="finding"></span>
 		</div>
 	</div>
 
@@ -65,10 +73,18 @@
 
 		</div>
 		<div class="vis-container">
-			<span class="chart">
-				<svg></svg>
+			<span class="chart"><svg></svg></span>
+			<span class="finding">
+				
+				<div>Key Observations:</div>
+
+				<div>1. The model trained only on benign examples again has the lowest <span class="te-e">test_err</span> and the lowest <span class="adv-e">adv_err</span>.</div>
+
+				<div>2. As the probability increases (training on more adversarial examples), <span class="te-e">test_err</span> decreases. This indicates that training on more adversarial examples helps the model generalize to benign examples.</div>
+
+				<div>3. As the probability increases, <span class="adv-e">adv_err</span> mildly decreases.</div>
+
 			</span>
-			<span class="finding"></span>
 		</div>
 	</div>
 
@@ -86,10 +102,31 @@
 
 		</div>
 		<div class="vis-container">
-			<span class="chart">
-				<svg></svg>
+			<span class="chart"><svg></svg></span>
+			<span class="finding">
+				
+				<div>Key Observations:</div>
+
+				<div>1. As the probability increases (training on more benign examples), <span class="te-e">test_err</span> decreases. Obviously, training on more benign examples helps the model generalize to benign examples.</div>
+
+				<div>2. As the probability increases, <span class="adv-e">adv_err</span> also decreases, indicating that training on more benign examples helps the model generalize to adversarial examples.</div>
+
 			</span>
-			<span class="finding"></span>
+		</div>
+	</div>
+
+	<div id="conclusion">
+		<div class="title">Conclusion</div>
+		<div class="introduction">
+			
+			<div>Unsurprisingly, the above findings suggest that training on adversarial examples and training on benign examples will both reduce errors on adversarial and benign examples.</div>
+
+			<div>What is more interesting is that with weak a PGD attack (Ɛ=0.05 in our case), adversarial training only mildly improves model performance on adversarial examples (see Strategy 1 and Strategy 2).</div>
+
+			<div>On the other hand, training on benign examples seems to do a pretty good job in improving model performance on adversarial examples (see Strategy 3). Indeed, the best <span class="te-e">test_err</span> and <span class="adv-e">adv_err</span> were achieved by the model trained solely on benign examples (see Strategy 1 and Strategy 2). Furthermore, different from adversarial training, it does not harm the performance on benign examples.</div>
+
+			<div>The above results imply that with a weak PGD attack, training on benign examples alone is a better than adversarial training in improving adversarial robustness. To gain a better understanding into PGD adversarial training, experiments on a strong PGD attack (e.g., Ɛ=8.0) will be required.</div>
+
 		</div>
 	</div>
 
@@ -102,11 +139,6 @@
 			</span>
 			<span class="finding"></span>
 		</div>
-	</div>
-
-	<div id="conclusion">
-		<div class="title">Conclusion</div>
-		<div class="introduction"></div>
 	</div>
 
 	<div id="reference">
