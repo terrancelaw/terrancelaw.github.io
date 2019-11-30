@@ -38,7 +38,7 @@
 
 			<div>When the attack probability is 0%, the model is trained on 50,000 benign examples. When the attack probability is 60%, the model is trained on approximately 60% x 50,000 adversarial examples.</div>
 
-			<div>We trained each model for 50 epochs. After each epoch, we evaluate the error on the benign training set (<span class="tr-e">train_err</span>), the benign test set (<span class="te-e">test_err</span>), and the adversarial test set (<span class="adv-e">adv_err</span>).</div>
+			<div>We trained each model for 50 epochs. After each epoch, we evaluate the error on the benign training set (<span class="tr-e">train_err</span>), the benign test set (<span class="te-e">test_err</span>), and the adversarial test set (<span class="adv-e">adv_err</span>). The following graph shows the three errors at the 50th epoch for each model.</div>
 
 			<div><a href="https://github.com/terrancelaw/terrancelaw.github.io/blob/master/adversarial-training-experiments/stochastic/stochastic.ipynb" target="_blank">Jupyter Notebook for the Experiment</a></div>
 
@@ -94,7 +94,7 @@
 	</div>
 
 	<div id="individual-experiment">
-		<div class="title"></div>
+		<div class="title">Visualizing Results for Each Experiment</div>
 		<div class="introduction"></div>
 		<div class="vis-container">
 			<span class="chart">
@@ -117,4 +117,7 @@
 
 	<script src="js/start.js"></script>
 	<script src="js/database.js"></script>
+	<script src="js/stochasticView.js"></script>
+	<script src="js/learningFromCleanView.js"></script>
+	<script src="js/learningFromAdvView.js"></script>
 </body>

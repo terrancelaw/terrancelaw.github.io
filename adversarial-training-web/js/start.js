@@ -1,5 +1,5 @@
 $(function() {
-	Promise.all([
+  Promise.all([
   		d3.csv('data/stochastic_vgg.csv'),
   		d3.csv('data/stochastic_20.csv'),
   		d3.csv('data/stochastic_40.csv'),
@@ -24,5 +24,13 @@ $(function() {
 	.then(function(data) {
 		Database.load(data);
 		Database.preprocess();
+
+        StochasticView.init();
+        LearningFromCleanView.init();
+        LearningFromAdvView.init();
+
+        StochasticView.drawChart();
+        LearningFromCleanView.drawChart();
+        LearningFromAdvView.drawChart();
 	});
 });

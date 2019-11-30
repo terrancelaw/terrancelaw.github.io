@@ -30,20 +30,25 @@ const Database = {
 	preprocess: function() {
 		const self = this;
 
-		for (let experiment in self.stochastic) {
-			self.stochastic[experiment].train_err = +self.stochastic[experiment].train_err;
-			self.stochastic[experiment].test_err = +self.stochastic[experiment].test_err;
-			self.stochastic[experiment].adv_err = +self.stochastic[experiment].adv_err;
-		}
-		for (let experiment in self.transferFromClean) {
-			self.transferFromClean[experiment].train_err = +self.transferFromClean[experiment].train_err;
-			self.transferFromClean[experiment].test_err = +self.transferFromClean[experiment].test_err;
-			self.transferFromClean[experiment].adv_err = +self.transferFromClean[experiment].adv_err;
-		}
-		for (let experiment in self.transferFromAdversarial) {
-			self.transferFromAdversarial[experiment].train_err = +self.transferFromAdversarial[experiment].train_err;
-			self.transferFromAdversarial[experiment].test_err = +self.transferFromAdversarial[experiment].test_err;
-			self.transferFromAdversarial[experiment].adv_err = +self.transferFromAdversarial[experiment].adv_err;
-		}
+		for (let experiment in self.stochastic)
+			for (let i = 0; i < self.stochastic[experiment].length; i++) {
+				self.stochastic[experiment][i].train_err = +self.stochastic[experiment][i].train_err;
+				self.stochastic[experiment][i].test_err = +self.stochastic[experiment][i].test_err;
+				self.stochastic[experiment][i].adv_err = +self.stochastic[experiment][i].adv_err;
+			}
+
+		for (let experiment in self.transferFromClean)
+			for (let i = 0; i < self.transferFromClean[experiment].length; i++) {
+				self.transferFromClean[experiment][i].train_err = +self.transferFromClean[experiment][i].train_err;
+				self.transferFromClean[experiment][i].test_err = +self.transferFromClean[experiment][i].test_err;
+				self.transferFromClean[experiment][i].adv_err = +self.transferFromClean[experiment][i].adv_err;
+			}
+
+		for (let experiment in self.transferFromAdversarial)
+			for (let i = 0; i < self.transferFromAdversarial[experiment].length; i++) {
+				self.transferFromAdversarial[experiment][i].train_err = +self.transferFromAdversarial[experiment][i].train_err;
+				self.transferFromAdversarial[experiment][i].test_err = +self.transferFromAdversarial[experiment][i].test_err;
+				self.transferFromAdversarial[experiment][i].adv_err = +self.transferFromAdversarial[experiment][i].adv_err;
+			}
 	}
 }

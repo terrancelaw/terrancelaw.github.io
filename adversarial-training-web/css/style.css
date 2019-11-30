@@ -30,9 +30,7 @@ body {
 #header > .title {
 	font-size: 30px;
 	text-align: center;
-	padding: 10px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 30px;
 }
 
 #header > .introduction {
@@ -43,48 +41,60 @@ body {
 	padding: 10px;
 }
 
-#stochastic > .title {
-	font-size: 25px;
-	padding: 20px;
-}
+span.tr-e { color: rgb(78, 121, 167); }
+span.te-e { color: rgb(242, 142, 44); }
+span.adv-e { color: rgb(225, 87, 89); }
 
-#stochastic > .introduction {
-	font-size: 20px;
-}
-
-#stochastic > .introduction > div {
-	padding: 10px;
-}
-
-#learning-from-clean > .title {
-	font-size: 25px;
-	padding: 20px;
-}
-
-#learning-from-clean > .introduction {
-	font-size: 20px;
-}
-
-#learning-from-clean > .introduction > div {
-	padding: 10px;
-}
-
+#stochastic > .title,
+#learning-from-clean > .title,
 #learning-from-adversarial > .title {
 	font-size: 25px;
-	padding: 20px;
+	padding: 25px;
 }
 
+#stochastic > .introduction,
+#learning-from-clean > .introduction,
 #learning-from-adversarial > .introduction {
 	font-size: 20px;
 }
 
+#stochastic > .introduction > div,
+#learning-from-clean > .introduction > div,
 #learning-from-adversarial > .introduction > div {
 	padding: 10px;
 }
 
+#stochastic > .vis-container,
+#learning-from-clean > .vis-container,
+#learning-from-adversarial > .vis-container {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#stochastic > .vis-container > .chart,
+#learning-from-clean > .vis-container > .chart,
+#learning-from-adversarial > .vis-container > .chart {
+	display: inline-block;
+	vertical-align: text-top;
+	margin-left: 80px;
+}
+
+#stochastic > .vis-container > .finding,
+#learning-from-clean > .vis-container > .finding,
+#learning-from-adversarial > .vis-container > .finding {
+	display: inline-block;
+	vertical-align: text-top;
+	margin-right: 80px;
+}
+
+#individual-experiment > .title {
+	font-size: 25px;
+	padding: 25px;
+}
+
 #conclusion > .title {
 	font-size: 25px;
-	padding: 20px;
+	padding: 25px;
 }
 
 #conclusion > .introduction > div {

@@ -12,3 +12,24 @@ body {
 #individual-experiment, #reference, #conclusion {
 	width: 900px;
 }
+
+#stochastic > .vis-container > .chart,
+#learning-from-clean > .vis-container > .chart,
+#learning-from-adversarial > .vis-container > .chart {
+	width: 360px;
+	height: 360px;
+}
+
+#stochastic > .vis-container > .finding,
+#learning-from-clean > .vis-container > .finding,
+#learning-from-adversarial > .vis-container > .finding {
+	width: 360px;
+	height: 360px;
+}
+
+#stochastic > .vis-container > .chart > svg, 
+#learning-from-clean > .vis-container > .chart > svg, 
+#learning-from-adversarial > .vis-container > .chart > svg {
+	width: 100%;
+	height: 100%;
+}
