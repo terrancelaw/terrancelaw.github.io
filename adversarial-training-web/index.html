@@ -22,7 +22,7 @@
 		<div class="title">Exploring Adversarial Training Strategies for Weak PGD Attack</div>
 		<div class="introduction">
 
-			<div>Deep neural networks are powerful in image classification but are vulnerable to adversarial attacks—subtle perturbations to images can lead to incorrect classifications. A well-known adversarial attack is projected gradient descent (PGD) <a href="#pgd">[1]</a>. It was shown that PGD adversarial training (i.e. producing adversarial examples using PGD and train a deep neural network using the attacked examples) improves model resistance to a wide range of attacks <a href="#pgd">[1]</a>.</div>
+			<div>Deep neural networks are powerful in image classification but are vulnerable to adversarial attacks—subtle perturbations to images can lead to incorrect classifications. A well-known adversarial attack is projected gradient descent (PGD) <a href="#pgd">[1]</a>. It was shown that PGD adversarial training (i.e. producing adversarial examples using PGD and train a deep neural network using the adversarial examples) improves model resistance to a wide range of attacks <a href="#pgd">[1]</a>.</div>
 
 			<div>A goal of adversarial training is to ensure that the model is robust to the adversarial examples (i.e. the model should have low adversarial error) while not harming the performance on the benign examples (i.e. the model should have low error on the test set).</div>
 
@@ -39,9 +39,9 @@
 			
 			<div>We trained VGG16 models on the 50,000 CIFAR10 training examples. For this strategy, there is a certain probability that an image is perturbed using PGD. With six attack probabilities (0%, 20%, 40%, 60%, 80%, 100%), we trained six VGG16 models.</div>
 
-			<div>When the attack probability is 0%, the model is trained on 50,000 benign examples. When the attack probability is 60%, the model is trained on approximately 60% x 50,000 adversarial examples.</div>
+			<div>When the attack probability is 0%, the model is trained on 50,000 benign examples. When the attack probability is 60%, the model is trained on approximately 60% x 50,000 adversarial examples and approximately 40% x 50,000 benign examples.</div>
 
-			<div>We trained each model for 50 epochs. After each epoch, we evaluate the error on the benign training set (<span class="tr-e">train_err</span>), the benign test set (<span class="te-e">test_err</span>), and the adversarial test set (<span class="adv-e">adv_err</span>). The following graph shows the three errors at the 50th epoch for each model.</div>
+			<div>We trained each model for 50 epochs. After each epoch, we evaluate the errors on the benign training set (<span class="tr-e">train_err</span>), the benign test set (<span class="te-e">test_err</span>), and the adversarial test set (<span class="adv-e">adv_err</span>). The following graph shows the three errors at the 50th epoch for each model.</div>
 
 			<div><a href="https://github.com/terrancelaw/terrancelaw.github.io/blob/master/adversarial-training-experiments/stochastic/stochastic.ipynb" target="_blank">Jupyter Notebook for the Experiments</a></div>
 
@@ -95,7 +95,7 @@
 		<div class="title">Strategy 3: Train on Adversarial Examples, Then on Benign Examples</div>
 		<div class="introduction">
 			
-			<div>For the third strategy, we first trained a VGG16 model on the 50,000 adversarial examples. We then continue the training on the same 50,000 training examples. Again, an image was used for training only with a certain probabiliy. Contrary to strategy 2, the images used for training are benign.</div>
+			<div>For the third strategy, we first trained a VGG16 model on the 50,000 adversarial examples. We then continue the training on the same 50,000 training examples. Again, an image was used for training only with a certain probabiliy. Contrary to strategy 2, the images used for training are NOT perturbed.</div>
 
 			<div>For example, when the probability is 60%, there is 60% chance that an image used for training, and this image is NOT perturbed. In other words, the model is trained on approximately 60% x 50,000 benign examples (after training on the 50,000 adversarial examples).</div>
 
@@ -122,11 +122,11 @@
 		<div class="title">Conclusion</div>
 		<div class="introduction">
 			
-			<div>Unsurprisingly, the above findings suggest that training on adversarial examples and training on benign examples will both reduce errors on adversarial and benign examples.</div>
+			<div>Unsurprisingly, the above findings suggest that training on adversarial examples and training on benign examples both reduce errors on adversarial and benign examples.</div>
 
-			<div>What is more interesting is that with weak a PGD attack (Ɛ=0.05 in our case), adversarial training only mildly improves model performance on adversarial examples (see Strategy 1 and Strategy 2).</div>
+			<div>What is more interesting is that with weak a PGD attack (Ɛ=0.05 in our case), adversarial training only mildly improves the model performance on the adversarial examples (see Strategy 1 and Strategy 2).</div>
 
-			<div>On the other hand, training on benign examples seems to do a pretty good job in improving model performance on adversarial examples (see Strategy 3). Indeed, the best <span class="te-e">test_err</span> and <span class="adv-e">adv_err</span> were achieved by the model trained solely on benign examples (see Strategy 1 and Strategy 2). Furthermore, different from adversarial training, it does not harm the performance on benign examples.</div>
+			<div>On the other hand, training on benign examples seems to do a pretty good job in improving the performance on the adversarial examples (see Strategy 3). Indeed, the best <span class="te-e">test_err</span> and <span class="adv-e">adv_err</span> were achieved by the model trained solely on the benign examples (see Strategy 1 and Strategy 2). Furthermore, different from adversarial training, it does not harm the performance on the benign examples.</div>
 
 			<div>The above results imply that with a weak PGD attack, training on benign examples alone is a better than adversarial training in improving adversarial robustness. However, does adversarial training with a stronger PGD attack (e.g., Ɛ=8.0) improves adversarial robustness? Future study will conduct further experiments.</div>
 
