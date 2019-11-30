@@ -28,9 +28,11 @@ $(function() {
         StochasticView.init();
         LearningFromCleanView.init();
         LearningFromAdvView.init();
+        IndividualExperimentView.init();
 
         StochasticView.drawChart();
         LearningFromCleanView.drawChart();
         LearningFromAdvView.drawChart();
+        IndividualExperimentView.drawChart();
 	});
 });
