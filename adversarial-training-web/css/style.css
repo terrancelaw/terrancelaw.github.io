@@ -131,6 +131,11 @@ span.adv-e { color: rgb(225, 87, 89); }
 	margin-right: 10px;
 }
 
+#individual-experiment > .introduction > .dropdown > .dropdown-menu > .dropdown-item {
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
 #individual-experiment > .introduction > span {
 	display: inline-block;
 	vertical-align: middle;
