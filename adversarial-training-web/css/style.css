@@ -22,8 +22,8 @@ body {
    	overflow: auto;
 }
 
-#header, #stochastic, #learning-from-clean, 
-#learning-from-adversarial, #individual-experiment, #reference {
+#header, #stochastic, #learning-from-clean, #learning-from-adversarial, 
+#individual-experiment, #reference, #conclusion {
 	margin: 0 auto;
 }
 
@@ -40,6 +40,54 @@ body {
 }
 
 #header > .introduction > div {
+	padding: 10px;
+}
+
+#stochastic > .title {
+	font-size: 25px;
+	padding: 20px;
+}
+
+#stochastic > .introduction {
+	font-size: 20px;
+}
+
+#stochastic > .introduction > div {
+	padding: 10px;
+}
+
+#learning-from-clean > .title {
+	font-size: 25px;
+	padding: 20px;
+}
+
+#learning-from-clean > .introduction {
+	font-size: 20px;
+}
+
+#learning-from-clean > .introduction > div {
+	padding: 10px;
+}
+
+#learning-from-adversarial > .title {
+	font-size: 25px;
+	padding: 20px;
+}
+
+#learning-from-adversarial > .introduction {
+	font-size: 20px;
+}
+
+#learning-from-adversarial > .introduction > div {
+	padding: 10px;
+}
+
+#conclusion > .title {
+	font-size: 25px;
+	padding: 20px;
+}
+
+#conclusion > .introduction > div {
 	padding: 10px;
 }
 

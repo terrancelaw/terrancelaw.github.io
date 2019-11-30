@@ -8,7 +8,7 @@ body {
     height: calc(100% - 16px); /* margin = 8 */
 }
 
-#header, #stochastic, #learning-from-clean, 
-#learning-from-adversarial, #individual-experiment, #reference {
+#header, #stochastic, #learning-from-clean, #learning-from-adversarial, 
+#individual-experiment, #reference, #conclusion {
 	width: 900px;
 }

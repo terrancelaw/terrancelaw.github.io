@@ -25,13 +25,24 @@
 
 			<div>In this article, we explore three adversarial training strategies. For each strategy, we conducted six experiments by training six models. Our goal is to understaning which strategy can produce both a low adversarial error and a low low error on the test set.</div>
 
-			<div>For all the 18 experiments, we trained a VGG16 (lr=0.1) on the CIFAR10 dataset and employed a weak PGD attack (Ɛ=0.05).</div>
+			<div>For each of the 18 experiments, we trained a VGG16 (lr=0.1) on the CIFAR10 dataset and employed a weak PGD attack (Ɛ=0.05). We trained all the 18 models for 50 epochs.</div>
 
 		</div>
 	</div>
 
 	<div id="stochastic">
-		<div class="introduction"></div>
+		<div class="title">Strategy 1: Stochastic Adversarial Attack</div>
+		<div class="introduction">
+			
+			<div>We trained VGG16 models on the 50,000 CIFAR10 training examples. For this strategy, there is a certain probability that an image is perturbed using PGD. With six attack probabilities (0%, 20%, 40%, 60%, 80%, 100%), we trained six VGG16 models.</div>
+
+			<div>When the attack probability is 0%, the model is trained on 50,000 benign examples. When the attack probability is 60%, the model is trained on approximately 60% x 50,000 adversarial examples.</div>
+
+			<div>We trained each model for 50 epochs. After each epoch, we evaluate the error on the benign training set (<span class="tr-e">train_err</span>), the benign test set (<span class="te-e">test_err</span>), and the adversarial test set (<span class="adv-e">adv_err</span>).</div>
+
+			<div><a href="https://github.com/terrancelaw/terrancelaw.github.io/blob/master/adversarial-training-experiments/stochastic/stochastic.ipynb" target="_blank">Jupyter Notebook for the Experiment</a></div>
+
+		</div>
 		<div class="vis-container">
 			<span class="chart">
 				<svg></svg>
@@ -41,7 +52,18 @@
 	</div>
 
 	<div id="learning-from-clean">
-		<div class="introduction"></div>
+		<div class="title">Strategy 2: Train on Benign Examples, Then on Adversarial Examples</div>
+		<div class="introduction">
+			
+			<div>For the second strategy, we first trained a VGG16 model on the 50,000 benign examples. We then continue the training on the same 50,000 training examples. However, only with a certain probabiliy was an image used for training. If an image was used for training, it was first perturbed using PGD before the forward pass of backpropagation.</div>
+
+			<div>For example, when the probability is 60%, there is 60% chance that an image is perturbed and used for training. In other words, the model is trained on approximately 60% x 50,000 adversarial examples (after training on the 50,000 benign examples).</div>
+
+			<div>Using this strategy, we trained six models. The first is a VGG16 model trained on the 50,000 benign examples. The other five models are created by continuing the training on 20%, 40%, 60%, 80%, and 100% x 50,000 adversarial examples.</div>
+
+			<div><a href="https://github.com/terrancelaw/terrancelaw.github.io/blob/master/adversarial-training-experiments/transfer_from_clean/transfer_from_clean.ipynb" target="_blank">Jupyter Notebook for the Experiment</a></div>
+
+		</div>
 		<div class="vis-container">
 			<span class="chart">
 				<svg></svg>
@@ -51,7 +73,18 @@
 	</div>
 
 	<div id="learning-from-adversarial">
-		<div class="introduction"></div>
+		<div class="title">Strategy 3: Train on Adversarial Examples, Then on Benign Examples</div>
+		<div class="introduction">
+			
+			<div>For the third strategy, we first trained a VGG16 model on the 50,000 adversarial examples. We then continue the training on the same 50,000 training examples. Again, an image was used for training only with a certain probabiliy. Contrary to strategy 2, the images used for training are benign.</div>
+
+			<div>For example, when the probability is 60%, there is 60% chance that an image used for training, and this image is NOT perturbed. In other words, the model is trained on approximately 60% x 50,000 benign examples (after training on the 50,000 adversarial examples).</div>
+
+			<div>Using this strategy, we trained six models. The first is a VGG16 model trained on the 50,000 adversarial examples. The other five models are created by continuing the training on 20%, 40%, 60%, 80%, and 100% x 50,000 benign examples.</div>
+
+			<div><a href="https://github.com/terrancelaw/terrancelaw.github.io/blob/master/adversarial-training-experiments/transfer_from_adversarial/transfer_from_adversarial.ipynb" target="_blank">Jupyter Notebook for the Experiment</a></div>
+
+		</div>
 		<div class="vis-container">
 			<span class="chart">
 				<svg></svg>
@@ -61,6 +94,7 @@
 	</div>
 
 	<div id="individual-experiment">
+		<div class="title"></div>
 		<div class="introduction"></div>
 		<div class="vis-container">
 			<span class="chart">
@@ -68,6 +102,11 @@
 			</span>
 			<span class="finding"></span>
 		</div>
+	</div>
+
+	<div id="conclusion">
+		<div class="title">Conclusion</div>
+		<div class="introduction"></div>
 	</div>
 
 	<div id="reference">
