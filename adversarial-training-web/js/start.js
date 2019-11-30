@@ -34,5 +34,6 @@ $(function() {
         LearningFromCleanView.drawChart();
         LearningFromAdvView.drawChart();
         IndividualExperimentView.drawChart();
+        IndividualExperimentView.drawFinding();
 	});
 });

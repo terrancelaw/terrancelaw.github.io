@@ -25,8 +25,12 @@ body {
 #learning-from-clean > .vis-container > .finding,
 #learning-from-adversarial > .vis-container > .finding,
 #individual-experiment > .vis-container > .finding {
-	width: calc(370px - 60px);
+	width: calc(370px - 70px);
 	height: calc(360px - 50px);
+}
+
+#individual-experiment > .vis-container > .finding {
+	height: calc(360px - 70px);
 }
 
 #stochastic > .vis-container > .chart > svg, 

@@ -111,10 +111,15 @@ span.adv-e { color: rgb(225, 87, 89); }
 	white-space: normal;
 }
 
+#individual-experiment > .vis-container > .finding {
+	font-size: 18px;
+	padding-top: 60px;
+}
+
 #stochastic > .vis-container > .finding > div,
 #learning-from-clean > .vis-container > .finding > div,
 #learning-from-adversarial > .vis-container > .finding > div,
-#individual-experiment > .vis-container > .finding div > div {
+#individual-experiment > .vis-container > .finding > div {
 	padding: 10px;
 }
 
