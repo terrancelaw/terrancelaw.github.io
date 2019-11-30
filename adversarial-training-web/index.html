@@ -4,13 +4,16 @@
 <head>
 	<title>Exploring Adversarial Training Strategies for Weak PGD Attack</title>
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/view.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link rel="stylesheet" type="text/css" href="fonts/Font-Awesome/css/all.min.css">
 
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="vendor/d3.v5.min.js"></script>
-	<script src="vendor/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -40,7 +43,7 @@
 
 			<div>We trained each model for 50 epochs. After each epoch, we evaluate the error on the benign training set (<span class="tr-e">train_err</span>), the benign test set (<span class="te-e">test_err</span>), and the adversarial test set (<span class="adv-e">adv_err</span>). The following graph shows the three errors at the 50th epoch for each model.</div>
 
-			<div><a href="https://github.com/terrancelaw/terrancelaw.github.io/blob/master/adversarial-training-experiments/stochastic/stochastic.ipynb" target="_blank">Jupyter Notebook for the Experiment</a></div>
+			<div><a href="https://github.com/terrancelaw/terrancelaw.github.io/blob/master/adversarial-training-experiments/stochastic/stochastic.ipynb" target="_blank">Jupyter Notebook for the Experiments</a></div>
 
 		</div>
 		<div class="vis-container">
@@ -69,7 +72,7 @@
 
 			<div>Using this strategy, we trained six models. The first is a VGG16 model trained on the 50,000 benign examples. The other five models are created by continuing the training on 20%, 40%, 60%, 80%, and 100% x 50,000 adversarial examples.</div>
 
-			<div><a href="https://github.com/terrancelaw/terrancelaw.github.io/blob/master/adversarial-training-experiments/transfer_from_clean/transfer_from_clean.ipynb" target="_blank">Jupyter Notebook for the Experiment</a></div>
+			<div><a href="https://github.com/terrancelaw/terrancelaw.github.io/blob/master/adversarial-training-experiments/transfer_from_clean/transfer_from_clean.ipynb" target="_blank">Jupyter Notebook for the Experiments</a></div>
 
 		</div>
 		<div class="vis-container">
@@ -98,7 +101,7 @@
 
 			<div>Using this strategy, we trained six models. The first is a VGG16 model trained on the 50,000 adversarial examples. The other five models are created by continuing the training on 20%, 40%, 60%, 80%, and 100% x 50,000 benign examples.</div>
 
-			<div><a href="https://github.com/terrancelaw/terrancelaw.github.io/blob/master/adversarial-training-experiments/transfer_from_adversarial/transfer_from_adversarial.ipynb" target="_blank">Jupyter Notebook for the Experiment</a></div>
+			<div><a href="https://github.com/terrancelaw/terrancelaw.github.io/blob/master/adversarial-training-experiments/transfer_from_adversarial/transfer_from_adversarial.ipynb" target="_blank">Jupyter Notebook for the Experiments</a></div>
 
 		</div>
 		<div class="vis-container">
@@ -125,18 +128,43 @@
 
 			<div>On the other hand, training on benign examples seems to do a pretty good job in improving model performance on adversarial examples (see Strategy 3). Indeed, the best <span class="te-e">test_err</span> and <span class="adv-e">adv_err</span> were achieved by the model trained solely on benign examples (see Strategy 1 and Strategy 2). Furthermore, different from adversarial training, it does not harm the performance on benign examples.</div>
 
-			<div>The above results imply that with a weak PGD attack, training on benign examples alone is a better than adversarial training in improving adversarial robustness. To gain a better understanding into PGD adversarial training, experiments on a strong PGD attack (e.g., Ɛ=8.0) will be required.</div>
+			<div>The above results imply that with a weak PGD attack, training on benign examples alone is a better than adversarial training in improving adversarial robustness. However, does adversarial training with a stronger PGD attack (e.g., Ɛ=8.0) improves adversarial robustness? Future study will conduct further experiments.</div>
 
 		</div>
 	</div>
 
 	<div id="individual-experiment">
 		<div class="title">Visualizing Results for Each Experiment</div>
-		<div class="introduction"></div>
-		<div class="vis-container">
-			<span class="chart">
-				<svg></svg>
+		<div class="introduction">
+
+			<span class="dropdown-name">Strategy: </span>
+			
+			<span class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stochastic Adversarial Attack</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" value="1">Stochastic Adversarial Attack</a>
+					<a class="dropdown-item" value="2">Benign First, Then Adversarial</a>
+					<a class="dropdown-item" value="3">Adversarial First, Then Benign</a>
+		  		</div>
 			</span>
+
+			<span class="dropdown-name">Experiment: </span>
+
+			<span class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">0%</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" value="1">0%</a>
+					<a class="dropdown-item" value="2">20%</a>
+					<a class="dropdown-item" value="3">40%</a>
+					<a class="dropdown-item" value="4">60%</a>
+					<a class="dropdown-item" value="5">80%</a>
+					<a class="dropdown-item" value="6">100%</a>
+		  		</div>
+			</span>
+
+		</div>
+		<div class="vis-container">
+			<span class="chart"><svg></svg></span>
 			<span class="finding"></span>
 		</div>
 	</div>
@@ -152,4 +180,5 @@
 	<script src="js/stochasticView.js"></script>
 	<script src="js/learningFromCleanView.js"></script>
 	<script src="js/learningFromAdvView.js"></script>
+	<script src="js/individualExperimentView.js"></script>
 </body>

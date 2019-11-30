@@ -15,21 +15,24 @@ body {
 
 #stochastic > .vis-container > .chart,
 #learning-from-clean > .vis-container > .chart,
-#learning-from-adversarial > .vis-container > .chart {
+#learning-from-adversarial > .vis-container > .chart,
+#individual-experiment > .vis-container > .chart {
 	width: 360px;
 	height: 360px;
 }
 
 #stochastic > .vis-container > .finding,
 #learning-from-clean > .vis-container > .finding,
-#learning-from-adversarial > .vis-container > .finding {
-	width: calc(360px - 60px);
-	height: calc(360px - 60px);
+#learning-from-adversarial > .vis-container > .finding,
+#individual-experiment > .vis-container > .finding {
+	width: calc(370px - 60px);
+	height: calc(360px - 50px);
 }
 
 #stochastic > .vis-container > .chart > svg, 
 #learning-from-clean > .vis-container > .chart > svg, 
-#learning-from-adversarial > .vis-container > .chart > svg {
+#learning-from-adversarial > .vis-container > .chart > svg,
+#individual-experiment > .vis-container > .chart > svg {
 	width: 100%;
 	height: 100%;
 }
