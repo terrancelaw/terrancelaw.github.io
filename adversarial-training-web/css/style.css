@@ -66,9 +66,15 @@ span.adv-e { color: rgb(225, 87, 89); }
 	font-size: 20px;
 }
 
+#individual-experiment > .introduction > div {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
 #stochastic > .introduction > div,
 #learning-from-clean > .introduction > div,
-#learning-from-adversarial > .introduction > div {
+#learning-from-adversarial > .introduction > div,
+#individual-experiment > .introduction > div {
 	padding: 10px;
 }
 
