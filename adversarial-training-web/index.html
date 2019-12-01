@@ -66,7 +66,7 @@
 		<div class="title">Strategy 2: Train on Benign Examples, Then on Adversarial Examples</div>
 		<div class="introduction">
 			
-			<div>For the second strategy, we first trained a VGG16 model on the 50,000 benign examples. We then continue the training on the same 50,000 training examples. However, only with a certain probabiliy was an image used for training. If an image was used for training, it was first perturbed using PGD before the forward pass of backpropagation.</div>
+			<div>For the second strategy, we first trained a VGG16 model on the 50,000 benign examples. We then continue the training on the same 50,000 training examples. However, only with a certain probability was an image used for training. If an image was used for training, it was first perturbed using PGD before the forward pass of backpropagation.</div>
 
 			<div>For example, when the probability is 60%, there is 60% chance that an image is perturbed and used for training. In other words, the model is trained on approximately 60% x 50,000 adversarial examples (after training on the 50,000 benign examples).</div>
 
