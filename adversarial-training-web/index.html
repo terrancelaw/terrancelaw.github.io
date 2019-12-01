@@ -126,7 +126,7 @@
 
 			<div>First, in Strategy 1, <span class="adv-e">adv_err</span> increases drastically as the attack probability increases from 0% to 20%. This is contrary to the observation that training on more adversarial examples reduce <span class="adv-e">adv_err</span> (<span class="adv-e">adv_err</span> in Strategy 1 is downward trending).</div>
 
-			<div>Second, the trends of <span class="te-e">test_err</span> in Strategy 1 and Strategy 2 seem to offer contradictory conclusions: The upward trend of <span class="te-e">test_err</span> in Strategy 1 suggests that training on more adversarial examples harm the performance on benign examples while the downward trend of <span class="te-e">test_err</span> in Strategy 2 indicates that training on more adversarial examples helps the model generalize to benign examples.</div>
+			<div>Second, the trends of <span class="te-e">test_err</span> in Strategy 1 and Strategy 2 seem to offer contradictory conclusions: The upward trend of <span class="te-e">test_err</span> in Strategy 1 suggests that training on more adversarial examples harms the performance on benign examples while the downward trend of <span class="te-e">test_err</span> in Strategy 2 indicates that training on more adversarial examples helps the model generalize to benign examples.</div>
 
 			<div>Finally, the best <span class="te-e">test_err</span> and <span class="adv-e">adv_err</span> were achieved by the model trained solely on the benign examples (see Strategy 1 and Strategy 2). While prior work claimed the robustness of models trained on PGD-made adversarial examples, our findings say otherwise—natural training produces the best <span class="te-e">test_err</span> and <span class="adv-e">adv_err</span>.</div>
 
