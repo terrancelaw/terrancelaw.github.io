@@ -22,7 +22,7 @@
 		<div class="title">Exploring Adversarial Training Strategies for Weak PGD Attack</div>
 		<div class="introduction">
 
-			<div>Deep neural networks are powerful in image classification but are vulnerable to adversarial attacks—subtle perturbations to images can lead to incorrect classifications. A well-known adversarial attack is projected gradient descent (PGD) <a href="#pgd">[1]</a>. It was shown that PGD adversarial training (i.e. producing adversarial examples using PGD and train a deep neural network using the adversarial examples) improves model resistance to a wide range of attacks <a href="#pgd">[1]</a>.</div>
+			<div>Deep neural networks are powerful in image classification but are vulnerable to adversarial attacks—subtle perturbations to images can lead to incorrect classifications. A well-known L∞-bounded adversarial attack is the projected gradient descent (PGD) attack <a href="#pgd">[1]</a>. It was shown that PGD adversarial training (i.e. producing adversarial examples using PGD and train a deep neural network using the adversarial examples) improves model resistance to a wide range of attacks <a href="#pgd">[1]</a>.</div>
 
 			<div>A goal of adversarial training is to ensure that the model is robust to the adversarial examples (i.e. the model should have low adversarial error) while not harming the performance on the benign examples (i.e. the model should have low error on the test set).</div>
 
@@ -52,11 +52,11 @@
 				
 				<div>Key Observations:</div>
 
-				<div>1. The model trained only on benign examples (attack probability=0%) has the lowest <span class="te-e">test_err</span>. Interestingly, it also has the lowest <span class="adv-e">adv_err</span>.</div>
+				<div>1. The model trained only on benign examples (attack probability=0%) has the lowest <span class="te-e">test_err</span> and <span class="adv-e">adv_err</span>.</div>
 
-				<div>2. As the attack probability increases, <span class="adv-e">adv_err</span> decreases. Obviously, training on more adversarial examples helps the model generalize to adversarial examples.</div>
+				<div>2. Surprisingly, <span class="adv-e">adv_err</span> increases drastically as attack probability increases from 0% to 20% .</div>
 
-				<div>3. As the attack probability increases, <span class="te-e">test_err</span> increases.</div>
+				<div>3. As the attack probability increases, <span class="adv-e">adv_err</span> decreases while <span class="te-e">test_err</span> increases.</div>
 
 			</span>
 		</div>
