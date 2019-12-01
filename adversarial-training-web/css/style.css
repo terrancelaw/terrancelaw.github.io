@@ -162,11 +162,12 @@ span.adv-e { color: rgb(225, 87, 89); }
 }
 
 #reference {
+	margin-top: 30px;
 	font-size: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 #reference > div {
-	padding: 10px;
+	padding: 5px;
 }
 

@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 
 <head>
-	<title>Exploring Adversarial Training Strategies for Weak PGD Attack</title>
+	<title>Exploring Adversarial Training Strategies with PGD Attack</title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/view.css">
@@ -19,16 +19,16 @@
 <body>
 
 	<div id="header" class="section">
-		<div class="title">Exploring Adversarial Training Strategies for Weak PGD Attack</div>
+		<div class="title">Exploring Adversarial Training Strategies with PGD Attack</div>
 		<div class="introduction">
 
-			<div>Deep neural networks are powerful in image classification but are vulnerable to adversarial attacks—subtle perturbations to images can lead to incorrect classifications. A well-known L∞-bounded adversarial attack is the projected gradient descent (PGD) attack <a href="#pgd">[1]</a>. It was shown that PGD adversarial training (i.e. producing adversarial examples using PGD and train a deep neural network using the adversarial examples) improves model resistance to a wide range of attacks <a href="#pgd">[1]</a>.</div>
+			<div>Deep neural networks are powerful in image classification but are vulnerable to adversarial attacks—subtle perturbations to images can lead to incorrect classifications. A well-known L∞-bounded adversarial attack <a href="#l-inf-bound">[1]</a> is the projected gradient descent (PGD) attack <a href="#pgd">[2]</a>. It was shown that PGD adversarial training (i.e. producing adversarial examples using PGD and train a deep neural network using the adversarial examples) improves model resistance to a wide range of attacks <a href="#pgd">[2]</a>.</div>
 
 			<div>A goal of adversarial training is to ensure that the model is robust to the adversarial examples (i.e. the model should have low adversarial error) while not harming the performance on the benign examples (i.e. the model should have low error on the test set).</div>
 
-			<div>In this article, we explore three adversarial training strategies. For each strategy, we conducted six experiments by training six models. Our goal is to understaning which strategy can produce both a low adversarial error and a low low error on the test set.</div>
+			<div>In this article, we explore three adversarial training strategies. For each strategy, we conducted six experiments by training six models. Our goal is to understaning which strategy can produce both a low adversarial error and a low error on the test set.</div>
 
-			<div>For each of the 18 experiments, we trained a VGG16 (lr=0.1) on the CIFAR10 dataset and employed a weak PGD attack (Ɛ=0.05). With the weak attack, the perturbed images are perceptually indistinguishable from the benign images. We trained all the 18 models for 50 epochs.</div>
+			<div>For each of the 18 experiments, we trained a VGG16 on the CIFAR10 dataset with a learning rate of 0.1 and employed a PGD attack where Ɛ equals 0.05. We trained all the 18 models for 50 epochs.</div>
 
 		</div>
 	</div>
@@ -122,14 +122,15 @@
 		<div class="title">Conclusion</div>
 		<div class="introduction">
 			
-			<div>Unsurprisingly, the above findings suggest that training on adversarial examples and training on benign examples both reduce errors on adversarial and benign examples.</div>
+			<div>Unsurprisingly, the above findings suggest that training on benign examples reduce both error on adversarial examples (<span class="adv-e">adv_err</span> in Strategy 3 is downward trending) and error on benign examples (<span class="te-e">test_err</span> in Strategy 3 is downward trending). However, we also observe several surprising results.</div>
 
-			<div>What is more interesting is that with weak a PGD attack (Ɛ=0.05 in our case), adversarial training only mildly improves the model performance on the adversarial examples (see Strategy 1 and Strategy 2).</div>
+			<div>First, in Strategy 1, <span class="adv-e">adv_err</span> increases drastically as the attack probability increases from 0% to 20%. This is contrary to the observation that training on more adversarial examples reduce <span class="adv-e">adv_err</span> (<span class="adv-e">adv_err</span> in Strategy 1 is downward trending).</div>
 
-			<div>On the other hand, training on benign examples seems to do a pretty good job in improving the performance on the adversarial examples (see Strategy 3). Indeed, the best <span class="te-e">test_err</span> and <span class="adv-e">adv_err</span> were achieved by the model trained solely on the benign examples (see Strategy 1 and Strategy 2). Furthermore, different from adversarial training, it does not harm the performance on the benign examples.</div>
+			<div>Second, the trends of <span class="te-e">test_err</span> in Strategy 1 and Strategy 2 seem to offer contradictory conclusions: The upward trend of <span class="te-e">test_err</span> in Strategy 1 suggests that training on more adversarial examples harm the performance on benign examples while the downward trend of <span class="te-e">test_err</span> in Strategy 2 indicates that training on more adversarial examples helps the model generalize to benign examples.</div>
 
-			<div>The above results imply that with a weak PGD attack, training on benign examples alone is a better than adversarial training in improving adversarial robustness. However, does adversarial training with a stronger PGD attack (e.g., Ɛ=8.0) improves adversarial robustness? Future study will conduct further experiments.</div>
+			<div>Finally, the best <span class="te-e">test_err</span> and <span class="adv-e">adv_err</span> were achieved by the model trained solely on the benign examples (see Strategy 1 and Strategy 2). While prior work claimed the robustness of models trained on PGD-made adversarial examples, our findings say otherwise—natural training produces the best <span class="te-e">test_err</span> and <span class="adv-e">adv_err</span>.</div>
 
+			<div>To provide explanation for the quandary, further experiments (e.g., using a different Ɛ) will be required.</div>
 		</div>
 	</div>
 
@@ -173,7 +174,10 @@
 
 	<div id="reference">
 		<div>
-			<a name="pgd"></a>[1] Towards Deep Learning Models Resistant to Adversarial Attacks (<a href="https://arxiv.org/pdf/1706.06083.pdf" target="_blank">https://arxiv.org/pdf/1706.06083.pdf</a>)
+			<a name="l-inf-bound"></a>[1] Know Your Adversary: Understanding Adversarial Examples (Part 1/2). (<a href="https://towardsdatascience.com/know-your-adversary-understanding-adversarial-examples-part-1-2-63af4c2f5830" target="_blank">https://towardsdatascience.com/know-your-adversary-understanding-adversarial-examples-part-1-2-63af4c2f5830</a>)
+		</div>
+		<div>
+			<a name="pgd"></a>[2] Towards Deep Learning Models Resistant to Adversarial Attacks. (<a href="https://arxiv.org/pdf/1706.06083.pdf" target="_blank">https://arxiv.org/pdf/1706.06083.pdf</a>)
 		</div>
 	</div>
 
