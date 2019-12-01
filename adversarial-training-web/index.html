@@ -95,7 +95,7 @@
 		<div class="title">Strategy 3: Train on Adversarial Examples, Then on Benign Examples</div>
 		<div class="introduction">
 			
-			<div>For the third strategy, we first trained a VGG16 model on the 50,000 adversarial examples. We then continue the training on the same 50,000 training examples. Again, an image was used for training only with a certain probabiliy. Contrary to strategy 2, the images used for training are NOT perturbed.</div>
+			<div>For the third strategy, we first trained a VGG16 model on the 50,000 adversarial examples. We then continue the training on the same 50,000 training examples. Again, an image was used for training only with a certain probability. Contrary to strategy 2, the images used for training are NOT perturbed.</div>
 
 			<div>For example, when the probability is 60%, there is 60% chance that an image used for training, and this image is NOT perturbed. In other words, the model is trained on approximately 60% x 50,000 benign examples (after training on the 50,000 adversarial examples).</div>
 
