@@ -1,0 +1,89 @@
+#tooltip {
+    position: absolute;
+}
+
+/* animation */
+
+#tooltip:before, #tooltip:after {
+	position: absolute;
+  	visibility: hidden;
+  	pointer-events: none;
+  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  	opacity: 0;
+
+  	-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  	-moz-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  	transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  	
+  	-webkit-transform: translate3d(0, 0, 0);
+  	-moz-transform: translate3d(0, 0, 0);
+  	transform: translate3d(0, 0, 0);
+}
+
+/* show */
+
+#tooltip.show:before, #tooltip.show:after {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
+/* arrow appearance */
+
+#tooltip:before {
+    z-index: 1001;
+    border: 6px solid transparent;
+    background: transparent;
+    content: "";
+}
+
+/* content appearance */
+
+#tooltip:after {
+    z-index: 1000;
+    padding: 8px;
+
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+    content: attr(data-tooltip);
+
+    font-family: 'Lato', Arial;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+/* right arrow appearance */
+
+#tooltip.right:before {
+  	margin-bottom: 0;
+  	margin-left: -12px;
+  	border-top-color: transparent;
+  	border-right-color: #000;
+  	border-right-color: hsla(0, 0%, 20%, 0.9);
+}
+
+#tooltip.right:after {
+	bottom: 50%;
+  	left: 100%;
+}
+
+#tooltip.right.show:before,
+#tooltip.right.show:after {
+	-webkit-transform: translateX(12px);
+  	-moz-transform: translateX(12px);
+  	transform: translateX(12px); 
+}
+
+/* move directional arrows down a bit for right tooltip */
+#tooltip.right:before {
+  top: -5px;
+}
+
+/* vertically center tooltip content for right tooltip */
+#tooltip.right:after {
+  margin-left: 0;
+  margin-bottom: -16px;
+}

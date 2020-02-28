@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<title>With Look Ahead</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+	<link rel="stylesheet" type="text/css" href="css/tooltip.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/checkbox.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Font-Awesome/css/all.min.css">
+
+	<script src="vender/d3.min.js"></script>
+	<script src="vender/vega.js"></script>
+	<script src="vender/vega-lite.js"></script>
+	<script src="vender/vega-embed.js"></script>
+	<script src="vender/jquery-3.3.1.min.js"></script>
+	<script src="vender/jquery-ui.min.js"></script>
+	<script src="vender/moment.min.js"></script>
+	<script src="vender/bootstrap-slider.js"></script>
+	<script src="vender/regression.js"></script>
+	<script src="vender/combinatorics.js"></script>
+	<script src="vender/scagnostics.min.js"></script>
+	<script src="vender/pearsonCorrelation.js"></script>
+</head>
+
+<body class="noselection">
+	<div id="data-column" class="noselection pane loader-installed">
+
+		<div id="data-pane">
+			<div class="header">Data</div>
+			<div class="content">
+				<div class="dummy">
+					<span class="fa fa-database"></span>
+					<span class="file-name">NULL</span>
+					<span class="load-button">Load CSV</span>
+				</div>
+			</div>
+		</div>
+
+		<div id="dimension-pane">
+			<div class="header">Dimensions</div>
+			<div class="content"></div>
+		</div>
+
+		<div id="measure-pane">
+			<div class="header">Measures</div>
+			<div class="content"></div>
+		</div>
+
+		<div class="loader">
+			<div class="background"></div>
+			<div class="loader-container"><div class="loader-animation"></div></div>
+		</div>
+
+	</div>
+
+	<div id="encoding-column" class="noselection">
+
+		<div id="look-ahead-pane" class="pane">
+
+			<div class="header">Look Ahead</div>
+			<div class="content"></div>
+
+			<div class="footer">
+
+				<span class="select-metrics button">
+					<span class="fa fa-cog"></span>
+					<span class="button-text">Select Metrics</span>
+				</span>
+
+				<span class="detail button">
+					<span class="fa fa-eye"></span>
+					<span class="button-text">See Details</span>
+				</span>
+
+			</div>
+
+			<div class="loader">
+				<div class="background"></div>
+				<div class="loader-container"><div class="loader-animation"></div></div>
+			</div>
+		
+		</div>
+
+		<div id="shelf-pane" class="pane">
+
+			<div class="content">
+				<div class="header">Axes</div>
+
+				<div class="shelf x-axis" shelf-name="xAxis" data-tooltip="Drag a variable here">
+					<span class="fa fa-chart-bar"></span>
+					<span class="shelf-name">X-axis</span>
+					<span class="container"> <!-- dummy container to be consistent with dimension measure -->
+						<span class="capsule"></span>
+					</span>
+				</div>
+
+				<div class="shelf y-axis" shelf-name="yAxis" data-tooltip="Drag a variable here">
+					<span class="fa fa-chart-bar"></span>
+					<span class="shelf-name">Y-axis</span>
+					<span class="container"> <!-- dummy container to be consistent with dimension measure -->
+						<span class="capsule"></span>
+					</span>
+				</div>
+
+				<div class="header">Facet</div>
+
+				<div class="shelf row" shelf-name="row" data-tooltip="Drag a variable here">
+					<span class="fa fa-list"></span>
+					<span class="shelf-name">Row</span>
+					<span class="container"> <!-- dummy container to be consistent with dimension measure -->
+						<span class="capsule"></span>
+					</span>
+				</div>
+
+				<div class="shelf column" shelf-name="column" data-tooltip="Drag a variable here">
+					<span class="fa fa-list fa-rotate-90"></span>
+					<span class="shelf-name">Column</span>
+					<span class="container"> <!-- dummy container to be consistent with dimension measure -->
+						<span class="capsule"></span>
+					</span>
+				</div>
+
+				<div class="header">Marks</div>
+					
+				<div class="shelf size" shelf-name="size" data-tooltip="Drag a variable here">
+					<span class="fa fa-arrows-alt"></span>
+					<span class="shelf-name">Size</span>
+					<span class="container"> <!-- dummy container to be consistent with dimension measure -->
+						<span class="capsule"></span>
+					</span>
+				</div>
+
+				<div class="shelf colour" shelf-name="colour" data-tooltip="Drag a variable here">
+					<span class="fa fa-fill-drip"></span>
+					<span class="shelf-name">Color</span>
+					<span class="container"> <!-- dummy container to be consistent with dimension measure -->
+						<span class="capsule"></span>
+					</span>
+				</div>
+
+				<div class="shelf shape" shelf-name="shape" data-tooltip="Drag a variable here">
+					<span class="fa fa-shapes"></span>
+					<span class="shelf-name">Shape</span>
+					<span class="container"> <!-- dummy container to be consistent with dimension measure -->
+						<span class="capsule"></span>
+					</span>
+				</div>
+
+				<div class="header">Others</div>
+
+				<div class="shelf chart-tooltip" shelf-name="tooltip" data-tooltip="Drag a variable here">
+					<span class="fa fa-comment-alt"></span>
+					<span class="shelf-name">Tooltip</span>
+					<span class="container"> <!-- dummy container to be consistent with dimension measure -->
+						<span class="capsule"></span>
+					</span>
+				</div>
+
+				<div class="shelf filter" shelf-name="filter" data-tooltip="Drag a variable here">
+					<span class="fa fa-filter"></span>
+					<span class="shelf-name">Filter</span>
+				</div>
+			</div>
+
+			<div class="footer">
+				<span class="clear-all button">
+					<span class="fa fa-eraser"></span>
+					<span class="button-text">Clear All</span>
+				</span>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="vis-column" class="noselection pane loader-installed">
+
+		<div id="visualization-pane">
+			<div class="header">Chart</div>
+
+			<div class="content">
+				<div class="container"></div>
+			</div>
+
+			<div class="footer">
+
+				<span class="swap-axes button">
+					<span class="fa fa-exchange-alt"></span>
+					<span class="button-text">Swap Axes</span>
+				</span>
+
+				<span class="increase-size button">
+					<span class="fa fa-expand"></span>
+					<span class="button-text">Increase Size</span>
+				</span>
+
+				<span class="decrease-size button">
+					<span class="fa fa-compress"></span>
+					<span class="button-text">Decrease Size</span>
+				</span>
+				
+			</div>
+		</div>
+
+		<div class="showme">
+			<span class="title">Show Me:</span>
+
+			<span class="density-plot button disabled">
+				<span class="fa fa-chart-area"></span>
+				<span class="button-text">Density Plot</span>
+			</span>
+
+			<span class="trend-lines button disabled">
+				<span class="fa fa-chart-line"></span>
+				<span class="button-text">Trend Lines</span>
+			</span>
+		</div>
+
+		<div class="showme-description"></div>
+
+		<div class="loader">
+			<div class="background"></div>
+			<div class="loader-container"><div class="loader-animation"></div></div>
+		</div>
+
+	</div>
+
+	<div id="tooltip"></div>
+
+	<div id="variable-setting-menu" class="noselection">
+
+		<div class="left-pane">
+
+			<div class="variable-type-menu pane">
+
+				<div class="header">Variable Type</div>
+
+				<div class="content">
+
+					<div class="first column">
+						<div class="quantitative button" value="quantitative">Quantitative</div>
+						<div class="temporal button" value="temporal">Temporal</div>
+					</div>
+
+					<div class="second column">
+						<div class="nominal button" value="nominal">Nominal</div>
+						<div class="ordinal button" value="ordinal">Ordinal</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="function-menu pane">
+
+				<div class="header">Function</div>
+
+				<div class="content">
+
+					<div class="row">
+						<div class="first column">
+							<div class="none button" value="none">None</div>
+							<div class="min button" value="min">Min</div>
+							<div class="mean button" value="mean">Mean</div>
+						</div>
+
+						<div class="second column">
+							<div class="sum button" value="sum">Sum</div>
+							<div class="max button" value="max">Max</div>
+							<div class="median button" value="median">Median</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="bin button" value="bin">
+							<span class='bin-text'>Bin</span>
+							<span class="parenthesis">(</span>
+							<span class="max-bin-text">maxbins: </span>
+							<input type="number" class="max-bin-value" placeholder="auto"></input>
+							<span class="parenthesis">)</span>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="time-unit-menu pane">
+
+				<div class="header">Time Unit</div>
+
+				<div class="content">
+
+					<div class="first column">
+						<div class="none button" value="none">None</div>
+						<div class="month button" value="month">Month</div>
+					</div>
+
+					<div class="second column">
+						<div class="year button" value="year">Year</div>
+						<div class="day button" value="day">Day</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="right-pane">
+
+			<div class="footer pane">
+				<div class="confirm button" data-tooltip="Confirm">
+					<i class="fa fa-check"></i>
+				</div>
+				<div class="create button" data-tooltip="Create a new variable">
+					<i class="fa fa-plus"></i>
+				</div>
+				<div class="cancel button" data-tooltip="Cancel">
+					<i class="fa fa-times"></i>
+				</div>
+				<div class="restore button" data-tooltip="Restore to the original type">
+					<i class="fa fa-undo"></i>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="look-ahead-select-metric-menu" class="noselection">
+
+		<div class="left-pane">
+			
+			<div class="quality-metric-menu pane">
+
+				<div class="header">
+					<span class="title">Select Quality Metrics</span>
+					<span class="far fa-square" data-tooltip="Select None"></span>
+					<span class="far fa-check-square" data-tooltip="Select All"></span>
+					<span class="fa fa-undo" data-tooltip="Restore to Default"></span>
+				</div>
+
+				<div class="content"></div>
+
+			</div>
+
+		</div>
+
+		<div class="right-pane">
+
+			<div class="footer pane">
+
+				<div class="confirm button" data-tooltip="Confirm">
+					<i class="fa fa-check"></i>
+				</div>
+
+				<div class="cancel button" data-tooltip="Cancel">
+					<i class="fa fa-times"></i>
+				</div>
+				
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="load-data-window" class="noselection">
+		<div class="background"></div>
+
+		<div class="menu pane">
+
+			<div class="sample-data-title">
+				You can try out the system using one of the sample data sets:
+			</div>
+
+			<div class="sample-data-content"></div>
+
+			<div class="load-data-title">
+				You can also load your own data. If you data contains temporal variables, they should follow the <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO 8601</a> standard (e.g., 2019-12-31) for the system to work properly.
+			</div>
+
+			<div class="load-data-content">
+				<input type="file" id="file-selector"/>
+				<label for="file-selector" class="load-button">
+					<div class="container">Upload CSV</div>
+				</label>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="js/start.js"></script>
+	<script src="js/body.js"></script>
+	<script src="js/database.js"></script>
+	<script src="js/vegaliteGenerator.js"></script>
+	<script src="js/constraints.js"></script>
+
+	<script src="js/dataColumn.js"></script>
+	<script src="js/dataPane.js"></script>
+	<script src="js/dimensionMeasurePane.js"></script>
+	<script src="js/visualizationPane.js"></script>
+	<script src="js/variableSettingMenu.js"></script>
+
+	<script src="js/shelfPane.js"></script>
+	<script src="js/shelfTemplate.js"></script>
+	<script src="js/shelf.js"></script>
+	<script src="js/shelves.js"></script>
+
+	<script src="js/filterShelf.js"></script>
+	<script src="js/filterTemplate.js"></script>
+	<script src="js/filter.js"></script>
+	<script src="js/filters.js"></script>
+
+	<script src="js/lookAheadPane.js"></script>
+	<script src="js/lookAheadDatabase.js"></script>
+	<script src="js/lookAheadEventHandler.js"></script>
+	<script src="js/LAKBDistributionHandler.js"></script>
+	<script src="js/LAKBScagnosticsHandler.js"></script>
+	<script src="js/LAKBSlopeHandler.js"></script>
+	<script src="js/LAKBTrendHandler.js"></script>
+	<script src="js/LAKBCorrelationHandler.js"></script>
+	<script src="js/lookAheadKnowledgeBase.js"></script>
+	<script src="js/lookAheadHelpers.js"></script>
+	<script src="js/lookAheadSelectMetricMenu.js"></script>
+
+	<script src="js/showMe.js"></script>
+	<script src="js/showMeHelpers.js"></script>
+	<script src="js/densityPlot.js"></script>
+	<script src="js/trendLines.js"></script>
+	<script src="js/trendLinesForFacetedCharts.js"></script>
+	<script src="js/trendLinesForUnfacetedCharts.js"></script>
+
+	<script src="js/dimensionMeasurePaneCapsules.js"></script>
+	<script src="js/draggableCapsule.js"></script>
+	<script src="js/clickEventListeners.js"></script>
+	<script src="js/previewMode.js"></script>
+	<script src="js/loadDataWindow.js"></script>
+	<script src="js/tooltip.js"></script>
+	<script src="js/helpers.js"></script>
+</body>

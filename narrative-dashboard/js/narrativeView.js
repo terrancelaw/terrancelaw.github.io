@@ -34,7 +34,7 @@ const NarrativeView = {
 		let description = '';
 
 		if (selectedState === null) {
-			description += 'In <span>' + selectedYear + '</span>, the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' is ' + Math.round(average * 100 ) / 100 + ' nationwise. ';
+			description += 'In <span>' + selectedYear + '</span>, the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' is ' + Math.round(average * 100 ) / 100 + ' nationwide. ';
 			description += '<span>' + lowestStateStat.state + '</span> has the lowest value (' + Math.round(lowestStateStat[selectedQuantitativeAttr] * 100) / 100 + ') ';
 			description += 'while <span>' + highestStateStat.state + '</span> has the highest value (' + Math.round(highestStateStat[selectedQuantitativeAttr] * 100 ) / 100 + ').';
 		}
@@ -78,9 +78,9 @@ const NarrativeView = {
 		if (viewName == 'right') description += 'Meanwhile, ';
 
 		// second part
-		if (selectedState === null && isSignificantlyIncreasing) description += 'the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' increases significantly nationwise';
-		if (selectedState === null && isSignificantlyDecreasing) description += 'the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' decreases significantly nationwise';
-		if (selectedState === null && remainSteady) description += 'the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' remains steady nationwise';
+		if (selectedState === null && isSignificantlyIncreasing) description += 'the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' increases significantly nationwide';
+		if (selectedState === null && isSignificantlyDecreasing) description += 'the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' decreases significantly nationwide';
+		if (selectedState === null && remainSteady) description += 'the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' remains steady nationwide';
 		if (selectedState !== null && isSignificantlyIncreasing) description += 'the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' increases significantly in <span>' + selectedState + '</span>';
 		if (selectedState !== null && isSignificantlyDecreasing) description += 'the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' decreases significantly in <span>' + selectedState + '</span>';
 		if (selectedState !== null && remainSteady) description += 'the average <span>' + selectedQuantitativeAttr + '</span> per ' + itemName + ' remains steady in <span>' + selectedState + '</span>';
