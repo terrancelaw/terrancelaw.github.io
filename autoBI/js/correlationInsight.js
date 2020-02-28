@@ -9,26 +9,23 @@ const CorrelationInsight = {
 		let quantitativeAttrList = Database.getAttributeList('quantitative');
 
 		for (let i = 0; i < quantitativeAttrList.length; i++)
-			for (let j = 0; j < quantitativeAttrList.length; j++) {
+			for (let j = i + 1; j < quantitativeAttrList.length; j++) {
 				let currentAttribute = quantitativeAttrList[i];
 				let otherAttribute = quantitativeAttrList[j];
+				let dataColumns = self.getDataColumns(currentAttribute, otherAttribute);
+				let correlation = pearsonCorrelation(dataColumns.attribute1, dataColumns.attribute2);
 
-				if (currentAttribute !== otherAttribute) {
-					let dataColumns = self.getDataColumns(currentAttribute, otherAttribute);
-					let correlation = pearsonCorrelation(dataColumns.attribute1, dataColumns.attribute2);
-
-					if (Math.abs(correlation) > self.threshold)
-						insightList.push({
-							type: 'correlation',
-							quantitativeAttrList: [ currentAttribute, otherAttribute ],
-							temporalAttrList: [],
-							ordinalAttrList: [],
-							nominalAttrList: [],
-							data: { 
-								correlation: correlation 
-							}
-						});
-				}
+				if (Math.abs(correlation) > self.threshold)
+					insightList.push({
+						type: 'correlation',
+						quantitativeAttrList: [ currentAttribute, otherAttribute ],
+						temporalAttrList: [],
+						ordinalAttrList: [],
+						nominalAttrList: [],
+						data: { 
+							correlation: correlation 
+						}
+					});
 			}
 
 		self.insightList = insightList;
