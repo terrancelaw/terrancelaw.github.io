@@ -423,6 +423,12 @@ img.icon + a {
 	margin-right: 20px;
 }
 
+@media screen and (max-width: 600px) {
+	.experience > .logo {
+		display: none;
+	}
+}
+
 .experience > .logo > img {
 	width: 100px;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -431,6 +437,12 @@ img.icon + a {
 .experience > .content {
 	width: calc(100% - 100px - 25px);
 	white-space: normal;
+}
+
+@media screen and (max-width: 600px) {
+	.experience > .content {
+		width: 100%;
+	}
 }
 
 .experience > .content > div {
