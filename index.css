@@ -156,10 +156,12 @@ img.icon + a {
 #about-me > .content > div:nth-child(1),
 #about-me > .content > div:nth-child(2) {
 	margin-bottom: 20px;
+	width: 100%;
 }
 
 #about-me > .content > div:nth-child(3) {
 	font-size: 1.3em;
+	width: 100%;
 }
 
 /* news */
