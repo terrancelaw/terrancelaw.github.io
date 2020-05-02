@@ -125,7 +125,11 @@ img.icon + a {
 	}
 }
 
-#about-me > .header {
+#about-me > .scale-wrapper {
+	width: 100%;
+}
+
+#about-me > .scale-wrapper > .header {
 	display: inline;
 	position: absolute;
 	white-space: nowrap;
@@ -142,24 +146,24 @@ img.icon + a {
 }
 
 @media screen and (max-width: 1100px) {
-	#about-me > .header {
+	#about-me > .scale-wrapper > .header {
 		right: initial;
 		left: 0px;
    		top: -20px;
 	}
 }
 
-#about-me > .content {
+#about-me > .scale-wrapper > .content {
 	width: 100%;
 }
 
-#about-me > .content > div:nth-child(1),
-#about-me > .content > div:nth-child(2) {
+#about-me > .scale-wrapper > .content > div:nth-child(1),
+#about-me > .scale-wrapper > .content > div:nth-child(2) {
 	margin-bottom: 20px;
 	width: 100%;
 }
 
-#about-me > .content > div:nth-child(3) {
+#about-me > .scale-wrapper > .content > div:nth-child(3) {
 	font-size: 1.3em;
 	width: 100%;
 }
