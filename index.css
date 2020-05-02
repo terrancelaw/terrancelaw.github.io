@@ -67,6 +67,7 @@ img.icon + a {
 
 @media screen and (max-width: 600px) {
 	#personal-info > .photo {
+		display: block;
 		margin-left: 0px;
 	}
 
