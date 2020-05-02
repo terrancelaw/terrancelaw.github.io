@@ -178,12 +178,6 @@ img.icon + a {
 	}
 }
 
-@media screen and (max-width: 600px) {
-	#news {
-		display: none;
-	}
-}
-
 #news > .header {
 	display: inline;
 	position: absolute;
@@ -468,4 +462,12 @@ img.icon + a {
 
 #copyright > .content {
 	width: 100%;
+}
+
+/* not-display-on-small-screen */
+
+@media screen and (max-width: 600px) {
+	.not-display-on-small-screen {
+		display: none;
+	}
 }
