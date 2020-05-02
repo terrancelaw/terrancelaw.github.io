@@ -53,16 +53,40 @@ img.icon + a {
     padding-bottom: 20px;
 }
 
+@media screen and (max-width: 600px) {
+	#personal-info {
+		text-align: center;
+	}
+}
+
 #personal-info > .photo {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 15px;
 }
 
+@media screen and (max-width: 600px) {
+	#personal-info > .photo {
+		margin-left: 0px;
+	}
+
+	#personal-info > .photo > img {
+		border-radius: 10px;
+	}
+}
+
 #personal-info > .content {
 	display: inline-block;
 	vertical-align: middle;
 	padding-left: 25px;
+}
+
+@media screen and (max-width: 600px) {
+	#personal-info > .content {
+		padding-left: 0px;
+		margin-top: 20px;
+		text-align: left;
+	}
 }
 
 #personal-info > .content > .name {
@@ -214,15 +238,18 @@ img.icon + a {
 
 .publication > .teaser {
 	margin-right: 20px;
+	max-width: 195px;
+	width: 40%;
 }
 
 .publication > .teaser > img {
-	width: 195px;
+	width: 100%;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .publication > .content {
-	width: calc(100% - 195px - 25px);
+	width: calc(60% - 25px);
+    min-width: calc(100% - 195px - 25px);
 	white-space: normal;
 }
 
