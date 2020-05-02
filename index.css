@@ -176,6 +176,12 @@ img.icon + a {
 	}
 }
 
+@media screen and (max-width: 600px) {
+	#news {
+		display: none;
+	}
+}
+
 #news > .header {
 	display: inline;
 	position: absolute;
