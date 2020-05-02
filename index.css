@@ -243,6 +243,12 @@ img.icon + a {
 	width: 40%;
 }
 
+@media screen and (max-width: 600px) {
+	.publication > .teaser {
+		display: none;
+	}
+}
+
 .publication > .teaser > img {
 	width: 100%;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -252,6 +258,13 @@ img.icon + a {
 	width: calc(60% - 25px);
     min-width: calc(100% - 195px - 25px);
 	white-space: normal;
+}
+
+@media screen and (max-width: 600px) {
+	.publication > .content {
+		width: 100%;
+		min-width: 100%;
+	}
 }
 
 .publication > .content > div {
