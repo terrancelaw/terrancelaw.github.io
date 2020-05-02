@@ -356,6 +356,12 @@ img.icon + a {
 	}
 }
 
+@media screen and (max-width: 600px) {
+	.project > .teaser {
+		display: none;
+	}
+}
+
 .project > .content > .title {
 	margin-bottom: 15px;
 }
@@ -392,6 +398,12 @@ img.icon + a {
 
 	.project > .content > .title {
 		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.project > .content {
+		width: 100%;
 	}
 }
 
