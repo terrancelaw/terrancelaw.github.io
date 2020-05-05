@@ -1,9 +1,9 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', sans-serif;
-	font-size: 0.98em;
-	font-weight: 300;
+	font-family: 'Tajawal', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
 }
 
 a {
@@ -12,8 +12,7 @@ a {
 	text-decoration: none;
 	padding-right: 3px;
 	padding-left: 3px;
-	padding-bottom: 1px;
-	border-radius: 2px;
+	padding-top: 3px;
 }
 
 a:hover {
@@ -38,7 +37,6 @@ img.icon {
 
 img.icon + a {
 	margin-left: 3px;
-	vertical-align: middle;
 }
 
 #about-me, #news, .publication, .experience, #copyright {
@@ -91,7 +89,7 @@ img.icon + a {
 }
 
 #personal-info > .content > .name {
-	font-size: 2em;
+	font-size: 1.8em;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
@@ -131,7 +129,7 @@ img.icon + a {
 	white-space: nowrap;
 	right: calc(100% - 10px);
 	top: 10px;
-  	padding: 5px 8px 5px 8px;
+  	padding: 5px 8px 0px 8px;
 
   	opacity: 0.5;
   	background: steelblue;
@@ -184,7 +182,7 @@ img.icon + a {
 	white-space: nowrap;
 	right: calc(100% - 10px);
 	top: 10px;
-  	padding: 5px 8px 5px 8px;
+  	padding: 5px 8px 0px 8px;
 
   	opacity: 0.5;
   	background: steelblue;
