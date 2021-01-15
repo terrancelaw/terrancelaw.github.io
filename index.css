@@ -35,10 +35,6 @@ img.icon {
 	vertical-align: middle;
 }
 
-img.icon + a {
-	margin-left: 3px;
-}
-
 #about-me, #news, .publication, .experience, #copyright {
 	background: #f2f8ff;
 	margin-bottom: 15px;
@@ -151,13 +147,19 @@ img.icon + a {
 	width: 100%;
 }
 
-#about-me > .content > div,
-#about-me > .content > div {
+#about-me > .content > .intro,
+#about-me > .content > .edu {
 	margin-bottom: 20px;
 }
 
-#about-me > .content > span:last-child {
+#about-me > .content > .cv,
+#about-me > .content > .resume {
 	font-size: 1.3em;
+	white-space: nowrap;
+}
+
+#about-me > .content > .cv {
+	margin-right: 20px;
 }
 
 /* news */
