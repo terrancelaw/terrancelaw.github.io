@@ -487,3 +487,25 @@ body > .section > .title {
 		font-weight: 700;
 	}
 }
+
+/* really small mobile */
+
+@media only screen and (max-width: 400px) {
+	#vis-system-grid > .vis-system > .container > .project-name {
+		font-size: 15px;
+	}
+
+	#publication-list > .publication > .teaser > .name > span {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	#vis-system-grid > .vis-system > .container > .project-name {
+		font-size: 11px;
+	}
+
+	#publication-list > .publication > .teaser > .name > span {
+		font-size: 11px;
+	}
+}
