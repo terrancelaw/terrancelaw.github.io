@@ -1,1 +1,0 @@
-const Filter = {} // new filters are added to this object
