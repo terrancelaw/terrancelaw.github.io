@@ -456,6 +456,12 @@ body > .section > .title {
 		grid-template-columns: 1fr;
 	}
 
+	#vis-system-grid > .vis-system:hover > .container > .project-name {
+		bottom: 3px;
+		color: #454545;
+		transform: translateY(0px);
+	}
+
 	#vis-system-grid > .vis-system:hover > .link-container > .system-link,
 	#vis-system-grid > .vis-system:hover > .link-container > .github-link {
 		transform: translateX(0%);
