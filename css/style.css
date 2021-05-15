@@ -456,6 +456,16 @@ body > .section > .title {
 		grid-template-columns: 1fr;
 	}
 
+	#vis-system-grid > .vis-system:hover > .link-container > .system-link,
+	#vis-system-grid > .vis-system:hover > .link-container > .github-link {
+		transform: translateX(0%);
+	}
+
+	#vis-system-grid > .vis-system:hover > .link-container > .data-link,
+	#vis-system-grid > .vis-system:hover > .link-container > .video-link {
+		transform: translateX(0%);
+	}
+
 	#publication-list > .publication {
 		grid-template-columns: 1fr;
 
