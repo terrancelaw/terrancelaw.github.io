@@ -159,34 +159,11 @@ body > .section > .title {
 }
 
 #vis-system-grid > .vis-system > .link-container > .system-link,
-#vis-system-grid > .vis-system > .link-container > .github-link {
-	position: absolute;
-	bottom: calc(50% + 5px);
-
-	font-size: 20px;
-	font-weight: 700;
-	text-decoration: none;
-
-	display: inline-flex;
-	align-items: center;
-
-	padding-right: 5px;
-	padding-left: 5px;
-
-	white-space: nowrap;	
-
-	pointer-events: auto;
-}
-
-#vis-system-grid > .vis-system > .link-container > .system-link > .fa,
-#vis-system-grid > .vis-system > .link-container > .github-link > .fab {
-	margin-right: 10px;
-}
-
+#vis-system-grid > .vis-system > .link-container > .github-link,
 #vis-system-grid > .vis-system > .link-container > .data-link,
 #vis-system-grid > .vis-system > .link-container > .video-link {
 	position: absolute;
-	top: calc(50% + 5px);
+	bottom: 3px;
 
 	font-size: 20px;
 	font-weight: 700;
@@ -203,6 +180,13 @@ body > .section > .title {
 	pointer-events: auto;
 }
 
+#vis-system-grid > .vis-system > .link-container > .system-link,
+#vis-system-grid > .vis-system > .link-container > .github-link {
+	bottom: 36px;
+}
+
+#vis-system-grid > .vis-system > .link-container > .system-link > .fa,
+#vis-system-grid > .vis-system > .link-container > .github-link > .fab,
 #vis-system-grid > .vis-system > .link-container > .data-link > .fa,
 #vis-system-grid > .vis-system > .link-container > .video-link > .fa {
 	margin-right: 10px;
@@ -373,7 +357,7 @@ body > .section > .title {
 
 #vis-system-grid > .vis-system:hover > .link-container > .system-link,
 #vis-system-grid > .vis-system:hover > .link-container > .github-link {
-	transform: translateX(100%);
+	transform: translateX(calc(100% + 3px));
 }
 
 #vis-system-grid > .vis-system > .link-container > .system-link:hover,
@@ -393,7 +377,7 @@ body > .section > .title {
 
 #vis-system-grid > .vis-system:hover > .link-container > .data-link,
 #vis-system-grid > .vis-system:hover > .link-container > .video-link {
-	transform: translateX(100%);
+	transform: translateX(calc(100% + 3px));
 }
 
 #vis-system-grid > .vis-system > .link-container > .data-link:hover,
@@ -523,5 +507,13 @@ body > .section > .title {
 
 	#publication-list > .publication > .teaser > .name > span {
 		font-size: 11px;
+	}
+}
+
+/* really large screen */
+
+@media only screen and (min-width: 1600px) {
+	#vis-system-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 }
