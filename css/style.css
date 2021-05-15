@@ -417,12 +417,11 @@ body > .section > .title {
 	width: 100%;
 	height: 100%;
 
-	transition: width 0.3s, height 0.3s;
+	transition: transform 0.3s;
 }
 
 #publication-list > .publication:hover > .teaser > img {
-	width: 110%;
-	height: 110%;
+	transform: scale(1.1);
 }
 
 #publication-list > .publication > .info > .downloads > a {
