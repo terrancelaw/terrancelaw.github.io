@@ -1,940 +1,586 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><meta charset="utf-8">
-
-<html>
+<!DOCTYPE html>
+<meta charset="utf-8">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-
 	<title>Po-Ming "Terrance" Law</title>
-
-	<link rel="stylesheet" href="fonts.css" type="text/css">
-  	<link rel="stylesheet" href="index.css" type="text/css">
-
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.css">
 </head>
 
 <body>
 
-	<div id="container">
-		
-		<div id="personal-info">
+	<div id="about">
+		<div class="name">Terrance Law (he/him/his)</div>
+		<div class="text">I am a full-stack developer with extensive experience building interactive visualization systems. I received dual degrees in Computer Science and General Business Management from <a href="https://hkust.edu.hk/home" target="_blank">the Hong Kong University of Science and Technology</a>, and a PhD in Computer Science from <a href="https://www.gatech.edu/" target="_blank">Georgia Institute of Technology</a>. During my PhD, I was a member of <a href="http://vis.gatech.edu" target="_blank">Georgia Tech Visualization Lab</a>.</div>
+		<div class="text">For more information, you can see my <a href="/personal/cv_terrance_law.pdf" target="_blank">CV</a> or <a href="/personal/resume_terrance_law.pdf" target="_blank">resume</a>.</div>
+		<div class="text">You can contact me at pmlaw (at) gatech (dot) edu and find me on <a href="https://www.linkedin.com/in/po-ming-terrance-law-0987b6126/" target="_blank">LinkedIn</a>.</div>
+	</div>
 
-			<span class="photo">
-            	<img src="/personal/photo_terrance.jpg" alt="Terrance's photo" style="height:180px"></img>
-        	</span>
+	<div class="system section">
+		<div class="title">Visualization systems I built</div>
 
-        	<span class="content">
+		<div id="vis-system-grid">
 
-        		<div class="name">Po-Ming "Terrance" Law</div>
-          		<div class="other">PhD Student in Computer Science</div>
-          		<div class="other">School of Interactive Computing</div>
-          		<div class="other">Georgia Institute of Technology</div>
-
-          		<table>
-
-		            <tr>
-		              <td>Email:</td>
-		              <td>pmlaw&nbsp;(at)&nbsp;gatech&nbsp;(dot)&nbsp;edu</td>
-		            </tr>
-
-		            <tr>
-		              <td>Office:</td>
-		              <td>
-		              	<div>Technology Square Research Building 331</div>
-		              	<div>85 5th St NW, Atlanta, Georgia</div>
-		              </td>
-		            </tr>
-
-          		</table>
-        	
-        	</span>
-
-		</div>
-
-		<div id="about-me">
-
-			<div class="header">ABOUT ME</div>
-
-			<div class="content">
-
-				<div class="intro">
-					I am a fifth-year Ph.D. student in Computer Science working with <a href="http://va.gatech.edu/endert/" target="_blank">Dr. Alex Endert</a> and <a href="https://www.cc.gatech.edu/~john.stasko/" target="_blank">Dr. John Stasko</a>. I am a member of <a href="http://vis.gatech.edu" target="_blank">Georgia Tech Visualization Lab</a>. My research interests lie in Human-Computer Interaction and Information Visualization.
+			<div class="vis-system">
+				<img alt="placeholder" class="placeholder" src="/teasers/cow_map.png"/>
+				<a class="container" href="https://terrancelaw.github.io/cow_map/" target="_blank">
+					<img alt="visualization system for inter-state war analysis" class="static-image" src="/teasers/cow_map.png" />
+					<img alt="visualization system for inter-state war analysis" class="animated-image" src="/teasers/cow_map.gif" />
+					<div class="project-name">
+						<span class="text">Geospatial visualization and network analysis of inter-state wars</span>
+					</div>
+				</a>
+				<div class="link-container">
+					<a class="system-link" href="https://terrancelaw.github.io/cow_map/" target="_blank">
+						<span class="fa fa-laptop"></span>
+						<span class="text">System</span>
+					</a>
+					<a class="data-link" href="https://correlatesofwar.org/" target="_blank">
+						<span class="fa fa-database"></span>
+						<span class="text">Data</span>
+					</a>
 				</div>
+			</div>
 
-				<div class="edu">
-					I received a degree in Computer Science and a degree in General Business Management from <a href="http://www.ust.hk" target="_blank">the Hong Kong University of Science and Technology</a>. Before joining Georgia Tech, I was a member of <a href="http://vis.cse.ust.hk" target="_blank">HKUST VisLab</a>.
+			<div class="vis-system">
+				<img alt="placeholder" class="placeholder" src="/teasers/cow_event.png" />
+				<a class="container" href="https://terrancelaw.github.io/cow_event/" target="_blank">
+					<img alt="event sequence analysis of inter-state wars" class="static-image" src="/teasers/cow_event.png" />
+					<img alt="event sequence analysis of inter-state wars" class="animated-image" src="/teasers/cow_event.gif" />
+					<div class="project-name">
+						<span class="text">Event sequence and time series visualization of inter-state wars</span>
+					</div>
+				</a>
+				<div class="link-container">
+					<a class="system-link" href="https://terrancelaw.github.io/cow_event/" target="_blank">
+						<span class="fa fa-laptop"></span>
+						<span class="text">System</span>
+					</a>
+					<a class="data-link" href="https://correlatesofwar.org/" target="_blank">
+						<span class="fa fa-database"></span>
+						<span class="text">Data</span>
+					</a>
 				</div>
+			</div>
 
-				<span class="cv">
-					<img class="icon" src="/icons/doc.png" alt="CV icon">
-					<a href="/personal/cv_terrance_law.pdf" target="_blank">Curriculum Vitae</a>
-				</span>
+			<div class="vis-system">
+				<img alt="placeholder" class="placeholder" src="/teasers/tableau.png" />
+				<a class="container" href="https://terrancelaw.github.io/iQuery/" target="_blank">
+					<img alt="visualization system with automated analysis" class="static-image" src="/teasers/tableau.png" />
+					<img alt="visualization system with automated analysis" class="animated-image" src="/teasers/tableau.gif" />
+					<div class="project-name">
+						<span class="text">A Tableau-style visualization system with automated analysis</span>
+					</div>
+				</a>
+				<div class="link-container">
+					<a class="system-link" href="https://terrancelaw.github.io/iQuery/" target="_blank">
+						<span class="fa fa-laptop"></span>
+						<span class="text">System</span>
+					</a>
+				</div>
+			</div>
 
-				<span class="resume">
-					<img class="icon" src="/icons/doc.png" alt="resume icon">
-					<a href="/personal/resume_terrance_law.pdf" target="_blank">Resume</a>
-				</span>
+			<div class="vis-system">
+				<img alt="placeholder" class="placeholder" src="/teasers/maqui.png" />
+				<a class="container" href="https://github.com/terrancelaw/MAQUI" target="_blank">
+					<img alt="a system for interactive event sequence mining and querying" class="static-image" src="/teasers/maqui.png" />
+					<img alt="a system for interactive event sequence mining and querying" class="animated-image" src="/teasers/maqui.gif" />
+					<div class="project-name">
+						<span class="text">Interactive event sequence mining and querying</span>
+					</div>
+				</a>
+				<div class="link-container">
+					<a class="github-link" href="https://github.com/terrancelaw/MAQUI" target="_blank">
+						<span class="fab fa-github"></span>
+						<span class="text">Github</span>
+					</a>
+					<a class="video-link" href="https://youtu.be/UhlBhDrejK0" target="_blank">
+						<span class="fa fa-play-circle"></span>
+						<span class="text">Video</span>
+					</a>
+				</div>
+			</div>
 
+			<div class="vis-system">
+				<img alt="placeholder" class="placeholder" src="/teasers/duo.png" />
+				<a class="container" href="https://duospreadsheet.github.io/sloppy_rules_final/" target="_blank">
+					<img alt="a spreadsheet application with automated pairwise comparison" class="static-image" src="/teasers/duo.png" />
+					<img alt="a spreadsheet application with automated pairwise comparison" class="animated-image" src="/teasers/duo.gif" />
+					<div class="project-name">
+						<span class="text">A spreadsheet application with automated pairwise comparison</span>
+					</div>
+				</a>
+				<div class="link-container">
+					<a class="system-link" href="https://duospreadsheet.github.io/sloppy_rules_final/" target="_blank">
+						<span class="fa fa-laptop"></span>
+						<span class="text">System</span>
+					</a>
+					<a class="video-link" href="https://youtu.be/zXb8blGqOUQ" target="_blank">
+						<span class="fa fa-play-circle"></span>
+						<span class="text">Video</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="vis-system">
+				<img alt="placeholder" class="placeholder" src="/teasers/narrative.png" />
+				<a class="container" href="https://terrancelaw.github.io/iDashboard/" target="_blank">
+					<img alt="a visualization dashboard with automated data storytelling" class="static-image" src="/teasers/narrative.png" />
+					<img alt="a visualization dashboard with automated data storytelling" class="animated-image" src="/teasers/narrative.gif" />
+					<div class="project-name">
+						<span class="text">A visualization dashboard with automated data storytelling</span>
+					</div>
+				</a>
+				<div class="link-container">
+					<a class="system-link" href="https://terrancelaw.github.io/iDashboard/" target="_blank">
+						<span class="fa fa-laptop"></span>
+						<span class="text">System</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="vis-system">
+				<img alt="placeholder" class="placeholder" src="/teasers/visual_insight.png" />
+				<a class="container" href="https://terrancelaw.github.io/iPage/" target="_blank">
+					<img alt="an application for extracting visual insights from tabular data" class="static-image" src="/teasers/visual_insight.png" />
+					<img alt="an application for extracting visual insights from tabular data" class="animated-image" src="/teasers/visual_insight.gif" />
+					<div class="project-name">
+						<span class="text">Extracting visual insights from tabular data</span>
+					</div>
+				</a>
+				<div class="link-container">
+					<a class="system-link" href="https://terrancelaw.github.io/iPage/" target="_blank">
+						<span class="fa fa-laptop"></span>
+						<span class="text">System</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="vis-system">
+				<img alt="placeholder" class="placeholder" src="/teasers/us_college.png" />
+				<a class="container" href="https://terrancelaw.github.io/US-College/" target="_blank">
+					<img alt="mining automated insights from US college scorecard data" src="/teasers/us_college.png" />
+					<img alt="mining automated insights from US college scorecard data" class="animated-image" src="/teasers/us_college.gif" />
+					<div class="project-name">
+						<span class="text">Mining automated insights from US college scorecard data</span>
+					</div>
+				</a>
+				<div class="link-container">
+					<a class="system-link" href="https://terrancelaw.github.io/US-College/" target="_blank">
+						<span class="fa fa-laptop"></span>
+						<span class="text">System</span>
+					</a>
+					<a class="data-link" href="https://collegescorecard.ed.gov/data/" target="_blank">
+						<span class="fa fa-database"></span>
+						<span class="text">Data</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="vis-system">
+				<img alt="placeholder" class="placeholder" src="/teasers/duet.png" />
+				<a class="container" href="https://duetpaircomp.github.io/" target="_blank">
+					<img alt="a system for automated pairwise comparison" class="static-image" src="/teasers/duet.png" />
+					<img alt="a system for automated pairwise comparison" class="animated-image" src="/teasers/duet.gif" />
+					<div class="project-name">
+						<span class="text">Automated pairwise comparison for data analysis novices</span>
+					</div>
+				</a>
+				<div class="link-container">
+					<a class="system-link" href="https://duetpaircomp.github.io/" target="_blank">
+						<span class="fa fa-laptop"></span>
+						<span class="text">System</span>
+					</a>
+					<a class="video-link" href="https://youtu.be/Y4p0h8_EnDU" target="_blank">
+						<span class="fa fa-play-circle"></span>
+						<span class="text">Video</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="vis-system">
+				<img alt="placeholder" class="placeholder" src="/teasers/segue.png" />
+				<a class="container" href="https://segueegonetwork.github.io/" target="_blank">
+					<img alt="ego-network visualization" class="static-image" src="/teasers/segue.png" />
+					<img alt="ego-network visualization" class="animated-image" src="/teasers/segue.gif" />
+					<div class="project-name">
+						<span class="text">Overviewing ego-networks by creating spatial layouts</span>
+					</div>
+				</a>
+				<div class="link-container">
+					<a class="system-link" href="https://segueegonetwork.github.io/" target="_blank">
+						<span class="fa fa-laptop"></span>
+						<span class="text">System</span>
+					</a>
+					<a class="video-link" href="https://youtu.be/WD7v0_RTSZo" target="_blank">
+						<span class="fa fa-play-circle"></span>
+						<span class="text">Video</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="vis-system">
+				<img alt="placeholder" class="placeholder" src="/teasers/health.png" />
+				<a class="container" href="https://ushealthranking.github.io" target="_blank">
+					<img alt="US health disparity visualization" class="static-image" src="/teasers/health.png" />
+					<img alt="US health disparity visualization" class="animated-image" src="/teasers/health.gif" />
+					<div class="project-name">
+						<span class="text">Visualizing health disparities in the United States</span>
+					</div>
+				</a>
+				<div class="link-container">
+					<a class="system-link" href="https://ushealthranking.github.io" target="_blank">
+						<span class="fa fa-laptop"></span>
+						<span class="text">System</span>
+					</a>
+					<a class="data-link" href="https://www.countyhealthrankings.org" target="_blank">
+						<span class="fa fa-database"></span>
+						<span class="text">Data</span>
+					</a>
+				</div>
 			</div>
 
 		</div>
+	</div>
 
-		<div id="news" class="not-display-on-small-screen">
+	<div class="publication section">
+		<div class="title">Research during my PhD</div>
 
-			<div class="header">NEWS</div>
+		<div id="publication-list">
 
-			<div class="content">
-				<table>
+			<div class="publication">
+				<a class="teaser" href="/publications/dissertation_terrance_law.pdf" target="_blank">
+					<img alt="My dissertation" src="/teasers/dissertation.png" ></img>
+				</a>
+				<div class="info">
+					<div class="title">Exploring User Perception of Causality in Automated Data Insights</div>
+					<div class="authors">Po-Ming Law</div>
+					<div class="venue">PhD Dissertation, Georgia Institute of Technology</div>
+					<div class="downloads">
+						<a href="/publications/dissertation_terrance_law.pdf" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Dissertation</span>
+						</a>
+					</div>
+				</div>
+			</div>
 
-					<tr class="news-entry">
-			        	<td class="date">29<sup>th</sup> Aug, 2020</td>
-			        	<td class="content">Published findings from interviews with 23 visualization practitioners: <a href="/publications/data_insight_interviews_vis20.pdf" target="_blank">Paper</a> The study dived into what practitioners think are data insights and proposes ways to automatically generate data insights.</td>
-			        </tr>
+			<div class="publication">
+				<a class="teaser" href="/publications/causal_perception_chi21.pdf" target="_blank">
+					<img alt="CHI 2021 paper" src="/teasers/chi21.png" ></img>
+				</a>
+				<div class="info">
+					<div class="title">Causal Perception in Question-Answering Systems</div>
+					<div class="authors">Po-Ming Law, Leo Yu-Ho Lo, Alex Endert, John Stasko, and Huamin Qu</div>
+					<div class="venue">ACM Conference on Human Factors in Computing Systems (CHI 2021)</div>
+					<div class="downloads">
+						<a href="/publications/causal_perception_chi21.pdf" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Paper</span>
+						</a>
+						<a href="https://youtu.be/RJ7zqRO1Gmk" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Talk</span>
+						</a>
+						<a href="/publications/causal_perception_supplementary.zip" target="_blank">
+							<span class="fa fa-database"></span>
+							<span class="text">Supplementary materials</span>
+						</a>
+						<a href="https://osf.io/3vqwh" target="_blank">
+							<span class="fa fa-file"></span>
+							<span class="text">OSF</span>
+						</a>
+						<a href="https://arxiv.org/abs/2012.14477" target="_blank">
+							<span class="fa fa-file"></span>
+							<span class="text">arXiv</span>
+						</a>
+					</div>
+				</div>
+			</div>
 
-			        <tr class="news-entry">
-			        	<td class="date">10<sup>th</sup> Dec, 2018</td>
-			        	<td class="content">Released Duo, a spreadsheet application for pairwise comparisons: <a href="https://youtu.be/zXb8blGqOUQ" target="_blank">Video</a> / <a href="https://duospreadsheet.github.io/sloppy_rules_final/" target="_blank">Working Prototype</a></td>
-			        </tr>
-			        
-			        <tr class="news-entry">
-			        	<td class="date">30<sup>th</sup> Sept, 2018</td>
-			        	<td class="content">Released <a href="https://github.com/terrancelaw/MAQUI" target="_blank">MAQUI</a> under a GPL licence. <a href="https://github.com/terrancelaw/MAQUI" target="_blank">MAQUI</a> is a visualization tool for exploring event sequence data.</td>
-			        </tr>
+			<div class="publication">
+				<a class="teaser" href="/publications/data_insight_interviews_vis20.pdf.pdf" target="_blank">
+					<img alt="IEEE VIS 2020 interview study paper" src="/teasers/vis20-1.png" ></img>
+				</a>
+				<div class="info">
+					<div class="title">What are Data Insights to Professional Visualization Users?</div>
+					<div class="authors">Po-Ming Law, Alex Endert, and John Stasko</div>
+					<div class="venue">IEEE VIS Short Paper (IEEE VIS 2020)</div>
+					<div class="downloads">
+						<a href="/publications/data_insight_interviews_vis20.pdf" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Paper</span>
+						</a>
+						<a href="https://youtu.be/eA0A9-yrxYI" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Talk</span>
+						</a>
+						<a href="https://arxiv.org/abs/2008.13057" target="_blank">
+							<span class="fa fa-file"></span>
+							<span class="text">arXiv</span>
+						</a>
+						<a href="/publications/data_insight_interviews_demographics.pdf" target="_blank">
+							<span class="fa fa-database"></span>
+							<span class="text">Interviewees' demographics</span>
+						</a>
+					</div>
+				</div>
+			</div>
 
-		    	</table>
+			<div class="publication">
+				<a class="teaser" href="/publications/auto_insights_vis20.pdf" target="_blank">
+					<img alt="IEEE VIS 2020 literature review paper" src="/teasers/vis20-2.png" ></img>
+				</a>
+				<div class="info">
+					<div class="title">Characterizing Automated Data Insights</div>
+					<div class="authors">Po-Ming Law, Alex Endert, and John Stasko</div>
+					<div class="venue">IEEE VIS Short Paper (IEEE VIS 2020)</div>
+					<div class="downloads">
+						<a href="/publications/auto_insights_vis20.pdf" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Paper</span>
+						</a>
+						<a href="https://youtu.be/3DYZLK7v1ko" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Talk</span>
+						</a>
+						<a href="https://arxiv.org/abs/2008.13060" target="_blank">
+							<span class="fa fa-file"></span>
+							<span class="text">arXiv</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="publication">
+				<a class="teaser" href="/publications/bias_study_GI20.pdf" target="_blank">
+					<img alt="GI 2020 paper" src="/teasers/gi20.png" ></img>
+				</a>
+				<div class="info">
+					<div class="title">The Impact of Presentation Style on Human-In-The-Loop Detection of Algorithmic Bias</div>
+					<div class="authors">Po-Ming Law, Sana Malik, Fan Du, and Moumita Sinha</div>
+					<div class="venue">Graphics Interface 2020 (GI 2020)</div>
+					<div class="downloads">
+						<a href="/publications/bias_study_GI20.pdf" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Paper</span>
+						</a>
+						<a href="https://youtu.be/ZIGfNjXOdpM" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Talk</span>
+						</a>
+						<a href="https://youtu.be/8ZqCKxsbMHg" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Demo video</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="publication">
+				<a class="teaser" href="/publications/bias_interviews_CoBi20.pdf" target="_blank">
+					<img alt="CoBi 2020 paper" src="/teasers/cobi20.png" ></img>
+				</a>
+				<div class="info">
+					<div class="title">Designing Tools for Semi-Automated Detection of Machine Learning Biases: An Interview Study</div>
+					<div class="authors">Po-Ming Law, Sana Malik, Fan Du, and Moumita Sinha</div>
+					<div class="venue">CHI 2020 Workshop on Detection and Design for Cognitive Biases in People and Computing Systems (CoBi 2020)</div>
+					<div class="downloads">
+						<a href="/publications/bias_interviews_CoBi20.pdf" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Paper</span>
+						</a>
+						<a href="https://osf.io/uvjqh" target="_blank">
+							<span class="fa fa-file"></span>
+							<span class="text">OSF</span>
+						</a>
+						<a href="https://arxiv.org/abs/2003.07680" target="_blank">
+							<span class="fa fa-file"></span>
+							<span class="text">arXiv</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="publication">
+				<a class="teaser" href="/publications/duo_chi19.pdf" target="_blank">
+					<img alt="CHI 2019 paper" src="/teasers/chi19.png" ></img>
+				</a>
+				<div class="info">
+					<div class="title">Comparing Apples and Oranges: Taxonomy and Design of Pairwise Comparisons within Tabular Data</div>
+					<div class="authors">Po-Ming Law, Subhajit Das, and Rahul C. Basole</div>
+					<div class="venue">ACM Conference on Human Factors in Computing Systems (CHI 2019)</div>
+					<div class="downloads">
+						<a href="/publications/duo_chi19.pdf" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Paper</span>
+						</a>
+						<a href="https://github.com/duospreadsheet/supplemental" target="_blank">
+							<span class="fa fa-database"></span>
+							<span class="text">Supplementary materials</span>
+						</a>
+						<a href="https://duospreadsheet.github.io/sloppy_rules_final/" target="_blank">
+							<span class="fa fa-laptop"></span>
+							<span class="text">System</span>
+						</a>
+						<a href="https://youtu.be/zXb8blGqOUQ" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Demo video</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="publication">
+				<a class="teaser" href="/publications/duet_vis18.pdf" target="_blank">
+					<img alt="IEEE VIS 2018 Duet paper" src="/teasers/vis18-1.png" ></img>
+				</a>
+				<div class="info">
+					<div class="title">Duet: Helping Data Analysis Novices Conduct Pairwise Comparisons by Minimal Specification</div>
+					<div class="authors">Po-Ming Law, Rahul C. Basole, and Yanhong Wu</div>
+					<div class="venue">IEEE Transactions on Visualization and Computer Graphics (IEEE VIS 2018)</div>
+					<div class="downloads">
+						<a href="/publications/duet_vis18.pdf" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Paper</span>
+						</a>
+						<a href="https://vimeo.com/303205553" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Talk</span>
+						</a>
+						<a href="https://github.com/DuetPairComp/supplemental" target="_blank">
+							<span class="fa fa-database"></span>
+							<span class="text">Supplementary materials</span>
+						</a>
+						<a href="https://duetpaircomp.github.io/" target="_blank">
+							<span class="fa fa-laptop"></span>
+							<span class="text">System</span>
+						</a>
+						<a href="https://youtu.be/Y4p0h8_EnDU" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Demo video</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="publication">
+				<a class="teaser" href="/publications/MAQUI_vis18.pdf" target="_blank">
+					<img alt="IEEE VIS 2018 MAQUI paper" src="/teasers/vis18-2.png" ></img>
+				</a>
+				<div class="info">
+					<div class="title">MAQUI: Interweaving Queries and Pattern Mining for Recursive Event Sequence Exploration</div>
+					<div class="authors">Po-Ming Law, Zhicheng Liu, Sana Malik, and Rahul C. Basole</div>
+					<div class="venue">IEEE Transactions on Visualization and Computer Graphics (IEEE VIS 2018)</div>
+					<div class="downloads">
+						<a href="/publications/MAQUI_vis18.pdf" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Paper</span>
+						</a>
+						<a href="https://vimeo.com/303203643" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Talk</span>
+						</a>
+						<a href="https://github.com/terrancelaw/MAQUI" target="_blank">
+							<span class="fab fa-github"></span>
+							<span class="text">Github</span>
+						</a>
+						<a href="https://youtu.be/17jqGbyWm2w" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Atomic user actions</span>
+						</a>
+						<a href="https://youtu.be/UhlBhDrejK0" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Foursquare dataset demo</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="publication">
+				<a class="teaser" href="/publications/segue_vis18.pdf" target="_blank">
+					<img alt="IEEE VIS 2018 Segue paper" src="/teasers/vis18-3.png" ></img>
+				</a>
+				<div class="info">
+					<div class="title">Segue: Overviewing Evolution Patterns of Egocentric Networks by Interactive Construction of Spatial Layouts</div>
+					<div class="authors">Po-Ming Law, Yanhong Wu, and Rahul C. Basole</div>
+					<div class="venue">IEEE Conference on Visual Analytics Science and Technology (IEEE VIS 2018)</div>
+					<div class="downloads">
+						<a href="/publications/segue_vis18.pdf" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Paper</span>
+						</a>
+						<a href="https://vimeo.com/303201595" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Talk</span>
+						</a>
+						<a href="/publications/segue_supplemental.pdf" target="_blank">
+							<span class="fa fa-database"></span>
+							<span class="text">Supplementary materials</span>
+						</a>
+						<a href="https://segueegonetwork.github.io/" target="_blank">
+							<span class="fa fa-laptop"></span>
+							<span class="text">System</span>
+						</a>
+						<a href="https://youtu.be/WD7v0_RTSZo" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Enron dataset demo</span>
+						</a>
+						<a href="https://youtu.be/icWG0aPiMYw" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Co-investment network demo</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="publication">
+				<a class="teaser" href="http://decisive-workshop.dbvis.de/wp-content/uploads/2017/09/0107-paper.pdf" target="_blank">
+					<img alt="DECISIVe 2017 paper" src="/teasers/decisive17.png" ></img>
+				</a>
+				<div class="info">
+					<div class="title">Designing Breadth-Oriented Data Exploration for Mitigating Cognitive Biases</div>
+					<div class="authors">Po-Ming Law and Rahul C. Basole</div>
+					<div class="venue">2nd Workshop on Dealing with Cognitive Biases in Visualizations (DECISIVe 2017)</div>
+					<div class="downloads">
+						<a href="http://decisive-workshop.dbvis.de/wp-content/uploads/2017/09/0107-paper.pdf" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Paper</span>
+						</a>
+						<a href="https://www.springer.com/us/book/9783319958309" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Book chapter</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="publication">
+				<a class="teaser" href="/publications/vismatchmaker_vis16.pdf" target="_blank">
+					<img alt="IEEE VIS 2016 paper" src="/teasers/vis16.png"></img>
+				</a>
+				<div class="info">
+					<div class="title">VisMatchmaker: Cooperation of the User and the Computer in Centralized Matching Adjustment</div>
+					<div class="authors">Po-Ming Law, Wenchao Wu, Yixian Zheng, and Huamin Qu</div>
+					<div class="venue">IEEE Transactions on Visualization and Computer Graphics (IEEE VIS 2016)</div>
+					<div class="downloads">
+						<a href="/publications/vismatchmaker_vis16.pdf" target="_blank">
+							<span class="fas fa-file"></span>
+							<span class="text">Paper</span>
+						</a>
+						<a href="https://vimeo.com/230201637" target="_blank">
+							<span class="fa fa-play-circle"></span>
+							<span class="text">Talk</span>
+						</a>
+					</div>
+				</div>
 			</div>
 
 		</div>
-
-		<div class="top-header">Publications</div>
-
-		<div class="publication">
-
-	        <div class="teaser">
-	          <img src="/teasers/causal-perception.png" alt="CHI 2021 paper teaser">
-	        </div>
-
-	        <div class="content">
-
-	        	<div class="title">Causal Perception in Question-Answering Systems</div>
-	        	<div class="authors"><span class="me">Po-Ming Law</span>, Leo Yu-Ho Lo, Alex Endert, John Stasko, and Huamin Qu</div>
-	        	<div class="venue">ACM Conference on Human Factors in Computing Systems (CHI 2021)</div>
-
-	        	<div class="download">
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="/publications/causal_perception_chi21.pdf" target="_blank">Paper</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/talk.png" alt="talk icon">
-	        			<a href="https://youtu.be/RJ7zqRO1Gmk" target="_blank">Talk</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/data.png" alt="data icon">
-	        			<a href="/publications/causal_perception_supplementary.zip" target="_blank">Supplementary Materials</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="https://osf.io/3vqwh" target="_blank">OSF</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="https://arxiv.org/abs/2012.14477" target="_blank">arXiv</a>
-	        		</div>
-
-	        	</div>
-
-	        </div>
-
-    	</div>
-
-		<div class="publication">
-
-	        <div class="teaser">
-	          <img src="/teasers/data-insight-interviews.png" alt="VIS 2020 paper 2 teaser">
-	        </div>
-
-	        <div class="content">
-
-	        	<div class="title">What are Data Insights to Professional Visualization Users?</div>
-	        	<div class="authors"><span class="me">Po-Ming Law</span>, Alex Endert, and John Stasko</div>
-	        	<div class="venue">IEEE VIS Short Paper (IEEE VIS 2020)</div>
-
-	        	<div class="download">
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="/publications/data_insight_interviews_vis20.pdf" target="_blank">Paper</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/talk.png" alt="talk icon">
-	        			<a href="https://youtu.be/eA0A9-yrxYI" target="_blank">Talk</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="https://arxiv.org/abs/2008.13057" target="_blank">arXiv</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/data.png" alt="data icon">
-	        			<a href="/publications/data_insight_interviews_demographics.pdf" target="_blank">Interviewees' Demographics</a>
-	        		</div>
-
-	        	</div>
-
-	        </div>
-
-    	</div>
-
-		<div class="publication">
-
-	        <div class="teaser">
-	          <img src="/teasers/auto-insights.png" alt="VIS 2020 paper 1 teaser">
-	        </div>
-
-	        <div class="content">
-
-	        	<div class="title">Characterizing Automated Data Insights</div>
-	        	<div class="authors"><span class="me">Po-Ming Law</span>, Alex Endert, and John Stasko</div>
-	        	<div class="venue">IEEE VIS Short Paper (IEEE VIS 2020)</div>
-
-	        	<div class="download">
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="/publications/auto_insights_vis20.pdf" target="_blank">Paper</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/talk.png" alt="talk icon">
-	        			<a href="https://youtu.be/3DYZLK7v1ko" target="_blank">Talk</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="https://arxiv.org/abs/2008.13060" target="_blank">arXiv</a>
-	        		</div>
-
-	        	</div>
-
-	        </div>
-
-    	</div>
-
-		<div class="publication">
-
-	        <div class="teaser">
-	          <img src="/teasers/bias-study.png" alt="GI 2020 paper teaser">
-	        </div>
-
-	        <div class="content">
-
-	        	<div class="title">The Impact of Presentation Style on Human-In-The-Loop Detection of Algorithmic Bias</div>
-	        	<div class="authors"><span class="me">Po-Ming Law</span>, Sana Malik, Fan Du, and Moumita Sinha</div>
-	        	<div class="venue">Graphics Interface 2020 (GI 2020)</div>
-
-	        	<div class="download">
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="/publications/bias_study_GI20.pdf" target="_blank">Paper</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/talk.png" alt="talk icon">
-	        			<a href="https://youtu.be/ZIGfNjXOdpM" target="_blank">Talk</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/video.png" alt="video icon">
-	        			<a href="https://youtu.be/8ZqCKxsbMHg" target="_blank">Demo Video</a>
-	        		</div>
-
-	        	</div>
-
-	        </div>
-
-    	</div>
-
-    	<div class="publication">
-
-    		<div class="teaser">
-	          <img src="/teasers/bias-interviews.png" alt="CoBi 2020 paper teaser">
-	        </div>
-
-	        <div class="content">
-
-	        	<div class="title">Designing Tools for Semi-Automated Detection of Machine Learning Biases: An Interview Study</div>
-	        	<div class="authors"><span class="me">Po-Ming Law</span>, Sana Malik, Fan Du, and Moumita Sinha</div>
-	        	<div class="venue">CHI 2020 Workshop on Detection and Design for Cognitive Biases in People and Computing Systems (CoBi 2020)</div>
-
-	        	<div class="download">
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="/publications/bias_interviews_CoBi20.pdf" target="_blank">Paper</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="https://osf.io/uvjqh" target="_blank">OSF</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="https://arxiv.org/abs/2003.07680" target="_blank">arXiv</a>
-	        		</div>
-
-	        	</div>
-
-	        </div>
-
-    	</div>
-
-    	<div class="publication">
-    		
-    		<div class="teaser">
-	          <img src="/teasers/duo.png" alt="CHI 2019 paper teaser">
-	        </div>
-
-	        <div class="content">
-
-	        	<div class="title">Comparing Apples and Oranges: Taxonomy and Design of Pairwise Comparisons within Tabular Data</div>
-	        	<div class="authors"><span class="me">Po-Ming Law</span>, Subhajit Das, and Rahul C. Basole</div>
-	        	<div class="venue">ACM Conference on Human Factors in Computing Systems (CHI 2019)</div>
-
-	        	<div class="download">
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="/publications/duo_chi19.pdf" target="_blank">Paper</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/github.png" alt="github icon">
-	        			<a href="https://github.com/duospreadsheet/supplemental" target="_blank">Supplementary Materials</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/system.png" alt="system icon">
-	        			<a href="https://duospreadsheet.github.io/sloppy_rules_final/" target="_blank">System</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/video.png" alt="video icon">
-	        			<a href="https://youtu.be/zXb8blGqOUQ" target="_blank">Demo Video</a>
-	        		</div>
-	        		
-	        	</div>
-
-	        </div>
-
-    	</div>
-
-    	<div class="publication">
-    		
-    		<div class="teaser">
-	          <img src="/teasers/duet.png" alt="VIS 2018 paper 3 teaser">
-	        </div>
-
-	        <div class="content">
-
-	        	<div class="title">Duet: Helping Data Analysis Novices Conduct Pairwise Comparisons by Minimal Specification</div>
-	        	<div class="authors"><span class="me">Po-Ming Law</span>, Rahul C. Basole, and Yanhong Wu</div>
-	        	<div class="venue">IEEE Transactions on Visualization and Computer Graphics (IEEE VIS 2018)</div>
-
-	        	<div class="download">
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="/publications/duet_vis18.pdf" target="_blank">Paper</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/talk.png" alt="talk icon">
-	        			<a href="https://vimeo.com/303205553" target="_blank">Talk</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/github.png" alt="github icon">
-	        			<a href="https://github.com/DuetPairComp/supplemental" target="_blank">Supplementary Materials</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/system.png" alt="system icon">
-	        			<a href="https://duetpaircomp.github.io/" target="_blank">System</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/video.png" alt="video icon">
-	        			<a href="https://youtu.be/Y4p0h8_EnDU" target="_blank">Demo Video</a>
-	        		</div>
-	        		
-	        	</div>
-
-	        </div>
-
-    	</div>
-
-    	<div class="publication">
-    		
-    		<div class="teaser">
-	          <img src="/teasers/MAQUI.png" alt="VIS 2018 paper 2 teaser">
-	        </div>
-
-	        <div class="content">
-
-	        	<div class="title">MAQUI: Interweaving Queries and Pattern Mining for Recursive Event Sequence Exploration</div>
-	        	<div class="authors"><span class="me">Po-Ming Law</span>, Zhicheng Liu, Sana Malik, and Rahul C. Basole</div>
-	        	<div class="venue">IEEE Transactions on Visualization and Computer Graphics (IEEE VIS 2018)</div>
-
-	        	<div class="download">
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="/publications/MAQUI_vis18.pdf" target="_blank">Paper</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/talk.png" alt="talk icon">
-	        			<a href="https://vimeo.com/303203643" target="_blank">Talk</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/github.png" alt="github icon">
-	        			<a href="https://github.com/terrancelaw/MAQUI" target="_blank">Software</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/video.png" alt="video icon">
-	        			<a href="https://youtu.be/17jqGbyWm2w" target="_blank">Atomic User Actions</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/video.png" alt="video icon">
-	        			<a href="https://youtu.be/UhlBhDrejK0" target="_blank">Foursquare Dataset Demo</a>
-	        		</div>
-	        		
-	        	</div>
-
-	        </div>
-
-    	</div>
-
-    	<div class="publication">
-    		
-    		<div class="teaser">
-	          <img src="/teasers/segue.png" alt="VIS 2018 paper 1 teaser">
-	        </div>
-
-	        <div class="content">
-
-	        	<div class="title">Segue: Overviewing Evolution Patterns of Egocentric Networks by Interactive Construction of Spatial Layouts</div>
-	        	<div class="authors"><span class="me">Po-Ming Law</span>, Yanhong Wu, and Rahul C. Basole</div>
-	        	<div class="venue">IEEE Conference on Visual Analytics Science and Technology (IEEE VIS 2018)</div>
-
-	        	<div class="download">
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="/publications/segue_vis18.pdf" target="_blank">Paper</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/talk.png" alt="talk icon">
-	        			<a href="https://vimeo.com/303201595" target="_blank">Talk</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/data.png" alt="data icon">
-	        			<a href="/publications/segue_supplemental.pdf" target="_blank">Supplementary Materials</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/system.png" alt="system icon">
-	        			<a href="https://segueegonetwork.github.io/" target="_blank">System</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/video.png" alt="video icon">
-	        			<a href="https://youtu.be/WD7v0_RTSZo" target="_blank">Enron Dataset Demo</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/video.png" alt="video icon">
-	        			<a href="https://youtu.be/icWG0aPiMYw" target="_blank">Co-investment Network Demo</a>
-	        		</div>
-	        		
-	        	</div>
-
-	        </div>
-
-    	</div>
-
-    	<div class="publication">
-    		
-    		<div class="teaser">
-	          <img src="/teasers/breadth-oriented-exploration.png" alt="DECISIVe 2017 paper teaser">
-	        </div>
-
-	        <div class="content">
-
-	        	<div class="title">Designing Breadth-Oriented Data Exploration for Mitigating Cognitive Biases</div>
-	        	<div class="authors"><span class="me">Po-Ming Law</span>, and Rahul C. Basole</div>
-	        	<div class="venue">Chapter 11, <a href="https://www.springer.com/us/book/9783319958309" target="_blank">Cognitive Biases in Visualizations</a> (pp. 149-159), Springer</div>
-	        	<div class="venue">2nd Workshop on Dealing with Cognitive Biases in Visualizations (DECISIVe 2017)</div>
-
-	        	<div class="download">
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="http://decisive-workshop.dbvis.de/wp-content/uploads/2017/09/0107-paper.pdf" target="_blank">Paper</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/ppt.png" alt="ppt icon">
-	        			<a href="/publications/breadth_decisive17_slides.pdf" target="_blank">Talk Slides</a>
-	        		</div>
-	        		
-	        	</div>
-
-	        </div>
-
-    	</div>
-
-    	<div class="publication">
-    		
-    		<div class="teaser">
-	          <img src="/teasers/vismatchmaker.png" alt="VIS 2016 paper teaser">
-	        </div>
-
-	        <div class="content">
-
-	        	<div class="title">VisMatchmaker: Cooperation of the User and the Computer in Centralized Matching Adjustment</div>
-	        	<div class="authors"><span class="me">Po-Ming Law</span>, Wenchao Wu, Yixian Zheng, and Huamin Qu</div>
-	        	<div class="venue">IEEE Transactions on Visualization and Computer Graphics (IEEE VIS 2016)</div>
-
-	        	<div class="download">
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/pdf.png" alt="pdf icon">
-	        			<a href="/publications/vismatchmaker_vis16.pdf" target="_blank">Paper</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/talk.png" alt="talk icon">
-	        			<a href="https://vimeo.com/230201637" target="_blank">Talk</a>
-	        		</div>
-
-	        		<div class="resource">
-	        			<img class="icon" src="/icons/ppt.png" alt="ppt icon">
-	        			<a href="/publications/vismatchmaker_vis16_slides.pdf" target="_blank">Talk Slides</a>
-	        		</div>
-	        		
-	        	</div>
-
-	        </div>
-
-    	</div>
-
-    	<div class="top-header">Other Projects</div>
-
-    	<div class="project-container">
-
-	    	<div class="project">
-
-	        	<div class="teaser">
-	          		<img src="/teasers/adv-training.png" alt="Adversarial training project teaser">
-	        	</div>
-
-	        	<div class="content">
-
-			        <div class="title">Exploring Adversarial Training Strategies with PGD Attack</div>
-
-		        	<div class="download">
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/doc.png" alt="doc icon">
-		        			<a href="https://terrancelaw.github.io/adversarial-training-web/" target="_blank">Article</a>
-		        		</div>
-
-		          	</div>
-
-	          	</div>
-
-	    	</div>
-
-	    	<div class="project">
-
-	    		<div class="teaser">
-	          		<img src="/teasers/uscollege.png" alt="US college project teaser">
-	        	</div>
-
-	        	<div class="content">
-
-	          		<div class="title">Mining Automated Insights from College Scorecard Data</div>
-
-	          		<div class="download">
-
-	          			<div class="resource">
-		        			<img class="icon" src="/icons/system.png" alt="system icon">
-		        			<a href="https://terrancelaw.github.io/US-College/" target="_blank">System</a>
-		        		</div>
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/data.png" alt="data icon">
-		        			<a href="https://collegescorecard.ed.gov/data/" target="_blank">Data</a>
-		        		</div>
-
-		          	</div>
-
-	          	</div>
-
-	    	</div>
-
-	    	<div class="project">
-
-		        <div class="teaser">
-		          <img src="/teasers/ushealthranking.png" alt="Health disparities project teaser">
-		        </div>
-
-		        <div class="content">
-
-		        	<div class="title">Visualizing Health Disparities in the United States</div>
-
-		        	<div class="download">
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/system.png" alt="system icon">
-		        			<a href="https://ushealthranking.github.io" target="_blank">System</a>
-		        		</div>
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/data.png" alt="data icon">
-		        			<a href="http://www.countyhealthrankings.org" target="_blank">Data</a>
-		        		</div>
-
-		          	</div>
-
-	          	</div>
-
-	    	</div>
-
-	    </div>
-
-    	<div class="top-header">Professional Experience</div>
-
-    	<div class="experience">
-
-    		<div class="logo">
-				<img src="/logos/gatech.jpg" alt="Georgia Tech logo">
-        	</div>
-
-        	<div class="content">
-          		<div class="where">Georgia Institute of Technology, Atlanta, GA</div>
-          		<div class="position">Research Assistant, School of Interactive Computing</div>
-          		<div class="when">August 2016 - now</div>
-        	</div>
-
-    	</div>
-
-    	<div class="experience">
-
-    		<div class="logo">
-				<img src="/logos/adobe.png" alt="Adobe logo">
-        	</div>
-
-        	<div class="content">
-          		<div class="where">Adobe Research, San Jose, CA</div>
-          		<div class="position">Research Intern, Big Data Experience Lab</div>
-          		<div class="mentors">Mentors: Sana Malik, Fan Du, and Moumita Sinha</div>
-          		<div class="when">Summer 2019</div>
-        	</div>
-
-    	</div>
-
-    	<div class="experience">
-
-    		<div class="logo">
-				<img src="/logos/adobe.png" alt="Adobe logo">
-        	</div>
-
-        	<div class="content">
-          		<div class="where">Adobe Research, Seattle, WA</div>
-          		<div class="position">Research Intern, Creative Technology Lab</div>
-          		<div class="mentors">Mentors: Zhicheng Liu and Sana Malik</div>
-          		<div class="when">Summer 2017</div>
-        	</div>
-
-    	</div>
-
-    	<div class="top-header not-display-on-small-screen">A Collection of Visualization Systems I Developed</div>
-
-    	<div class="project-container not-display-on-small-screen">
-
-    		<div class="project">
-
-		        <div class="teaser">
-		          <img src="/teasers/iQuery.png" alt="Auto-insight project teaser">
-		        </div>
-
-		        <div class="content">
-
-		        	<div class="title">Creating Visualizations with the Help of Automated Analysis</div>
-
-		        	<div class="download">
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/system.png" alt="system icon">
-		        			<a href="https://terrancelaw.github.io/iQuery/" target="_blank">System</a>
-		        		</div>
-
-		          	</div>
-
-	          	</div>
-
-	    	</div>
-
-	    	<div class="project">
-
-		        <div class="teaser">
-		          <img src="/teasers/narrative-dashboard.png" alt="Dashboard explanation project teaser">
-		        </div>
-
-		        <div class="content">
-
-		        	<div class="title">Explaining Dashboards with Textual Descriptions</div>
-
-		        	<div class="download">
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/system.png" alt="system icon">
-		        			<a href="https://terrancelaw.github.io/iDashboard/" target="_blank">System</a>
-		        		</div>
-
-		          	</div>
-
-	          	</div>
-
-	    	</div>
-
-	    	<div class="project">
-
-		        <div class="teaser">
-		          <img src="/teasers/autoBI.png" alt="Visual insight project teaser">
-		        </div>
-
-		        <div class="content">
-
-		        	<div class="title">Extracting Visual Insights from Tabular Data</div>
-
-		        	<div class="download">
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/system.png" alt="system icon">
-		        			<a href="https://terrancelaw.github.io/iPage/" target="_blank">System</a>
-		        		</div>
-
-		          	</div>
-
-	          	</div>
-
-	    	</div>
-
-    	</div>
-
-    	<div class="project-container not-display-on-small-screen">
-
-    		<div class="project">
-
-		        <div class="teaser">
-		          <img src="/teasers/duo.png" alt="Duo project teaser">
-		        </div>
-
-		        <div class="content">
-
-		        	<div class="title">Conducting Pairwise Comparisons in a Spreadsheet</div>
-
-		        	<div class="download">
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/system.png" alt="system icon">
-		        			<a href="https://duospreadsheet.github.io/sloppy_rules_final/" target="_blank">System</a>
-		        		</div>
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/video.png" alt="video icon">
-		        			<a href="https://youtu.be/zXb8blGqOUQ" target="_blank">Video</a>
-		        		</div>
-
-		          	</div>
-
-	          	</div>
-
-	    	</div>
-
-	    	<div class="project">
-
-		        <div class="teaser">
-		          <img src="/teasers/uscollege.png" alt="US college project teaser">
-		        </div>
-
-		        <div class="content">
-
-		        	<div class="title">Mining Automated Insights from College Scorecard Data</div>
-
-		        	<div class="download">
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/system.png" alt="system icon">
-		        			<a href="https://terrancelaw.github.io/US-College/" target="_blank">System</a>
-		        		</div>
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/data.png" alt="data icon">
-		        			<a href="https://collegescorecard.ed.gov/data/" target="_blank">Data</a>
-		        		</div>
-
-		          	</div>
-
-	          	</div>
-
-	    	</div>
-
-	    	<div class="project">
-
-		        <div class="teaser">
-		          <img src="/teasers/MAQUI2.png" alt="MAQUI project teaser">
-		        </div>
-
-		        <div class="content">
-
-		        	<div class="title">Querying and Mining Patterns from Event Sequence Data</div>
-
-		        	<div class="download">
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/github.png" alt="github icon">
-		        			<a href="https://github.com/terrancelaw/MAQUI" target="_blank">System</a>
-		        		</div>
-
-					<div class="resource">
-	        			<img class="icon" src="/icons/video.png" alt="video icon">
-	        			<a href="https://youtu.be/UhlBhDrejK0" target="_blank">Video</a>
-	        		</div>
-
-		          	</div>
-
-	          	</div>
-
-	    	</div>
-
-    	</div>
-
-    	<div class="project-container not-display-on-small-screen">
-
-    		<div class="project">
-
-		        <div class="teaser">
-		          <img src="/teasers/duet2.png" alt="Duet project teaser">
-		        </div>
-
-		        <div class="content">
-
-		        	<div class="title">Using Automated Analysis to Make Pairwise Comparisons Easier</div>
-
-		        	<div class="download">
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/system.png" alt="system icon">
-		        			<a href="https://duetpaircomp.github.io/" target="_blank">System</a>
-		        		</div>
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/video.png" alt="video icon">
-		        			<a href="https://youtu.be/Y4p0h8_EnDU" target="_blank">Video</a>
-		        		</div>
-
-		          	</div>
-
-	          	</div>
-
-	    	</div>
-
-	    	<div class="project">
-
-		        <div class="teaser">
-		          <img src="/teasers/segue.png" alt="Segue project teaser">
-		        </div>
-
-		        <div class="content">
-
-		        	<div class="title">Overviewing Ego-Networks by Creating Spatial Layouts</div>
-
-		        	<div class="download">
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/system.png" alt="system icon">
-		        			<a href="https://segueegonetwork.github.io/" target="_blank">System</a>
-		        		</div>
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/video.png" alt="video icon">
-		        			<a href="https://youtu.be/WD7v0_RTSZo" target="_blank">Video</a>
-		        		</div>
-
-		          	</div>
-
-	          	</div>
-
-	    	</div>
-
-	    	<div class="project">
-
-		        <div class="teaser">
-		          <img src="/teasers/ushealthranking.png" alt="Health disparities project teaser">
-		        </div>
-
-		        <div class="content">
-
-		        	<div class="title">Visualizing Health Disparities in the United States</div>
-
-		        	<div class="download">
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/system.png" alt="system icon">
-		        			<a href="https://ushealthranking.github.io" target="_blank">System</a>
-		        		</div>
-
-		        		<div class="resource">
-		        			<img class="icon" src="/icons/data.png" alt="data icon">
-		        			<a href="http://www.countyhealthrankings.org" target="_blank">Data</a>
-		        		</div>
-
-		          	</div>
-
-	          	</div>
-
-	    	</div>
-
-    	</div>
-
-    	<div id="copyright">
-
-    		<div class="content">Copyright © 2021 Terrance Law</div>
-
-    	</div>
 
 	</div>
 
-</body>
+	<div id="copyright">Copyright <span class="fa fa-copyright"></span> 2021 Terrance Law</div>
 
-</html>
+</body>
