@@ -469,7 +469,7 @@ body > .section > .title {
 	}
 
 	#publication-list > .publication > .teaser {
-		height: 200px;
+		height: calc((100vw - 100px) / 16 * 9);
 	}
 
 	#publication-list > .publication > .teaser > .name {
