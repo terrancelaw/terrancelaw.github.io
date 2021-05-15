@@ -158,13 +158,18 @@ body > .section > .title {
 	background: rgba(255, 227, 201, 0.8);
 }
 
-#vis-system-grid > .vis-system > .link-container > .system-link,
-#vis-system-grid > .vis-system > .link-container > .github-link,
-#vis-system-grid > .vis-system > .link-container > .data-link,
-#vis-system-grid > .vis-system > .link-container > .video-link {
+#vis-system-grid > .vis-system > .link-container > .links {
 	position: absolute;
 	bottom: 3px;
+	right: 100%;
 
+	text-align: right;
+}
+
+#vis-system-grid > .vis-system > .link-container > .links > .system-link,
+#vis-system-grid > .vis-system > .link-container > .links > .github-link,
+#vis-system-grid > .vis-system > .link-container > .links > .data-link,
+#vis-system-grid > .vis-system > .link-container > .links > .video-link {
 	font-size: 20px;
 	font-weight: 700;
 	text-decoration: none;
@@ -180,15 +185,20 @@ body > .section > .title {
 	pointer-events: auto;
 }
 
-#vis-system-grid > .vis-system > .link-container > .system-link,
-#vis-system-grid > .vis-system > .link-container > .github-link {
-	bottom: 36px;
+#vis-system-grid > .vis-system > .link-container > .links > .system-link,
+#vis-system-grid > .vis-system > .link-container > .links > .github-link {
+	display: block;
 }
 
-#vis-system-grid > .vis-system > .link-container > .system-link > .fa,
-#vis-system-grid > .vis-system > .link-container > .github-link > .fab,
-#vis-system-grid > .vis-system > .link-container > .data-link > .fa,
-#vis-system-grid > .vis-system > .link-container > .video-link > .fa {
+#vis-system-grid > .vis-system > .link-container > .links > .data-link,
+#vis-system-grid > .vis-system > .link-container > .links > .video-link {
+	margin-top: 3px;
+}
+
+#vis-system-grid > .vis-system > .link-container > .links > .system-link > .fa,
+#vis-system-grid > .vis-system > .link-container > .links > .github-link > .fab,
+#vis-system-grid > .vis-system > .link-container > .links > .data-link > .fa,
+#vis-system-grid > .vis-system > .link-container > .links > .video-link > .fa {
 	margin-right: 10px;
 }
 
@@ -346,42 +356,40 @@ body > .section > .title {
 	transform: translateY(calc(100% + 3px));
 }
 
-#vis-system-grid > .vis-system > .link-container > .system-link,
-#vis-system-grid > .vis-system > .link-container > .github-link {
-	right: 100%;
+#vis-system-grid > .vis-system > .link-container > .links > .system-link,
+#vis-system-grid > .vis-system > .link-container > .links > .github-link {
 	background: rgba(255, 227, 201, 0.8);
 	color: #ff4646;
 
 	transition: transform 0.5s ease 0.15s, background 0.3s, color 0.3s;
 }
 
-#vis-system-grid > .vis-system:hover > .link-container > .system-link,
-#vis-system-grid > .vis-system:hover > .link-container > .github-link {
+#vis-system-grid > .vis-system:hover > .link-container > .links > .system-link,
+#vis-system-grid > .vis-system:hover > .link-container > .links > .github-link {
 	transform: translateX(calc(100% + 3px));
 }
 
-#vis-system-grid > .vis-system > .link-container > .system-link:hover,
-#vis-system-grid > .vis-system > .link-container > .github-link:hover {
+#vis-system-grid > .vis-system > .link-container > .links > .system-link:hover,
+#vis-system-grid > .vis-system > .link-container > .links > .github-link:hover {
 	background: #ff8474;
 	color: white;
 }
 
-#vis-system-grid > .vis-system > .link-container > .data-link,
-#vis-system-grid > .vis-system > .link-container > .video-link {
-	right: 100%;
+#vis-system-grid > .vis-system > .link-container > .links > .data-link,
+#vis-system-grid > .vis-system > .link-container > .links > .video-link {
 	background: rgba(255, 227, 201, 0.8);
 	color: #ff4646;
 
 	transition: transform 0.5s ease 0.3s, background 0.3s, color 0.3s;
 }
 
-#vis-system-grid > .vis-system:hover > .link-container > .data-link,
-#vis-system-grid > .vis-system:hover > .link-container > .video-link {
+#vis-system-grid > .vis-system:hover > .link-container > .links > .data-link,
+#vis-system-grid > .vis-system:hover > .link-container > .links > .video-link {
 	transform: translateX(calc(100% + 3px));
 }
 
-#vis-system-grid > .vis-system > .link-container > .data-link:hover,
-#vis-system-grid > .vis-system > .link-container > .video-link:hover {
+#vis-system-grid > .vis-system > .link-container > .links > .data-link:hover,
+#vis-system-grid > .vis-system > .link-container > .links > .video-link:hover {
 	background: #ff8474;
 	color: white;
 }
@@ -446,13 +454,13 @@ body > .section > .title {
 		transform: translateY(0px);
 	}
 
-	#vis-system-grid > .vis-system:hover > .link-container > .system-link,
-	#vis-system-grid > .vis-system:hover > .link-container > .github-link {
+	#vis-system-grid > .vis-system:hover > .link-container > .links > .system-link,
+	#vis-system-grid > .vis-system:hover > .link-container > .links > .github-link {
 		transform: translateX(0%);
 	}
 
-	#vis-system-grid > .vis-system:hover > .link-container > .data-link,
-	#vis-system-grid > .vis-system:hover > .link-container > .video-link {
+	#vis-system-grid > .vis-system:hover > .link-container > .links > .data-link,
+	#vis-system-grid > .vis-system:hover > .link-container > .links > .video-link {
 		transform: translateX(0%);
 	}
 
