@@ -357,24 +357,7 @@ body > .section > .title {
 }
 
 #vis-system-grid > .vis-system > .link-container > .links > .system-link,
-#vis-system-grid > .vis-system > .link-container > .links > .github-link {
-	background: rgba(255, 227, 201, 0.8);
-	color: #ff4646;
-
-	transition: transform 0.5s ease 0.15s, background 0.3s, color 0.3s;
-}
-
-#vis-system-grid > .vis-system:hover > .link-container > .links > .system-link,
-#vis-system-grid > .vis-system:hover > .link-container > .links > .github-link {
-	transform: translateX(calc(100% + 3px));
-}
-
-#vis-system-grid > .vis-system > .link-container > .links > .system-link:hover,
-#vis-system-grid > .vis-system > .link-container > .links > .github-link:hover {
-	background: #ff8474;
-	color: white;
-}
-
+#vis-system-grid > .vis-system > .link-container > .links > .github-link,
 #vis-system-grid > .vis-system > .link-container > .links > .data-link,
 #vis-system-grid > .vis-system > .link-container > .links > .video-link {
 	background: rgba(255, 227, 201, 0.8);
@@ -383,11 +366,15 @@ body > .section > .title {
 	transition: transform 0.5s ease 0.3s, background 0.3s, color 0.3s;
 }
 
+#vis-system-grid > .vis-system:hover > .link-container > .links > .system-link,
+#vis-system-grid > .vis-system:hover > .link-container > .links > .github-link,
 #vis-system-grid > .vis-system:hover > .link-container > .links > .data-link,
 #vis-system-grid > .vis-system:hover > .link-container > .links > .video-link {
 	transform: translateX(calc(100% + 3px));
 }
 
+#vis-system-grid > .vis-system > .link-container > .links > .system-link:hover,
+#vis-system-grid > .vis-system > .link-container > .links > .github-link:hover,
 #vis-system-grid > .vis-system > .link-container > .links > .data-link:hover,
 #vis-system-grid > .vis-system > .link-container > .links > .video-link:hover {
 	background: #ff8474;
